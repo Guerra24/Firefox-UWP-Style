@@ -9,9 +9,10 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
-:root:-moz-lwtheme {
-	--tab-line-color: rgb(200,200,200) !important;
+#tabbrowser-tabs {
+	--tab-line-color: -moz-win-accentcolor !important;
+	--tab-loading-fill: #fff !important;
 }
-:root:-moz-lwtheme:-moz-window-inactive {
-	--tab-line-color: rgb(128,128,128) !important;
+#tabbrowser-tabs:-moz-window-inactive {
+	--tab-line-color: rgb(128, 128, 128) !important;
 }

@@ -171,9 +171,6 @@ browser, browser.display.background_color, tabbrowser tabpanels {
 	--titlebar-min-max-active-bg-color: #444;
 	--titlebar-close-hover-bg-color: #E81123;
 	--titlebar-close-active-bg-color: #F06F79;
-}
-:root:-moz-lwtheme {
-	--tab-loading-fill: #fff !important;
-	--tab-min-height: 32px !important;
 	--toolbarbutton-border-radius: 0px !important;
+	--tab-min-height: 32px !important;
 }

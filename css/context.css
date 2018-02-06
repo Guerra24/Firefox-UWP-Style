@@ -3,7 +3,7 @@ menupopup {
 	padding: 8px 2px 8px 2px !important;
 	background-color: #2B2B2B !important;
 	border: 1px #A0A0A0 solid !important;
-	width: 280px !important;
+	min-width: 280px !important;
 }
 menuseparator {
 	-moz-appearance: none !important;

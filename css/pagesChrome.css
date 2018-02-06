@@ -41,7 +41,7 @@ textbox:not(#urlbar):hover {
 }
 textbox[focused="true"]:not(#urlbar) {
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
-	border: 2px solid #999999 !important;
+	border: 2px solid -moz-win-accentcolor !important;
 	background-color: white !important;
 	color: black !important;
 }
@@ -60,6 +60,28 @@ listitem:hover {
 }
 listitem[selected="true"] {
 	background-color: #404040 !important;
+}
+menulist {
+	-moz-appearance: none !important;
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #666666 !important;
+	background-color: transparent !important;
+}
+menulist:hover {
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #999999 !important;
+	background-color: transparent !important;
+}
+menulist[open="true"]  {
+	border: 2px solid #666666 !important;
+	background-color: #333333 !important;
+}
+dropmarker {
+	-moz-appearance: none !important;
+	margin-right: 0px !important;
+	padding-right: 20px !important;
+	list-style-image: none !important;
+	background: url(../img/arrowdown.png) center center no-repeat !important;
 }
 #customization-content-container {
 	background-color: black !important;
@@ -99,7 +121,7 @@ listitem[selected="true"] {
 	#clearDownloadsButton {
 		-moz-appearance: none !important;
 		margin-left: 8px !important;
-		color: white !important;
+		color: -moz-win-accentcolor !important;
 	}
 	#clearDownloadsButton:hover {
 		color: #999999 !important;
@@ -122,7 +144,7 @@ listitem[selected="true"] {
 		background-color: #202020 !important;
 	}
 	label {
-		color: white !important;
+		color: -moz-win-accentcolor !important;
 	}
 	label:hover {
 		color: #999999 !important;
@@ -138,5 +160,52 @@ listitem[selected="true"] {
 	}
 	label {
 		color: white !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xul") {
+	#unknownContentType {
+		background-color: black !important;
+	}
+	label, description {
+		color: white !important;
+	}
+	caption {
+		background-color: black !important;
+	}
+	groupbox {
+		-moz-appearance: none !important;
+		border: 0px !important;
+	}
+	radio > .radio-check {
+		-moz-appearance: none !important;
+		padding: 5px !important;
+		border: 3px solid black;
+		border-radius: 100%;
+		background: black;
+		box-shadow: 0 .5px 0 2.5px #CCCCCC;
+		margin-right: 10px !important;
+	}
+	radio[selected="true"] > .radio-check {
+		padding: 5px !important;
+		border: 3px solid black;
+		border-radius: 100%;
+		background: #CCCCCC;
+		box-shadow: 0 0 0 2.5px -moz-win-accentcolor;
+	}
+}
+
+@-moz-document url("chrome://global/content/alerts/alert.xul") {
+	#alertBox {
+		box-shadow: none !important;
+		background-color: #1F1F1FF4 !important;
+		border: 1px solid #1F1F1F !important;
+		color: white !important;
+	}
+	#alertTitleLabel {
+		padding-top: 0px !important;
+	}
+	#alertNotification {
+		padding: 8px 16px 0px 0px !important;
 	}
 }
