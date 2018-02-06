@@ -11,7 +11,7 @@
 
 #tabbrowser-tabs {
 	--tab-line-color: -moz-win-accentcolor !important;
-	--tab-loading-fill: #fff !important;
+	--tab-loading-fill: -moz-win-accentcolor !important;
 }
 #tabbrowser-tabs:-moz-window-inactive {
 	--tab-line-color: rgb(128, 128, 128) !important;
