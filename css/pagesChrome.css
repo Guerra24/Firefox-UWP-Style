@@ -83,6 +83,9 @@ dropmarker {
 	list-style-image: none !important;
 	background: url(../img/arrowdown.png) center center no-repeat !important;
 }
+dropmarker > .dropmarker-icon {
+	list-style-image: none !important;
+}
 #customization-content-container {
 	background-color: black !important;
 }
