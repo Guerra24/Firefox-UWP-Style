@@ -1,0 +1,142 @@
+button {
+	-moz-appearance: none !important;
+	padding: 3px !important;
+	background-color: #333333 !important;
+	border: 2px #333333 solid !important;
+	color: white !important;
+}
+button:hover {
+	color: white !important;
+	border: 2px #858585 solid !important;
+}
+button:active {
+	color: white !important;
+	background-color: #666666 !important;
+	border: 2px #858585 solid !important;
+}
+.expander-down {
+	background: url(../img/arrowdown.png) center center no-repeat !important;
+	list-style-image: none !important;
+	padding: 11px !important;
+}
+.expander-up {
+	background: url(../img/arrowdown.png) center center no-repeat !important;
+	list-style-image: none !important;
+	padding: 11px !important;
+	transform: rotate(180deg);
+}
+.customizationmode-button {
+	border-radius: 0px !important;
+}
+textbox:not(#urlbar) {
+	-moz-appearance: none !important;
+	padding: 5.5px 5.5px 5.5px 5.5px !important;
+	border: 2px solid #666666 !important;
+	background-color: transparent !important;
+	color: white !important;
+}
+textbox:not(#urlbar):hover {
+	padding: 5.5px 5.5px 5.5px 5.5px !important;
+	border: 2px solid #999999 !important;
+}
+textbox[focused="true"]:not(#urlbar) {
+	padding: 5.5px 5.5px 5.5px 5.5px !important;
+	border: 2px solid #999999 !important;
+	background-color: white !important;
+	color: black !important;
+}
+listbox {
+	-moz-appearance: none !important;
+	background-color: black !important;
+	border: 1px #333333 solid !important;
+}
+listitem {
+	margin: 0px !important;
+	padding: 1px !important;
+	border: none !important;
+}
+listitem:hover {
+	background-color: #202020 !important;
+}
+listitem[selected="true"] {
+	background-color: #404040 !important;
+}
+#customization-content-container {
+	background-color: black !important;
+}
+#customization-footer {
+	background-color: #161616 !important;
+}
+@-moz-document url("chrome://browser/content/places/places.xul") {
+	#placesToolbar {
+		padding: 4px 6px 4px 0px !important;
+		background-color: black !important;
+	}
+	#placesMenu > menu {
+		padding: 4px 4px 4px 4px !important;
+		border: 2px solid #666666 !important;
+		background-color: transparent !important;
+	}
+	#placesMenu > menu:hover, #placesMenu > menu[_moz-menuactive="true"] {
+		padding: 4px 4px 4px 4px !important;
+		border: 2px solid #999999 !important;
+		background-color: transparent !important;
+	}
+	#placesMenu > menu[open="true"]  {
+		border: 2px solid #666666 !important;
+		background-color: #333333 !important;
+	}
+	#placesMenu > menu + menu {
+    	margin-left: 10px;
+	}
+	#placesMenu > menu > .menubar-left {
+		display: none !important;
+	}
+	#placesMenu > menu > .menubar-text {
+		padding-right: 30px !important;
+		background: url(../img/arrowdown.png) right center no-repeat !important;
+	}
+	#clearDownloadsButton {
+		-moz-appearance: none !important;
+		margin-left: 8px !important;
+		color: white !important;
+	}
+	#clearDownloadsButton:hover {
+		color: #999999 !important;
+		background-color: transparent !important;
+	}
+	#clearDownloadsButton:active {
+		padding: 3px 9px 3px 9px !important;
+		color: #666666 !important;
+	}
+	textbox:not(#urlbar), .expander-down, .expander-up {
+		background-color: black !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/aboutDialog.xul") {
+	#aboutDialogContainer {
+		background-color: black !important;
+	}
+	#bottomBox {
+		background-color: #202020 !important;
+	}
+	label {
+		color: white !important;
+	}
+	label:hover {
+		color: #999999 !important;
+	}
+	label:active {
+		color: #666666 !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul") {
+	#bookmarkproperties {
+		background-color: black !important;
+	}
+	label {
+		color: white !important;
+	}
+}

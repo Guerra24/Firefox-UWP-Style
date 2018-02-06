@@ -1,0 +1,17 @@
+/*AGENT_SHEET*/
+
+/* Base Theme */
+@import url(./css/base.css);
+
+/* Pop-ups, Context Menus, Dropdowns, etc */
+@import url(./css/context.css);
+
+/* Pages */
+@import url(./css/pagesChrome.css);
+
+:root:-moz-lwtheme {
+	--tab-line-color: rgb(200,200,200) !important;
+}
+:root:-moz-lwtheme:-moz-window-inactive {
+	--tab-line-color: rgb(128,128,128) !important;
+}

@@ -1,0 +1,179 @@
+.titlebar-button, #minimize-button, #restore-button, #close-button {
+	width: 46px !important;
+	height: 32px !important;
+}
+.titlebar-buttonbox {
+	height: 32px !important;
+}
+#titlebar {
+	margin-top: 1px !important;
+	height: 33px !important;
+	margin-bottom: -33px !important;
+}
+window #titlebar-content {
+	margin-top: 0px !important;
+	height: 32px !important;
+}
+window[sizemode="maximized"] #titlebar {
+	margin-top: 0px !important;
+	height: 41px !important;
+}
+window[sizemode="maximized"] #titlebar-content {
+	margin-top: 0px !important;
+	height: 32px !important;
+}
+#titlebar-min, #minimize-button {
+	padding-top: 9px !important;
+}
+window[sizemode="fullscreen"] #minimize-button {
+	padding-top: 8px !important;
+}
+#titlebar-min:hover, #titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
+	background-color: var(--titlebar-min-max-hover-bg-color) !important;
+}
+#titlebar-min:hover:active, #titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
+	background-color: var(--titlebar-min-max-active-bg-color) !important;
+}
+#titlebar-close:hover, #close-button:hover {
+	background-color: var(--titlebar-close-hover-bg-color)	!important;
+}
+#titlebar-close:hover:active, #close-button:hover:active {
+	background-color: var(--titlebar-close-active-bg-color) !important;
+}
+#navigator-toolbox {
+	background: black !important;
+}
+#nav-bar {
+	margin-top: 0px !important;
+	border-top: 0px !important;
+	box-shadow: none !important;
+}
+#main-window[chromemargin] {
+	background-color: rgba(0, 0, 0, 1) !important;
+	-moz-appearance: -moz-win-glass !important;
+}
+#nav-bar textbox {
+	background-color: rgba(42, 42, 42, 0) !important;
+}
+#nav-bar textbox:hover {
+	background-color: rgba(75, 75, 75, 1) !important;
+}
+#urlbar, .searchbar-textbox {
+	border: 0px !important;
+	height: 20px !important;
+}
+#urlbar {
+	margin-left: 1px !important;
+	margin-right: 1px !important;
+}
+#nav-bar[id], #PersonalToolbar[id], #web-developer-toolbar[id], #navigator-toolbox[tabsontop="true"] > #nav-bar[id], #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"][id] + toolbar, #navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar[id], #navigator-toolbox[tabsontop="false"] > #nav-bar[id], #navigator-toolbox[tabsontop="false"]:not([customizing]) > #nav-bar[collapsed="true"][id] + toolbar, #navigator-toolbox[tabsontop="false"]:not([customizing]) > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar[id] {
+	background-image: none !important;
+	background: rgba(42, 42, 42, 1) !important;
+}
+.tabbrowser-tab[selected="true"][pinned="true"]:hover, .tabbrowser-tab:not([pinned]):hover, .tabs-newtab-button:hover, #new-tab-button:hover, #alltabs-button:hover {
+	color: rgba(240, 240, 240, 1) !important;
+	background: rgba(42, 42, 42, 1) !important;
+	border-top: 0px !important;
+}
+.tab-background-middle[selected="true"], .tabbrowser-tab[selected="true"], .tab-background-middle[selected="true"]:hover, .tabbrowser-tab[selected="true"]:hover {
+	background: rgba(42, 42, 42, 1) !important;
+}
+.tabbrowser-tab[pinned]:hover {
+	color: rgba(240, 240, 240, 1) !important;
+	background: rgba(42, 42, 42, 1) !important;
+	border-top: 0px !important;
+}
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+	display: none !important;
+}
+.tabs-newtab-button, #new-tab-button, #alltabs-button {
+	color: rgba(240, 240, 240, 1) !important;
+	background: rgba(0, 0, 0, 0.0) !important;
+	border-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.tabs-newtab-button:hover:active, #new-tab-button:hover:active, #alltabs-button:hover:active {
+	background: #444 !important
+}
+window:not([chromehidden~="toolbar"]) #urlbar-container > .toolbarbutton-1:-moz-any([disabled], :not([open]):not([disabled]):not(:active)) > .toolbarbutton-icon[class], #main-window:not([customizing]) #back-button[disabled] > .toolbarbutton-icon[class] {
+	background-image: none !important;
+	background-color: rgba(40, 40, 40, 0) !important;
+	box-shadow: none !important;
+	border: 0px !important;
+}
+#forward-button, #back-button {
+	display: none !important;
+}
+toolbarbutton.bookmark-item {
+	border: 1px rgba(0, 0, 0, 0) solid !important;
+}
+toolbarbutton.bookmark-item:hover {
+	background-color: rgba(75, 75, 75, 1) !important;
+	border: 1px rgba(75, 75, 75, 1) solid !important;
+}
+.titlebar-placeholder[type="pre-tabs"] {
+	display: none !important;
+}
+.titlebar-placeholder[type="post-tabs"] {
+	width: 50px !important;
+}
+#content-deck {
+	-moz-appearance: -moz-win-exclude-glass !important;
+}
+#TabsToolbar {
+	background: black !important;
+	margin-bottom: 0px !important;
+}
+#navigator-toolbox::after {
+	border-bottom: 0px !important;
+}
+browser[type="content-primary"], browser[type="content"] {
+	background: #303030 !important;
+}
+browser, browser.display.background_color, tabbrowser tabpanels {
+	background-color: #303030 !important;
+}
+#TabsToolbar .tab-background {
+	background: transparent !important;
+	border-right: 0px !important;
+	border-left: 0px !important;
+}
+.scrollbutton-up, .scrollbutton-down {
+	margin-bottom: 0px !important;
+}
+.scrollbutton-up:hover, .scrollbutton-down:hover {
+	background: rgba(42, 42, 42, 1) !important;
+}
+.scrollbutton-up:hover:active, .scrollbutton-down:hover:active {
+	background: #444 !important;
+}
+.tabs-newtab-button .toolbarbutton-icon {
+	background: transparent !important;
+}
+#urlbar, .searchbar-textbox {
+	box-shadow: none !important;
+}
+.close-icon > .toolbarbutton-icon {
+	border-radius: 0px !important;
+}
+#TabsToolbar[movingtab] {
+	padding-bottom: 0px !important;
+}
+#TabsToolbar[movingtab] > .tabbrowser-tabs {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+#new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
+	background-color: transparent !important;
+}
+:root {
+	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
+	--titlebar-min-max-active-bg-color: #444;
+	--titlebar-close-hover-bg-color: #E81123;
+	--titlebar-close-active-bg-color: #F06F79;
+}
+:root:-moz-lwtheme {
+	--tab-loading-fill: #fff !important;
+	--tab-min-height: 32px !important;
+	--toolbarbutton-border-radius: 0px !important;
+}
