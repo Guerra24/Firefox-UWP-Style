@@ -61,21 +61,6 @@ listitem:hover {
 listitem[selected="true"] {
 	background-color: #404040 !important;
 }
-menulist { /* Bug Here */
-	-moz-appearance: none !important;
-	padding: 4px 4px 4px 4px !important;
-	border: 2px solid #666666 !important;
-	background-color: transparent !important;
-}
-menulist:hover {
-	padding: 4px 4px 4px 4px !important;
-	border: 2px solid #999999 !important;
-	background-color: transparent !important;
-}
-menulist[open="true"]  {
-	border: 2px solid #666666 !important;
-	background-color: #333333 !important;
-}
 dropmarker {
 	-moz-appearance: none !important;
 	margin-right: 0px !important;

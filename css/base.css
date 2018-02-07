@@ -2,16 +2,16 @@
 	width: 46px !important;
 	height: 32px !important;
 }
-#titlebar-buttonbox {
+#titlebar-buttonbox, #TabsToolbar, #toolbar-menubar {
 	height: 32px !important;
+}
+#toolbar-menubar > #menubar-items > #main-menubar > menu {
+	padding: 0px !important;
 }
 #titlebar {
 	margin-top: 1px !important;
 	height: 33px !important;
 	margin-bottom: -33px !important;
-}
-#TabsToolbar {
-	height: 32px !important;
 }
 window #titlebar-content {
 	margin-top: 0px !important;
@@ -85,6 +85,9 @@ window[sizemode="fullscreen"] #minimize-button {
 	color: rgba(240, 240, 240, 1) !important;
 	background: rgba(42, 42, 42, 1) !important;
 	border-top: 0px !important;
+}
+.tab-background {
+	border-top: none !important;
 }
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;

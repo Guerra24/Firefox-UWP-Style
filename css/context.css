@@ -60,6 +60,31 @@ menuitem[checked="true"][type="radio"] > .menu-iconic-left {
 	background: white;
 	transform: scale(.5); 
 }
+menucaption {
+	background-color: transparent !important;
+	color: white !important;
+}
+#ContentSelectDropdown > menupopup {
+	background-image: none !important;
+}
+#ContentSelectDropdown {
+	padding: 0px !important;
+}
+menulist {
+	-moz-appearance: none !important;
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #666666 !important;
+	background-color: transparent !important;
+}
+menulist:hover {
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #999999 !important;
+	background-color: transparent !important;
+}
+menulist[open="true"]  {
+	border: 2px solid #666666 !important;
+	background-color: #333333 !important;
+}
 #context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, #context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, #context-bookmarkpage > .menu-iconic-left {
 	padding: 0px !important;
 }
@@ -83,4 +108,3 @@ tooltip {
 	border: 1px solid #767676 !important;
 	padding: 6.5px !important;
 }
-/* #ContentSelectDropdown main popup set */
