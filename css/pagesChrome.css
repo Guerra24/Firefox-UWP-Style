@@ -200,3 +200,21 @@ dropmarker > .dropmarker-icon {
 		padding: 8px 16px 0px 0px !important;
 	}
 }
+
+@-moz-document url("chrome://global/content/commonDialog.xul") {
+	#commonDialog {
+		background-color: black !important;
+	}
+	label, description {
+		color: white !important;
+	}
+	#infoIcon {
+		display: none !important;
+	}
+	#infoContainer {
+		text-align: center !important;
+	}
+	#checkbox {
+		margin-left: 23px !important;
+	}
+}
