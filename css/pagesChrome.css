@@ -155,6 +155,9 @@ dropmarker > .dropmarker-icon {
 	label:active {
 		color: #666666 !important;
 	}
+	.button-text {
+		color: white !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/places/bookmarkProperties.xul") {
