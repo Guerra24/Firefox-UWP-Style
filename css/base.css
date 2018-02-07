@@ -2,13 +2,16 @@
 	width: 46px !important;
 	height: 32px !important;
 }
-.titlebar-buttonbox {
+#titlebar-buttonbox {
 	height: 32px !important;
 }
 #titlebar {
 	margin-top: 1px !important;
 	height: 33px !important;
 	margin-bottom: -33px !important;
+}
+#TabsToolbar {
+	height: 32px !important;
 }
 window #titlebar-content {
 	margin-top: 0px !important;

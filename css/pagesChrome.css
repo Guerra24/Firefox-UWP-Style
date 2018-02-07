@@ -61,7 +61,7 @@ listitem:hover {
 listitem[selected="true"] {
 	background-color: #404040 !important;
 }
-menulist {
+menulist { /* Bug Here */
 	-moz-appearance: none !important;
 	padding: 4px 4px 4px 4px !important;
 	border: 2px solid #666666 !important;
