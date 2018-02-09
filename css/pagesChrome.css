@@ -16,11 +16,13 @@ button:active {
 }
 .expander-down {
 	background: url(../img/arrowdown.png) center center no-repeat !important;
+	background-color: #000000A0 !important;
 	list-style-image: none !important;
 	padding: 11px !important;
 }
 .expander-up {
 	background: url(../img/arrowdown.png) center center no-repeat !important;
+	background-color: #000000A0 !important;
 	list-style-image: none !important;
 	padding: 11px !important;
 	transform: rotate(180deg);
@@ -32,7 +34,7 @@ textbox:not(#urlbar) {
 	-moz-appearance: none !important;
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid #666666 !important;
-	background-color: transparent !important;
+	background-color: #000000A0 !important;
 	color: white !important;
 }
 textbox:not(#urlbar):hover {
@@ -77,27 +79,32 @@ dropmarker > .dropmarker-icon {
 #customization-footer {
 	background-color: #161616 !important;
 }
+
+:root {
+	--uwp-header-background: #1F1F1F;
+}
+
 @-moz-document url("chrome://browser/content/places/places.xul") {
 	#placesToolbar {
 		padding: 4px 6px 4px 0px !important;
-		background-color: black !important;
+		background-color: var(--uwp-header-background) !important;
 	}
 	#placesMenu > menu {
 		padding: 4px 4px 4px 4px !important;
 		border: 2px solid #666666 !important;
-		background-color: transparent !important;
+		background-color: #000000A0 !important;
 	}
 	#placesMenu > menu:hover, #placesMenu > menu[_moz-menuactive="true"] {
 		padding: 4px 4px 4px 4px !important;
 		border: 2px solid #999999 !important;
 		background-color: transparent !important;
 	}
-	#placesMenu > menu[open="true"]  {
+	#placesMenu > menu[open="true"]	 {
 		border: 2px solid #666666 !important;
 		background-color: #333333 !important;
 	}
 	#placesMenu > menu + menu {
-    	margin-left: 10px;
+		margin-left: 10px;
 	}
 	#placesMenu > menu > .menubar-left {
 		display: none !important;
@@ -118,9 +125,6 @@ dropmarker > .dropmarker-icon {
 	#clearDownloadsButton:active {
 		padding: 3px 9px 3px 9px !important;
 		color: #666666 !important;
-	}
-	textbox:not(#urlbar), .expander-down, .expander-up {
-		background-color: black !important;
 	}
 }
 
@@ -216,5 +220,32 @@ dropmarker > .dropmarker-icon {
 	}
 	#checkbox {
 		margin-left: 23px !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xul") {
+	label {
+		color: white !important;
+	}
+	.wizard-header {
+		background-color: var(--uwp-header-background) !important;
+		border-bottom: none !important;
+		height: 40px !important;
+		vertical-align: middle;
+	}
+	.wizard-header-label {
+		margin: 5.75px 12px 0px 12px !important;
+	}
+	.wizard-page-box {
+		color: white !important;
+	}
+	.wizard-buttons-separator {
+		display: none !important;
+	}
+	.wizard-next-deck {
+		margin-left: 10px !important;
+	}
+	#createProfileWizard {
+		background-color: black !important;
 	}
 }
