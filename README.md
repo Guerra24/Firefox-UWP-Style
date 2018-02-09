@@ -14,7 +14,7 @@ Now restart Firefox and the theme will be enabled, if you want to disable parts 
 
 ## Updates
 
-I will provide updates for the Firefox releases that have support, this mean if a Firefox release goes out of support I will stop providing updates for that release. By example: when F59 launches, F58 stops receiving updates and so the theme.
+I will provide updates for the Firefox releases that have support, this mean if a Firefox release goes out of support I will stop providing updates for that release. Example: when F59 launches, F58 stops receiving updates and so the theme.
 
 ## Screenshots
 
