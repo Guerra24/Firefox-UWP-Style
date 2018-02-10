@@ -249,3 +249,27 @@ dropmarker > .dropmarker-icon {
 		background-color: black !important;
 	}
 }
+
+@-moz-document url("chrome://pippki/content/exceptionDialog.xul") {
+	#exceptiondialog {
+		background-color: black !important;
+	}
+	.dialog-content-box {
+		color: white !important;
+	}
+	groupbox {
+		-moz-appearance: none !important;
+		border: none !important;
+	}
+	caption {
+		background-color: transparent !important;
+		font-size: 16px !important;
+		font-weight: bold !important;
+	}
+	vbox > image {
+		display: none !important;
+	}
+	#locationGroupBox {
+		margin-top: 5px !important;
+	}
+}
