@@ -97,6 +97,10 @@ tabmodalprompt {
 	animation: fadeInOpacity .3s;
 }
 
+.buttonContainer > button {
+	padding: 4.5px !important;
+}
+
 @keyframes fadeInScale {
 	from {
 		opacity: 0;
