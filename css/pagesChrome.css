@@ -84,6 +84,38 @@ dropmarker > .dropmarker-icon {
 	--uwp-header-background: #1F1F1F;
 }
 
+.mainContainer {
+	color: white !important;
+	background-color: black !important;
+	border-radius: 0px !important;
+	border: 1px solid -moz-win-accentcolor !important;
+	animation: fadeInScale .3s;
+}
+tabmodalprompt {
+	background: none !important;
+	background-color: #00000090 !important;
+	animation: fadeInOpacity .3s;
+}
+
+@keyframes fadeInScale {
+	from {
+		opacity: 0;
+		transform: scale(1.05);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+@keyframes fadeInOpacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @-moz-document url("chrome://browser/content/places/places.xul") {
 	#placesToolbar {
 		padding: 4px 6px 4px 0px !important;
