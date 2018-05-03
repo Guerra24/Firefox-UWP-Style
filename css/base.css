@@ -172,6 +172,20 @@ browser, browser.display.background_color, tabbrowser tabpanels {
 #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
 	background-color: transparent !important;
 }
+.findbar-find-previous, .findbar-find-next {
+	border: none !important;
+	margin-left: 5px !important;
+	background: rgb(80, 80, 80) !important;
+	border-radius: 0px !important;
+}
+.findbar-find-previous[disabled="true"], .findbar-find-next[disabled="true"] {
+	border: none !important;
+	margin-left: 5px !important;
+	background: none !important;
+}
+findbar {
+	background-color: #161616 !important;
+}
 :root {
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
 	--titlebar-min-max-active-bg-color: #444;
