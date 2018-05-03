@@ -1,6 +1,12 @@
-.titlebar-button, #minimize-button, #restore-button, #close-button {
-	width: 46px !important;
+.titlebar-button {
+	width: 48px !important;
 	height: 32px !important;
+	padding: 0px 0px 0px 18px !important;
+}
+#minimize-button, #restore-button, #close-button {
+	width: 48px !important;
+	height: 32px !important;
+	padding: 0px 0px 0px 0px !important;
 }
 #titlebar-buttonbox, #TabsToolbar, #toolbar-menubar {
 	height: 32px !important;
@@ -25,8 +31,8 @@ window[sizemode="maximized"] #titlebar-content {
 	margin-top: 0px !important;
 	height: 32px !important;
 }
-#titlebar-min, #minimize-button {
-	padding-top: 9px !important;
+#minimize-button {
+	padding-bottom: 8px !important;
 }
 window[sizemode="fullscreen"] #minimize-button {
 	padding-top: 8px !important;
