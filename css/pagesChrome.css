@@ -73,7 +73,7 @@ dropmarker {
 dropmarker > .dropmarker-icon {
 	list-style-image: none !important;
 }
-.checkbox-check {
+.checkbox-check { /* Disabled Checkbox */
 	-moz-appearance: none !important;
 	border: 2px solid #CCCCCC !important;
 	padding: 8px !important;
@@ -93,6 +93,32 @@ checkbox:active > .checkbox-check {
 }
 .checkbox-label-box {
 	margin-left: 5px !important;
+}
+radio > .radio-check { /* Disabled Radio Button */
+	-moz-appearance: none !important;
+	padding: 8px !important;
+	border: 2px solid #CCCCCC;
+	border-radius: 100%;
+	background: transparent !important;
+	margin-right: 5px !important;
+}
+radio:hover > .radio-check {
+	border: 2px solid #FFFFFF !important;
+}
+radio:active > .radio-check {
+	border: 2px solid #999999 !important;
+}
+radio[selected="true"] > .radio-check {
+	padding: 8px !important;
+	border: 2px solid -moz-win-accentcolor;
+	background: url(../img/radio.png) !important;
+}
+radio[selected="true"]:hover > .radio-check {
+	border: 2px solid -moz-win-accentcolor !important;
+	background: url(../img/radio-hover.png) !important;
+}
+radio[selected="true"]:active > .radio-check {
+	background: url(../img/radio-active.png) !important;
 }
 #customization-content-container {
 	background-color: black !important;
@@ -229,22 +255,6 @@ tabmodalprompt {
 		-moz-appearance: none !important;
 		border: 0px !important;
 	}
-	radio > .radio-check {
-		-moz-appearance: none !important;
-		padding: 5px !important;
-		border: 3px solid black;
-		border-radius: 100%;
-		background: black;
-		box-shadow: 0 .5px 0 2.5px #CCCCCC;
-		margin-right: 10px !important;
-	}
-	radio[selected="true"] > .radio-check {
-		padding: 5px !important;
-		border: 3px solid black;
-		border-radius: 100%;
-		background: #CCCCCC;
-		box-shadow: 0 0 0 2.5px -moz-win-accentcolor;
-	}
 }
 
 @-moz-document url("chrome://global/content/alerts/alert.xul") {
@@ -328,5 +338,33 @@ tabmodalprompt {
 	}
 	#locationGroupBox {
 		margin-top: 5px !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/pageinfo/pageInfo.xul") {
+	/* Change Header Size */
+	#topBar {
+		background-color: var(--uwp-header-background) !important;
+		color: lightgray !important;
+		border: none !important;
+	}
+	#mainDeck {
+		background-color: black !important;
+		color: white !important;
+	}
+	#permHostBox > label {
+		margin-top: 7px !important;
+	}
+	#permList {
+		border: none !important;
+		-moz-appearance: none !important;
+		color: white !important;
+	}
+	.permission {
+		border: none !important;
+	}
+	.permission:hover {
+		background-color: #2E2E2E !important;
+		color: white !important;
 	}
 }
