@@ -94,7 +94,7 @@ checkbox:active > .checkbox-check {
 .checkbox-label-box {
 	margin-left: 5px !important;
 }
-radio > .radio-check { /* Disabled Radio Button */
+radio > .radio-check { /* Disabled Radio Button [disabled="true"]  */
 	-moz-appearance: none !important;
 	padding: 8px !important;
 	border: 2px solid #CCCCCC;
@@ -119,6 +119,30 @@ radio[selected="true"]:hover > .radio-check {
 }
 radio[selected="true"]:active > .radio-check {
 	background: url(../img/radio-active.png) !important;
+}
+groupbox {
+	-moz-appearance: none !important;
+	border: none !important;
+}
+treechildren {
+    --treechildren-outline: none !important;
+    --treechildren-focusColor: rgb(123,195,255) !important;
+    --treechildren-selectedFocusColor: rgb(205,232,255) !important;
+    --treechildren-currentColor: rgb(125,162,206) !important;
+    --treechildren-hoverColor: rgb(229,243,255) !important;
+    --treechildren-selectedBorder: rgb(217,217,217) !important;
+    --treechildren-selectedBackground: rgb(217,217,217) !important;
+    --treechildren-currentFocusBorder: var(--treechildren-focusColor) !important;
+    --treechildren-selectedFocusBorder: var(--treechildren-selectedFocusColor) var(--treechildren-selectedFocusColor) rgb(165,214,255) !important;
+    --treechildren-selectedFocusBackground: var(--treechildren-selectedFocusColor) !important;
+    --treechildren-selectedFocusCurrentBorder: var(--treechildren-focusColor) !important;
+    --treechildren-selectedFocusCurrentBackground: rgb(205,232,255) !important;
+    --treechildren-hoverBorder: var(--treechildren-hoverColor) !important;
+    --treechildren-hoverBackground: rgb(229,243,255) !important;
+    --treechildren-hoverCurrentBorder: var(--treechildren-currentColor) !important;
+    --treechildren-hoverCurrentBackground: rgba(131,183,249,.16) !important;
+    --treechildren-hoverSelectedBorder: var(--treechildren-focusColor) !important;
+    --treechildren-hoverSelectedBackground: rgb(205,232,255) !important;
 }
 #customization-content-container {
 	background-color: black !important;
@@ -251,10 +275,6 @@ tabmodalprompt {
 	caption {
 		background-color: black !important;
 	}
-	groupbox {
-		-moz-appearance: none !important;
-		border: 0px !important;
-	}
 }
 
 @-moz-document url("chrome://global/content/alerts/alert.xul") {
@@ -324,10 +344,6 @@ tabmodalprompt {
 	.dialog-content-box {
 		color: white !important;
 	}
-	groupbox {
-		-moz-appearance: none !important;
-		border: none !important;
-	}
 	caption {
 		background-color: transparent !important;
 		font-size: 16px !important;
@@ -364,7 +380,12 @@ tabmodalprompt {
 		border: none !important;
 	}
 	.permission:hover {
-		background-color: #2E2E2E !important;
+		background-color: #191919 !important;
 		color: white !important;
+	}
+	caption {
+		background-color: transparent !important;
+		font-size: 16px !important;
+		font-weight: bold !important;
 	}
 }
