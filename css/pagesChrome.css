@@ -30,18 +30,18 @@ button:active {
 .customizationmode-button {
 	border-radius: 0px !important;
 }
-textbox:not(#urlbar) {
+textbox:not(#urlbar):not(.searchbar-textbox) {
 	-moz-appearance: none !important;
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid #666666 !important;
 	background-color: #000000A0 !important;
 	color: white !important;
 }
-textbox:not(#urlbar):hover {
+textbox:not(#urlbar):not(.searchbar-textbox):hover {
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid #999999 !important;
 }
-textbox[focused="true"]:not(#urlbar) {
+textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid -moz-win-accentcolor !important;
 	background-color: white !important;
@@ -72,6 +72,27 @@ dropmarker {
 }
 dropmarker > .dropmarker-icon {
 	list-style-image: none !important;
+}
+.checkbox-check {
+	-moz-appearance: none !important;
+	border: 2px solid #CCCCCC !important;
+	padding: 8px !important;
+}
+checkbox:hover > .checkbox-check {
+	-moz-appearance: none !important;
+	border: 2px solid #FFFFFF !important;
+}
+checkbox:active > .checkbox-check {
+	-moz-appearance: none !important;
+	border: 2px solid #999999 !important;
+	background-color: #999999 !important;
+}
+.checkbox-check[checked="true"] {
+	border: 2px solid -moz-win-accentcolor !important;
+	background: -moz-win-accentcolor url(../img/check.png);
+}
+.checkbox-label-box {
+	margin-left: 5px !important;
 }
 #customization-content-container {
 	background-color: black !important;
