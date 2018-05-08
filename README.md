@@ -6,7 +6,10 @@ Currently is in very early development.
 
 ## Install
 
-In your `chrome` folder clone this repo from the branch that targets your version of Firefox:
+Go into your Firefox profile folder and clone the repo:
+`git clone -b <branch> https://github.com/Guerra24/Firefox-UWP-Style.git chrome`
+
+Replace `<branch>` with the one that targets your version of Firefox:
 - master > Nightly
 - firefox-58 > Firefox 58, 59, 60 & 61
 
