@@ -73,17 +73,17 @@ dropmarker {
 dropmarker > .dropmarker-icon {
 	list-style-image: none !important;
 }
-.checkbox-check { /* Disabled Checkbox */
+
+/* Check Box */
+checkbox > .checkbox-check {
 	-moz-appearance: none !important;
 	border: 2px solid #CCCCCC !important;
 	padding: 8px !important;
 }
 checkbox:hover > .checkbox-check {
-	-moz-appearance: none !important;
 	border: 2px solid #FFFFFF !important;
 }
 checkbox:active > .checkbox-check {
-	-moz-appearance: none !important;
 	border: 2px solid #999999 !important;
 	background-color: #999999 !important;
 }
@@ -94,7 +94,22 @@ checkbox:active > .checkbox-check {
 .checkbox-label-box {
 	margin-left: 5px !important;
 }
-radio > .radio-check { /* Disabled Radio Button [disabled="true"]  */
+
+/* Check Box Disabled */
+checkbox[disabled="true"] > .checkbox-check {
+	border: 2px solid #666666 !important;
+	padding: 8px !important;
+}
+checkbox[disabled="true"]:hover > .checkbox-check {
+	border: 2px solid #666666 !important;
+}
+checkbox[disabled="true"]:active > .checkbox-check {
+	border: 2px solid #666666 !important;
+	background-color: transparent !important;
+}
+
+/* Radio Button */
+radio > .radio-check {
 	-moz-appearance: none !important;
 	padding: 8px !important;
 	border: 2px solid #CCCCCC;
@@ -109,7 +124,6 @@ radio:active > .radio-check {
 	border: 2px solid #999999 !important;
 }
 radio[selected="true"] > .radio-check {
-	padding: 8px !important;
 	border: 2px solid -moz-win-accentcolor;
 	background: url(../img/radio.png) !important;
 }
@@ -120,30 +134,140 @@ radio[selected="true"]:hover > .radio-check {
 radio[selected="true"]:active > .radio-check {
 	background: url(../img/radio-active.png) !important;
 }
+/* Radio Button Disabled */
+radio[disabled="true"] > .radio-check {
+	border: 2px solid #666666 !important;
+}
+radio[disabled="true"]:hover > .radio-check {
+	border: 2px solid #666666 !important;
+}
+radio[disabled="true"]:active > .radio-check {
+	border: 2px solid #666666 !important;
+}
+radio[disabled="true"][selected="true"] > .radio-check {
+	border: 2px solid -moz-win-accentcolor;
+	background: url(../img/radio.png) !important;
+}
+radio[disabled="true"][selected="true"]:hover > .radio-check {
+	border: 2px solid -moz-win-accentcolor !important;
+	background: url(../img/radio.png) !important;
+}
+
 groupbox {
 	-moz-appearance: none !important;
 	border: none !important;
 }
+/* Tree stuff */
 treechildren {
-    --treechildren-outline: none !important;
-    --treechildren-focusColor: rgb(123,195,255) !important;
-    --treechildren-selectedFocusColor: rgb(205,232,255) !important;
-    --treechildren-currentColor: rgb(125,162,206) !important;
-    --treechildren-hoverColor: rgb(229,243,255) !important;
-    --treechildren-selectedBorder: rgb(217,217,217) !important;
-    --treechildren-selectedBackground: rgb(217,217,217) !important;
-    --treechildren-currentFocusBorder: var(--treechildren-focusColor) !important;
-    --treechildren-selectedFocusBorder: var(--treechildren-selectedFocusColor) var(--treechildren-selectedFocusColor) rgb(165,214,255) !important;
-    --treechildren-selectedFocusBackground: var(--treechildren-selectedFocusColor) !important;
-    --treechildren-selectedFocusCurrentBorder: var(--treechildren-focusColor) !important;
-    --treechildren-selectedFocusCurrentBackground: rgb(205,232,255) !important;
-    --treechildren-hoverBorder: var(--treechildren-hoverColor) !important;
-    --treechildren-hoverBackground: rgb(229,243,255) !important;
-    --treechildren-hoverCurrentBorder: var(--treechildren-currentColor) !important;
-    --treechildren-hoverCurrentBackground: rgba(131,183,249,.16) !important;
-    --treechildren-hoverSelectedBorder: var(--treechildren-focusColor) !important;
-    --treechildren-hoverSelectedBackground: rgb(205,232,255) !important;
+	background-color: black !important;
+	color: lightgray !important;
+	--treechildren-outline: none !important;
+	--treechildren-focusColor: rgb(123,195,255) !important;
+	--treechildren-selectedFocusColor: rgb(205,232,255) !important;
+	--treechildren-currentColor: rgb(125,162,206) !important;
+	--treechildren-hoverColor: rgb(229,243,255) !important;
+	--treechildren-selectedBorder: rgb(80,80,80) !important;
+	--treechildren-selectedBackground: rgb(80,80,80) !important;
+	--treechildren-currentFocusBorder: var(--treechildren-focusColor) !important;
+	--treechildren-selectedFocusBorder: var(--treechildren-selectedFocusColor) var(--treechildren-selectedFocusColor) rgb(165,214,255) !important;
+	--treechildren-selectedFocusBackground: var(--treechildren-selectedFocusColor) !important;
+	--treechildren-selectedFocusCurrentBorder: rgb(100,100,100) !important;
+	--treechildren-selectedFocusCurrentBackground: rgb(100,100,100) !important;
+	--treechildren-hoverBorder: rgb(35,35,35) !important;
+	--treechildren-hoverBackground: rgb(35,35,35) !important;
+	--treechildren-hoverCurrentBorder: var(--treechildren-currentColor) !important;
+	--treechildren-hoverCurrentBackground: rgba(131,183,249,.16) !important;
+	--treechildren-hoverSelectedBorder: rgb(120,120,120) !important;
+	--treechildren-hoverSelectedBackground: rgb(120,120,120) !important;
 }
+tree {
+	-moz-appearance: none !important;
+	border: none !important;
+}
+treecol {
+	-moz-appearance: none !important;
+	color: white !important;
+	background-color: rgb(25, 25, 25) !important;
+	height: 22px !important;
+}
+#placesView > splitter {
+	border-inline-end: 1px solid rgb(40,40,40) !important;
+}
+#detailsDeck {
+	border-top: 1px solid rgb(40,40,40) !important;
+}
+.tree-splitter {
+	width: 1px !important;
+	max-width: 1px !important;
+	-moz-appearance: none !important;
+	border: 1px solid rgb(100,100,100) !important;
+}
+.treecol-image {
+	-moz-appearance: none !important;
+	background-color: rgb(25, 25, 25) !important;
+}
+treecol:hover, .treecol-image:hover {
+	background-color: rgb(40, 40, 40) !important;
+}
+treecol:active, .treecol-image:active {
+	background-color: rgb(60, 60, 60) !important;
+}
+.treecol-sortdirection[sortDirection="descending"] {
+	list-style-image: url(../img/arrowdown.png) !important;
+}
+.treecol-sortdirection[sortDirection="ascending"] {
+	list-style-image: url(../img/arrowdown.png) !important;
+	transform: rotate(180deg);
+}
+
+/* Removes padding effect on click */
+treecol:active {
+	padding-inline-start: 0 !important;
+	padding-inline-end: 0 !important;
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+	padding-top: 0px !important;
+}
+.treecol-image:active {
+	padding: 1px 1px !important;
+	padding-inline-start: 0 !important;
+}
+.treecol-image:hover:active {
+	padding-inline-start: 0 !important;
+	padding-left: 1px !important;
+}
+.tree-columnpicker-icon {
+	filter: invert(1);
+}
+
+/* Download Stuff */
+richlistitem {
+	background-color: black !important;
+	color: white !important;
+	border-radius: 0 !important;
+	padding: 2px !important;
+}
+richlistitem:hover {
+	background-color: #191919 !important;
+}
+richlistitem[selected="true"] {
+	background-image: none !important;
+	background-clip: border-box !important;
+	border: 2px solid -moz-win-accentcolor !important;
+	padding: 0 !important;
+	outline: none !important;
+}
+.downloadButton:hover > .button-box > .button-icon {
+	fill: -moz-win-accentcolor !important;
+}
+
+/* Window Stuff */
+window:not([chromemargin]) {
+	/*animation-timing-function: ease-out;
+	animation: fadeInUp 1s;*/
+	background-color: black !important;
+}
+
 #customization-content-container {
 	background-color: black !important;
 }
@@ -188,6 +312,14 @@ tabmodalprompt {
 	}
 	to {
 		opacity: 1;
+	}
+}
+@keyframes fadeInUp {
+	from {
+		transform: translate(0px, 80px);
+	}
+	to {
+		transform: translate(0px, 0px);
 	}
 }
 
@@ -387,5 +519,24 @@ tabmodalprompt {
 		background-color: transparent !important;
 		font-size: 16px !important;
 		font-weight: bold !important;
+	}
+	#imagecontainerbox {
+		background-color: black !important;
+		border: none !important;
+	}
+	#viewGroup > radio[selected="true"] {
+		background-color: rgb(60,60,60) !important;
+		color: white !important;
+	}
+	#viewGroup > radio:hover {
+		background-color: rgb(80,80,80) !important;
+		color: white !important;
+	}
+}
+
+@-moz-document url("chrome://pippki/content/certViewer.xul") {
+	/* Finish This */
+	#certDetails {
+		background-color: black !important;
 	}
 }
