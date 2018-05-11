@@ -1,3 +1,5 @@
+/* Replace :active with :hover:active */
+
 button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
@@ -250,12 +252,16 @@ richlistitem {
 richlistitem:hover {
 	background-color: #191919 !important;
 }
+richlistitem:hover:active {
+	background-color: #333333 !important;
+}
 richlistitem[selected="true"] {
 	background-image: none !important;
 	background-clip: border-box !important;
 	border: 2px solid -moz-win-accentcolor !important;
 	padding: 0 !important;
 	outline: none !important;
+	background-color: #171717 !important;
 }
 .downloadButton:hover > .button-box > .button-icon {
 	fill: -moz-win-accentcolor !important;
@@ -515,6 +521,9 @@ tabmodalprompt {
 		background-color: #191919 !important;
 		color: white !important;
 	}
+	.permission:hover:active {
+		background-color: #333333 !important;
+	}
 	caption {
 		background-color: transparent !important;
 		font-size: 16px !important;
@@ -524,12 +533,23 @@ tabmodalprompt {
 		background-color: black !important;
 		border: none !important;
 	}
+	#viewGroup > radio {
+		padding-left: 13px !important;
+		padding-right: 13px !important;
+		padding-top: 9.5px !important;
+		padding-bottom: 9.5px !important;
+	}
 	#viewGroup > radio[selected="true"] {
-		background-color: rgb(60,60,60) !important;
+		background-color: transparent !important;
 		color: white !important;
+		border-bottom: 3px solid -moz-win-accentcolor;
+		padding-bottom: 6.5px !important;
+	}
+	#viewGroup > radio > .radio-label-box {
+		outline: none !important;
 	}
 	#viewGroup > radio:hover {
-		background-color: rgb(80,80,80) !important;
+		background-color: rgb(60,60,60) !important;
 		color: white !important;
 	}
 }
