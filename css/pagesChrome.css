@@ -415,6 +415,18 @@ tabmodalprompt {
 	}
 }
 
+@-moz-document url("chrome://mozapps/content/handling/dialog.xul") {
+	#handling {
+		background-color: black !important;
+		color: white !important;
+	}
+	richlistbox {
+		background-color: black !important;
+		border: none !important;
+		-moz-appearance: none !important;
+	}
+}
+
 @-moz-document url("chrome://global/content/alerts/alert.xul") {
 	#alertBox {
 		box-shadow: none !important;
