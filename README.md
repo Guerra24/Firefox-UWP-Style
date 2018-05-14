@@ -2,8 +2,6 @@
 
 *Firefox UWP* is a more complete and robust theme that mimics UWP UI. Created with consistency and accuracy in mind, captures look and feel of UWP and brings it to Firefox. Based on *Firefox Flat-Dark UWP Style* theme, it expands the changes to context menus and most part of the UI.
 
-Currently is in very early development.
-
 ## Install
 
 Go into your Firefox profile folder and clone the repo:
@@ -21,5 +19,12 @@ I will provide updates for the Firefox releases that have support, this mean if 
 
 ## Screenshots
 
-![img](https://puu.sh/zjMCd/0280547365.png)
+![img](https://puu.sh/AlQTm/59b95d76fa.png)
 ![img](https://puu.sh/zjMEr/143cceb18f.png)
+![img](https://puu.sh/AlR9L/fba2e9b764.png)
+![img](https://puu.sh/AlQUJ/0c704e2d7f.png)
+![img](https://puu.sh/AlQY6/2d7e14d58b.png)
+![img](https://puu.sh/AlR4f/dbad98ce5f.png)
+![img](https://puu.sh/AlQZU/bfcf66017f.png)
+![img](https://puu.sh/AlR1u/61ae600e9d.png)
+![img](https://puu.sh/AlR5J/a54c45ac29.png)
