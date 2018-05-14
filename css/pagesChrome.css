@@ -5,6 +5,7 @@
 	--urlbar-popup-url-color: -moz-win-accentcolor !important;
 }
 
+/* Button */
 button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
@@ -34,9 +35,8 @@ button:hover:active {
 	padding: 11px !important;
 	transform: rotate(180deg);
 }
-.customizationmode-button {
-	border-radius: 0px !important;
-}
+
+/* Text Box */
 textbox:not(#urlbar):not(.searchbar-textbox) {
 	-moz-appearance: none !important;
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -298,6 +298,9 @@ window > * {
 #customization-footer {
 	background-color: #161616 !important;
 }
+.customizationmode-button {
+	border-radius: 0px !important;
+}
 .mainContainer {
 	color: white !important;
 	background-color: black !important;
@@ -312,6 +315,23 @@ tabmodalprompt {
 }
 .buttonContainer > button {
 	padding: 4.5px !important;
+}
+
+/* Dev Tools */
+.devtools-tab {
+	border: none !important;
+}
+.devtools-tab:hover {
+	border: none !important;
+}
+.devtools-tab:hover:active {
+	border: none !important;
+}
+.devtools-tab-line {
+	background: -moz-win-accentcolor !important;
+}
+.devtools-button {
+	border-radius: 0px !important;
 }
 
 @keyframes fadeInScale {
