@@ -271,6 +271,20 @@ richlistitem[selected="true"] {
 .downloadButton:hover > .button-box > .button-icon {
 	fill: -moz-win-accentcolor !important;
 }
+.downloadProgress > .progress-bar {
+	background-color: -moz-win-accentcolor !important;
+}
+.downloadProgress[paused="true"] > .progress-bar {
+	background-color: GrayText !important;
+}
+.downloadProgress[mode="undetermined"] > .progress-bar {
+	background-image: none !important;
+	animation: none !important;
+}
+.downloadProgress > .progress-remainder {
+	border: none !important;
+	background: transparent !important;
+}
 
 /* Window Stuff */
 window:not([chromemargin]) {
