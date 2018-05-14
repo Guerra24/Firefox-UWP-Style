@@ -273,7 +273,7 @@ window:not([chromemargin]) {
 }
 window > * {
 	animation-timing-function: ease-out;
-	animation: fadeInUp 1s;
+	animation: fadeInUp .5s;
 }
 
 #customization-content-container {
