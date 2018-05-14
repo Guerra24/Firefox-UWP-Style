@@ -1,5 +1,10 @@
 /* Replace :active with :hover:active */
 
+:root {
+	--uwp-header-background: #1F1F1F;
+	--urlbar-popup-url-color: -moz-win-accentcolor !important;
+}
+
 button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
@@ -273,20 +278,26 @@ window:not([chromemargin]) {
 }
 window > * {
 	animation-timing-function: ease-out;
-	animation: fadeInUp .5s;
+	animation: fadeInTransformUp .5s;
 }
-
+/* URL dropdown thing */
+#PopupAutoCompleteRichResult {
+	border: none !important;
+}
+.autocomplete-richlistbox {
+	padding: 0 !important;
+	background: rgb(42, 42, 42) !important;
+}
+.autocomplete-richlistitem {
+	background: rgb(42, 42, 42) !important;
+}
+/* Customization Page */
 #customization-content-container {
 	background-color: black !important;
 }
 #customization-footer {
 	background-color: #161616 !important;
 }
-
-:root {
-	--uwp-header-background: #1F1F1F;
-}
-
 .mainContainer {
 	color: white !important;
 	background-color: black !important;
@@ -299,7 +310,6 @@ tabmodalprompt {
 	background-color: #00000090 !important;
 	animation: fadeInOpacity .3s;
 }
-
 .buttonContainer > button {
 	padding: 4.5px !important;
 }
@@ -322,7 +332,7 @@ tabmodalprompt {
 		opacity: 1;
 	}
 }
-@keyframes fadeInUp {
+@keyframes fadeInTransformUp {
 	from {
 		transform: translate(0px, 80px);
 		opacity: 0;
