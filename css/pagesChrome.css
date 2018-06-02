@@ -285,14 +285,9 @@ richlistitem[selected="true"] {
 	border: none !important;
 	background: transparent !important;
 }
-
 /* Window Stuff */
 window:not([chromemargin]) {
 	background-color: black !important;
-}
-window > * {
-	animation-timing-function: ease-out;
-	animation: fadeInTransformUp .5s;
 }
 /* URL dropdown thing */
 #PopupAutoCompleteRichResult {
