@@ -2,10 +2,10 @@
 
 @-moz-document url(about:newtab), url(about:home) {
 	body{
-		background-color: #303030 !important;
+		background-color: #101010 !important;
 		color: #D1D1D1 !important;
 		overflow: hidden !important;
-    }
+	}
 	#newtab-customize-overlay {
 		background: #323234 !important;
 	}

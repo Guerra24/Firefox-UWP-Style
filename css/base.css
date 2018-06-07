@@ -8,6 +8,9 @@
 	height: 32px !important;
 	padding: 0px 0px 0px 0px !important;
 }
+#restore-button {
+	list-style-image: url(../img/titlebox-full-restore.png) !important;
+}
 #titlebar-buttonbox, #TabsToolbar, #toolbar-menubar {
 	height: 32px !important;
 }
@@ -140,7 +143,7 @@ toolbarbutton.bookmark-item:hover {
 	border-bottom: 0px !important;
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
-	background-color: #303030 !important;
+	background-color: #101010 !important;
 }
 #TabsToolbar .tab-background {
 	background: transparent !important;
@@ -244,6 +247,22 @@ panelview {
 #identity-popup {
 	margin-top: 4px !important;
 	margin-left: -21px !important;
+}
+/* Tracking toggle */
+#appMenu-tp-toggle {
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+}
+#appMenu-tp-toggle[enabled="true"] {
+	background-color: -moz-win-accentcolor !important;
+	border: 1px solid -moz-win-accentcolor !important;
+}
+#appMenu-tp-toggle > .toolbarbutton-text {
+	padding: 0px !important;
+}
+/* Sync Icon */
+#appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
+	fill: -moz-win-accentcolor !important;
 }
 :root {
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
