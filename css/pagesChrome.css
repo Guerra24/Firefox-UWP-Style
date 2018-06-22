@@ -187,6 +187,12 @@ treechildren {
 	--treechildren-hoverSelectedBorder: rgb(120,120,120) !important;
 	--treechildren-hoverSelectedBackground: rgb(120,120,120) !important;
 }
+treechildren::-moz-tree-image {
+	fill: white !important;
+}
+treechildren::-moz-tree-twisty {
+	fill: white !important;
+}
 tree {
 	-moz-appearance: none !important;
 	border: none !important;
@@ -413,6 +419,9 @@ tabmodalprompt {
 	#clearDownloadsButton:active {
 		padding: 3px 9px 3px 9px !important;
 		color: #666666 !important;
+	}
+	label {
+		color: white !important;
 	}
 }
 

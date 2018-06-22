@@ -186,7 +186,14 @@ toolbarbutton.bookmark-item:hover {
 	border-radius: 0px !important;
 }
 findbar {
+	transition-property: margin-bottom, visibility !important;
 	background-color: #161616 !important;
+	border-top: none !important;
+}
+findbar[hidden] {
+	visibility: collapse !important;
+	margin-bottom: -40px !important;
+	opacity: 1 !important;
 }
 .findbar-button, .findbar-find-previous, .findbar-find-next {
 	-moz-appearance: none !important;
@@ -263,6 +270,27 @@ panelview {
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
 	fill: -moz-win-accentcolor !important;
+}
+/* Sidebar */
+#sidebar-header {
+	background: #2A2A2A !important;
+	color: white !important;
+	border-bottom: none !important;
+}
+#sidebar-switcher-target > #sidebar-icon {
+	fill: white !important;
+}
+#sidebar-search-container {
+	background: black !important;
+}
+#sidebar-splitter {
+	border-right: none !important;
+	margin: 0px !important;
+	width: 0px !important;
+	min-width: 0px !important;
+}
+#sidebar-box {
+	background-color: black !important;
 }
 :root {
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
