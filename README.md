@@ -19,7 +19,7 @@ I will provide updates for the Firefox releases that have support, this mean if 
 
 ## Screenshots
 
-![img](https://puu.sh/AlQTm/59b95d76fa.png)
+![img](https://puu.sh/AKaUQ/55603170a4.png)
 ![img](https://puu.sh/zjMEr/143cceb18f.png)
 ![img](https://puu.sh/AlR9L/fba2e9b764.png)
 ![img](https://puu.sh/AlQUJ/0c704e2d7f.png)
