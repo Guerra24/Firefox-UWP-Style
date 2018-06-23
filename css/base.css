@@ -232,6 +232,9 @@ findbar[hidden] {
 .findbar-find-previous > .toolbarbutton-text, .findbar-find-next > .toolbarbutton-text {
 	padding: 0 !important;
 }
+.findbar-textbox {
+	border-radius: 0px !important;
+}
 /* Panels */
 panel {
 	margin-top: 0px !important;
