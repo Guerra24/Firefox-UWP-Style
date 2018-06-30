@@ -9,7 +9,7 @@ Go into your Firefox profile folder and clone the repo:
 
 Replace `<branch>` with the one that targets your version of Firefox:
 - master > Nightly
-- firefox-58 > Firefox 58, 59, 60 & 61
+- firefox-58 > Firefox 58, 59, 60, 61 & 62.
 
 Now restart Firefox and the theme will be enabled, if you want to disable parts of it open `userChrome.css` and remove or comment the `@import` line of the module that you want to disable.
 
