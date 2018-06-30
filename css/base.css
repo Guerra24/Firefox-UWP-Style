@@ -178,6 +178,12 @@ toolbarbutton.bookmark-item:hover {
 #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
 	background-color: transparent !important;
 }
+#alltabs-button > .toolbarbutton-badge-stack {
+	background: none !important;
+}
+#alltabs-button[open] {
+	background: #444 !important;
+}
 /* Findbar */
 .findbar-find-previous, .findbar-find-next {
 	border: none !important;
@@ -236,9 +242,7 @@ findbar[hidden] {
 	border-radius: 0px !important;
 }
 /* Panels */
-panel {
-	margin-top: 0px !important;
-}
+
 .panel-arrowbox {
 	display: none !important;
 }
@@ -269,6 +273,9 @@ panelview {
 }
 #appMenu-tp-toggle > .toolbarbutton-text {
 	padding: 0px !important;
+}
+#customizationui-widget-panel {
+	margin-top: -2px !important;
 }
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
