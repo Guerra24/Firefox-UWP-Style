@@ -277,6 +277,13 @@ panelview {
 #customizationui-widget-panel {
 	margin-top: -2px !important;
 }
+/* Customization Page Overflow */
+#customization-panelWrapper > .panel-arrowcontent {
+	background: rgba(42, 42, 42, 1) !important;
+}
+#customization-panel-container {
+	padding-right: 0px !important;
+}
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
 	fill: -moz-win-accentcolor !important;

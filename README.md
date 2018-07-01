@@ -11,7 +11,7 @@ Replace `<branch>` with the one that targets your version of Firefox:
 - master > Nightly
 - firefox-58 > Firefox 58, 59, 60, 61 & 62.
 
-Now restart Firefox and the theme will be enabled, if you want to disable parts of it open `userChrome.css` and remove or comment the `@import` line of the module that you want to disable.
+Now restart Firefox and the theme will be enabled. This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
 
 ## Updates
 

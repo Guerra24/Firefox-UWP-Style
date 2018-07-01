@@ -13,7 +13,7 @@ button {
 	border: 2px #333333 solid !important;
 	color: white !important;
 }
-button:hover {
+button:hover, button[open] {
 	color: white !important;
 	border: 2px #858585 solid !important;
 }
@@ -331,7 +331,47 @@ tabmodalprompt {
 .buttonContainer > button {
 	padding: 4.5px !important;
 }
-
+#customization-uidensity-menu {
+	margin-bottom: -4px !important;
+	margin-left: -105px !important;
+}
+#customization-uidensity-button {
+	width: 202px !important;
+}
+#customization-uidensity-menuitem-compact {
+	width: 190px !important;
+}
+#customization-uidensity-menuitem-normal, #customization-uidensity-menuitem-touch, #customization-uidensity-touch-spacer, #customization-uidensity-autotouchmode-checkbox:not([checked]) {
+	display: none !important;
+}
+#customization-uidensity-autotouchmode-checkbox {
+	width: 175px !important;
+	margin-left: 0px !important;
+}
+#customization-lwtheme-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+	background: #2B2B2B !important;
+	border: 1px #A0A0A0 solid !important;
+}
+#customization-uidensity-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+	background: #2B2B2B !important;
+	border: 1px #A0A0A0 solid !important;
+}
+#customization-lwtheme-menu {
+	margin-bottom: -4px !important;
+	margin-left: -105px !important;
+}
+#customization-lwtheme-button {
+	width: 202px !important;
+}
+#customization-lwtheme-menu-header {
+	width: 200px !important;
+}
+#customization-lwtheme-menu-recommended, #customization-lwtheme-menu-footer {
+	display: none !important;
+}
+.customization-lwtheme-menu-theme:not([label="Dark"]) {
+	display: none !important;
+}
 /* Dev Tools */
 .devtools-tab {
 	border: none !important;
