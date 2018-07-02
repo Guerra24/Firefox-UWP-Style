@@ -192,7 +192,6 @@ toolbarbutton.bookmark-item:hover {
 	border-radius: 0px !important;
 }
 findbar {
-	transition-property: margin-bottom, visibility !important;
 	background-color: #161616 !important;
 	border-top: none !important;
 }
