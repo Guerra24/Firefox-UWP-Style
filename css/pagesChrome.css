@@ -216,6 +216,11 @@ treecol {
 	-moz-appearance: none !important;
 	border: 1px solid rgb(100,100,100) !important;
 }
+treecol[hidden="true"] + .tree-splitter {
+	border: none !important;
+	width: 0px !important;
+	max-width: 0px !important;
+}
 .treecol-image {
 	-moz-appearance: none !important;
 	background-color: rgb(25, 25, 25) !important;
@@ -461,7 +466,10 @@ tabmodalprompt {
 		padding: 3px 9px 3px 9px !important;
 		color: #666666 !important;
 	}
-	label {
+	#downloadsRichListBox {
+		background-color: black !important;
+	}
+	#editBookmarkPanelRows label {
 		color: white !important;
 	}
 }

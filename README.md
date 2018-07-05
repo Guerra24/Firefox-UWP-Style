@@ -10,7 +10,7 @@ Go into your Firefox profile folder and clone the repo:
 Replace `<branch>` with the one that targets your version of Firefox:
 - master > Nightly
 - firefox-61 > Firefox 61 & 62.
-- firefox-58 > Firefox 58, 59, 60.
+- firefox-58 > Firefox 58, 59 & 60.
 
 Now restart Firefox and the theme will be enabled. This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
 

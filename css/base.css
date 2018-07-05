@@ -261,6 +261,29 @@ panelview {
 	margin-top: 4px !important;
 	margin-left: -21px !important;
 }
+#pageActionPanel {
+	margin-top: 0px !important;
+}
+#editBookmarkPanel .panel-arrowcontent {
+	margin-top: 8px !important;
+	background: #2A2A2A !important;
+}
+#editBookmarkPanelFavicon {
+	display: none !important;
+}
+#editBMPanel_folderRow .menulist-label-box {
+	fill: white !important;
+}
+#editBMPanel_folderRow .menulist-label {
+	color: white !important;
+	padding-left: 5px !important;
+}
+#editBookmarkPanelImage {
+	border-bottom: none !important;
+}
+#editBookmarkPanel .panel-header {
+	border-bottom: none !important;
+}
 /* Tracking toggle */
 #appMenu-tp-toggle {
 	margin-top: 6px !important;
