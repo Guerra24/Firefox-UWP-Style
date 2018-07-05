@@ -23,7 +23,7 @@ Scrollbar JS loading code by [Aris-t2](https://github.com/Aris-t2) (https://gith
 ![img](https://puu.sh/zjMEr/143cceb18f.png)
 ![img](https://puu.sh/AlR9L/fba2e9b764.png)
 ![img](https://puu.sh/AR4Qh/e370a35a95.png)
-![img](https://puu.sh/AR4S7/c008aadb6a.png)
+![img](https://puu.sh/AR5lN/ffc9571131.png)
 ![img](https://puu.sh/AlR4f/dbad98ce5f.png)
 ![img](https://puu.sh/AlQZU/bfcf66017f.png)
 ![img](https://puu.sh/AR4UE/4bc8a40dd1.png)
