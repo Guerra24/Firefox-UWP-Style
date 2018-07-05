@@ -127,7 +127,7 @@ radio > .radio-check {
 radio:hover > .radio-check {
 	border: 2px solid #FFFFFF !important;
 }
-radio:active > .radio-check {
+radio:hover:active > .radio-check {
 	border: 2px solid #999999 !important;
 }
 radio[selected="true"] > .radio-check {
@@ -138,8 +138,9 @@ radio[selected="true"]:hover > .radio-check {
 	border: 2px solid -moz-win-accentcolor !important;
 	background: url(../img/radio-hover.png) !important;
 }
-radio[selected="true"]:active > .radio-check {
+radio[selected="true"]:hover:active > .radio-check {
 	background: url(../img/radio-active.png) !important;
+	border: 2px solid #999999 !important;
 }
 /* Radio Button Disabled */
 radio[disabled="true"] > .radio-check {
@@ -152,7 +153,7 @@ radio[disabled="true"]:active > .radio-check {
 	border: 2px solid #666666 !important;
 }
 radio[disabled="true"][selected="true"] > .radio-check {
-	border: 2px solid -moz-win-accentcolor;
+	border: 2px solid -moz-win-accentcolor !important;
 	background: url(../img/radio.png) !important;
 }
 radio[disabled="true"][selected="true"]:hover > .radio-check {
@@ -617,6 +618,22 @@ tabmodalprompt {
 		border: none !important;
 		-moz-appearance: none !important;
 		color: white !important;
+	}
+	#feedListbox {
+		border: none !important;
+		background-color: black !important;
+		-moz-appearance: none !important;
+	}
+	#feedListbox > richlistitem {
+		padding-inline-start: 0px !important;
+		padding-inline-end: 0px !important;
+	}
+	#feedListbox richlistitem:not([selected="true"]) {
+	    border-bottom: 0px !important;
+	}
+	.text-link {
+		margin-inline-start: 0px !important;
+		margin-inline-end: 0px !important;
 	}
 	.permission {
 		border: none !important;

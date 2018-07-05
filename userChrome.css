@@ -10,8 +10,8 @@
 @import url(./css/pagesChrome.css);
 
 /* Scrollbars */
-toolbarbutton#alltabs-button {
-  -moz-binding: url("./userChrome/userChrome.xml#execute_javascript_code");
+.titlebar-placeholder[type="pre-tabs"] {
+	-moz-binding: url("./userChrome/userChrome.xml#execute_javascript_code");
 }
 
 #tabbrowser-tabs {

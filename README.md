@@ -13,18 +13,18 @@ Replace `<branch>` with the one that targets your version of Firefox:
 
 Now restart Firefox and the theme will be enabled. This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
 
-## Updates
+## Acknowledges
 
-I will provide updates for the Firefox releases that have support, this mean if a Firefox release goes out of support I will stop providing updates for that release. Example: when F59 launches, F58 stops receiving updates and so the theme.
+Scrollbar JS loading code by [Aris-t2](https://github.com/Aris-t2) (https://github.com/Aris-t2/Scrollbars)
 
 ## Screenshots
 
 ![img](https://puu.sh/AKaUQ/55603170a4.png)
 ![img](https://puu.sh/zjMEr/143cceb18f.png)
 ![img](https://puu.sh/AlR9L/fba2e9b764.png)
-![img](https://puu.sh/AlQUJ/0c704e2d7f.png)
-![img](https://puu.sh/AlQY6/2d7e14d58b.png)
+![img](https://puu.sh/AR4Qh/e370a35a95.png)
+![img](https://puu.sh/AR4S7/c008aadb6a.png)
 ![img](https://puu.sh/AlR4f/dbad98ce5f.png)
 ![img](https://puu.sh/AlQZU/bfcf66017f.png)
-![img](https://puu.sh/AlR1u/61ae600e9d.png)
-![img](https://puu.sh/AlR5J/a54c45ac29.png)
+![img](https://puu.sh/AR4UE/4bc8a40dd1.png)
+![img](https://puu.sh/AR5dB/10bd837e94.png)
