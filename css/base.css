@@ -116,9 +116,6 @@ window:not([chromehidden~="toolbar"]) #urlbar-container > .toolbarbutton-1:-moz-
 	box-shadow: none !important;
 	border: 0px !important;
 }
-#forward-button, #back-button {
-	display: none !important;
-}
 toolbarbutton.bookmark-item {
 	border: 1px rgba(0, 0, 0, 0) solid !important;
 }

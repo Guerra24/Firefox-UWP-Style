@@ -4,15 +4,34 @@
 
 ## Install
 
-Go into your Firefox profile folder and clone the repo:
-`git clone -b <branch> https://github.com/Guerra24/Firefox-UWP-Style.git chrome`
+This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
 
-Replace `<branch>` with the one that targets your version of Firefox:
+Select the branch that targets your version of Firefox.
+
 - master > Nightly
 - firefox-61 > Firefox 61 & 62.
 - firefox-58 > Firefox 58, 59 & 60.
 
-Now restart Firefox and the theme will be enabled. This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
+The firefox-58 branch has an incomplete theme, I have plans for back-porting features only to FF60 so I might end creating a ff60 branch.
+
+### With Git
+
+Go into your Firefox profile folder and clone the repo:
+`git clone -b <branch> https://github.com/Guerra24/Firefox-UWP-Style.git chrome`
+
+Replace `<branch>` with the one that targets your version of Firefox.
+
+Now restart Firefox and the theme will be enabled.
+
+### Without Git
+
+Download the code of the branch as ZIP, copy the content inside the folder(where the userChrome.css file is located) into your chrome folder.
+
+Now restart Firefox and the theme will be enabled.
+
+## Tweaks
+
+Restoring the back-forward buttons: userChrome.css Line 25, delete rule.
 
 ## Acknowledges
 

@@ -21,3 +21,7 @@
 #tabbrowser-tabs:-moz-window-inactive {
 	--tab-line-color: rgb(128, 128, 128) !important;
 }
+
+#forward-button, #back-button {
+	display: none !important;
+}
