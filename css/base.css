@@ -238,16 +238,12 @@ findbar[hidden] {
 	border-radius: 0px !important;
 }
 /* Panels */
-
 .panel-arrowbox {
 	display: none !important;
 }
 .panel-arrowcontent {
 	border: none !important;
 	box-shadow: none !important;
-}
-panelview {
-	background: rgba(42, 42, 42, 1) !important;
 }
 /* Various Panels */
 #appMenu-popup {
@@ -263,7 +259,6 @@ panelview {
 }
 #editBookmarkPanel .panel-arrowcontent {
 	margin-top: 8px !important;
-	background: #2A2A2A !important;
 }
 #editBookmarkPanelFavicon {
 	display: none !important;
@@ -280,6 +275,9 @@ panelview {
 }
 #editBookmarkPanel .panel-header {
 	border-bottom: none !important;
+}
+#notification-popup {
+	margin-top: 4px !important;
 }
 /* Tracking toggle */
 #appMenu-tp-toggle {
@@ -335,4 +333,5 @@ panelview {
 	--titlebar-close-active-bg-color: #F06F79;
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
+	--arrowpanel-background: #2A2A2A !important;
 }
