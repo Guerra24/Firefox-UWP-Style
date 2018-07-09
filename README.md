@@ -1,6 +1,6 @@
 # Firefox UWP Style
 
-*Firefox UWP* is a more complete and robust theme that mimics UWP UI. Created with consistency and accuracy in mind, captures look and feel of UWP and brings it to Firefox. Based on *Firefox Flat-Dark UWP Style* theme, it expands the changes to context menus and most part of the UI.
+This is a very visually simple theme that follows UWP styling with the accent color and gray-on-black elements, combines both while remaining original.
 
 ## Install
 

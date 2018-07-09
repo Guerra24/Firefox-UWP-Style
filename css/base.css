@@ -289,6 +289,23 @@ findbar[hidden] {
 #notification-popup {
 	margin-top: 4px !important;
 }
+/* URL Panel */
+#PopupAutoCompleteRichResult {
+	border: none !important;
+}
+.autocomplete-richlistbox {
+	padding: 0 !important;
+	background: rgb(42, 42, 42) !important;
+}
+.autocomplete-richlistitem {
+	background: rgb(42, 42, 42) !important;
+}
+.search-panel-one-offs {
+	background-color: #333333 !important;
+}
+button.dummy:hover {
+	border: 2px #333333 solid !important;
+}
 /* Tracking toggle */
 #appMenu-tp-toggle {
 	margin-top: 6px !important;
@@ -344,4 +361,5 @@ findbar[hidden] {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
 	--arrowpanel-background: #2A2A2A !important;
+	--arrowpanel-dimmed: #2A2A2A !important;
 }

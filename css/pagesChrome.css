@@ -301,17 +301,6 @@ richlistitem[selected="true"] {
 window:not([chromemargin]) {
 	background-color: black !important;
 }
-/* URL dropdown thing */
-#PopupAutoCompleteRichResult {
-	border: none !important;
-}
-.autocomplete-richlistbox {
-	padding: 0 !important;
-	background: rgb(42, 42, 42) !important;
-}
-.autocomplete-richlistitem {
-	background: rgb(42, 42, 42) !important;
-}
 /* Customization Page */
 #customization-content-container {
 	background-color: black !important;
