@@ -303,6 +303,12 @@ findbar[hidden] {
 .search-panel-one-offs {
 	background-color: #333333 !important;
 }
+.searchbar-engine-one-off-item {
+	min-width: 38px !important;
+}
+.search-setting-button-compact {
+	height: 22px !important;
+}
 button.dummy:hover {
 	border: 2px #333333 solid !important;
 }
