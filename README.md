@@ -31,7 +31,7 @@ Now restart Firefox and the theme will be enabled.
 
 ## Tweaks
 
-Restoring the back-forward buttons: userChrome.css Line 25, delete rule.
+Check userChrome.css for customizable variables or restore elements.
 
 ## Acknowledges
 

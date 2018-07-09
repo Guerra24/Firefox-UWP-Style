@@ -2,7 +2,7 @@
 
 :root {
 	--uwp-header-background: #1F1F1F;
-	--urlbar-popup-url-color: -moz-win-accentcolor !important;
+	--urlbar-popup-url-color: var(--uwp-accent-color) !important;
 }
 
 /* Button */
@@ -50,7 +50,7 @@ textbox:not(#urlbar):not(.searchbar-textbox):hover {
 }
 textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
-	border: 2px solid -moz-win-accentcolor !important;
+	border: 2px solid var(--uwp-accent-color) !important;
 	background-color: white !important;
 	color: black !important;
 }
@@ -95,8 +95,8 @@ checkbox:active > .checkbox-check {
 	background-color: #999999 !important;
 }
 .checkbox-check[checked="true"] {
-	border: 2px solid -moz-win-accentcolor !important;
-	background: -moz-win-accentcolor url(../img/check.png);
+	border: 2px solid var(--uwp-accent-color) !important;
+	background: var(--uwp-accent-color) url(../img/check.png);
 }
 .checkbox-label-box {
 	margin-left: 5px !important;
@@ -131,11 +131,11 @@ radio:hover:active > .radio-check {
 	border: 2px solid #999999 !important;
 }
 radio[selected="true"] > .radio-check {
-	border: 2px solid -moz-win-accentcolor;
+	border: 2px solid var(--uwp-accent-color);
 	background: url(../img/radio.png) !important;
 }
 radio[selected="true"]:hover > .radio-check {
-	border: 2px solid -moz-win-accentcolor !important;
+	border: 2px solid var(--uwp-accent-color) !important;
 	background: url(../img/radio-hover.png) !important;
 }
 radio[selected="true"]:hover:active > .radio-check {
@@ -153,11 +153,11 @@ radio[disabled="true"]:active > .radio-check {
 	border: 2px solid #666666 !important;
 }
 radio[disabled="true"][selected="true"] > .radio-check {
-	border: 2px solid -moz-win-accentcolor !important;
+	border: 2px solid var(--uwp-accent-color) !important;
 	background: url(../img/radio.png) !important;
 }
 radio[disabled="true"][selected="true"]:hover > .radio-check {
-	border: 2px solid -moz-win-accentcolor !important;
+	border: 2px solid var(--uwp-accent-color) !important;
 	background: url(../img/radio.png) !important;
 }
 
@@ -275,16 +275,16 @@ richlistitem:hover:active {
 richlistitem[selected="true"] {
 	background-image: none !important;
 	background-clip: border-box !important;
-	border: 2px solid -moz-win-accentcolor !important;
+	border: 2px solid var(--uwp-accent-color) !important;
 	padding: 0 !important;
 	outline: none !important;
 	background-color: #171717 !important;
 }
 .downloadButton:hover > .button-box > .button-icon {
-	fill: -moz-win-accentcolor !important;
+	fill: var(--uwp-accent-color) !important;
 }
 .downloadProgress > .progress-bar {
-	background-color: -moz-win-accentcolor !important;
+	background-color: var(--uwp-accent-color) !important;
 }
 .downloadProgress[paused="true"] > .progress-bar {
 	background-color: GrayText !important;
@@ -326,7 +326,7 @@ window:not([chromemargin]) {
 	color: white !important;
 	background-color: black !important;
 	border-radius: 0px !important;
-	border: 1px solid -moz-win-accentcolor !important;
+	border: 1px solid var(--uwp-accent-color) !important;
 	animation: fadeInScale .3s;
 }
 tabmodalprompt {
@@ -389,7 +389,7 @@ tabmodalprompt {
 	border: none !important;
 }
 .devtools-tab-line {
-	background: -moz-win-accentcolor !important;
+	background: var(--uwp-accent-color) !important;
 }
 .devtools-button {
 	border-radius: 0px !important;
@@ -456,7 +456,7 @@ tabmodalprompt {
 	#clearDownloadsButton {
 		-moz-appearance: none !important;
 		margin-left: 8px !important;
-		color: -moz-win-accentcolor !important;
+		color: var(--uwp-accent-color) !important;
 	}
 	#clearDownloadsButton:hover {
 		color: #999999 !important;
@@ -482,7 +482,7 @@ tabmodalprompt {
 		background-color: #202020 !important;
 	}
 	label {
-		color: -moz-win-accentcolor !important;
+		color: var(--uwp-accent-color) !important;
 	}
 	label:hover {
 		color: #999999 !important;
@@ -671,7 +671,7 @@ tabmodalprompt {
 	#viewGroup > radio[selected="true"] {
 		background-color: transparent !important;
 		color: white !important;
-		border-bottom: 3px solid -moz-win-accentcolor;
+		border-bottom: 3px solid var(--uwp-accent-color);
 		padding-bottom: 6.5px !important;
 	}
 	#viewGroup > radio > .radio-label-box {

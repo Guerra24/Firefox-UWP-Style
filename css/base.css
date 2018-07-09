@@ -98,6 +98,16 @@ window[sizemode="fullscreen"] #minimize-button {
 .tab-background {
 	border-top: none !important;
 }
+.tab-throbber[progress]:not([selected="true"])::before {
+    fill: #555555 !important;
+}
+#tabbrowser-tabs:-moz-window-inactive {
+	--tab-line-color: rgb(128, 128, 128) !important;
+}
+#tabbrowser-tabs {
+	--tab-line-color: var(--uwp-accent-color) !important;
+	--tab-loading-fill: var(--uwp-accent-color) !important;
+}
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;
 }
@@ -214,8 +224,8 @@ findbar[hidden] {
 	border: 2px #858585 solid !important;
 }
 .findbar-button[checked="true"] {
-	background-color: -moz-win-accentcolor !important;
-	border: 2px -moz-win-accentcolor solid !important;
+	background-color: var(--uwp-accent-color) !important;
+	border: 2px var(--uwp-accent-color) solid !important;
 }
 .findbar-button[checked="true"]:hover {
 	color: white !important;
@@ -285,8 +295,8 @@ findbar[hidden] {
 	margin-bottom: 6px !important;
 }
 #appMenu-tp-toggle[enabled="true"] {
-	background-color: -moz-win-accentcolor !important;
-	border: 1px solid -moz-win-accentcolor !important;
+	background-color: var(--uwp-accent-color) !important;
+	border: 1px solid var(--uwp-accent-color) !important;
 }
 #appMenu-tp-toggle > .toolbarbutton-text {
 	padding: 0px !important;
@@ -303,7 +313,7 @@ findbar[hidden] {
 }
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
-	fill: -moz-win-accentcolor !important;
+	fill: var(--uwp-accent-color) !important;
 }
 /* Sidebar */
 #sidebar-header {
