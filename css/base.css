@@ -359,6 +359,10 @@ button.dummy:hover {
 #sidebar-box {
 	background-color: black !important;
 }
+::selection {
+	color: white !important;
+	background-color: var(--uwp-accent-color) !important;
+}
 :root {
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
 	--titlebar-min-max-active-bg-color: #444;
