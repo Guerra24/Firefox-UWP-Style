@@ -289,6 +289,9 @@ findbar[hidden] {
 #notification-popup {
 	margin-top: 4px !important;
 }
+#widget-overflow {
+	margin-top: -2px !important;
+}
 /* URL Panel */
 #PopupAutoCompleteRichResult {
 	border: none !important;
