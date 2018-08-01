@@ -1,3 +1,4 @@
+/* Titlebar */
 .titlebar-button {
 	width: 48px !important;
 	height: 32px !important;
@@ -19,20 +20,12 @@
 }
 #titlebar {
 	margin-top: 1px !important;
-	height: 33px !important;
-	margin-bottom: -33px !important;
-}
-window #titlebar-content {
-	margin-top: 0px !important;
 	height: 32px !important;
+	margin-bottom: -32px !important;
 }
 window[sizemode="maximized"] #titlebar {
 	margin-top: 0px !important;
-	height: 41px !important;
-}
-window[sizemode="maximized"] #titlebar-content {
-	margin-top: 0px !important;
-	height: 32px !important;
+	margin-bottom: -24px !important;
 }
 #minimize-button {
 	padding-bottom: 8px !important;
@@ -52,16 +45,15 @@ window[sizemode="fullscreen"] #minimize-button {
 #titlebar-close:hover:active, #close-button:hover:active {
 	background-color: var(--titlebar-close-active-bg-color) !important;
 }
+/* navbar stuff */
 #navigator-toolbox {
 	background: black !important;
 }
 #nav-bar {
-	margin-top: 0px !important;
-	border-top: 0px !important;
 	box-shadow: none !important;
 }
 #main-window[chromemargin] {
-	background-color: rgba(0, 0, 0, 1) !important;
+	background-color: black !important;
 	-moz-appearance: -moz-win-glass !important;
 }
 #nav-bar textbox {
@@ -71,8 +63,7 @@ window[sizemode="fullscreen"] #minimize-button {
 	background-color: rgba(75, 75, 75, 1) !important;
 }
 #urlbar, .searchbar-textbox {
-	border: 0px !important;
-	height: 20px !important;
+	border: none !important;
 }
 #urlbar {
 	margin-left: 1px !important;
@@ -82,6 +73,7 @@ window[sizemode="fullscreen"] #minimize-button {
 	background-image: none !important;
 	background: rgba(42, 42, 42, 1) !important;
 }
+/* Tabs */
 .tabbrowser-tab[selected="true"][pinned="true"]:hover, .tabbrowser-tab:not([pinned]):hover, .tabs-newtab-button:hover, #new-tab-button:hover, #alltabs-button:hover {
 	color: rgba(240, 240, 240, 1) !important;
 	background: rgba(42, 42, 42, 1) !important;
@@ -143,8 +135,7 @@ toolbarbutton.bookmark-item:hover {
 	-moz-appearance: -moz-win-exclude-glass !important;
 }
 #TabsToolbar {
-	background: black !important;
-	margin-bottom: 0px !important;
+	background: transparent !important;
 }
 #navigator-toolbox::after {
 	border-bottom: 0px !important;
