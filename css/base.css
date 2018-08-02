@@ -169,9 +169,8 @@ toolbarbutton.bookmark-item:hover {
 #TabsToolbar[movingtab] {
 	padding-bottom: 0px !important;
 }
-#TabsToolbar[movingtab] > .tabbrowser-tabs {
-	padding-bottom: 0px !important;
-	margin-bottom: 0px !important;
+#TabsToolbar[movingtab] + #nav-bar {
+	margin-top: 0px !important;
 }
 #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
 	background-color: transparent !important;
