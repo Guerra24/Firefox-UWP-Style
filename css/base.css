@@ -233,6 +233,12 @@ findbar[hidden] {
 .panel-arrowcontent {
 	border: none !important;
 	box-shadow: none !important;
+	/*box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .40) !important;
+	margin: 30px !important;
+	margin-top: 8px !important;
+	margin-left: 18px !important;
+	margin-right: 18px !important;
+	margin-bottom: 28px !important;*/
 }
 /* Various Panels */
 #appMenu-popup {
