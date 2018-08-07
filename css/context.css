@@ -100,6 +100,9 @@ menulist[open="true"]  {
 	border-width: 0 2px 2px 0px;
 	transform: rotate(-45deg) scale(.55);
 }
+.menu-accel {
+	padding: 0px !important;
+}
 tooltip {
 	-moz-appearance: none !important;
 	color: white !important;
