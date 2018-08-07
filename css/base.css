@@ -64,6 +64,9 @@ window[sizemode="fullscreen"] #minimize-button {
 	--tab-line-color: var(--uwp-accent-color) !important;
 	--tab-loading-fill: var(--uwp-accent-color) !important;
 }
+.tabbrowser-tab > .tab-stack > .tab-background {
+	border-top: none !important;
+}
 .tabbrowser-tab > .tab-stack > .tab-background[selected] {
 	background: #2A2A2A !important;
 }
