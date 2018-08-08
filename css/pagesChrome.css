@@ -9,7 +9,7 @@
 button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
-	background-color: #333333 !important;
+	background: #333333 !important;
 	border: 2px #333333 solid !important;
 	color: white !important;
 }
@@ -19,7 +19,7 @@ button:hover, button[open] {
 }
 button:hover:active {
 	color: white !important;
-	background-color: #666666 !important;
+	background: #666666 !important;
 	border: 2px #858585 solid !important;
 }
 .expander-down {
@@ -41,7 +41,7 @@ textbox:not(#urlbar):not(.searchbar-textbox) {
 	-moz-appearance: none !important;
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid #666666 !important;
-	background-color: #000000A0 !important;
+	background: #000000A0 !important;
 	color: white !important;
 }
 textbox:not(#urlbar):not(.searchbar-textbox):hover {
@@ -51,12 +51,12 @@ textbox:not(#urlbar):not(.searchbar-textbox):hover {
 textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid var(--uwp-accent-color) !important;
-	background-color: white !important;
+	background: white !important;
 	color: black !important;
 }
 listbox {
 	-moz-appearance: none !important;
-	background-color: black !important;
+	background: black !important;
 	border: 1px #333333 solid !important;
 }
 listitem {
@@ -65,10 +65,10 @@ listitem {
 	border: none !important;
 }
 listitem:hover {
-	background-color: #202020 !important;
+	background: #202020 !important;
 }
 listitem[selected="true"] {
-	background-color: #404040 !important;
+	background: #404040 !important;
 }
 dropmarker {
 	-moz-appearance: none !important;

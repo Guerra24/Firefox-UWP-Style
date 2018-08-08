@@ -300,6 +300,10 @@ findbar[hidden] {
 button.dummy:hover {
 	border: 2px #333333 solid !important;
 }
+button.searchbar-engine-one-off-item[selected] {
+	color: white !important;
+	border: 2px #858585 solid !important;
+}
 /* Tracking toggle */
 #appMenu-tp-toggle {
 	margin-top: 6px !important;
