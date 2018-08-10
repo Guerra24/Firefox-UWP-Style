@@ -65,6 +65,7 @@ listitem {
 	margin: 0px !important;
 	padding: 1px !important;
 	border: none !important;
+	color: white !important;
 }
 listitem:hover {
 	background: #202020 !important;
