@@ -6,19 +6,20 @@
 }
 
 
-/* Button + Fix for dev tools */
-:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab) {
+/* Button */
+/* button:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up) */
+button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
 	background: #333333 !important;
 	border: 2px #333333 solid !important;
 	color: white !important;
 }
-:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab):hover {
+button:hover, button[open] {
 	color: white !important;
 	border: 2px #858585 solid !important;
 }
-:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab):hover:active {
+button:hover:active {
 	color: white !important;
 	background: #666666 !important;
 	border: 2px #858585 solid !important;
@@ -260,7 +261,11 @@ treecol:active {
 	filter: invert(1);
 }
 
-/* Download Stuff */
+/* Richlist Stuff */
+richlistbox {
+	-moz-appearance: none !important;
+	background-color: black !important;
+}
 richlistitem {
 	background-color: black !important;
 	color: white !important;
@@ -385,6 +390,24 @@ tabmodalprompt {
 	border-radius: 0px !important;
 }
 
+/* Permissions */
+.identity-popup-permission-remove-button:not(:-moz-focusring):hover > .button-box > .button-icon {
+    fill: currentColor !important;
+}
+.identity-popup-expander {
+	border: none !important;
+	background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+}
+.identity-popup-expander:hover, .identity-popup-expander[open] {
+	border: none !important;
+}
+.identity-popup-expander:hover:active {
+	border: none !important;
+	fill: currentColor !important;
+	background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+	background-color: var(--arrowpanel-dimmed-further) !important;
+}
+
 @keyframes fadeInScale {
 	from {
 		opacity: 0;
@@ -455,9 +478,6 @@ tabmodalprompt {
 	#clearDownloadsButton:active {
 		padding: 3px 9px 3px 9px !important;
 		color: #666666 !important;
-	}
-	#downloadsRichListBox {
-		background-color: black !important;
 	}
 	#editBookmarkPanelRows label {
 		color: white !important;
