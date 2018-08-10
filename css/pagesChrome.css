@@ -5,19 +5,20 @@
 	--urlbar-popup-url-color: var(--uwp-accent-color) !important;
 }
 
-/* Button */
-button {
+
+/* Button + Fix for dev tools */
+:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab) {
 	-moz-appearance: none !important;
 	padding: 3px !important;
 	background: #333333 !important;
 	border: 2px #333333 solid !important;
 	color: white !important;
 }
-button:hover, button[open] {
+:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab):hover {
 	color: white !important;
 	border: 2px #858585 solid !important;
 }
-button:hover:active {
+:not(.html-arrowscrollbox-inner) > button:not(.devtools-button):not(.devtools-tab):hover:active {
 	color: white !important;
 	background: #666666 !important;
 	border: 2px #858585 solid !important;
