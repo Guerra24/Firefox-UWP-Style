@@ -527,6 +527,13 @@ tabmodalprompt {
 	}
 }
 
+@-moz-document url("chrome://global/content/appPicker.xul") {
+	#app-picker {
+		background-color: black !important;
+		color: white !important;
+	}
+}
+
 @-moz-document url("chrome://mozapps/content/handling/dialog.xul") {
 	#handling {
 		background-color: black !important;
