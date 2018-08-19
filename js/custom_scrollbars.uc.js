@@ -144,10 +144,10 @@ var scrollbar_size = {
 		height: '+custom_scrollbar_size_value+'px !important;\
 	}\
 	scrollbar thumb[orient="vertical"] {\
-		min-height: 16px;\
+		min-height: 16px !important;\
 	}\
 	scrollbar thumb[orient="horizontal"] {\
-		min-width: 16px;\
+		min-width: 16px !important;\
 	}\
 	\
 	'), null, null);
