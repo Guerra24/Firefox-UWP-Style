@@ -84,40 +84,40 @@ var custom_scrollbars = {
 	scrollbar scrollbarbutton:active {\
 		background-color: '+cs_buttons_active_color+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="increment"] {\
 		background-image: '+cs_buttons_image_vertical_up+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="decrement"] {\
 		background-image: '+cs_buttons_image_vertical_down+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"] {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="increment"] {\
 		background-image: '+cs_buttons_image_horizontal_right+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="decrement"] {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="decrement"] {\
 		background-image: '+cs_buttons_image_horizontal_left+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="increment"]:hover {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="increment"]:hover {\
 		background-image: '+cs_buttons_hover_image_vertical_up+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]:hover {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="decrement"]:hover {\
 		background-image: '+cs_buttons_hover_image_vertical_down+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"]:hover {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="increment"]:hover {\
 		background-image: '+cs_buttons_hover_image_horizontal_right+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="decrement"]:hover {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="decrement"]:hover {\
 		background-image: '+cs_buttons_hover_image_horizontal_left+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="increment"]:active {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="increment"]:active {\
 		background-image: '+cs_buttons_active_image_vertical_up+' !important;\
 	}\
-	scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]:active {\
+	scrollbar[orient="vertical"] scrollbarbutton[type="decrement"]:active {\
 		background-image: '+cs_buttons_active_image_vertical_down+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"]:active {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="increment"]:active {\
 		background-image: '+cs_buttons_active_image_horizontal_right+' !important;\
 	}\
-	scrollbar[orient="horizontal"] > scrollbarbutton[type="decrement"]:active {\
+	scrollbar[orient="horizontal"] scrollbarbutton[type="decrement"]:active {\
 		background-image: '+cs_buttons_active_image_horizontal_left+' !important;\
 	}\
 	'), null, null);
@@ -136,14 +136,12 @@ var scrollbar_size = {
 	@namespace html url("http://www.w3.org/1999/xhtml");\
 	\
 	scrollbar[orient="vertical"] scrollbarbutton {\
-		min-width: 0 !important;\
 		width: '+custom_scrollbar_size_value+'px !important;\
-		max-width: '+custom_scrollbar_size_value+'px !important;\
+		height: '+custom_scrollbar_size_value+'px !important;\
 	}\
 	scrollbar[orient="horizontal"] scrollbarbutton {\
-		min-height: 0 !important;\
+		width: '+custom_scrollbar_size_value+'px !important;\
 		height: '+custom_scrollbar_size_value+'px !important;\
-		max-height: '+custom_scrollbar_size_value+'px !important;\
 	}\
 	\
 	'), null, null);
