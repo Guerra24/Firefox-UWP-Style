@@ -197,6 +197,12 @@ treechildren::-moz-tree-image {
 treechildren::-moz-tree-twisty {
 	fill: white !important;
 }
+treechildren::-moz-tree-row {
+	background-color: black !important;
+}
+treechildren::-moz-tree-row(hover) {
+	background-color: rgb(35,35,35) !important;
+}
 tree {
 	-moz-appearance: none !important;
 	border: none !important;
