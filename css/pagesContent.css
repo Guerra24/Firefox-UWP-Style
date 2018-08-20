@@ -78,7 +78,7 @@
 	}
 }
 
-@-moz-document url-prefix("about:") {
+@-moz-document url-prefix("chrome://"), url-prefix("about:") {
 
 	treecol {
 		border-inline-start-width: 0px !important;
@@ -115,6 +115,25 @@
 	}
 	.dialogBox > caption {
 		padding: 0px !important;
+	}
+	dialog.prefwindow[type="child"], #history[windowtype="Update:History"] {
+		background: black !important;
+		color: white !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
+		padding-inline-start: 0px !important;
+		padding-inline-end: 0px !important;
+	}
+	#history[windowtype="Update:History"] #historyItems {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	.prefpane {
+		background: black !important;
+		color: white !important;
+	}
+	separator.groove:not([orient="vertical"]) {
+		border-top: 0px !important;
 	}
 
 	:root {
