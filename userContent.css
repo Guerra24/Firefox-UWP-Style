@@ -13,13 +13,18 @@
 	--uwp-accent-color: -moz-win-accentcolor; /* Global Accent Color */
 }
 
-dialog.prefwindow[type="child"] {
+/* Risky fixes */
+dialog.prefwindow[type="child"], #history[windowtype="Update:History"] {
 	background: black !important;
 	color: white !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	padding-inline-start: 0px !important;
 	padding-inline-end: 0px !important;
+}
+#history[windowtype="Update:History"] #historyItems {
+	border: none !important;
+	border-radius: 0px !important;
 }
 .prefpane {
 	background: black !important;
