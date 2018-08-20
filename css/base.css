@@ -153,16 +153,12 @@ toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 #content-deck {
 	-moz-appearance: -moz-win-exclude-glass !important;
 }
-#TabsToolbar {
-	background: transparent !important;
-}
 #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
 	background-color: #101010 !important;
 }
-
 #urlbar, .searchbar-textbox {
 	box-shadow: none !important;
 }
@@ -358,10 +354,6 @@ button.searchbar-engine-one-off-item[selected] {
 	border: none !important;
 	padding: 4px !important;
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
-}
-::selection {
-	color: white !important;
-	background-color: var(--uwp-accent-color) !important;
 }
 :root {
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);

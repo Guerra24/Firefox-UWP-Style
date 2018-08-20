@@ -1,19 +1,26 @@
 /* Replace :active with :hover:active */
 
+@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+
 :root {
 	--uwp-header-background: #1F1F1F;
 	--urlbar-popup-url-color: var(--uwp-accent-color) !important;
 }
 
+::selection {
+	color: white !important;
+	background-color: var(--uwp-accent-color) !important;
+}
 
 /* Button */
-/* button:not(.devtools-button):not(.devtools-tab):not(.expander-down):not(.expander-up) */
 button {
 	-moz-appearance: none !important;
 	padding: 3px !important;
 	background: #333333 !important;
 	border: 2px #333333 solid !important;
+	border-radius: 0px !important;
 	color: white !important;
+	height: auto !important;
 }
 button:hover, button[open] {
 	color: white !important;
@@ -23,6 +30,10 @@ button:hover:active {
 	color: white !important;
 	background: #666666 !important;
 	border: 2px #858585 solid !important;
+}
+button[disabled]:hover, button[disabled]:hover:active {
+	background: #333333 !important;
+	border: 2px #333333 solid !important;
 }
 .expander-down {
 	background: url(../img/arrowdown.png) center center no-repeat !important;
@@ -43,6 +54,7 @@ textbox:not(#urlbar):not(.searchbar-textbox) {
 	-moz-appearance: none !important;
 	padding: 5.5px 5.5px 5.5px 5.5px !important;
 	border: 2px solid #666666 !important;
+	border-radius: 0px !important;
 	background: #000000A0 !important;
 	color: white !important;
 }
@@ -56,6 +68,17 @@ textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
 	background: white !important;
 	color: black !important;
 }
+/* Text Area*/
+textarea {
+	color: white !important;
+	background: transparent !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+textbox[focused="true"] textarea {
+	color: black !important;
+}
+/* Listbox */
 listbox {
 	-moz-appearance: none !important;
 	background: black !important;
@@ -88,7 +111,11 @@ dropmarker > .dropmarker-icon {
 checkbox > .checkbox-check {
 	-moz-appearance: none !important;
 	border: 2px solid #CCCCCC !important;
+	border-radius: 0px !important;
 	padding: 8px !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
 }
 checkbox:hover > .checkbox-check {
 	border: 2px solid #FFFFFF !important;
@@ -99,7 +126,7 @@ checkbox:active > .checkbox-check {
 }
 .checkbox-check[checked="true"] {
 	border: 2px solid var(--uwp-accent-color) !important;
-	background: var(--uwp-accent-color) url(../img/check.png);
+	background: var(--uwp-accent-color) url(../img/check.png) !important;
 }
 .checkbox-label-box {
 	margin-left: 5px !important;
@@ -122,10 +149,13 @@ checkbox[disabled="true"]:active > .checkbox-check {
 radio > .radio-check {
 	-moz-appearance: none !important;
 	padding: 8px !important;
-	border: 2px solid #CCCCCC;
-	border-radius: 100%;
+	border: 2px solid #CCCCCC !important;
+	border-radius: 100% !important;
 	background: transparent !important;
 	margin-right: 5px !important;
+	box-shadow: none !important;
+	width: auto !important;
+	height: auto !important;
 }
 radio:hover > .radio-check {
 	border: 2px solid #FFFFFF !important;
@@ -134,7 +164,7 @@ radio:hover:active > .radio-check {
 	border: 2px solid #999999 !important;
 }
 radio[selected="true"] > .radio-check {
-	border: 2px solid var(--uwp-accent-color);
+	border: 2px solid var(--uwp-accent-color) !important;
 	background: url(../img/radio.png) !important;
 }
 radio[selected="true"]:hover > .radio-check {
@@ -242,27 +272,28 @@ treecol:active, .treecol-image:active {
 }
 .treecol-sortdirection[sortDirection="descending"] {
 	list-style-image: url(../img/arrowdown.png) !important;
+	width: 14px !important;
+	height: 10px !important;
 }
 .treecol-sortdirection[sortDirection="ascending"] {
 	list-style-image: url(../img/arrowdown.png) !important;
 	transform: rotate(180deg);
+	width: 14px !important;
+	height: 10px !important;
 }
 
 /* Removes padding effect on click */
+treecol {
+	padding: 0px 10px !important;
+}
 treecol:active {
-	padding-inline-start: 0 !important;
-	padding-inline-end: 0 !important;
-	padding-left: 4px !important;
-	padding-right: 4px !important;
-	padding-top: 0px !important;
+	padding: 0px 10px !important;
 }
-.treecol-image:active {
-	padding: 1px 1px !important;
-	padding-inline-start: 0 !important;
+treecols {
+	border-bottom: 0px !important;
 }
-.treecol-image:hover:active {
-	padding-inline-start: 0 !important;
-	padding-left: 1px !important;
+.treecol-image {
+    padding: 5px 10px !important;
 }
 .tree-columnpicker-icon {
 	filter: invert(1);
@@ -442,6 +473,8 @@ tabmodalprompt {
 		transform: translate(0px, 0px);
 		opacity: 1;
 	}
+}
+
 }
 
 @-moz-document url("chrome://browser/content/places/places.xul") {

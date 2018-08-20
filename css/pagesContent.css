@@ -1,6 +1,6 @@
 
 
-@-moz-document url(about:newtab), url(about:home) {
+@-moz-document url("about:newtab"), url("about:home") {
 	body{
 		background-color: #101010 !important;
 		color: #D1D1D1 !important;
@@ -72,5 +72,125 @@
 	}
 	.onboarding-watermark {
 		display: none !important;
+	}
+	.icon.icon-settings {
+		display: none !important;
+	}
+}
+
+@-moz-document url-prefix("about:") {
+
+	treecol {
+		border-inline-start-width: 0px !important;
+	}
+	listheader {
+		border-bottom: 0px !important;
+	}
+	richlistbox {
+		border: none !important;
+	}
+	.menulist-label-box {
+		border: none !important;
+	}
+	.checkbox-icon {
+		filter: invert(1) !important;
+	}
+	.menulist-dropmarker {
+		padding-right: 0px !important;
+	}
+	* {
+		outline: none !important;
+	}
+
+	.dialogBox {
+		background: black !important;
+		border: 1px solid var(--uwp-accent-color) !important;
+		border-radius: 0px !important;
+		color: white !important;
+	}
+	.groupbox-title {
+		background: transparent !important;
+		border-bottom: 0px !important;
+		padding: 0px !important;
+	}
+	.dialogBox > caption {
+		padding: 0px !important;
+	}
+
+	:root {
+	    --in-content-page-color: white !important;
+	    --in-content-page-background: black !important;
+	    --in-content-text-color: lightgray !important;
+	    --in-content-selected-text: #fff;
+	    --in-content-box-background: #fff;
+	    --in-content-box-background-odd: #f3f6fa;
+	    --in-content-box-background-hover: #ebebeb;
+	    --in-content-box-background-active: #dadada;
+	    --in-content-box-border-color: transparent !important;
+	    --in-content-item-hover: rgba(0,149,221,0.25);
+	    --in-content-item-selected: #0a84ff;
+		--in-content-border-highlight: #0a84ff;
+	    --in-content-border-focus: #0a84ff;
+	    --in-content-border-color: #282828 !important;
+	    --in-content-category-outline-focus: 1px dotted #0a84ff;
+	    --in-content-category-text: white !important;
+	    --in-content-category-text-active: ##666666 !important;
+	    --in-content-category-text-selected: var(--uwp-accent-color) !important;
+	    --in-content-category-text-selected-active: #666666 !important;
+	    --in-content-category-background-hover: #202020 !important;
+	    --in-content-category-background-active: #404040 !important;
+	    --in-content-category-background-selected-hover: #202020 !important;
+	    --in-content-category-background-selected-active: #404040 !important;
+	    --in-content-tab-color: #424f5a;
+	    --in-content-link-color: var(--uwp-accent-color) !important;
+	    --in-content-link-color-hover: #999999 !important;
+	    --in-content-link-color-active: #666666 !important;
+	    --in-content-link-color-visited: #0a8dff;
+	    --in-content-primary-button-background: #0a84ff;
+	    --in-content-primary-button-background-hover: #0060df;
+	    --in-content-primary-button-background-active: #003EAA;
+	    --in-content-table-background: black !important;
+	    --in-content-table-border-dark-color: #282828 !important;
+	    --in-content-table-header-background: var(--uwp-accent-color) !important;
+	    --grey-20: #ededf0;
+	    --grey-90: #0c0c0d;
+	    --grey-90-a10: rgba(12, 12, 13, 0.1);
+	    --grey-90-a20: rgba(12, 12, 13, 0.2);
+	    --grey-90-a30: rgba(12, 12, 13, 0.3);
+	}
+}
+
+@-moz-document url("about:config") {
+	#configTree {
+		margin-bottom: 0px !important;
+	}
+}
+
+@-moz-document url-prefix("about:networking") {
+	#categories > .category {
+		cursor: default !important;
+		border-radius: 0px !important;
+		transition: none !important;
+	}
+	#categories > .category:hover, #categories > .category:hover:active {
+		transition: none !important;
+	}
+}
+@-moz-document url-prefix("about:preferences") {
+	#categories > .category {
+		padding-left: 10px !important;
+		transition: none !important;
+	}
+	#categories > .category[selected] {
+		padding-left: 8px !important;
+	}
+	.help-button > .text-link {
+		border-radius: 0px !important;
+	}
+	.help-button > .text-link:hover:active {
+		color: white !important;
+	}
+	#defaultFontSize {
+		width: 100px !important;
 	}
 }
