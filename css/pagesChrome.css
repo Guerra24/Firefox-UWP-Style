@@ -31,7 +31,7 @@ button:hover:active {
 	background: #666666 !important;
 	border: 2px #858585 solid !important;
 }
-button[disabled]:hover, button[disabled]:hover:active {
+button[disabled="true"]:hover, button[disabled="true"]:hover:active {
 	background: #333333 !important;
 	border: 2px #333333 solid !important;
 }
@@ -750,5 +750,16 @@ tabmodalprompt {
 	/* Finish This */
 	#certDetails {
 		background-color: black !important;
+	}
+}
+
+@-moz-document url("chrome://mozapps/content/update/history.xul") {
+	/* Finish This */
+	#history {
+		background-color: black !important;
+		color: white !important;
+	}
+	.text-link {
+		color: var(--uwp-accent-color) !important;
 	}
 }

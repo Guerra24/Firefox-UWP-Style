@@ -138,6 +138,10 @@
 	separator.groove:not([orient="vertical"]) {
 		border-top: 0px !important;
 	}
+	.advanced-panel {
+		background-color: black !important;
+		border: none !important;
+	}
 
 	:root {
 	    --in-content-page-color: white !important;
@@ -179,6 +183,8 @@
 	    --grey-90-a10: rgba(12, 12, 13, 0.1);
 	    --grey-90-a20: rgba(12, 12, 13, 0.2);
 	    --grey-90-a30: rgba(12, 12, 13, 0.3);
+
+		--exception-button-container-background: black !important;
 	}
 }
 
@@ -217,5 +223,60 @@
 	}
 	#defaultFontSize {
 		width: 100px !important;
+	}
+}
+
+@-moz-document url("about:downloads") {
+	#contentAreaDownloadsView {
+		padding: 0px !important;
+	}
+}
+
+@-moz-document url("about:addons") {
+	#categories > .category {
+		padding-left: 10px !important;
+	}
+	#categories > .category[selected] {
+		padding-left: 8px !important;
+		border-top: none !important;
+		border-bottom: none !important;
+		border-right: none !important;
+	}
+	button.button-link {
+		cursor: default !important;
+		margin: 0px 10px !important;
+	}
+	button.button-link:hover {
+		text-decoration: none !important;
+	}
+	.button-box {
+		padding: 0px 5px !important;
+	}
+	richlistbox.list > richlistitem.addon:not([selected]) {
+		border-bottom: 0px !important;
+	}
+	.detail-view-container {
+		color: white !important;
+	}
+	.detail-row, .detail-row-complex {
+		text-shadow: none !important;
+	}
+	.addon-view[type="plugin"] .icon {
+		fill: white !important;
+		-moz-context-properties: fill !important;
+	}
+	.alert {
+		color: white !important;
+		background-color: black !important;
+	}
+	#header-utils-btn {
+		fill: white !important;
+		border-radius: 0px !important;
+	}
+	#header-utils-btn:hover {
+		background-color: #202020 !important;
+	}
+	#header-utils-btn[open] {
+		background-color: #404040 !important;
 	}
 }
