@@ -522,6 +522,9 @@ tabmodalprompt {
 	#editBookmarkPanelRows label {
 		color: white !important;
 	}
+	label {
+		color: white !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/aboutDialog.xul") {
