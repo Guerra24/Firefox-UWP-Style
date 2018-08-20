@@ -98,6 +98,9 @@
 	.menulist-dropmarker {
 		padding-right: 0px !important;
 	}
+	.menulist-label-box {
+		padding-left: 0px !important;
+	}
 	* {
 		outline: none !important;
 	}
