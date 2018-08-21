@@ -754,7 +754,6 @@ tabmodalprompt {
 }
 
 @-moz-document url("chrome://mozapps/content/update/history.xul") {
-	/* Finish This */
 	#history {
 		background-color: black !important;
 		color: white !important;

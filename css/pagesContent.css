@@ -5,6 +5,10 @@
 		background-color: #101010 !important;
 		color: #D1D1D1 !important;
 		overflow: hidden !important;
+		--newtab-textbox-focus-boxshadow: 0 0 0 1px var(--uwp-accent-color) !important;
+		--newtab-textbox-focus-color: var(--uwp-accent-color) !important;
+		--newtab-snippets-background-color: #2A2A2A !important;
+		--newtab-link-primary-color: var(--uwp-accent-color) !important;
 	}
 	#newtab-customize-overlay {
 		background: #323234 !important;
@@ -46,12 +50,6 @@
 	.search-wrapper .search-label, .search-wrapper .search-button {
 		fill: #EEE !important; 
 	}
-	.search-wrapper .search-button:focus, .search-wrapper .search-button:hover {
-		background-color: #444444 !important;
-	}
-	.search-wrapper .search-button:active {
-		background-color: #323234 !important;
-	}
 	.section-top-bar .info-option {
 		background: #2c2c2c !important;
 		color: #FFF !important;
@@ -73,8 +71,50 @@
 	.onboarding-watermark {
 		display: none !important;
 	}
-	.icon.icon-settings {
-		display: none !important;
+	.top-site-outer .context-menu-button {
+		background-clip: padding-box !important;
+		background-image: url("chrome://browser/skin/page-action.svg") !important;
+		background-position: 55% !important;
+		background-repeat: no-repeat !important;
+	}
+	.top-site-outer .context-menu-button:hover:active {
+		background-clip: padding-box !important;
+		background-image: url("chrome://browser/skin/page-action.svg") !important;
+		background-position: 55% !important;
+		background-repeat: no-repeat !important;
+	}
+	.search-wrapper .search-button {
+		background: url("chrome://browser/skin/forward.svg") no-repeat center center !important;
+		background-color: transparent !important;
+		background-size: 16px 16px !important;
+		height: 100% !important;
+		border: none !important;
+	}
+	.search-wrapper .search-button:hover{
+		background-color: transparent !important;
+	}
+	.search-wrapper .search-button:hover:active {
+		background: url("chrome://browser/skin/forward.svg") no-repeat center center !important;
+		background-color: transparent !important;
+		border: none !important;
+	}
+	.icon.icon-settings, .icon.icon-settings:hover:active {
+		background-image: url("chrome://browser/skin/settings.svg") !important;
+	}
+	.collapsible-section .section-top-bar .context-menu-button {
+		background: url("chrome://browser/skin/page-action.svg") no-repeat center center !important;
+	}
+	.prefs-button button, .prefs-button button:hover:active {
+		background-color: transparent !important;
+		padding: 15px !important;
+		border: none !important;
+	}
+	.icon, .icon:hover, .icon:hover:active {
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-size: 16px !important;
+		height: 16px !important;
+		border: none !important;
 	}
 }
 
