@@ -412,13 +412,15 @@ tabmodalprompt {
 	display: none !important;
 }
 /* Dev Tools */
-.devtools-tab {
+.devtools-tab, .breadcrumbs-widget-item, .tooltip-container button {
 	border: none !important;
+	background: transparent !important;
 }
-.devtools-tab:hover {
+.devtools-tab:hover, .breadcrumbs-widget-item:hover, .tooltip-container button:hover {
 	border: none !important;
+	background: #353535 !important;
 }
-.devtools-tab:hover:active {
+.devtools-tab:hover:active, .breadcrumbs-widget-item:hover:active, .tooltip-container button:hover:active {
 	border: none !important;
 }
 .devtools-tab-line {
@@ -426,6 +428,18 @@ tabmodalprompt {
 }
 .devtools-button {
 	border-radius: 0px !important;
+	background: transparent !important;
+	border: none !important;
+}
+.devtools-button:hover {
+	background: #353535 !important;
+	border: none !important;
+}
+.devtools-button:hover:active {
+	border: none !important;
+}
+.styleinspector-propertyeditor {
+	color: black !important;
 }
 
 /* Permissions */
