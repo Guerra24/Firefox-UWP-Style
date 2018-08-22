@@ -1,0 +1,492 @@
+/* Base tags for chrome:// and about: pages */
+
+@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+
+	:root {
+		--uwp-header-background: #1F1F1F;
+		--urlbar-popup-url-color: var(--uwp-accent-color) !important;
+	}
+
+	::selection {
+		color: white !important;
+		background-color: var(--uwp-accent-color) !important;
+	}
+
+	/* Button */
+	button {
+		-moz-appearance: none !important;
+		padding: 3px !important;
+		background: #333333 !important;
+		border: 2px #333333 solid !important;
+		border-radius: 0px !important;
+		color: white !important;
+		height: auto !important;
+	}
+	button:hover, button[open] {
+		color: white !important;
+		border: 2px #858585 solid !important;
+	}
+	button:hover:active {
+		color: white !important;
+		background: #666666 !important;
+		border: 2px #858585 solid !important;
+	}
+	button[disabled="true"]:hover, button[disabled="true"]:hover:active {
+		background: #333333 !important;
+		border: 2px #333333 solid !important;
+	}
+	.expander-down {
+		background: url(../img/arrowdown.png) center center no-repeat !important;
+		background-color: #000000A0 !important;
+		list-style-image: none !important;
+		padding: 11px !important;
+	}
+	.expander-up {
+		background: url(../img/arrowdown.png) center center no-repeat !important;
+		background-color: #000000A0 !important;
+		list-style-image: none !important;
+		padding: 11px !important;
+		transform: rotate(180deg);
+	}
+
+	/* Text Box */
+	textbox:not(#urlbar):not(.searchbar-textbox) {
+		-moz-appearance: none !important;
+		padding: 5.5px 5.5px 5.5px 5.5px !important;
+		border: 2px solid #666666 !important;
+		border-radius: 0px !important;
+		background: #000000A0 !important;
+		color: white !important;
+	}
+	textbox:not(#urlbar):not(.searchbar-textbox):hover {
+		padding: 5.5px 5.5px 5.5px 5.5px !important;
+		border: 2px solid #999999 !important;
+	}
+	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
+		padding: 5.5px 5.5px 5.5px 5.5px !important;
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: white !important;
+		color: black !important;
+	}
+	/* Text Area*/
+	textarea {
+		color: white !important;
+		background: transparent !important;
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	textbox[focused="true"] textarea {
+		color: black !important;
+	}
+	/* Listbox */
+	listbox {
+		-moz-appearance: none !important;
+		background: black !important;
+		border: 1px #333333 solid !important;
+	}
+	listitem {
+		margin: 0px !important;
+		padding: 1px !important;
+		border: none !important;
+		color: white !important;
+	}
+	listitem:hover {
+		background: #202020 !important;
+	}
+	listitem[selected="true"] {
+		background: #404040 !important;
+	}
+	dropmarker {
+		-moz-appearance: none !important;
+		margin-right: 0px !important;
+		padding-right: 20px !important;
+		list-style-image: none !important;
+		background: url(../img/arrowdown.png) center center no-repeat !important;
+	}
+	dropmarker > .dropmarker-icon {
+		list-style-image: none !important;
+	}
+
+	/* Check Box */
+	checkbox > .checkbox-check {
+		-moz-appearance: none !important;
+		border: 2px solid #CCCCCC !important;
+		border-radius: 0px !important;
+		padding: 8px !important;
+		box-shadow: none !important;
+		background-color: transparent !important;
+		background-image: none !important;
+	}
+	checkbox:hover > .checkbox-check {
+		border: 2px solid #FFFFFF !important;
+	}
+	checkbox:active > .checkbox-check {
+		border: 2px solid #999999 !important;
+		background-color: #999999 !important;
+	}
+	.checkbox-check[checked="true"] {
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: var(--uwp-accent-color) url(../img/check.png) !important;
+	}
+	.checkbox-label-box {
+		margin-left: 5px !important;
+	}
+
+	/* Check Box Disabled */
+	checkbox[disabled="true"] > .checkbox-check {
+		border: 2px solid #666666 !important;
+		padding: 8px !important;
+	}
+	checkbox[disabled="true"]:hover > .checkbox-check {
+		border: 2px solid #666666 !important;
+	}
+	checkbox[disabled="true"]:active > .checkbox-check {
+		border: 2px solid #666666 !important;
+		background-color: transparent !important;
+	}
+
+	/* Radio Button */
+	radio > .radio-check {
+		-moz-appearance: none !important;
+		padding: 8px !important;
+		border: 2px solid #CCCCCC !important;
+		border-radius: 100% !important;
+		background: transparent !important;
+		margin-right: 5px !important;
+		box-shadow: none !important;
+		width: auto !important;
+		height: auto !important;
+	}
+	radio:hover > .radio-check {
+		border: 2px solid #FFFFFF !important;
+	}
+	radio:hover:active > .radio-check {
+		border: 2px solid #999999 !important;
+	}
+	radio[selected="true"] > .radio-check {
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: url(../img/radio.png) !important;
+	}
+	radio[selected="true"]:hover > .radio-check {
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: url(../img/radio-hover.png) !important;
+	}
+	radio[selected="true"]:hover:active > .radio-check {
+		background: url(../img/radio-active.png) !important;
+		border: 2px solid #999999 !important;
+	}
+	/* Radio Button Disabled */
+	radio[disabled="true"] > .radio-check {
+		border: 2px solid #666666 !important;
+	}
+	radio[disabled="true"]:hover > .radio-check {
+		border: 2px solid #666666 !important;
+	}
+	radio[disabled="true"]:active > .radio-check {
+		border: 2px solid #666666 !important;
+	}
+	radio[disabled="true"][selected="true"] > .radio-check {
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: url(../img/radio.png) !important;
+	}
+	radio[disabled="true"][selected="true"]:hover > .radio-check {
+		border: 2px solid var(--uwp-accent-color) !important;
+		background: url(../img/radio.png) !important;
+	}
+
+	groupbox {
+		-moz-appearance: none !important;
+		border: none !important;
+	}
+	/* Tree stuff */
+	treechildren {
+		background-color: black !important;
+		color: lightgray !important;
+		--treechildren-outline: none !important;
+		--treechildren-focusColor: rgb(123,195,255) !important;
+		--treechildren-selectedFocusColor: rgb(205,232,255) !important;
+		--treechildren-currentColor: rgb(125,162,206) !important;
+		--treechildren-hoverColor: rgb(229,243,255) !important;
+		--treechildren-selectedBorder: rgb(80,80,80) !important;
+		--treechildren-selectedBackground: rgb(80,80,80) !important;
+		--treechildren-currentFocusBorder: var(--treechildren-focusColor) !important;
+		--treechildren-selectedFocusBorder: rgb(100,100,100) !important;
+		--treechildren-selectedFocusBackground: rgb(100,100,100) !important;
+		--treechildren-selectedFocusCurrentBorder: rgb(100,100,100) !important;
+		--treechildren-selectedFocusCurrentBackground: rgb(100,100,100) !important;
+		--treechildren-hoverBorder: rgb(35,35,35) !important;
+		--treechildren-hoverBackground: rgb(35,35,35) !important;
+		--treechildren-hoverCurrentBorder: var(--treechildren-currentColor) !important;
+		--treechildren-hoverCurrentBackground: rgba(131,183,249,.16) !important;
+		--treechildren-hoverSelectedBorder: rgb(120,120,120) !important;
+		--treechildren-hoverSelectedBackground: rgb(120,120,120) !important;
+	}
+	treechildren::-moz-tree-image {
+		fill: white !important;
+	}
+	treechildren::-moz-tree-twisty {
+		fill: white !important;
+	}
+	treechildren::-moz-tree-row {
+		background-color: black !important;
+	}
+	treechildren::-moz-tree-row(hover) {
+		background-color: rgb(35,35,35) !important;
+	}
+	tree {
+		-moz-appearance: none !important;
+		border: none !important;
+	}
+	treecol {
+		-moz-appearance: none !important;
+		color: white !important;
+		background-color: rgb(25, 25, 25) !important;
+		height: 22px !important;
+	}
+	#placesView > splitter {
+		border-inline-end: 1px solid rgb(40,40,40) !important;
+	}
+	#detailsDeck {
+		border-top: 1px solid rgb(40,40,40) !important;
+	}
+	.tree-splitter {
+		width: 1px !important;
+		max-width: 1px !important;
+		-moz-appearance: none !important;
+		border: 1px solid rgb(100,100,100) !important;
+	}
+	treecol[hidden="true"] + .tree-splitter {
+		border: none !important;
+		width: 0px !important;
+		max-width: 0px !important;
+	}
+	.treecol-image {
+		-moz-appearance: none !important;
+		background-color: rgb(25, 25, 25) !important;
+	}
+	treecol:hover, .treecol-image:hover {
+		background-color: rgb(40, 40, 40) !important;
+	}
+	treecol:active, .treecol-image:active {
+		background-color: rgb(60, 60, 60) !important;
+	}
+	.treecol-sortdirection[sortDirection="descending"] {
+		list-style-image: url(../img/arrowdown.png) !important;
+		width: 14px !important;
+		height: 10px !important;
+	}
+	.treecol-sortdirection[sortDirection="ascending"] {
+		list-style-image: url(../img/arrowdown.png) !important;
+		transform: rotate(180deg);
+		width: 14px !important;
+		height: 10px !important;
+	}
+
+	/* Removes padding effect on click */
+	treecol {
+		padding: 0px 10px !important;
+	}
+	treecol:active {
+		padding: 0px 10px !important;
+	}
+	treecols {
+		border-bottom: 0px !important;
+	}
+	.treecol-image {
+		padding: 5px 10px !important;
+	}
+	.tree-columnpicker-icon {
+		filter: invert(1);
+	}
+
+	/* Richlist Stuff */
+	richlistbox {
+		-moz-appearance: none !important;
+		background-color: black !important;
+	}
+	richlistitem {
+		background-color: black !important;
+		color: white !important;
+		border-radius: 0 !important;
+		padding: 2px !important;
+	}
+	richlistitem:hover {
+		background-color: #191919 !important;
+	}
+	richlistitem:hover:active {
+		background-color: #333333 !important;
+	}
+	richlistitem[selected="true"] {
+		background-image: none !important;
+		background-clip: border-box !important;
+		border: 2px solid var(--uwp-accent-color) !important;
+		padding: 0 !important;
+		outline: none !important;
+		background-color: #171717 !important;
+	}
+	.downloadButton:hover > .button-box > .button-icon {
+		fill: var(--uwp-accent-color) !important;
+	}
+	.downloadProgress > .progress-bar {
+		background-color: var(--uwp-accent-color) !important;
+	}
+	.downloadProgress[paused="true"] > .progress-bar {
+		background-color: GrayText !important;
+	}
+	.downloadProgress[mode="undetermined"] > .progress-bar {
+		background-image: none !important;
+		animation: none !important;
+	}
+	.downloadProgress > .progress-remainder {
+		border: none !important;
+		background: transparent !important;
+	}
+	/* Window Stuff */
+	window:not([chromemargin]):not([role="alert"]) {
+		background-color: black !important;
+	}
+	/* Customization Page */
+	#customization-content-container {
+		background-color: black !important;
+	}
+	#customization-footer {
+		background-color: #161616 !important;
+	}
+	.customizationmode-button {
+		border-radius: 0px !important;
+	}
+	.mainContainer {
+		color: white !important;
+		background-color: black !important;
+		border-radius: 0px !important;
+		border: 1px solid var(--uwp-accent-color) !important;
+		animation: fadeInScale .3s;
+	}
+	tabmodalprompt {
+		background: none !important;
+		background-color: #00000090 !important;
+		animation: fadeInOpacity .3s;
+	}
+	.buttonContainer > button {
+		padding: 4.5px !important;
+	}
+	#customization-uidensity-menu {
+		margin-bottom: -4px !important;
+		margin-left: -105px !important;
+	}
+	#customization-uidensity-button {
+		width: 202px !important;
+	}
+	#customization-uidensity-menuitem-compact {
+		width: 190px !important;
+	}
+	#customization-uidensity-menuitem-normal, #customization-uidensity-menuitem-touch, #customization-uidensity-touch-spacer, #customization-uidensity-autotouchmode-checkbox:not([checked]) {
+		display: none !important;
+	}
+	#customization-uidensity-autotouchmode-checkbox {
+		width: 175px !important;
+		margin-left: 0px !important;
+	}
+	#customization-lwtheme-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+		background: #2B2B2B !important;
+		border: 1px #2B2B2B solid !important;
+	}
+	#customization-uidensity-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+		background: #2B2B2B !important;
+		border: 1px #2B2B2B solid !important;
+	}
+	#customization-lwtheme-menu {
+		margin-bottom: -4px !important;
+		margin-left: -105px !important;
+	}
+	#customization-lwtheme-button {
+		width: 202px !important;
+	}
+	#customization-lwtheme-menu-header {
+		width: 200px !important;
+	}
+	#customization-lwtheme-menu-recommended, #customization-lwtheme-menu-footer {
+		display: none !important;
+	}
+	.customization-lwtheme-menu-theme:not([label="Dark"]) {
+		display: none !important;
+	}
+	/* Dev Tools */
+	.devtools-tab, .breadcrumbs-widget-item, .tooltip-container button {
+		border: none !important;
+		background: transparent !important;
+	}
+	.devtools-tab:hover, .breadcrumbs-widget-item:hover, .tooltip-container button:hover {
+		border: none !important;
+		background: #353535 !important;
+	}
+	.devtools-tab:hover:active, .breadcrumbs-widget-item:hover:active, .tooltip-container button:hover:active {
+		border: none !important;
+	}
+	.devtools-tab-line {
+		background: var(--uwp-accent-color) !important;
+	}
+	.devtools-button {
+		border-radius: 0px !important;
+		background: transparent !important;
+		border: none !important;
+	}
+	.devtools-button:hover {
+		background: #353535 !important;
+		border: none !important;
+	}
+	.devtools-button:hover:active {
+		border: none !important;
+	}
+	.styleinspector-propertyeditor {
+		color: black !important;
+	}
+
+	/* Permissions */
+	.identity-popup-permission-remove-button:not(:-moz-focusring):hover > .button-box > .button-icon {
+		fill: currentColor !important;
+	}
+	.identity-popup-expander {
+		border: none !important;
+		background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+	}
+	.identity-popup-expander:hover, .identity-popup-expander[open] {
+		border: none !important;
+	}
+	.identity-popup-expander:hover:active {
+		border: none !important;
+		fill: currentColor !important;
+		background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+		background-color: var(--arrowpanel-dimmed-further) !important;
+	}
+
+	@keyframes fadeInScale {
+		from {
+			opacity: 0;
+			transform: scale(1.05);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1.0);
+		}
+	}
+	@keyframes fadeInOpacity {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeInTransformUp {
+		from {
+			transform: translate(0px, 80px);
+			opacity: 0;
+		}
+		to {
+			transform: translate(0px, 0px);
+			opacity: 1;
+		}
+	}
+
+}

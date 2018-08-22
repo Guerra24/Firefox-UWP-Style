@@ -6,6 +6,9 @@
 /* Pop-ups, Context Menus, Dropdowns, etc */
 @import url(./css/context.css);
 
+/* Base Tags Theme */
+@import url(./css/tags.css);
+
 /* Pages */
 @import url(./css/pagesChrome.css);
 
