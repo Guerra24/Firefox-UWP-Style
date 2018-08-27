@@ -65,6 +65,9 @@
 		background-color: black !important;
 		border: none !important;
 	}
+	.windowDialog {
+		color: white !important;
+	}
 
 	:root {
 	    --in-content-page-color: white !important;

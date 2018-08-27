@@ -10,7 +10,7 @@
 @import url(./css/pagesContent.css);
 
 /* To prevent the root style to go into any page */
-@-moz-document url-prefix("about:") {
+@-moz-document url-prefix("chrome://"), url-prefix("about:") {
 
 	:root {
 		--uwp-accent-color: -moz-win-accentcolor; /* Global Accent Color */
