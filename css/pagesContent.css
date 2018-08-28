@@ -24,6 +24,9 @@
 	.menulist-label-box {
 		padding-left: 0px !important;
 	}
+	resizer {
+		display: none !important;
+	}
 	* {
 		outline: none !important;
 	}
@@ -288,6 +291,16 @@
 	}
 	#defaultFontSize {
 		width: 100px !important;
+	}
+	.spotlight {
+		background-color: rgba(100,100,100,0.3) !important;
+		border-radius: 0px !important;
+	}
+	.fxaProfileImage.actionable:hover {
+		border-color: #505050 !important;
+	}
+	.fxaProfileImage.actionable:hover:active {
+		border-color: var(--uwp-accent-color) !important;
 	}
 }
 

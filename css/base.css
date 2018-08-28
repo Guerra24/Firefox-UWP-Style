@@ -236,6 +236,9 @@ findbar[hidden] {
 	margin-right: 18px !important;
 	margin-bottom: 28px !important;*/
 }
+panel .text-link {
+	color: var(--uwp-accent-color) !important;
+}
 /* Various Panels */
 #appMenu-popup {
 	margin-top: -2px !important;

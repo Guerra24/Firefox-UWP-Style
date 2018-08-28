@@ -73,7 +73,7 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul") {
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul"), url("chrome://browser/content/places/bookmarkProperties2.xul") {
 	#bookmarkproperties {
 		background-color: black !important;
 	}
@@ -285,5 +285,15 @@
 	}
 	.text-link {
 		color: var(--uwp-accent-color) !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/sanitize.xul") {
+	#SanitizeDialog {
+		background: black !important;
+		color: white !important;
+	}
+	caption {
+		background: transparent !important;
 	}
 }

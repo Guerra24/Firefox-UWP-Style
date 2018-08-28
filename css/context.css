@@ -39,8 +39,6 @@
 	}
 	menuitem[type="checkbox"], menuitem[type="radio"] {
 		padding-left: 17px !important;
-		padding-top: 7px !important;
-		padding-bottom: 7px !important;
 	}
 	menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-iconic-text {
 		padding-left: 5px !important;
@@ -107,9 +105,7 @@
 		border-width: 0 2px 2px 0px;
 		transform: rotate(-45deg) scale(.55);
 	}
-	.menu-accel {
-		padding: 0px !important;
-	}
+
 	tooltip {
 		-moz-appearance: none !important;
 		color: white !important;
