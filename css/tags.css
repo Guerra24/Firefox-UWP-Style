@@ -194,6 +194,10 @@
 		background: url(../img/radio.png) !important;
 	}
 
+	.toolbarbutton-text {
+		color: inherit !important;
+	}
+
 	groupbox {
 		-moz-appearance: none !important;
 		border: none !important;
@@ -339,7 +343,7 @@
 	}
 	.downloadProgress > .progress-remainder {
 		border: none !important;
-		background: transparent !important;
+		background: #333333 !important;
 	}
 	/* Window Stuff */
 	window:not([chromemargin]):not([role="alert"]) {
