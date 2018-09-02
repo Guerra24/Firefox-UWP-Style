@@ -331,17 +331,22 @@
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: var(--uwp-accent-color) !important;
 	}
-	.downloadProgress > .progress-bar {
+	progressmeter {
+		-moz-appearance: none !important;
+		border: none !important;
+		background: transparent !important;
+	}
+	progressmeter > .progress-bar {
 		background-color: var(--uwp-accent-color) !important;
 	}
-	.downloadProgress[paused="true"] > .progress-bar {
+	progressmeter[paused="true"] > .progress-bar {
 		background-color: GrayText !important;
 	}
-	.downloadProgress[mode="undetermined"] > .progress-bar {
+	progressmeter[mode="undetermined"] > .progress-bar {
 		background-image: none !important;
 		animation: none !important;
 	}
-	.downloadProgress > .progress-remainder {
+	progressmeter > .progress-remainder {
 		border: none !important;
 		background: #333333 !important;
 	}

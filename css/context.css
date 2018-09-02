@@ -5,6 +5,7 @@
 		padding: 8px 0px 8px 0px !important;
 		background-color: #2B2B2B !important;
 		border: 1px #2B2B2B solid !important;
+		border-radius: 0px !important;
 		min-width: 280px !important;
 	}
 	menuseparator {
@@ -19,6 +20,7 @@
 		color: white !important;
 		padding: 8px 0px 8px 9px !important;
 		border: none !important;
+		font-size: 12px !important;
 	}
 	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
