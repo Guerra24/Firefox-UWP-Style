@@ -358,3 +358,53 @@
 		background-color: #404040 !important;
 	}
 }
+
+@-moz-document url("about:memory") {
+	button + button {
+		margin-left: 10px !important;
+	}
+	html {
+		background: black !important;
+	}
+	div.opsRow {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	div.section {
+		border: none !important;
+		border-radius: 0px !important;
+	}
+}
+
+@-moz-document url-prefix("about:policies") {
+	#categories > .category {
+		padding-left: 10px !important;
+		transition: none !important;
+		border-radius: 0px !important;
+	}
+	#categories > .category[selected] {
+		border-left: 2px solid var(--uwp-accent-color) !important;
+		padding-left: 8px !important;
+		border-top: none !important;
+		border-bottom: none !important;
+		border-right: none !important;
+		background: #171717 !important;
+	}
+}
+
+@-moz-document url("about:url-classifier") {
+	.toggle-container-with-text + .toggle-container-with-text {
+		margin-top: 5px !important;
+	}
+}
+
+@-moz-document url("about:welcome") {
+	.firstrun-sign-in {
+		background: rgba(0, 0, 0, 0.5) !important;
+		color: white !important;
+		border: 1px solid var(--uwp-accent-color) !important;
+	}
+	.firstrun-sign-in .extra-links {
+		color: darkgray !important;
+	}
+}

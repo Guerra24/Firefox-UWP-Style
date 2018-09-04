@@ -21,6 +21,7 @@
 		border-radius: 0px !important;
 		color: white !important;
 		height: auto !important;
+		cursor: default !important;
 	}
 	button:hover, button[open] {
 		color: white !important;
@@ -50,7 +51,7 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox) {
+	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"],input[type="text"] {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid #666666 !important;
@@ -58,15 +59,16 @@
 		background: #000000A0 !important;
 		color: white !important;
 	}
-	textbox:not(#urlbar):not(.searchbar-textbox):hover {
+	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid #999999 !important;
 	}
-	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox) {
+	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: white !important;
 		color: black !important;
+		box-shadow: none !important;
 	}
 	/* Text Area*/
 	textarea {
@@ -108,7 +110,11 @@
 	}
 
 	/* Check Box */
-	checkbox > .checkbox-check {
+	input[type="checkbox"] {
+		height: 0px !important;
+		width: 0px !important;
+	}
+	checkbox > .checkbox-check, input[type="checkbox"] {
 		-moz-appearance: none !important;
 		border: 2px solid #CCCCCC !important;
 		border-radius: 0px !important;
@@ -117,14 +123,14 @@
 		background-color: transparent !important;
 		background-image: none !important;
 	}
-	checkbox:hover > .checkbox-check {
+	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover {
 		border: 2px solid #FFFFFF !important;
 	}
-	checkbox:active > .checkbox-check {
+	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
 		border: 2px solid #999999 !important;
 		background-color: #999999 !important;
 	}
-	.checkbox-check[checked="true"] {
+	.checkbox-check[checked="true"], input[type="checkbox"]:checked {
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: var(--uwp-accent-color) url(../img/check.png) !important;
 	}
@@ -481,6 +487,13 @@
 		fill: currentColor !important;
 		background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
 		background-color: var(--arrowpanel-dimmed-further) !important;
+	}
+
+	.external {
+		color: var(--uwp-accent-color) !important;
+	}
+	.external::after {
+		fill: var(--uwp-accent-color) !important;
 	}
 
 	@keyframes fadeInScale {
