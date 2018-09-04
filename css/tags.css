@@ -203,6 +203,7 @@
 		border: none !important;
 	}
 	/* Tree stuff */
+	/* This code only works on Firefox <=62 */
 	treechildren {
 		background-color: black !important;
 		color: lightgray !important;
@@ -225,6 +226,7 @@
 		--treechildren-hoverSelectedBorder: rgb(120,120,120) !important;
 		--treechildren-hoverSelectedBackground: rgb(120,120,120) !important;
 	}
+	/* Firefox >= 63 */
 	treechildren::-moz-tree-image {
 		fill: white !important;
 	}
@@ -236,6 +238,18 @@
 	}
 	treechildren::-moz-tree-row(hover) {
 		background-color: rgb(35,35,35) !important;
+	}
+	treechildren::-moz-tree-row(selected) {
+		background-color: rgb(60,60,60) !important;
+	}
+	treechildren::-moz-tree-cell-text {
+		color: lightgray !important;
+	}
+	treechildren::-moz-tree-cell-text(hover) {
+		color: rgb(220,220,220) !important;
+	}
+	treechildren::-moz-tree-cell-text(selected) {
+		color: rgb(255,255,255) !important;
 	}
 	tree {
 		-moz-appearance: none !important;
