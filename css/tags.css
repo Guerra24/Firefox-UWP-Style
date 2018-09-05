@@ -119,6 +119,7 @@
 		border: 2px solid #CCCCCC !important;
 		border-radius: 0px !important;
 		padding: 8px !important;
+		margin: 0px !important;
 		box-shadow: none !important;
 		background-color: transparent !important;
 		background-image: none !important;
@@ -135,7 +136,7 @@
 		background: var(--uwp-accent-color) url(../img/check.png) !important;
 	}
 	.checkbox-label-box {
-		margin-left: 5px !important;
+		margin-left: 10px !important;
 	}
 
 	/* Check Box Disabled */
@@ -198,6 +199,9 @@
 	radio[disabled="true"][selected="true"]:hover > .radio-check {
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: url(../img/radio.png) !important;
+	}
+	radio > .radio-label-box {
+		margin-left: 5px !important;
 	}
 
 	.toolbarbutton-text {
