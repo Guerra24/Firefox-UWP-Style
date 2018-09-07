@@ -110,10 +110,6 @@
 	}
 
 	/* Check Box */
-	input[type="checkbox"] {
-		height: 0px !important;
-		width: 0px !important;
-	}
 	checkbox > .checkbox-check, input[type="checkbox"] {
 		-moz-appearance: none !important;
 		border: 2px solid #CCCCCC !important;
@@ -134,6 +130,11 @@
 	.checkbox-check[checked="true"], input[type="checkbox"]:checked {
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: var(--uwp-accent-color) url(../img/check.png) !important;
+	}
+	input[type="checkbox"] {
+		height: 0px !important;
+		width: 0px !important;
+		margin-right: 10px !important;
 	}
 	.checkbox-label-box {
 		margin-left: 10px !important;
