@@ -408,3 +408,19 @@
 		color: darkgray !important;
 	}
 }
+
+@-moz-document url("about:sessionrestore") {
+	#tabsToggle {
+		padding-right: 30px !important;
+	}
+	#tabsToggle::after {
+		background-size: 16px !important;
+		left: -4px !important;
+	}
+}
+
+@-moz-document url("about:blank") {
+	body {
+		background-color: #1A1A1A !important;
+	}
+}

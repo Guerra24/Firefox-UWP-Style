@@ -1,13 +1,14 @@
 /* Titlebar */
 .titlebar-button {
-	width: 48px !important;
+	width: 46px !important;
 	height: 32px !important;
-	padding: 0px 0px 0px 18px !important;
+}
+.titlebar-button > .toolbarbutton-text {
+	display: none !important;
 }
 #minimize-button, #restore-button, #close-button {
-	width: 48px !important;
+	width: 46px !important;
 	height: 32px !important;
-	padding: 0px 0px 0px 0px !important;
 }
 #restore-button {
 	list-style-image: url(../img/titlebox-full-restore.png) !important;
@@ -23,15 +24,15 @@
 	height: 32px !important;
 	margin-bottom: -32px !important;
 }
-window[sizemode="maximized"] #titlebar {
+#main-window[sizemode="maximized"] #titlebar {
 	margin-top: 0px !important;
 	margin-bottom: -24px !important;
 }
-#minimize-button {
-	padding-bottom: 8px !important;
-}
-window[sizemode="fullscreen"] #minimize-button {
+#main-window[sizemode="fullscreen"] #minimize-button {
 	padding-top: 8px !important;
+}
+#titlebar-min {
+	padding-bottom: 7px !important;
 }
 #titlebar-min:hover, #titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
 	background-color: var(--titlebar-min-max-hover-bg-color) !important;
@@ -370,3 +371,33 @@ button.searchbar-engine-one-off-item[selected] {
 	--chrome-background-color: black !important;
 	--chrome-secondary-background-color: #2A2A2A !important;
 }
+
+/* Testing shadows  */
+/*
+:root {
+	--chrome-background-color: #202020 !important;
+}
+:root:-moz-window-inactive {
+	--chrome-background-color: #101010 !important;
+}
+#nav-bar {
+	box-shadow: 0px -2px 10px 2px rgba(0, 0, 0, .4) !important;
+	clip-path: inset(-20px 0px 0px 0px) !important;
+}
+.tabbrowser-tab > .tab-stack > .tab-background[selected] {
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .4) !important;
+}
+.titlebar-button {
+	clip-path: inset(0px -20px 0px -20px) !important;
+}
+.titlebar-button:hover {
+	box-shadow: 0px -2px 10px 2px rgba(0, 0, 0, .4) !important;
+	clip-path: inset(0px -20px 0px -20px) !important;
+}
+.tabs-newtab-button:hover, #new-tab-button:hover, #alltabs-button:hover, .scrollbutton-up:hover, .scrollbutton-down:hover {
+	box-shadow: 0px -2px 10px 2px rgba(0, 0, 0, .4) !important;
+	z-index: 2 !important;
+	position: relative !important;
+	clip-path: inset(0px -20px 0px -20px) !important;
+}
+*/
