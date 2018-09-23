@@ -72,10 +72,13 @@
 	}
 	/* Text Area*/
 	textarea {
-		color: white !important;
+		color: black !important;
 		background: transparent !important;
 		border: none !important;
 		border-radius: 0px !important;
+	}
+	textbox textarea {
+		color: white !important;
 	}
 	textbox[focused="true"] textarea {
 		color: black !important;

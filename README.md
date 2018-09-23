@@ -9,7 +9,7 @@ This theme only supports the default Dark mode and Compact UI, selection of othe
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-61 > Firefox 61 & 62.
+- firefox-61 > Firefox 61, 62 & 63
 - firefox-58 > Firefox 58, 59 & 60.
 
 The firefox-58 branch has an incomplete theme, I have plans for back-porting features only to FF60 so I might end creating a ff60 branch.
@@ -39,12 +39,14 @@ Scrollbar JS loading code by [Aris-t2](https://github.com/Aris-t2) (https://gith
 
 ## Screenshots
 
-![img](https://puu.sh/AKaUQ/55603170a4.png)
-![img](https://puu.sh/zjMEr/143cceb18f.png)
-![img](https://puu.sh/AlR9L/fba2e9b764.png)
-![img](https://puu.sh/AR4Qh/e370a35a95.png)
-![img](https://puu.sh/AR5lN/ffc9571131.png)
+![img](https://puu.sh/BzsQn/83858043ab.png)
+![img](https://puu.sh/BzsRM/aa3536b535.png)
+![img](https://puu.sh/BzsTc/edeba2bc78.png)
+![img](https://puu.sh/Bzt3J/2c48ea22ba.png)
+![img](https://puu.sh/Bzt4o/12744c3414.png)
+![img](https://puu.sh/BzsXr/20645805df.png)
+![img](https://puu.sh/BzsYI/1834702e23.png)
 ![img](https://puu.sh/AlR4f/dbad98ce5f.png)
-![img](https://puu.sh/AlQZU/bfcf66017f.png)
-![img](https://puu.sh/AR4UE/4bc8a40dd1.png)
-![img](https://puu.sh/AR5dB/10bd837e94.png)
+![img](https://puu.sh/Bzt0m/f26db51f28.png)
+![img](https://puu.sh/Bzt1P/f85a90ab7a.png)
+![img](https://puu.sh/Bzt2p/e0f243c5be.png)
