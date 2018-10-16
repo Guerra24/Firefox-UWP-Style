@@ -122,7 +122,7 @@
 		--exception-button-container-background: black !important;
 	}
 	:root > * {
-		font-size: 12px !important;
+		font-size: 14px !important;
 	}
 
 	html.private {
@@ -151,7 +151,7 @@
 		margin-bottom: 8px !important;
 	}
 	.sidebar-footer-label {
-		font-size: inherit !important;
+		font-size: 13px !important;
 		margin: 0px !important;
 		padding-left: 10px !important;
 		line-height: 1.4em !important;
@@ -173,6 +173,7 @@
 		background-color: #2A2A2A !important;
 		padding-top: 8px !important;
 		width: 250px !important;
+		font-size: 12px !important;
 	}
 	#categories > .category {
 		min-height: 40px !important;
