@@ -36,6 +36,11 @@
 		background: #333333 !important;
 		border: 2px #333333 solid !important;
 	}
+/*	button:-moz-focusring {
+		outline-offset: 0px !important;
+		outline: 1px solid black !important;
+		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;
+	}*/
 	.expander-down {
 		background: url(../img/arrowdown.png) center center no-repeat !important;
 		background-color: #000000A0 !important;
@@ -334,13 +339,12 @@
 	/* Richlist Stuff */
 	richlistbox {
 		-moz-appearance: none !important;
-		background-color: black !important;
+		background-color: transparent !important;
 	}
 	richlistitem {
-		background-color: black !important;
+		background-color: transparent !important;
 		color: white !important;
-		border-radius: 0 !important;
-		padding: 2px !important;
+		border-radius: 0px !important;
 	}
 	richlistitem:hover {
 		background-color: #191919 !important;
@@ -351,8 +355,6 @@
 	richlistitem[selected="true"] {
 		background-image: none !important;
 		background-clip: border-box !important;
-		border: 2px solid var(--uwp-accent-color) !important;
-		padding: 0 !important;
 		outline: none !important;
 		background-color: #171717 !important;
 	}
@@ -392,7 +394,7 @@
 	.customizationmode-button {
 		border-radius: 0px !important;
 	}
-	.mainContainer {
+	.mainContainer, .tabmodalprompt-mainContainer {
 		color: white !important;
 		background-color: black !important;
 		border-radius: 0px !important;

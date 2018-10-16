@@ -71,6 +71,9 @@
 	.windowDialog {
 		color: white !important;
 	}
+	.list > scrollbox > .scrollbox-innerbox {
+	border: none !important;
+	}
 
 	:root {
 	    --in-content-page-color: white !important;
@@ -89,13 +92,13 @@
 	    --in-content-border-color: #282828 !important;
 	    --in-content-category-outline-focus: 1px dotted #0a84ff;
 	    --in-content-category-text: white !important;
-	    --in-content-category-text-active: ##666666 !important;
-	    --in-content-category-text-selected: var(--uwp-accent-color) !important;
-	    --in-content-category-text-selected-active: #666666 !important;
-	    --in-content-category-background-hover: #202020 !important;
-	    --in-content-category-background-active: #404040 !important;
-	    --in-content-category-background-selected-hover: #202020 !important;
-	    --in-content-category-background-selected-active: #404040 !important;
+	    --in-content-category-text-active: white !important;
+	    --in-content-category-text-selected: white !important;
+	    --in-content-category-text-selected-active: white !important;
+	    --in-content-category-background-hover: #404040 !important;
+	    --in-content-category-background-active: #555555 !important;
+	    --in-content-category-background-selected-hover: #404040 !important;
+	    --in-content-category-background-selected-active: #555555 !important;
 	    --in-content-tab-color: #424f5a;
 	    --in-content-link-color: var(--uwp-accent-color) !important;
 	    --in-content-link-color-hover: #999999 !important;
@@ -107,6 +110,9 @@
 	    --in-content-table-background: black !important;
 	    --in-content-table-border-dark-color: #282828 !important;
 	    --in-content-table-header-background: var(--uwp-accent-color) !important;
+		--card-shadow-hover: none !important;
+		--card-shadow-focus: none !important;
+		--in-content-box-background: black !important;
 	    --grey-20: #ededf0;
 	    --grey-90: #0c0c0d;
 	    --grey-90-a10: rgba(12, 12, 13, 0.1);
@@ -115,9 +121,104 @@
 
 		--exception-button-container-background: black !important;
 	}
+	:root > * {
+		font-size: 12px !important;
+	}
 
 	html.private {
 		--in-content-page-background: #25003e !important;
+	}
+
+}
+
+/* Extra stuff */
+@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+	.sidebar-footer-button > .text-link {
+		height: 40px !important;
+		margin-inline-start: 0px !important;
+		padding-left: 12px !important;
+	}
+	.sidebar-footer-button > .text-link:hover {
+		border-radius: 0px !important;
+	}
+	.sidebar-footer-button {
+		padding: 0px !important;
+	}
+	.sidebar-footer-button > .text-link > hbox {
+		margin-top: 10px !important;
+	}
+	.sidebar-footer-button:last-of-type {
+		margin-bottom: 8px !important;
+	}
+	.sidebar-footer-label {
+		font-size: inherit !important;
+		margin: 0px !important;
+		padding-left: 10px !important;
+		line-height: 1.4em !important;
+		padding-bottom: 1px !important;
+	}
+	.sidebar-footer-icon {
+		height: 18px !important;
+		width: 18px !important;
+		margin: 0px !important;
+	}
+	.category-icon {
+		height: 18px !important;
+		width: 18px !important;
+	}
+	.category-name {
+		padding-left: 10px !important;
+	}
+	#categories {
+		background-color: #2A2A2A !important;
+		padding-top: 8px !important;
+		width: 250px !important;
+	}
+	#categories > .category {
+		min-height: 40px !important;
+		transition: none !important;
+		padding-left: 0px !important;
+		margin-inline-start: 0px !important;
+		border-radius: 0px !important;
+	}
+	#categories > .category::before {
+		content: "";
+		display: block !important;
+		padding: 12px 3px !important;
+		margin-right: 10px !important;
+		background: transparent !important;
+	}
+	#categories > .category[selected] {
+		background: transparent !important;
+	}
+	#categories > .category[selected]::before {
+		content: "";
+		display: block !important;
+		padding: 12px 3px !important;
+		margin-right: 10px !important;
+		background: var(--uwp-accent-color) !important;
+	}
+	#categories > .category:hover {
+		background-color: var(--in-content-category-background-hover) !important;
+	}
+	#categories > .category:hover:active {
+		background-color: var(--in-content-category-background-active) !important;
+	}
+	#categories > .category[selected]:hover, #categories > .category.selected:hover {
+		background-color: var(--in-content-category-background-selected-hover) !important;
+	}
+	#categories > .category[selected]:hover:active, #categories > .category.selected:hover:active {
+		background-color: var(--in-content-category-background-selected-active) !important;
+	}
+	#category-box {
+		background-color: #2A2A2A !important;
+	}
+	/* Font Fixes */
+	textbox {
+		font-size: 12px !important;
+	}
+	.anonymous-div {
+		line-height: inherit !important;
 	}
 }
 
@@ -262,27 +363,7 @@
 	}
 }
 
-@-moz-document url-prefix("about:networking") {
-	#categories > .category {
-		cursor: default !important;
-		border-radius: 0px !important;
-		transition: none !important;
-	}
-	#categories > .category:hover, #categories > .category:hover:active {
-		transition: none !important;
-	}
-}
 @-moz-document url-prefix("about:preferences") {
-	#categories > .category {
-		padding-left: 10px !important;
-		transition: none !important;
-	}
-	#categories > .category[selected] {
-		padding-left: 8px !important;
-		border-top: none !important;
-		border-bottom: none !important;
-		border-right: none !important;
-	}
 	.help-button > .text-link {
 		border-radius: 0px !important;
 	}
@@ -302,6 +383,16 @@
 	.fxaProfileImage.actionable:hover:active {
 		border-color: var(--uwp-accent-color) !important;
 	}
+	.dialogTitleBar {
+		background-color: transparent !important;
+		border-bottom: none !important;
+	}
+	#categories > scrollbox > box {
+		padding: 0px !important;
+	}
+	.navigation {
+		background-color: #2A2A2A !important;
+	}
 }
 
 @-moz-document url("about:downloads") {
@@ -311,27 +402,31 @@
 }
 
 @-moz-document url("about:addons") {
-	#categories > .category {
-		padding-left: 10px !important;
-	}
-	#categories > .category[selected] {
-		padding-left: 8px !important;
-		border-top: none !important;
-		border-bottom: none !important;
-		border-right: none !important;
-	}
 	button.button-link {
+		background: transparent !important;
+		border: none !important;
 		cursor: default !important;
-		margin: 0px 10px !important;
+		text-decoration: underline !important;
+		margin: 0px !important;
+		color: var(--uwp-accent-color) !important;
 	}
 	button.button-link:hover {
-		text-decoration: none !important;
+		color: #999999 !important;
+	}
+	button.button-link:hover:active {
+		color: #666666 !important;
+		background: transparent !important;
+		border: none !important;
+	}
+	.addon label, .addon {
+		margin: 0px !important;
+		cursor: default !important;
+	}
+	.addon:not([selected]) {
+		border-bottom: 0px !important;
 	}
 	.button-box {
 		padding: 0px 5px !important;
-	}
-	richlistbox.list > richlistitem.addon:not([selected]) {
-		border-bottom: 0px !important;
 	}
 	.detail-view-container {
 		color: white !important;
@@ -355,6 +450,8 @@
 		background-color: #202020 !important;
 	}
 	#header-utils-btn[open] {
+		padding-top: 3px !important;
+		padding-bottom: 3px !important;
 		background-color: #404040 !important;
 	}
 }
@@ -373,22 +470,6 @@
 	div.section {
 		border: none !important;
 		border-radius: 0px !important;
-	}
-}
-
-@-moz-document url-prefix("about:policies") {
-	#categories > .category {
-		padding-left: 10px !important;
-		transition: none !important;
-		border-radius: 0px !important;
-	}
-	#categories > .category[selected] {
-		border-left: 2px solid var(--uwp-accent-color) !important;
-		padding-left: 8px !important;
-		border-top: none !important;
-		border-bottom: none !important;
-		border-right: none !important;
-		background: #171717 !important;
 	}
 }
 
