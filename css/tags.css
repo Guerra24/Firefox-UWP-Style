@@ -22,6 +22,7 @@
 		color: white !important;
 		height: auto !important;
 		cursor: default !important;
+		transition: none !important;
 	}
 	button:hover, button[open] {
 		color: white !important;
