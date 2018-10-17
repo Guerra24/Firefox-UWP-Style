@@ -133,10 +133,15 @@
 
 /* Extra stuff */
 @-moz-document url-prefix("chrome://"), url-prefix("about:") {
+	/* Fixes for FF62~ Placed here due to CSS order priority */
+	.help-button > .text-link > hbox {
+		margin-top: 2px !important;
+	}
+	/*END*/
 	.sidebar-footer-button > .text-link {
 		height: 40px !important;
 		margin-inline-start: 0px !important;
-		padding-left: 12px !important;
+		padding-left: 16px !important;
 	}
 	.sidebar-footer-button > .text-link:hover {
 		border-radius: 0px !important;
@@ -409,9 +414,6 @@
 		margin-inline-start: 0px !important;
 		height: 40px !important;
 	}
-	.help-button > .text-link > hbox {
-		margin-top: 2px !important;
-	}
 }
 
 @-moz-document url("about:downloads") {
@@ -473,7 +475,7 @@
 		padding-bottom: 3px !important;
 		background-color: #404040 !important;
 	}
-	/* Fixes for FF 62~ */
+	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
 		border-bottom: none !important;
