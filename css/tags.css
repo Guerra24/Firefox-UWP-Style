@@ -362,18 +362,20 @@
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: var(--uwp-accent-color) !important;
 	}
-	progressmeter {
+	progressmeter, progress {
 		-moz-appearance: none !important;
 		border: none !important;
-		background: transparent !important;
+		background: #333333 !important;
+		height: 8px !important;
 	}
-	progressmeter > .progress-bar {
+	progressmeter > .progress-bar, progress::-moz-progress-bar {
 		background-color: var(--uwp-accent-color) !important;
+		margin: 0px !important;
 	}
-	progressmeter[paused="true"] > .progress-bar {
+	progressmeter[paused="true"] > .progress-bar, progress[paused]::-moz-progress-bar  {
 		background-color: GrayText !important;
 	}
-	progressmeter[mode="undetermined"] > .progress-bar {
+	progressmeter[mode="undetermined"] > .progress-bar, progress:not([value])::-moz-progress-bar {
 		background-image: none !important;
 		animation: none !important;
 	}
