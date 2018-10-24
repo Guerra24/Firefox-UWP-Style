@@ -1,6 +1,6 @@
 /* Base tags for chrome:// and about: pages */
 
-@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	:root {
 		--uwp-header-background: #1F1F1F;

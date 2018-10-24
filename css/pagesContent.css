@@ -1,7 +1,6 @@
-
 /* about: specific pages */
 
-@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	treecol {
 		border-inline-start-width: 0px !important;
@@ -132,7 +131,7 @@
 }
 
 /* Extra stuff */
-@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 	/* Fixes for FF62~ Placed here due to CSS order priority */
 	.help-button > .text-link > hbox {
 		margin-top: 2px !important;
@@ -524,11 +523,5 @@
 	#tabsToggle::after {
 		background-size: 16px !important;
 		left: -4px !important;
-	}
-}
-
-@-moz-document url("about:blank") {
-	body {
-		background-color: #1A1A1A !important;
 	}
 }

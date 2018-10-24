@@ -1,6 +1,6 @@
 # Firefox UWP Style
 
-This is a very visually simple theme that follows UWP styling with the accent color and gray-on-black elements, combines both while remaining original.
+This is a very visually simple theme that follows MDL2 styling with the accent color and gray-on-black elements, combines both while remaining original.
 
 ## Install
 
