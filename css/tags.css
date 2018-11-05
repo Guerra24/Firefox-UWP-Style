@@ -16,26 +16,25 @@
 	button {
 		-moz-appearance: none !important;
 		padding: 3px !important;
-		background: #333333 !important;
+		background-color: #333333 !important;
 		border: 2px #333333 solid !important;
 		border-radius: 0px !important;
 		color: white !important;
-		height: auto !important;
 		cursor: default !important;
 		transition: none !important;
 	}
 	button:hover, button[open] {
 		color: white !important;
-		border: 2px #858585 solid !important;
+		border-color: #858585 !important;
 	}
 	button:hover:active {
 		color: white !important;
-		background: #666666 !important;
-		border: 2px #858585 solid !important;
+		background-color: #666666 !important;
+		border-color: #858585 !important;
 	}
 	button[disabled="true"]:hover, button[disabled="true"]:hover:active {
-		background: #333333 !important;
-		border: 2px #333333 solid !important;
+		background-color: #333333 !important;
+		border-color: #333333 !important;
 	}
 /*	button:-moz-focusring {
 		outline-offset: 0px !important;

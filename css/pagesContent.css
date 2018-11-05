@@ -388,6 +388,10 @@
 		background-color: rgba(100,100,100,0.3) !important;
 		border-radius: 0px !important;
 	}
+	.fxaProfileImage.actionable {
+		border-width: 2px !important;
+		border-color: transparent !important;
+	}
 	.fxaProfileImage.actionable:hover {
 		border-color: #505050 !important;
 	}
@@ -403,6 +407,9 @@
 	}
 	.navigation {
 		background-color: #2A2A2A !important;
+	}
+	.accessory-button {
+		height: auto !important;
 	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
@@ -523,5 +530,46 @@
 	#tabsToggle::after {
 		background-size: 16px !important;
 		left: -4px !important;
+	}
+}
+
+@-moz-document url-prefix("about:reader") {
+	.toolbar {
+		border: none !important;
+		background-color: #2A2A2A !important;
+		width: 40px !important;
+	}
+	button {
+		fill: white !important;
+		background-color: transparent !important;
+		border: none !important;
+	}
+	button:hover {
+		background-color: #525252 !important;
+	}
+	.dropdown-popup {
+		/* Backdrop filter here... */
+		background-color: #2B2B2B !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5) !important;
+		border-radius: 0px !important;
+		border: none !important;
+		opacity: 0 !important;
+		transition: opacity 150ms, visibility 0s 2s !important;
+	}
+	.open > .dropdown-popup {
+		opacity: 1 !important;
+		transition: opacity 150ms !important;
+	}
+	.dropdown-arrow {
+		display: none !important;
+	}
+	.dropdown.open {
+		background-color: #666666 !important;
+	}
+	.narrate-row:not(:first-child) {
+		border: none !important;
+	}
+	.font-type-buttons > button > .description {
+		color: #BEBEBE !important;
 	}
 }
