@@ -1,4 +1,10 @@
 /* Titlebar */
+#titlebar {
+	margin-top: 1px !important;
+}
+#main-window[sizemode="maximized"] #titlebar {
+	margin-top: 0px !important;
+}
 .titlebar-button {
 	width: 46px !important;
 	height: 32px !important;
@@ -13,37 +19,28 @@
 #restore-button {
 	list-style-image: url(../img/titlebox-full-restore.png) !important;
 }
-#titlebar-buttonbox, #TabsToolbar, #toolbar-menubar {
+#titlebar-buttonbox, #TabsToolbar, #toolbar-menubar, #main-menubar {
 	height: 32px !important;
 }
 #toolbar-menubar > #menubar-items > #main-menubar > menu {
 	padding: 0px !important;
 }
-#titlebar {
-	margin-top: 1px !important;
-	height: 32px !important;
-	margin-bottom: -32px !important;
-}
-#main-window[sizemode="maximized"] #titlebar {
-	margin-top: 0px !important;
-	margin-bottom: -24px !important;
-}
 #main-window[sizemode="fullscreen"] #minimize-button {
 	padding-top: 8px !important;
 }
-#titlebar-min {
+.titlebar-min {
 	padding-bottom: 7px !important;
 }
-#titlebar-min:hover, #titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
+.titlebar-min:hover, .titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
 	background-color: var(--titlebar-min-max-hover-bg-color) !important;
 }
-#titlebar-min:hover:active, #titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
+.titlebar-min:hover:active, .titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
 	background-color: var(--titlebar-min-max-active-bg-color) !important;
 }
-#titlebar-close:hover, #close-button:hover {
+.titlebar-close:hover, #close-button:hover {
 	background-color: var(--titlebar-close-hover-bg-color)	!important;
 }
-#titlebar-close:hover:active, #close-button:hover:active {
+.titlebar-close:hover:active, #close-button:hover:active {
 	background-color: var(--titlebar-close-active-bg-color) !important;
 }
 .titlebar-placeholder[type="pre-tabs"] {
@@ -62,6 +59,9 @@
 	-moz-appearance: -moz-win-glass !important;
 }
 /* Tabs */
+.toolbar-items > spacer:first-of-type {
+	display: none !important;
+}
 #tabbrowser-tabs:-moz-window-inactive {
 	--tab-line-color: rgb(128, 128, 128) !important;
 }
