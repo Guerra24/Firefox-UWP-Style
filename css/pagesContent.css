@@ -73,6 +73,10 @@
 	.list > scrollbox > .scrollbox-innerbox {
 		border: none !important;
 	}
+	window, dialog {
+		background: black !important;
+		color: white !important;
+	}
 
 	:root {
 	    --in-content-page-color: white !important;
@@ -410,6 +414,9 @@
 	}
 	.accessory-button {
 		height: auto !important;
+	}
+	description.indent, .indent > description {
+		color: #999 !important;
 	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
