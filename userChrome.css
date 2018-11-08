@@ -13,7 +13,7 @@
 @import url(./css/pagesChrome.css);
 
 /* Scrollbars */
-.titlebar-placeholder[type="pre-tabs"] {
+.titlebar-spacer[type="pre-tabs"] {
 	-moz-binding: url("./js/userChrome.xml#execute_javascript_code");
 }
 
