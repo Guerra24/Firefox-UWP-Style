@@ -1,9 +1,6 @@
 /* Titlebar */
-#titlebar {
+#main-window[sizemode="normal"] #titlebar {
 	margin-top: 1px !important;
-}
-#main-window[sizemode="maximized"] #titlebar {
-	margin-top: 0px !important;
 }
 .titlebar-button {
 	width: 46px !important;
@@ -104,10 +101,10 @@
 .tabs-newtab-button .toolbarbutton-icon {
 	background: transparent !important;
 }
-#TabsToolbar[movingtab] {
+#navigator-toolbox[movingtab] > #titlebar > #TabsToolbar {
 	padding-bottom: 0px !important;
 }
-#TabsToolbar[movingtab] + #nav-bar {
+#navigator-toolbox[movingtab] > #nav-bar {
 	margin-top: 0px !important;
 }
 #new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
