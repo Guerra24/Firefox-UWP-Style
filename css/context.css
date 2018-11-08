@@ -2,9 +2,9 @@
 
 	menupopup {
 		-moz-appearance: none !important;
-		padding: 8px 0px 8px 0px !important;
+		padding: 9px 1px 9px 1px !important;
 		background-color: #2B2B2B !important;
-		border: 1px #2B2B2B solid !important;
+		border: 1px #1C1C1C solid !important;
 		border-radius: 0px !important;
 		min-width: 280px !important;
 	}
@@ -114,8 +114,8 @@
 		-moz-appearance: none !important;
 		color: white !important;
 		background-color: #2B2B2B !important;
-		border: 1px solid #2B2B2B !important;
-		padding: 6.5px !important;
+		border: 1px solid #1C1C1C !important;
+		padding: 6px !important;
 	}
 
 }
