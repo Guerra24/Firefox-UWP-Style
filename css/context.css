@@ -2,11 +2,11 @@
 
 	menupopup {
 		-moz-appearance: none !important;
-		padding: 9px 1px 9px 1px !important;
+		padding: 6px 2px 6px 2px !important;
 		background-color: #2B2B2B !important;
 		border: 1px #1C1C1C solid !important;
 		border-radius: 0px !important;
-		min-width: 280px !important;
+		min-width: 258px !important;
 	}
 	menuseparator {
 		-moz-appearance: none !important;
@@ -18,17 +18,20 @@
 	menuitem, menu {
 		-moz-appearance: none !important;
 		color: white !important;
-		padding: 8px 0px 8px 9px !important;
+		padding: 7px 0px 7px 9px !important;
 		border: none !important;
 		font-size: 12px !important;
 	}
-	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	menuitem[disabled], menuitem[disabled] > .menu-text {
 		color: gray !important;
 	}
-	menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"] {
+	menuitem:hover, menu:hover, menuitem[_moz-menuactive] {
 		background-color: #404040 !important;
 	}
-	menuitem:hover:active, menu:hover:active, menuitem[selected="true"] {
+	menu[open] {
+		background-color: var(--uwp-accent-color) !important;
+	}
+	menuitem:hover:active, menu:hover:active, menuitem[selected] {
 		background-color: #555555 !important;
 	}
 	menugroup {
