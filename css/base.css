@@ -1,7 +1,4 @@
 /* Titlebar */
-#main-window[sizemode="normal"] #titlebar {
-	margin-top: 1px !important;
-}
 .titlebar-button {
 	width: 46px !important;
 	height: 32px !important;
@@ -44,7 +41,11 @@
 	display: none !important;
 }
 .titlebar-spacer[type="post-tabs"] {
-	width: 50px !important;
+	display: none !important;
+}
+.titlebar-buttonbox-container, #window-controls {
+	margin-left: 50px !important;
+	margin-bottom: 0px !important;
 }
 #toolbar-menubar[autohide="true"][inactive="true"]:not([customizing="true"]) {
 	min-height: 0 !important;
@@ -54,6 +55,9 @@
 #main-window[chromemargin] {
 	background-color: black !important;
 	-moz-appearance: -moz-win-glass !important;
+}
+#main-window[sizemode="normal"] {
+	margin-top: 1px !important;
 }
 /* Tabs */
 .toolbar-items > spacer:first-of-type {
