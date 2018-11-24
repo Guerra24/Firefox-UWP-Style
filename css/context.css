@@ -22,7 +22,7 @@
 		border: none !important;
 		font-size: 12px !important;
 	}
-	menuitem[disabled], menuitem[disabled] > .menu-text {
+	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
 	menuitem:hover, menu:hover, menuitem[_moz-menuactive] {
