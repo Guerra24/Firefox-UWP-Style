@@ -36,11 +36,13 @@
 		background-color: #333333 !important;
 		border-color: #333333 !important;
 	}
-/*	button:-moz-focusring {
-		outline-offset: 0px !important;
+	button:-moz-focusring {
+		outline: none !important;
+		box-shadow: none !important;
+		/*outline-offset: 0px !important;
 		outline: 1px solid black !important;
-		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;
-	}*/
+		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;*/
+	}
 	.expander-down {
 		background: url(../img/arrowdown.png) center center no-repeat !important;
 		background-color: #000000A0 !important;
