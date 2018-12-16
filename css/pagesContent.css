@@ -580,3 +580,9 @@
 		color: #BEBEBE !important;
 	}
 }
+
+@-moz-document url-prefix("about:tabcrashed") {
+	#reportBox {
+		background-color: transparent !important;
+	}
+}
