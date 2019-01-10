@@ -22,19 +22,19 @@
 #main-window[sizemode="fullscreen"] #minimize-button {
 	padding-top: 8px !important;
 }
-.titlebar-min {
+#titlebar-min {
 	padding-bottom: 7px !important;
 }
-.titlebar-min:hover, .titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
+#titlebar-min:hover, #titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
 	background-color: var(--titlebar-min-max-hover-bg-color) !important;
 }
-.titlebar-min:hover:active, .titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
+#titlebar-min:hover:active, #titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
 	background-color: var(--titlebar-min-max-active-bg-color) !important;
 }
-.titlebar-close:hover, #close-button:hover {
+#titlebar-close:hover, #close-button:hover {
 	background-color: var(--titlebar-close-hover-bg-color)	!important;
 }
-.titlebar-close:hover:active, #close-button:hover:active {
+#titlebar-close:hover:active, #close-button:hover:active {
 	background-color: var(--titlebar-close-active-bg-color) !important;
 }
 .titlebar-spacer[type="pre-tabs"] {
@@ -52,11 +52,11 @@
 	height: 0 !important;
 }
 /* Window */
-#main-window[chromemargin] {
+#messengerWindow[chromemargin] {
 	background-color: black !important;
 	-moz-appearance: -moz-win-glass !important;
 }
-#main-window[sizemode="normal"][tabsintitlebar="true"] {
+#messengerWindow[sizemode="normal"] {
 	margin-top: 1px !important;
 }
 /* Tabs */

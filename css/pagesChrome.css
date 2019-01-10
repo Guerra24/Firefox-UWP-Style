@@ -52,7 +52,7 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/aboutDialog.xul") {
+@-moz-document url("chrome://browser/content/aboutDialog.xul"), url("chrome://messenger/content/aboutDialog.xul") {
 	#aboutDialogContainer {
 		background-color: black !important;
 	}
@@ -70,6 +70,28 @@
 	}
 	.button-text {
 		color: white !important;
+	}
+	/* Thunderbird */
+	#clientBox {
+		background-color: transparent !important;
+	}
+	description {
+		color: white !important;
+	}
+	#rightBox:before {
+		content: "";
+		position: fixed;
+		top: 14px !important;
+		mask-image: url("chrome://branding/content/about-wordmark.svg") !important;
+		background-color: white !important;
+		width: 260px !important;
+		height: 50px !important;
+	}
+	#rightBox {
+		background: none !important;
+	}
+	#updateDeck > hbox > label:not([class="text-link"]) {
+		font-style: normal !important;
 	}
 }
 

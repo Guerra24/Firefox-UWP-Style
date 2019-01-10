@@ -12,8 +12,11 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
+/* Thunderbird support */
+@import url(./css/thunderbird.css);
+
 /* Load custom JS */
-.titlebar-spacer[type="pre-tabs"] {
+#mail-toolbar-menubar2 > .titlebar-placeholder {
 	-moz-binding: url("./userChrome.xml#execute_javascript_code");
 }
 

@@ -1,0 +1,117 @@
+/* Thunderbird specific fixes */
+.titlebar-placeholder {
+	width: 194px !important;
+}
+.tabmail-tab {
+	margin-right: 0px !important;
+}
+.tabmail-tab::before, .tabmail-tab::after {
+	display: none !important;
+}
+.tabmail-tab:hover > .tab-stack > .tab-background:not([selected="true"]) {
+	background-color: #2A2A2A !important;
+}
+.tab-background[selected="true"] {
+	background: #2A2A2A !important;
+}
+
+#mail-toolbox::after {
+	border-bottom: 0px !important;
+	height: 0px !important;
+}
+#navigation-toolbox {
+	background-color: black !important;
+}
+#menubar-items {
+	margin-bottom: 0px !important;
+}
+#mail-menubar > menu {
+	padding: 0px !important;
+	height: 32px !important;
+}
+splitter {
+	border-inline-start: 1px solid rgb(40,40,40) !important;
+}
+splitter[orient="vertical"] {
+	border-bottom: 1px solid rgb(40,40,40) !important;
+}
+#today-splitter {
+	border-inline-start: none !important;
+	border-inline-end: 1px solid rgb(40,40,40) !important;
+}
+.emailDisplayButton:hover {
+	color: white !important;
+	background-color: var(--uwp-accent-color) !important;
+}
+
+/* Titlebar buttons */
+#calendar-tab-button, #task-tab-button {
+	width: 48px !important;
+	margin: 0px !important;
+	border: none !important;
+	box-shadow: none !important;
+	transition: none !important;
+}
+#calendar-tab-button:hover, #task-tab-button:hover {
+	background-color: var(--titlebar-min-max-hover-bg-color) !important;
+}
+#calendar-tab-button:hover:active, #task-tab-button:hover:active {
+	background-color: var(--titlebar-min-max-active-bg-color) !important;
+}
+/* Sidebar header */
+sidebarheader {
+	height: 40px !important;
+	border: none !important;
+}
+/* Main Pane */
+#appmenuPrimaryPane {
+	background-color: unset !important;
+	padding: 0px !important;
+}
+#appmenuPrimaryPane menupopup {
+	background-image: none !important;
+}
+#appmenuSecondaryPane {
+    --appMenu-bg-color: unset !important;
+	box-shadow: none !important;
+}
+/* Buttons */
+.toolbarbutton-1.msgHeaderView-button, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-button, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-dropmarker {
+	padding: 3px !important;
+	background-color: #333333 !important;
+	border: 2px #333333 solid !important;
+	color: white !important;
+	transition: none !important;
+}
+.toolbarbutton-1.msgHeaderView-button:hover, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-button:hover, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-dropmarker:hover {
+	color: white !important;
+	border: 2px #858585 solid !important;
+	transition: none !important;
+}
+.toolbarbutton-1.msgHeaderView-button:hover:active, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-button:hover:active, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-dropmarker:hover:active {
+	color: white !important;
+	background-color: #666666 !important;
+	border: 2px #858585 solid !important;
+	transition: none !important;
+	box-shadow: none !important;
+}
+.toolbarbutton-1:not([type="menu-button"]):not([disabled="true"]):-moz-any([open="true"], [checked="true"], :hover:active) {
+	color: white !important;
+	background-color: #666666 !important;
+	border: 2px #858585 solid !important;
+	transition: none !important;
+	box-shadow: none !important;
+}
+/* Status bar */
+statusbarpanel {
+	border-right: 1px solid rgb(40,40,40) !important;
+}
+
+:root:-moz-window-inactive {
+	--tab-line-color: rgb(128, 128, 128) !important;
+}
+:root {
+	--tab-line-color: var(--uwp-accent-color) !important;
+	--tab-loading-fill: var(--uwp-accent-color) !important;
+	--chrome-secondary-background-color: #2A2A2A !important;
+}

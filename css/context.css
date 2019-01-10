@@ -21,11 +21,12 @@
 		padding: 7px 0px 7px 9px !important;
 		border: none !important;
 		font-size: 12px !important;
+		height: 32px !important;
 	}
 	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menuitem:hover, menu:hover, menuitem[_moz-menuactive] {
+	menuitem:hover, menu:hover, menuitem[_moz-menuactive], menu[_moz-menuactive] {
 		background-color: #404040 !important;
 	}
 	menu[open] {
@@ -119,6 +120,19 @@
 		background-color: #2B2B2B !important;
 		border: 1px solid #1C1C1C !important;
 		padding: 6px !important;
+	}
+	splitmenu {
+		color: white !important;
+	}
+	.splitmenu-menuitem {
+		-moz-appearance: none !important;
+		padding-left: 9px !important;
+	}
+	.splitmenu-menuitem[_moz-menuactive="true"] {
+		background-color: #404040 !important;
+	}
+	.menu-text {
+		color: white !important;
 	}
 
 }
