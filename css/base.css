@@ -56,7 +56,7 @@
 	background-color: black !important;
 	-moz-appearance: -moz-win-glass !important;
 }
-#main-window[sizemode="normal"] {
+#main-window[sizemode="normal"][tabsintitlebar="true"] {
 	margin-top: 1px !important;
 }
 /* Tabs */

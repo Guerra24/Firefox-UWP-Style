@@ -5,7 +5,7 @@
   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
   xmlns:xbl="http://www.mozilla.org/xbl">
 
-  <binding id="execute_javascript_code" extends="chrome://global/content/bindings/toolbarbutton.xml#menu">
+  <binding id="execute_javascript_code">
 	<implementation>
 	  <constructor>
 		<![CDATA[
@@ -15,10 +15,11 @@
 				Components.stack.filename.lastIndexOf("/") + 1) + js_file_name, window);
 		  }
 		  
-		  load_js_script("custom_scrollbars.uc.js");
+		  load_js_script("js/custom_scrollbars.uc.js");
+		  load_js_script("js/custom_tooltips.uc.js");
 		  
 		  // load other scripts
-		  // load_js_script("my_script_name.uc.js");
+		  // load_js_script("js/my_script_name.uc.js");
 
 		]]>
 	  </constructor>

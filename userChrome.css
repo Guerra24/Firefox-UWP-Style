@@ -12,9 +12,9 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
-/* Scrollbars */
+/* Load custom JS */
 .titlebar-spacer[type="pre-tabs"] {
-	-moz-binding: url("./js/userChrome.xml#execute_javascript_code");
+	-moz-binding: url("./userChrome.xml#execute_javascript_code");
 }
 
 :root {

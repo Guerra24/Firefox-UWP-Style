@@ -2,7 +2,7 @@
 
 /* Firefox 57+ userChrome.js tweaks - SCROLLBARS ********************************************** */
 /* by Aris (aris-addons@gmx.net)*************************************************************** */
-/* Github: https://github.com/aris-t2/customscrollbarsforfx *********************************** */
+/* Github: https://github.com/Aris-t2/Scrollbars ********************************************** */
 /* ******************************************************************************************** */
 
 /* ******************************************************************************************** */
@@ -159,3 +159,4 @@ var scrollbar_size = {
 
 custom_scrollbars.init();
 scrollbar_size.init();
+console.log("Init Custom Scrollbars!");
