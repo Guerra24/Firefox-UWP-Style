@@ -25,7 +25,7 @@
 	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menuitem:hover, menu:hover, menuitem[_moz-menuactive] {
+	menuitem:hover, menu:hover, menuitem[_moz-menuactive], menu[_moz-menuactive] {
 		background-color: #404040 !important;
 	}
 	menu[open] {
@@ -112,6 +112,10 @@
 	}
 	.menu-accel {
 		padding: 0px !important;
+	}
+	.menu-text {
+		margin-top: 1px !important;
+		margin-bottom: 1px !important;
 	}
 	tooltip { /* Also update the js script */
 		-moz-appearance: none !important;
