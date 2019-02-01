@@ -309,16 +309,21 @@
 	treecol:active, .treecol-image:active {
 		background-color: rgb(60, 60, 60) !important;
 	}
-	.treecol-sortdirection[sortDirection="descending"] {
+	treecol[sortDirection="descending"]:not([hideheader="true"]) > *.treecol-sortdirection, .treecol-sortdirection[sortDirection="descending"] {
 		list-style-image: url(../img/arrowdown.png) !important;
 		width: 14px !important;
 		height: 10px !important;
 	}
-	.treecol-sortdirection[sortDirection="ascending"] {
+	treecol[sortDirection="ascending"]:not([hideheader="true"]) > *.treecol-sortdirection, .treecol-sortdirection[sortDirection="ascending"] {
 		list-style-image: url(../img/arrowdown.png) !important;
 		transform: rotate(180deg);
 		width: 14px !important;
 		height: 10px !important;
+	}
+	listheader {
+		box-shadow: none !important;
+		padding-bottom: 0px !important;
+		border: none !important;
 	}
 
 	/* Removes padding effect on click */

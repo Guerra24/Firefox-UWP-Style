@@ -88,7 +88,7 @@
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;
 	    --in-content-box-border-color: transparent !important;
-	    --in-content-item-hover: rgba(0,149,221,0.25);
+	    --in-content-item-hover: #191919 !important;
 	    --in-content-item-selected: #0a84ff;
 		--in-content-border-highlight: #0a84ff;
 	    --in-content-border-focus: #0a84ff;
@@ -182,6 +182,9 @@
 		padding-top: 8px !important;
 		width: 250px !important;
 		font-size: 12px !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		margin-top: 0px !important;
 	}
 	#categories > .category {
 		min-height: 40px !important;
@@ -208,6 +211,9 @@
 		margin-right: 10px !important;
 		background: var(--uwp-accent-color) !important;
 	}
+	#categories > .category[disabled] {
+		opacity: 0.5 !important;
+	}
 	#categories > .category:hover {
 		background-color: var(--in-content-category-background-hover) !important;
 	}
@@ -227,6 +233,10 @@
 		margin: 0px !important;
 		border: none !important;
 		height: 20px !important;
+	}
+	.message-bar {
+		background: transparent !important;
+		color: white !important;
 	}
 	/* Font Fixes */
 	textbox {
@@ -438,6 +448,9 @@
 	description.indent, .indent > description {
 		color: #999 !important;
 	}
+	.updateSettingCrossUserWarningContainer {
+		background-color: transparent !important;
+	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
 		margin-bottom: 8px !important;
@@ -507,6 +520,9 @@
 		padding-top: 3px !important;
 		padding-bottom: 3px !important;
 		background-color: #404040 !important;
+	}
+	.addon {
+		border: none !important;
 	}
 	/* Fixes for FF62~ */
 	.addon {
