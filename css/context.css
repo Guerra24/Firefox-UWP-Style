@@ -3,8 +3,8 @@
 	menupopup {
 		-moz-appearance: none !important;
 		padding: 5px 1px 5px 1px !important;
-		background-color: #2B2B2B !important;
-		border: 1px #1C1C1C solid !important;
+		background-color: var(--uwp-context-background) !important;
+		border: 1px var(--uwp-context-border) solid !important;
 		border-radius: 0px !important;
 		min-width: 258px !important;
 	}
@@ -13,11 +13,11 @@
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;
 		margin: 4px 11px 4px 11px !important;
-		background-color: #757575 !important;
+		background-color: var(--uwp-context-separator) !important;
 	}
 	menuitem, menu {
 		-moz-appearance: none !important;
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 		padding: 7px 0px 7px 9px !important;
 		border: none !important;
 		font-size: 12px !important;
@@ -26,20 +26,20 @@
 		color: gray !important;
 	}
 	menuitem:hover, menu:hover, menuitem[_moz-menuactive], menu[_moz-menuactive] {
-		background-color: #404040 !important;
+		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
 	menu[open] {
-		background-color: var(--uwp-accent-color) !important;
+		background-color: var(--uwp-context-menuitem-open) !important;
 	}
 	menuitem:hover:active, menu:hover:active, menuitem[selected] {
-		background-color: #555555 !important;
+		background-color: var(--uwp-context-menuitem-active) !important;
 	}
 	menugroup {
 		padding: 0px !important;
 		background-color: transparent !important;
 	}
 	menuitem > .menu-text, menuitem > .menu-iconic-text {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 		padding: 0px !important;
 	}
 	menuitem[type="checkbox"], menuitem[type="radio"] {
@@ -50,17 +50,17 @@
 	}
 	menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
 		padding: 7px 0px 0px 0px !important;
-		border: solid white;
+		border: solid var(--uwp-global-front);
 		border-width: 0 0 2px 2px;
 		transform: rotate(-45deg) scale(.75);
 		margin-bottom: 4px !important;
 	}
 	menuitem[checked="true"][type="radio"] > .menu-iconic-left {
 		padding: 1px !important;
-		border: solid white;
+		border: solid var(--uwp-global-front);
 		height: 17px !important;
 		border-radius: 100%;
-		background: white;
+		background: var(--uwp-global-front);
 		transform: scale(.5); 
 	}
 	menucaption {
@@ -106,7 +106,7 @@
 		padding: 7px !important;
 		margin-right: 12px !important;
 		color: white !important;
-		border: solid white;
+		border: solid var(--uwp-global-front);
 		border-width: 0 2px 2px 0px;
 		transform: rotate(-45deg) scale(.55);
 	}
@@ -119,9 +119,9 @@
 	}
 	tooltip { /* Also update the js script */
 		-moz-appearance: none !important;
-		color: white !important;
-		background-color: #2B2B2B !important;
-		border: 1px solid #1C1C1C !important;
+		color: var(--uwp-global-front) !important;
+		background-color: var(--uwp-context-tooltip) !important;
+		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
 	}
 

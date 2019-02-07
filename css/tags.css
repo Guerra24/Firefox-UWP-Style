@@ -3,7 +3,6 @@
 @-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	:root {
-		--uwp-header-background: #1F1F1F;
 		--urlbar-popup-url-color: var(--uwp-accent-color) !important;
 	}
 
@@ -16,25 +15,23 @@
 	button {
 		-moz-appearance: none !important;
 		padding: 3px !important;
-		background-color: #333333 !important;
-		border: 2px #333333 solid !important;
+		background-color: var(--uwp-tags-button) !important;
+		border: 2px var(--uwp-tags-button) solid !important;
 		border-radius: 0px !important;
-		color: white !important;
+		color: var(--uwp-tags-button-color) !important;
 		cursor: default !important;
 		transition: none !important;
 	}
 	button:hover, button[open] {
-		color: white !important;
-		border-color: #858585 !important;
+		border-color: var(--uwp-tags-button-hover) !important;
 	}
 	button:hover:active {
-		color: white !important;
-		background-color: #666666 !important;
-		border-color: #858585 !important;
+		background-color: var(--uwp-tags-button-hover-active) !important;
+		border-color: var(--uwp-tags-button-hover-active) !important;
 	}
 	button[disabled="true"]:hover, button[disabled="true"]:hover:active {
-		background-color: #333333 !important;
-		border-color: #333333 !important;
+		background-color: var(--uwp-tags-button) !important;
+		border-color: var(--uwp-tags-button) !important;
 	}
 	button:-moz-focusring {
 		outline: none !important;
@@ -58,17 +55,17 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"],input[type="text"] {
+	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"], input[type="text"] {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
-		border: 2px solid #666666 !important;
+		border: 2px solid var(--uwp-tags-textbox-border) !important;
 		border-radius: 0px !important;
-		background: #000000A0 !important;
-		color: white !important;
+		background: var(--uwp-tags-textbox) !important;
+		color: var(--uwp-tags-textbox-color) !important;
 	}
 	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
-		border: 2px solid #999999 !important;
+		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -108,7 +105,7 @@
 	listitem[selected="true"] {
 		background: #404040 !important;
 	}
-	dropmarker {
+	dropmarker { /* Change this */
 		-moz-appearance: none !important;
 		margin-right: 0px !important;
 		padding-right: 20px !important;
@@ -122,7 +119,7 @@
 	/* Check Box */
 	checkbox > .checkbox-check, input[type="checkbox"] {
 		-moz-appearance: none !important;
-		border: 2px solid #CCCCCC !important;
+		border: 2px solid var(--uwp-tags-checkbox) !important;
 		border-radius: 0px !important;
 		padding: 8px !important;
 		margin: 0px !important;
@@ -131,14 +128,14 @@
 		background-image: none !important;
 	}
 	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover {
-		border: 2px solid #FFFFFF !important;
+		border-color: var(--uwp-tags-checkbox-checked-hover) !important;
 	}
 	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
-		border: 2px solid #999999 !important;
-		background-color: #999999 !important;
+		border-color: var(--uwp-tags-checkbox-checked-active) !important;
+		background-color: var(--uwp-tags-checkbox-checked-active) !important;
 	}
 	.checkbox-check[checked="true"], input[type="checkbox"]:checked {
-		border: 2px solid var(--uwp-accent-color) !important;
+		border-color: var(--uwp-accent-color) !important;
 		background: var(--uwp-accent-color) url(../img/check.png) !important;
 	}
 	input[type="checkbox"] {
@@ -147,19 +144,20 @@
 		margin-right: 10px !important;
 	}
 	.checkbox-label-box {
+		color: var(--uwp-global-front);
 		margin-left: 10px !important;
 	}
 
 	/* Check Box Disabled */
 	checkbox[disabled="true"] > .checkbox-check {
-		border: 2px solid #666666 !important;
+		border-color: var(--uwp-tags-checkbox-disabled) !important;
 		padding: 8px !important;
 	}
 	checkbox[disabled="true"]:hover > .checkbox-check {
-		border: 2px solid #666666 !important;
+		border-color: var(--uwp-tags-checkbox-disabled) !important;
 	}
 	checkbox[disabled="true"]:active > .checkbox-check {
-		border: 2px solid #666666 !important;
+		border-color: var(--uwp-tags-checkbox-disabled) !important;
 		background-color: transparent !important;
 	}
 
@@ -226,7 +224,7 @@
 	/* Tree stuff */
 	/* This code only works on Firefox <=62 */
 	treechildren {
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
 		color: lightgray !important;
 		--treechildren-outline: none !important;
 		--treechildren-focusColor: rgb(123,195,255) !important;
@@ -249,28 +247,28 @@
 	}
 	/* Firefox >= 63 */
 	treechildren::-moz-tree-image {
-		fill: white !important;
+		fill: var(--uwp-global-front) !important;
 	}
 	treechildren::-moz-tree-twisty {
-		fill: white !important;
+		fill: var(--uwp-global-front) !important;
 	}
 	treechildren::-moz-tree-row {
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
 	}
 	treechildren::-moz-tree-row(hover) {
-		background-color: rgb(35,35,35) !important;
+		background-color: var(--uwp-tags-treechildren-row-hover) !important;
 	}
 	treechildren::-moz-tree-row(selected) {
-		background-color: rgb(60,60,60) !important;
+		background-color: var(--uwp-tags-treechildren-row-selected)  !important;
 	}
 	treechildren::-moz-tree-cell-text {
-		color: lightgray !important;
+		color: var(--uwp-global-front) !important;
 	}
 	treechildren::-moz-tree-cell-text(hover) {
-		color: rgb(220,220,220) !important;
+		color: var(--uwp-global-front) !important;
 	}
 	treechildren::-moz-tree-cell-text(selected) {
-		color: rgb(255,255,255) !important;
+		color: var(--uwp-global-front) !important;
 	}
 	tree {
 		-moz-appearance: none !important;
@@ -350,20 +348,20 @@
 	}
 	richlistitem {
 		background-color: transparent !important;
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 		border-radius: 0px !important;
 	}
 	richlistitem:hover {
-		background-color: #191919 !important;
+		background-color: var(--uwp-tags-richlistitem-hover) !important;
 	}
 	richlistitem:hover:active {
-		background-color: #333333 !important;
+		background-color: var(--uwp-tags-richlistitem-active) !important;
 	}
 	richlistitem[selected="true"] {
 		background-image: none !important;
 		background-clip: border-box !important;
 		outline: none !important;
-		background-color: #171717 !important;
+		background-color: var(--uwp-tags-richlistitem-selected) !important;
 	}
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: var(--uwp-accent-color) !important;
@@ -395,10 +393,11 @@
 	}
 	/* Customization Page */
 	#customization-content-container {
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
 	}
 	#customization-footer {
-		background-color: #161616 !important;
+		border-top: none !important;
+		background-color: var(--uwp-bottom-background) !important;
 	}
 	.customizationmode-button {
 		border-radius: 0px !important;
@@ -456,7 +455,7 @@
 	#customization-lwtheme-menu-recommended, #customization-lwtheme-menu-footer {
 		display: none !important;
 	}
-	.customization-lwtheme-menu-theme:not([label="Dark"]) {
+	.customization-lwtheme-menu-theme:not([label="Dark"]):not([label="Light"]) {
 		display: none !important;
 	}
 	/* Dev Tools */

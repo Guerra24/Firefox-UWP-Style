@@ -45,19 +45,35 @@
 		color: #666666 !important;
 	}
 	#editBookmarkPanelRows label {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 	label {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
+	}
+	#placesViewsDeck, #detailsDeck {
+		background: var(--uwp-global-back) !important;
 	}
 }
 
 @-moz-document url("chrome://browser/content/aboutDialog.xul") {
 	#aboutDialogContainer {
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
 	}
 	#bottomBox {
-		background-color: #202020 !important;
+		background-color: var(--uwp-bottom-background) !important;
+	}
+	#rightBox {
+		background-image: none !important;
+	}
+	#rightBox:before {
+		content: "";
+		position: fixed;
+		top: 20px !important;
+		mask-image: url("chrome://branding/content/about-wordmark.svg") !important;
+		background-color: var(--uwp-global-front) !important;
+		width: 270px !important;
+		height: 48px !important;
 	}
 	label {
 		color: var(--uwp-accent-color) !important;
@@ -69,16 +85,16 @@
 		color: #666666 !important;
 	}
 	.button-text {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 }
 
 @-moz-document url("chrome://browser/content/places/bookmarkProperties.xul"), url("chrome://browser/content/places/bookmarkProperties2.xul") {
 	#bookmarkproperties {
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
 	}
 	label {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 }
 

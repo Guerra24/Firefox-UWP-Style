@@ -1,0 +1,12 @@
+/**/
+
+:root {
+	--uwp-context-background: #DCDCDC;
+	--uwp-context-border: #C6C6C6;
+	--uwp-context-separator: #898989;
+	--uwp-context-menuitem-hover: #F2F2F2;
+	--uwp-context-menuitem-active: #EBEBEB;
+	--uwp-context-menuitem-open: #F8F8F8;
+	--uwp-context-tooltip: #F2F2F2;
+	--uwp-context-tooltip-border: #D1D1D1;
+}

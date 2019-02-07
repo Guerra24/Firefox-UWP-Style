@@ -12,6 +12,20 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
+/* Colors */
+/* Dark */
+@import url(./css/colors/tags-dark.css);
+@import url(./css/colors/context-dark.css);
+@import url(./css/colors/base-dark.css);
+@import url(./css/colors/pagesChrome-dark.css);
+
+/* Light *//*
+@import url(./css/colors/tags-light.css);
+@import url(./css/colors/context-light.css);
+@import url(./css/colors/base-light.css);
+@import url(./css/colors/pagesChrome-light.css);
+*/
+
 /* Load custom JS */
 .titlebar-spacer[type="pre-tabs"] {
 	-moz-binding: url("./userChrome.xml#execute_javascript_code");

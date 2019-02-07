@@ -2,6 +2,7 @@
 .titlebar-button {
 	width: 46px !important;
 	height: 32px !important;
+	stroke: var(--uwp-titlebar) !important;
 }
 .titlebar-button > .toolbarbutton-text {
 	display: none !important;
@@ -53,7 +54,7 @@
 }
 /* Window */
 #main-window[chromemargin] {
-	background-color: black !important;
+	background-color: var(--uwp-mainwindow) !important;
 	-moz-appearance: -moz-win-glass !important;
 }
 #main-window[sizemode="normal"][tabsintitlebar="true"] {
@@ -73,11 +74,8 @@
 .tabbrowser-tab > .tab-stack > .tab-background {
 	border-top: none !important;
 }
-.tabbrowser-tab > .tab-stack > .tab-background[selected] {
-	background: #2A2A2A !important;
-}
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
-	background: #2A2A2A !important;
+	background: var(--uwp-tabbar-tab-hover) !important;
 }
 .tab-throbber[progress]:not([selected="true"])::before {
     fill: #555555 !important;
@@ -86,15 +84,14 @@
 	display: none !important;
 }
 .tabs-newtab-button, #new-tab-button, #alltabs-button {
-	color: rgba(240, 240, 240, 1) !important;
 	background: transparent !important;
 	margin-bottom: 0px !important;
 }
 .tabs-newtab-button:hover, #new-tab-button:hover, #alltabs-button:hover, .scrollbutton-up:hover, .scrollbutton-down:hover {
-	background: #2A2A2A !important
+	background: var(--uwp-tabbar-button-hover) !important
 }
-.tabs-newtab-button:hover:active, #new-tab-button:hover:active, #alltabs-button:hover:active, .scrollbutton-up:hover:active, .scrollbutton-down:hover:active {
-	background: #444 !important
+.tabs-newtab-button:hover:active, #new-tab-button:hover:active, #alltabs-button:hover:active, .scrollbutton-up:hover:active, .scrollbutton-down:hover:active, #alltabs-button[open] {
+	background: var(--uwp-tabbar-button-hover-active) !important
 }
 .scrollbutton-up, .scrollbutton-down {
 	margin-bottom: 0px !important;
@@ -117,9 +114,6 @@
 #alltabs-button > .toolbarbutton-badge-stack {
 	background: none !important;
 }
-#alltabs-button[open] {
-	background: #444 !important;
-}
 .all-tabs-item[selected] {
     box-shadow: inset 4px 0 var(--uwp-accent-color) !important;
 }
@@ -131,7 +125,7 @@
 	background-color: transparent !important;
 }
 #nav-bar textbox:hover {
-	background-color: rgba(75, 75, 75, 1) !important;
+	background-color: var(--uwp-navbar-background-hover) !important;
 }
 #urlbar, .searchbar-textbox {
 	border: none !important;
@@ -140,17 +134,8 @@
 	margin-left: 1px !important;
 	margin-right: 1px !important;
 }
-window:not([chromehidden~="toolbar"]) #urlbar-container > .toolbarbutton-1:-moz-any([disabled], :not([open]):not([disabled]):not(:active)) > .toolbarbutton-icon[class], #main-window:not([customizing]) #back-button[disabled] > .toolbarbutton-icon[class] {
-	background-image: none !important;
-	background-color: rgba(40, 40, 40, 0) !important;
-	box-shadow: none !important;
-	border: 0px !important;
-}
 toolbarbutton.bookmark-item {
-	border: none!important;
-}
-toolbarbutton.bookmark-item:hover {
-	background-color: rgba(75, 75, 75, 1) !important;
+	border: none !important;
 }
 toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 	padding-right: 0px !important;
@@ -163,7 +148,7 @@ toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 	border-bottom: 0px !important;
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
-	background: #1A1A1A !important;
+	background: var(--uwp-browser) !important;
 }
 #urlbar, .searchbar-textbox {
 	box-shadow: none !important;
@@ -176,11 +161,10 @@ toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 .findbar-find-previous, .findbar-find-next {
 	border: none !important;
 	margin-left: 5px !important;
-	background: rgb(80, 80, 80) !important;
 	border-radius: 0px !important;
 }
 findbar {
-	background-color: #161616 !important;
+	background-color: var(--uwp-findbar-background) !important;
 	border-top: none !important;
 }
 findbar[hidden] {
@@ -191,18 +175,18 @@ findbar[hidden] {
 .findbar-button, .findbar-find-previous, .findbar-find-next {
 	-moz-appearance: none !important;
 	padding: 3px !important;
-	background-color: #333333 !important;
-	border: 2px #333333 solid !important;
+	background-color: var(--uwp-tags-button) !important;
+	border: 2px var(--uwp-tags-button) solid !important;
 	color: white !important;
 }
 .findbar-button:hover, .findbar-find-previous:hover, .findbar-find-next:hover {
 	color: white !important;
-	border: 2px #858585 solid !important;
+	border: 2px var(--uwp-tags-button-hover) solid !important;
 }
 .findbar-button:hover:active, .findbar-find-previous:hover:active, .findbar-find-next:hover:active {
 	color: white !important;
-	background-color: #666666 !important;
-	border: 2px #858585 solid !important;
+	background-color: var(--uwp-tags-button-hover-active) !important;
+	border: 2px var(--uwp-tags-button-hover-active) solid !important;
 }
 .findbar-button[checked="true"] {
 	background-color: var(--uwp-accent-color) !important;
@@ -210,11 +194,11 @@ findbar[hidden] {
 }
 .findbar-button[checked="true"]:hover {
 	color: white !important;
-	border: 2px #858585 solid !important;
+	border: 2px var(--uwp-tags-button-hover) solid !important;
 }
 .findbar-find-previous[disabled="true"]:hover, .findbar-find-next[disabled="true"]:hover, .findbar-find-previous[disabled="true"]:hover:active, .findbar-find-next[disabled="true"]:hover:active {
-	border: 2px #333333 solid !important;
-	background-color: #333333 !important;
+	border: 2px var(--uwp-tags-button) solid !important;
+	background-color: var(--uwp-tags-button) !important;
 }
 .toolbarbutton-text {
 	padding: 3px !important;
@@ -291,13 +275,13 @@ panel .text-link {
 }
 .autocomplete-richlistbox {
 	padding: 0 !important;
-	background: rgb(42, 42, 42) !important;
+	background: var(--uwp-autocomplete-list) !important;
 }
 .autocomplete-richlistitem {
-	background: rgb(42, 42, 42) !important;
+	background: var(--uwp-autocomplete-list) !important;
 }
 .search-panel-one-offs {
-	background-color: #333333 !important;
+	background-color: var(--uwp-autocomplete-oneoffs) !important;
 }
 .searchbar-engine-one-off-item {
 	min-width: 38px !important;
@@ -310,7 +294,7 @@ button.dummy:hover {
 }
 button.searchbar-engine-one-off-item[selected] {
 	color: white !important;
-	border: 2px #858585 solid !important;
+	border: 2px var(--uwp-tags-button-hover) solid !important;
 }
 /* Tracking toggle */
 #appMenu-tp-toggle {
@@ -328,9 +312,6 @@ button.searchbar-engine-one-off-item[selected] {
 	margin-top: -2px !important;
 }
 /* Customization Page Overflow */
-#customization-panelWrapper > .panel-arrowcontent {
-	background: rgba(42, 42, 42, 1) !important;
-}
 #customization-panel-container {
 	padding-right: 0px !important;
 }
@@ -340,15 +321,15 @@ button.searchbar-engine-one-off-item[selected] {
 }
 /* Sidebar */
 #sidebar-header {
-	background: #2A2A2A !important;
-	color: white !important;
+	background: var(--uwp-sidebar) !important;
+	color: var(--uwp-global-front) !important;
 	border-bottom: none !important;
 }
 #sidebar-switcher-target > #sidebar-icon {
-	fill: white !important;
+	fill: var(--uwp-global-front) !important;
 }
 #sidebar-search-container {
-	background: black !important;
+	background: var(--uwp-sidebar-search) !important;
 }
 #sidebar-splitter {
 	border-right: none !important;
@@ -357,12 +338,12 @@ button.searchbar-engine-one-off-item[selected] {
 	min-width: 0px !important;
 }
 #sidebar-box {
-	background-color: black !important;
+	background-color: var(--uwp-sidebar-box) !important;
 }
 /* Status Panel */
 #statuspanel-label {
-	background-color: #2A2A2A !important;
-	color: lightgray !important;
+	background-color: var(--uwp-statuspanel) !important;
+	color: var(--uwp-statuspanel-color) !important;
 	border: none !important;
 	padding: 4px !important;
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
@@ -371,22 +352,11 @@ button.searchbar-engine-one-off-item[selected] {
 notification {
 	background-color: var(--uwp-bottom-background) !important;
 	border: none !important;
-	color: white !important;
+	color: var(--uwp-global-front) !important;
 }
 :root {
-	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
-	--titlebar-min-max-active-bg-color: #444;
-	--titlebar-close-hover-bg-color: #E81123;
-	--titlebar-close-active-bg-color: #F06F79;
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
-	--arrowpanel-background: #2A2A2A !important;
-	--arrowpanel-dimmed: #2A2A2A !important;
-	--chrome-background-color: black !important;
-	--chrome-secondary-background-color: #2A2A2A !important;
-	--toolbar-bgcolor: #2A2A2A !important;
-
-	--uwp-bottom-background: #161616;
 }
 
 /* Testing shadows  */

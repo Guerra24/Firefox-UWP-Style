@@ -1,0 +1,49 @@
+/**/
+
+:root {
+	--uwp-mainwindow: #E6E6E6;
+	--uwp-tabbar-tab-hover: white;
+	--uwp-tabbar-button-hover: #D5D5D5;
+	--uwp-tabbar-button-hover-active: #BBBBBB;
+	--uwp-navbar-background-hover: #DEDEDE;
+	--uwp-browser: #1A1A1A;
+	--uwp-findbar: #161616;
+	--uwp-autocomplete-list: white;
+	--uwp-autocomplete-oneoffs: #333333;
+	--uwp-sidebar: #2A2A2A;
+	--uwp-sidebar-search: black;
+	--uwp-sidebar-box: black;
+	--uwp-statuspanel: #2A2A2A;
+	--uwp-statuspanel-color: lightgray;
+	
+	--titlebar-min-max-hover-bg-color: white;
+	--titlebar-min-max-active-bg-color: #444;
+	--titlebar-close-hover-bg-color: #E81123;
+	--titlebar-close-active-bg-color: #F06F79;
+	--arrowpanel-background: white !important;
+	--arrowpanel-dimmed: #CDCDCD !important;
+	--chrome-background-color: black !important;
+	--chrome-secondary-background-color: #2A2A2A !important;
+	--toolbar-bgcolor: white !important;
+
+	--uwp-bottom-background: #E6E6E6;
+	
+	--uwp-titlebar: black;
+}
+
+:root:-moz-window-inactive {
+	--uwp-titlebar: #4C4C4C;
+}
+
+:root #titlebar {
+    --lwt-toolbarbutton-icon-fill: black !important;
+    --toolbarbutton-icon-fill-opacity: 1 !important;
+}
+
+:root:-moz-window-inactive #titlebar {
+    --lwt-toolbarbutton-icon-fill: gray !important;
+}
+
+.tabbrowser-tab:-moz-lwtheme {
+	color: black !important;
+}
