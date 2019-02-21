@@ -152,7 +152,7 @@
 		content: "";
 		display: block !important;
 		padding: 12px 3px !important;
-		margin-right: 10px !important;
+		margin-right: 6px !important;
 		background: transparent !important;
 	}
 	#categories > .category[selected] {
@@ -162,7 +162,6 @@
 		content: "";
 		display: block !important;
 		padding: 12px 3px !important;
-		margin-right: 10px !important;
 		background: var(--uwp-accent-color) !important;
 	}
 	#categories > .category[disabled] {
@@ -198,6 +197,27 @@
 	}
 	.anonymous-div {
 		line-height: inherit !important;
+	}
+}
+/* Move this in the future */
+@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+	@media (max-width: 830px) {
+		#categories {
+			width: 40px !important;
+		}
+		#categories > .category {
+			padding-inline-start: 0px; !important;
+			margin-inline-end: 0px !important;
+			padding-right: 2px !important;
+		}
+		.main-content {
+			padding-left: 28px !important;
+			padding-right: 28px !important;
+		}
+		sidebar-footer-button > .text-link {
+			margin-inline-start: 0px !important;
+			padding-left: 0px !important;
+		}
 	}
 }
 
@@ -404,6 +424,9 @@
 	}
 	.updateSettingCrossUserWarningContainer {
 		background-color: transparent !important;
+	}
+	.navigation {
+		overflow-y: hidden !important;
 	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
