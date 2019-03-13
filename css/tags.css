@@ -127,14 +127,14 @@
 		background-color: transparent !important;
 		background-image: none !important;
 	}
-	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover {
+	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-checked-hover) !important;
 	}
-	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
+	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:Active > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-checked-active) !important;
 		background-color: var(--uwp-tags-checkbox-checked-active) !important;
 	}
-	.checkbox-check[checked="true"], input[type="checkbox"]:checked {
+	.checkbox-check[checked="true"], input[type="checkbox"]:checked, checkbox[checked="true"] > .checkbox-check {
 		border-color: var(--uwp-accent-color) !important;
 		background: var(--uwp-accent-color) url(../img/check.png) !important;
 	}

@@ -419,6 +419,11 @@
 	.accessory-button {
 		height: auto !important;
 	}
+	.extension-controlled {
+		fill: var(--uwp-global-front) !important;
+		-moz-context-properties: fill !important;
+		background-color: transparent !important;
+	}
 	description.indent, .indent > description {
 		color: #999 !important;
 	}
