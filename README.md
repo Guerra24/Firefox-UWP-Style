@@ -9,7 +9,7 @@ This theme only supports the default Dark mode and Compact UI, selection of othe
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-65 > Firefox 65.
+- firefox-65 > Firefox 65, 66 & 67
 - firefox-61 > Firefox 61, 62, 63 & 64.
 - firefox-58 > Firefox 58, 59 & 60.
 
