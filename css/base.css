@@ -269,7 +269,7 @@ panel .text-link {
 #appMenu-notification-popup {
 	margin-top: -2px !important;
 }
-/* URL Panel */
+/* URL Panel Pre-68 */
 #PopupAutoCompleteRichResult {
 	border: none !important;
 }
@@ -295,6 +295,16 @@ button.dummy:hover {
 button.searchbar-engine-one-off-item[selected] {
 	color: white !important;
 	border: 2px var(--uwp-tags-button-hover) solid !important;
+}
+/* URL Panel Post-68 */
+#urlbarView-results {
+	padding: 0px !important;
+}
+#urlbar-results {
+	border: none !important;
+}
+.urlbarView-row {
+	border-radius: 0px !important;
 }
 /* Tracking toggle */
 #appMenu-tp-toggle {
@@ -353,6 +363,24 @@ notification {
 	background-color: var(--uwp-bottom-background) !important;
 	border: none !important;
 	color: var(--uwp-global-front) !important;
+}
+/* FXA Panel */
+.PanelUI-fxa-signin-button {
+	padding: 3px !important;
+	background-color: var(--uwp-tags-button) !important;
+	border: 2px var(--uwp-tags-button) solid !important;
+	border-radius: 0px !important;
+	color: var(--uwp-tags-button-color) !important;
+}
+.PanelUI-fxa-signin-button:hover {
+	border-color: var(--uwp-tags-button-hover) !important;
+}
+.PanelUI-fxa-signin-button:hover:active {
+	background-color: var(--uwp-tags-button-hover-active) !important;
+	border-color: var(--uwp-tags-button-hover-active) !important;
+}
+#PanelUI-fxa-menu-syncnow-button[syncstatus="active"] > .toolbarbutton-icon {
+	fill: var(--uwp-accent-color) !important;
 }
 :root {
 	--toolbarbutton-border-radius: 0px !important;

@@ -29,6 +29,11 @@
 	--uwp-bottom-background: #161616;
 	
 	--uwp-titlebar: white;
+
+	--autocomplete-popup-background: #2A2A2A !important;
+	--autocomplete-popup-color: var(--uwp-global-front) !important;
+	--autocomplete-popup-highlight-background: var(--uwp-accent-color) !important;
+	--uwp-autocomplete-hover: #202020;
 }
 
 :root:-moz-window-inactive {
