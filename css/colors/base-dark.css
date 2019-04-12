@@ -21,7 +21,7 @@
 	--titlebar-close-hover-bg-color: #E81123;
 	--titlebar-close-active-bg-color: #F06F79;
 	--arrowpanel-background: #2A2A2A !important;
-	--arrowpanel-dimmed: #2A2A2A !important;
+	--arrowpanel-dimmed: #3C3C3C !important;
 	--chrome-background-color: black !important;
 	--chrome-secondary-background-color: #2A2A2A !important;
 	--toolbar-bgcolor: #2A2A2A !important;
@@ -33,7 +33,6 @@
 	--autocomplete-popup-background: #2A2A2A !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
 	--autocomplete-popup-highlight-background: var(--uwp-accent-color) !important;
-	--uwp-autocomplete-hover: #202020;
 }
 
 :root:-moz-window-inactive {

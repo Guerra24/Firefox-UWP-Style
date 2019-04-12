@@ -1,28 +1,29 @@
 /**/
+@media (prefers-color-scheme: light) {
+	:root {
+		--uwp-global-front: black;
+		--uwp-global-back: white;
 
-:root {
-	--uwp-global-front: black;
-	--uwp-global-back: white;
-	
-	--uwp-tags-button: #CCCCCC;
-	--uwp-tags-button-hover: #7A7A7A;
-	--uwp-tags-button-hover-active: #999999;
-	--uwp-tags-button-color: var(--uwp-global-front);
-	--uwp-tags-textbox: white;
-	--uwp-tags-textbox-border: #999999;
-	--uwp-tags-textbox-color: var(--uwp-global-front);
-	--uwp-tags-textbox-hover: #666666;
-	--uwp-tags-checkbox: #333333;
-	--uwp-tags-checkbox-checked-hover: black;
-	--uwp-tags-checkbox-checked-active: #666666;
-	--uwp-tags-checkbox-disabled: #666666;
-	
-	--uwp-tags-richlistitem-hover: #E6E6E6;
-	--uwp-tags-richlistitem-active: #CCCCCC;
-	--uwp-tags-richlistitem-selected: #F2F2F2;
-	
-	--uwp-tags-treechildren-row-hover: #D0D0D0;
-	--uwp-tags-treechildren-row-selected: #B0B0B0;
-	
-	--uwp-header-background: #E6E6E6;
+		--uwp-tags-button: #CCCCCC;
+		--uwp-tags-button-hover: #7A7A7A;
+		--uwp-tags-button-hover-active: #999999;
+		--uwp-tags-button-color: var(--uwp-global-front);
+		--uwp-tags-textbox: white;
+		--uwp-tags-textbox-border: #999999;
+		--uwp-tags-textbox-color: var(--uwp-global-front);
+		--uwp-tags-textbox-hover: #666666;
+		--uwp-tags-checkbox: #333333;
+		--uwp-tags-checkbox-checked-hover: black;
+		--uwp-tags-checkbox-checked-active: #666666;
+		--uwp-tags-checkbox-disabled: #666666;
+
+		--uwp-tags-richlistitem-hover: #E6E6E6;
+		--uwp-tags-richlistitem-active: #CCCCCC;
+		--uwp-tags-richlistitem-selected: #F2F2F2;
+
+		--uwp-tags-treechildren-row-hover: #D0D0D0;
+		--uwp-tags-treechildren-row-selected: #B0B0B0;
+
+		--uwp-header-background: #E6E6E6;
+	}
 }
