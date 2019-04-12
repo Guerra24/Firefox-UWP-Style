@@ -342,10 +342,8 @@ button.searchbar-engine-one-off-item[selected] {
 	background: var(--uwp-sidebar-search) !important;
 }
 #sidebar-splitter {
-	border-right: none !important;
-	margin: 0px !important;
-	width: 0px !important;
-	min-width: 0px !important;
+	border: none !important;
+	min-width: 3px !important;
 }
 #sidebar-box {
 	background-color: var(--uwp-sidebar-box) !important;
