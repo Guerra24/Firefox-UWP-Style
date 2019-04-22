@@ -144,7 +144,7 @@ toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 #content-deck {
 	-moz-appearance: -moz-win-exclude-glass !important;
 }
-#navigator-toolbox::after {
+#navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {

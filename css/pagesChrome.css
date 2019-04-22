@@ -311,3 +311,6 @@
 		background: transparent !important;
 	}
 }
+
+@-moz-document url("chrome://global/content/pictureinpicture/player.xhtml") {
+}
