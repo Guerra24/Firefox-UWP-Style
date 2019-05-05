@@ -29,7 +29,9 @@
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
 	menu[open] {
-		background-color: var(--uwp-context-menuitem-open) !important;
+		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
+		background-blend-mode: multiply;
+		background-color: rgb(80,80,80) !important;
 	}
 	menuitem:hover:active, menu:hover:active, menuitem[selected] {
 		background-color: var(--uwp-context-menuitem-active) !important;

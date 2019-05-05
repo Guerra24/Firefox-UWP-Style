@@ -433,6 +433,20 @@
 	.navigation {
 		overflow-y: hidden !important;
 	}
+	.searchBarImage {
+		-moz-context-properties: fill, stroke;
+		fill: var(--chrome-secondary-background-color) !important;
+		stroke: gray !important;
+	}
+	.content-blocking-category {
+		border-radius: 0px !important;
+		border: none !important;
+	}
+	.content-blocking-category.selected {
+		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
+		background-blend-mode: multiply;
+		background-color: rgb(140,140,140) !important;
+	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
 		margin-bottom: 8px !important;
@@ -483,9 +497,15 @@
 	.detail-row, .detail-row-complex {
 		text-shadow: none !important;
 	}
-	.addon-view[type="plugin"] .icon {
-		fill: white !important;
+	.icon[src=""] {
+		fill: var(--uwp-global-front) !important;
 		-moz-context-properties: fill !important;
+	}
+	.addon-view[notification], .addon-view[pending] {
+		background-image: none !important;
+	}
+	.addon[privateBrowsing="true"] .privateBrowsing-notice-container {
+		margin-top: 5px !important;
 	}
 	.alert {
 		color: white !important;
