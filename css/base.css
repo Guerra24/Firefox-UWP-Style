@@ -53,13 +53,18 @@
 	height: 0 !important;
 }
 /* Window */
+/* Temporal fix for top border */
+#main-window[chromemargin] {
+	background-color: var(--uwp-mainwindow) !important;
+}
+/*
 #main-window[chromemargin] {
 	background-color: var(--uwp-mainwindow) !important;
 	-moz-appearance: -moz-win-glass !important;
 }
 #main-window[sizemode="normal"][tabsintitlebar="true"] {
 	margin-top: 1px !important;
-}
+}*/
 /* Tabs */
 .toolbar-items > spacer:first-of-type {
 	display: none !important;
@@ -343,10 +348,12 @@ button.searchbar-engine-one-off-item[selected] {
 }
 #sidebar-splitter {
 	border: none !important;
-	min-width: 3px !important;
 }
 #sidebar-box {
 	background-color: var(--uwp-sidebar-box) !important;
+}
+body[lwt-sidebar] {
+	background-color: var(--uwp-global-back) !important;
 }
 /* Status Panel */
 #statuspanel-label {
@@ -383,6 +390,10 @@ notification {
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
+}
+/* Temporal fix for top border */
+:root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive {
+    border-top-color: #2B2B2B !important;
 }
 
 /* Testing shadows  */

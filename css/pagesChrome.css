@@ -63,7 +63,7 @@
 	#bottomBox {
 		background-color: var(--uwp-bottom-background) !important;
 	}
-	#rightBox {
+	/*#rightBox {
 		background-image: none !important;
 	}
 	#rightBox:before {
@@ -74,7 +74,7 @@
 		background-color: var(--uwp-global-front) !important;
 		width: 270px !important;
 		height: 48px !important;
-	}
+	}*/
 	label {
 		color: var(--uwp-accent-color) !important;
 	}

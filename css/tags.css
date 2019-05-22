@@ -55,7 +55,7 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"], input[type="text"] {
+	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"], input[type="text"], input[type="number"] {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
@@ -63,11 +63,11 @@
 		background: var(--uwp-tags-textbox) !important;
 		color: var(--uwp-tags-textbox-color) !important;
 	}
-	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover {
+	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="number"]:hover {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
-	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus {
+	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="number"]:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: white !important;
@@ -333,6 +333,10 @@
 	}
 	treecols {
 		border-bottom: 0px !important;
+	}
+	treecol[hideheader="true"], treecol[hideheader="true"] > .treecol-image {
+		padding: 0px !important;
+		height: 0px !important;
 	}
 	.treecol-image {
 		padding: 5px 10px !important;

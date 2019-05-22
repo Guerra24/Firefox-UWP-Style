@@ -6,14 +6,15 @@ This is a very visually simple theme that follows MDL2 styling with the accent c
 
 This theme only supports the default Dark mode and Compact UI, selection of other type [in the customization page](https://puu.sh/AORte/1e2ae0255e.png) is disabled.
 
+From Firefox 69 onwards, new users will have to toggle the `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` to enable both userChrome.css and userContent.css, users that already had a css file will have it enabled by default.
+
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-65 > Firefox 65, 66 & 67
+- firefox-68 > Firefox 68.
+- firefox-65 > Firefox 65, 66 & 67.
 - firefox-61 > Firefox 61, 62, 63 & 64.
 - firefox-58 > Firefox 58, 59 & 60.
-
-The firefox-58 branch has an incomplete theme, I have plans for back-porting features only to FF60 so I might end creating a ff60 branch.
 
 ### With Git
 

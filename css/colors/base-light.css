@@ -33,6 +33,8 @@
 		--autocomplete-popup-background: #2A2A2A !important;
 		--autocomplete-popup-color: var(--uwp-global-front) !important;
 		--autocomplete-popup-highlight-background: var(--uwp-accent-color) !important;
+
+	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
 	}
 
 	:root:-moz-window-inactive {
