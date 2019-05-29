@@ -99,6 +99,7 @@
 		height: 40px !important;
 		margin-inline-start: 0px !important;
 		padding-left: 16px !important;
+		color: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-button > .text-link:hover {
 		border-radius: 0px !important;

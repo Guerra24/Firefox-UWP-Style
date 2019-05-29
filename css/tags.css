@@ -1,6 +1,6 @@
 /* Base tags for chrome:// and about: pages */
 
-@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
 	:root {
 		--urlbar-popup-url-color: var(--uwp-accent-color) !important;
@@ -55,7 +55,7 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"], input[type="text"], input[type="number"] {
+	textbox:not(#urlbar):not(.searchbar-textbox), input[type="email"], input[type="tel"], input[type="text"], input[type="number"], .findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
@@ -63,11 +63,11 @@
 		background: var(--uwp-tags-textbox) !important;
 		color: var(--uwp-tags-textbox-color) !important;
 	}
-	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="number"]:hover {
+	textbox:not(#urlbar):not(.searchbar-textbox):hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="number"]:hover, .findbar-textbox:hover {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
-	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="number"]:focus {
+	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="number"]:focus, .findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: white !important;
@@ -146,6 +146,9 @@
 	.checkbox-label-box {
 		color: var(--uwp-global-front);
 		margin-left: 10px !important;
+	}
+	.checkbox-icon {
+		fill: var(--uwp-global-back) !important;
 	}
 
 	/* Check Box Disabled */

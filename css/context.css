@@ -1,4 +1,4 @@
-@-moz-document url-prefix("chrome://"), url-prefix("about:") {
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
 	menupopup {
 		-moz-appearance: none !important;
@@ -77,7 +77,7 @@
 	}
 	menulist, menulist[disabled="true"] {
 		-moz-appearance: none !important;
-		padding: 4px 4px 4px 4px !important;
+		padding: 4px 6px 4px 6px !important;
 		border: 2px solid #666666 !important;
 		border-radius: 0px !important;
 		background-color: transparent !important;
@@ -85,7 +85,7 @@
 		height: auto !important;
 	}
 	menulist:hover {
-		padding: 4px 4px 4px 4px !important;
+		padding: 4px 6px 4px 6px !important;
 		border: 2px solid #999999 !important;
 		background-color: transparent !important;
 	}
