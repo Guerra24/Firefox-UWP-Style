@@ -1,6 +1,6 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
-	menupopup {
+	menupopup, panel-list {
 		-moz-appearance: none !important;
 		padding: 5px 1px 5px 1px !important;
 		background-color: var(--uwp-context-background) !important;
@@ -8,11 +8,12 @@
 		border-radius: 0px !important;
 		min-width: 258px !important;
 	}
-	menuseparator {
+	menuseparator, panel-item-separator {
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;
 		margin: 4px 11px 4px 11px !important;
+		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
 	menuitem, menu {
@@ -125,6 +126,9 @@
 		background-color: var(--uwp-context-tooltip) !important;
 		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
+	}
+	.arrow.top, .arrow.bottom {
+		display: none !important;
 	}
 
 }
