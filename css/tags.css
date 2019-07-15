@@ -215,6 +215,18 @@
 	radio > .radio-label-box {
 		margin-left: 5px !important;
 	}
+	a {
+		color: var(--uwp-accent-color) !important;
+	}
+	a:hover {
+		color: #999999 !important;
+	}
+	a:hover:active{
+		color: #666666 !important;
+	}
+	a:visited {
+		color: gray !important;
+	}
 
 	.toolbarbutton-text {
 		color: inherit !important;

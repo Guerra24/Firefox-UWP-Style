@@ -514,10 +514,6 @@
 	}
 	#header-utils-btn {
 		fill: white !important;
-		border-radius: 0px !important;
-	}
-	#header-utils-btn:hover {
-		background-color: #202020 !important;
 	}
 	#header-utils-btn[open] {
 		padding-top: 3px !important;
@@ -527,6 +523,9 @@
 	.addon {
 		border: none !important;
 	}
+	#heading {
+		margin-top: 6px !important;
+	}
 	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
@@ -534,6 +533,37 @@
 		padding: 5px !important;
 	}
 }
+/* New HTML-based addons page */
+@-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html") {
+	:root{
+	}
+	.rating-star {
+		fill: var(--uwp-accent-color) !important;
+	}
+	.addon.card {
+		margin: 0px !important;
+		border: none !important;
+		border-radius: 0px !important;
+	}
+	addon-card:not([expanded]) > .addon.card:hover {
+		background: var(--uwp-tags-richlistitem-hover) !important;
+	}
+	addon-card:not([expanded]) > .addon.card:hover:active {
+		background: var(--uwp-tags-richlistitem-active) !important;
+	}
+	.card-heading-icon {
+		fill: var(--uwp-global-front) !important;
+		background-color: var(--uwp-accent-color) !important;
+		padding: 4px !important;
+	}
+	addon-card:not([expanded]) .card-contents {
+		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size) - 6px) !important;
+	}
+	addon-details, .addon-detail-row {
+		color: var(--uwp-global-front) !important;
+	}
+}
+
 /*
 @-moz-document url("about:memory") {
 	button + button {
