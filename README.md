@@ -41,14 +41,12 @@ Scrollbar JS loading code by [Aris-t2](https://github.com/Aris-t2) (https://gith
 
 ## Screenshots
 
-![img](https://puu.sh/BzsQn/83858043ab.png)
-![img](https://puu.sh/BzsRM/aa3536b535.png)
-![img](https://puu.sh/BzsTc/edeba2bc78.png)
-![img](https://puu.sh/BMm5H/dca6dae9eb.png)
-![img](https://puu.sh/BMm4d/af3e56da05.png)
-![img](https://puu.sh/BzsXr/20645805df.png)
-![img](https://puu.sh/BzsYI/1834702e23.png)
-![img](https://puu.sh/AlR4f/dbad98ce5f.png)
-![img](https://puu.sh/Bzt0m/f26db51f28.png)
-![img](https://puu.sh/Bzt1P/f85a90ab7a.png)
-![img](https://puu.sh/Bzt2p/e0f243c5be.png)
+![01](.github/screenshots/01.png)
+![02](.github/screenshots/02.png)
+![04](.github/screenshots/03.png)
+![05](.github/screenshots/04.png)
+![05](.github/screenshots/05.png)
+![06](.github/screenshots/06.png)
+![07](.github/screenshots/07.png)
+![08](.github/screenshots/08.png)
+![09](.github/screenshots/09.png)
