@@ -388,7 +388,7 @@
 	progressmeter, progress {
 		-moz-appearance: none !important;
 		border: none !important;
-		background: #333333 !important;
+		background: var(--uwp-tags-progressbar) !important;
 		height: 8px !important;
 	}
 	progressmeter > .progress-bar, progress::-moz-progress-bar {

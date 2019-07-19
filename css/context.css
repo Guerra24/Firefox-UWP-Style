@@ -8,7 +8,7 @@
 		border-radius: 0px !important;
 		min-width: 258px !important;
 	}
-	menuseparator, panel-item-separator {
+	menupopup menuseparator, panel-item-separator {
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;
@@ -16,49 +16,49 @@
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
-	menuitem, menu {
+	menupopup menuitem, menupopup menu {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		padding: 7px 0px 7px 9px !important;
 		border: none !important;
 		font-size: 12px !important;
 	}
-	menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	menupopup menuitem[disabled="true"], menupopup menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menuitem:hover, menu:hover, menuitem[_moz-menuactive], menu[_moz-menuactive] {
+	menupopup menuitem:hover, menupopup menu:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
-	menu[open] {
-		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
+	menupopup menu[open] {
+		background-image: var(--uwp-context-menuitem-open-image) !important;
 		background-blend-mode: multiply;
-		background-color: rgb(80,80,80) !important;
+		background-color: var(--uwp-context-menuitem-open) !important;
 	}
-	menuitem:hover:active, menu:hover:active, menuitem[selected] {
+	menupopup menuitem:hover:active, menupopup menu:hover:active, menupopup menuitem[selected] {
 		background-color: var(--uwp-context-menuitem-active) !important;
 	}
 	menugroup {
 		padding: 0px !important;
 		background-color: transparent !important;
 	}
-	menuitem > .menu-text, menuitem > .menu-iconic-text {
+	menupopup menuitem > .menu-text, menupopup menuitem > .menu-iconic-text {
 		color: var(--uwp-global-front) !important;
 		padding: 0px !important;
 	}
-	menuitem[type="checkbox"], menuitem[type="radio"] {
+	menupopup menuitem[type="checkbox"], menupopup menuitem[type="radio"] {
 		padding-left: 17px !important;
 	}
-	menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-iconic-text {
+	menupopup menuitem[type="checkbox"] > .menu-iconic-text, menupopup menuitem[type="radio"] > .menu-iconic-text {
 		padding-left: 5px !important;
 	}
-	menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
+	menupopup menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
 		padding: 7px 0px 0px 0px !important;
 		border: solid var(--uwp-global-front);
 		border-width: 0 0 2px 2px;
 		transform: rotate(-45deg) scale(.75);
 		margin-bottom: 4px !important;
 	}
-	menuitem[checked="true"][type="radio"] > .menu-iconic-left {
+	menupopup menuitem[checked="true"][type="radio"] > .menu-iconic-left {
 		padding: 1px !important;
 		border: solid var(--uwp-global-front);
 		height: 17px !important;
@@ -66,9 +66,26 @@
 		background: var(--uwp-global-front);
 		transform: scale(.5); 
 	}
-	menucaption {
+	menupopup menucaption {
 		background-color: transparent !important;
 		color: white !important;
+	}
+	menubar {
+	}
+	menubar > menu {
+		-moz-appearance: none !important;
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		font-size: 14px !important;
+		border: none !important;
+	}
+	menubar > menu:hover {
+		background-color: var(--uwp-context-menubar-hover) !important;
+	}
+	menubar > menu[open] {
+		background-color: var(--uwp-context-menubar-open) !important;
 	}
 	#ContentSelectDropdown > menupopup {
 		background-image: none !important;

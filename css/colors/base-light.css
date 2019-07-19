@@ -16,8 +16,8 @@
 	--uwp-statuspanel: #2A2A2A;
 	--uwp-statuspanel-color: lightgray;
 
-	--titlebar-min-max-hover-bg-color: white;
-	--titlebar-min-max-active-bg-color: #444;
+	--titlebar-min-max-hover-bg-color: #D5D5D5;
+	--titlebar-min-max-active-bg-color: #BBBBBB;
 	--titlebar-close-hover-bg-color: #E81123;
 	--titlebar-close-active-bg-color: #F06F79;
 	--arrowpanel-background: white !important;

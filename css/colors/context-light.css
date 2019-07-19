@@ -1,12 +1,15 @@
 /**/
 
 :root {
-	--uwp-context-background: #DCDCDC;
-	--uwp-context-border: #C6C6C6;
-	--uwp-context-separator: #898989;
-	--uwp-context-menuitem-hover: #F2F2F2;
-	--uwp-context-menuitem-active: #EBEBEB;
-	--uwp-context-menuitem-open: #F8F8F8;
+	--uwp-context-background: #D2D2D2;
+	--uwp-context-border: #B8B8B8;
+	--uwp-context-separator: #7E7E7E;
+	--uwp-context-menuitem-hover: #C2C2C2;
+	--uwp-context-menuitem-active: #AEAEAE;
+	--uwp-context-menuitem-open: #6A6A6A;
+	--uwp-context-menuitem-open-image: none;
 	--uwp-context-tooltip: #F2F2F2;
 	--uwp-context-tooltip-border: #D1D1D1;
+	--uwp-context-menubar-hover: #E6E6E6;
+	--uwp-context-menubar-open: #CCCCCC;
 }

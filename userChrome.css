@@ -34,7 +34,3 @@
 	--uwp-accent-color: -moz-win-accentcolor; /* Global Accent Color */
 }
 
-/* Hide back-forward buttons */
-#forward-button, #back-button {
-	display: none !important;
-}

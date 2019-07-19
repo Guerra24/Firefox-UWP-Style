@@ -14,12 +14,6 @@
 #restore-button {
 	list-style-image: url(../img/titlebox-full-restore.png) !important;
 }
-#titlebar-buttonbox, #TabsToolbar, #toolbar-menubar, #main-menubar {
-	height: 32px !important;
-}
-#toolbar-menubar > #menubar-items > #main-menubar > menu {
-	padding: 0px !important;
-}
 #main-window[sizemode="fullscreen"] #minimize-button {
 	padding-top: 8px !important;
 }
@@ -42,16 +36,13 @@
 	display: none !important;
 }
 .titlebar-spacer[type="post-tabs"] {
-	display: none !important;
+	width: 50px !important;
 }
 .titlebar-buttonbox-container, #window-controls {
-	margin-left: 50px !important;
 	margin-bottom: 0px !important;
+	-moz-box-align: start !important;
 }
-#toolbar-menubar[autohide="true"][inactive="true"]:not([customizing="true"]) {
-	min-height: 0 !important;
-	height: 0 !important;
-}
+
 /* Window */
 /* Temporal fix for top border */
 #main-window[chromemargin] {
@@ -88,66 +79,47 @@
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;
 }
-.tabs-newtab-button, #new-tab-button, #alltabs-button {
-	background: transparent !important;
-	margin-bottom: 0px !important;
-}
-.tabs-newtab-button:hover, #new-tab-button:hover, #alltabs-button:hover, .scrollbutton-up:hover, .scrollbutton-down:hover {
-	background: var(--uwp-tabbar-button-hover) !important
-}
-.tabs-newtab-button:hover:active, #new-tab-button:hover:active, #alltabs-button:hover:active, .scrollbutton-up:hover:active, .scrollbutton-down:hover:active, #alltabs-button[open] {
-	background: var(--uwp-tabbar-button-hover-active) !important
-}
 .scrollbutton-up, .scrollbutton-down {
 	margin-bottom: 0px !important;
 }
 .scrollbutton-up[disabled], .scrollbutton-up[disabled]:active, .scrollbutton-down[disabled], .scrollbutton-down[disabled]:active {
 	background: transparent !important;
 }
-.tabs-newtab-button .toolbarbutton-icon {
-	background: transparent !important;
+/* Toolbar buttons */
+.toolbar-items .toolbarbutton-1 {
+	margin-bottom: 0px !important;
 }
-#navigator-toolbox[movingtab] > #titlebar > #TabsToolbar {
-	padding-bottom: 0px !important;
+.toolbar-items .toolbarbutton-1:hover {
+	background: var(--uwp-tabbar-button-hover) !important;
 }
-#navigator-toolbox[movingtab] > #nav-bar {
-	margin-top: 0px !important;
+.toolbar-items .toolbarbutton-1:hover:active {
+	background: var(--uwp-tabbar-button-hover-active) !important;
 }
-#new-tab-button > .toolbarbutton-icon, #alltabs-button > .toolbarbutton-icon {
-	background-color: transparent !important;
-}
-#alltabs-button > .toolbarbutton-badge-stack {
+.toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
 	background: none !important;
 }
-.all-tabs-item[selected] {
-    box-shadow: inset 4px 0 var(--uwp-accent-color) !important;
+#PlacesToolbar .bookmark-item {
+	padding: 4px !important;
 }
 /* navbar stuff */
 #nav-bar {
 	box-shadow: none !important;
 }
-#nav-bar textbox {
+#nav-bar textbox, #urlbar, #searchbar {
 	background-color: transparent !important;
 }
-#nav-bar textbox:hover {
+#nav-bar textbox:hover, #urlbar:hover, #searchbar:hover {
 	background-color: var(--uwp-navbar-background-hover) !important;
 }
-#urlbar, .searchbar-textbox {
+#urlbar, .searchbar-textbox, #searchbar {
 	border: none !important;
 }
 #urlbar {
 	margin-left: 1px !important;
 	margin-right: 1px !important;
 }
-toolbarbutton.bookmark-item {
-	border: none !important;
-}
-toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
-	padding-right: 0px !important;
-	padding-left: 0px !important;
-}
 #content-deck {
-	-moz-appearance: -moz-win-exclude-glass !important;
+	/*-moz-appearance: -moz-win-exclude-glass !important;*/
 }
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
@@ -158,10 +130,6 @@ toolbarbutton.bookmark-item > .toolbarbutton-text[value=""] {
 #urlbar, .searchbar-textbox {
 	box-shadow: none !important;
 }
-.close-icon > .toolbarbutton-icon {
-	border-radius: 0px !important;
-}
-
 /* Findbar */
 .findbar-find-previous, .findbar-find-next {
 	border: none !important;
@@ -205,7 +173,7 @@ findbar[hidden] {
 	border: 2px var(--uwp-tags-button) solid !important;
 	background-color: var(--uwp-tags-button) !important;
 }
-.toolbarbutton-text {
+.findbar-button > .toolbarbutton-text {
 	padding: 3px !important;
 }
 .findbar-button > .toolbarbutton-text {
