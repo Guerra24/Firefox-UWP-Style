@@ -14,7 +14,7 @@
 	    --in-content-box-border-color: transparent !important;
 	    --in-content-item-hover: #191919 !important;
 	    --in-content-item-selected: #0a84ff;
-		--in-content-border-highlight: #0a84ff;
+		--in-content-border-highlight: var(--uwp-accent-color) !important;
 	    --in-content-border-focus: #0a84ff;
 	    --in-content-border-color: #282828 !important;
 	    --in-content-category-outline-focus: 1px dotted #0a84ff;

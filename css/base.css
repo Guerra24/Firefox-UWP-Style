@@ -101,6 +101,9 @@
 #PlacesToolbar .bookmark-item {
 	padding: 4px !important;
 }
+:root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #nav-bar > #PanelUI-button {
+	border: none !important;
+}
 /* navbar stuff */
 #nav-bar {
 	box-shadow: none !important;

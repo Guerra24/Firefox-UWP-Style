@@ -8,6 +8,7 @@
 	--uwp-tags-button-hover: #7A7A7A;
 	--uwp-tags-button-hover-active: #999999;
 	--uwp-tags-button-color: var(--uwp-global-front);
+	--uwp-tags-button-disabled-text: #858585;
 	--uwp-tags-textbox: white;
 	--uwp-tags-textbox-border: #999999;
 	--uwp-tags-textbox-color: var(--uwp-global-front);

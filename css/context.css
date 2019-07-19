@@ -101,6 +101,7 @@
 		background-color: transparent !important;
 		color: white !important;
 		height: auto !important;
+		box-shadow: none !important;
 	}
 	menulist:hover {
 		padding: 4px 6px 4px 6px !important;
