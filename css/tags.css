@@ -59,7 +59,9 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox), textarea, input:not([type="radio"]):not([type="checkbox"]):not(#urlbar-input):not(.textbox-input), .findbar-textbox {
+	textbox:not(#urlbar):not(.searchbar-textbox), textarea,
+	input[type="email"], input[type="tel"], input[type="text"], input[type="number"], input[type="url"], input[type="password"],
+	.findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
@@ -69,16 +71,21 @@
 		box-shadow: none !important;
 		opacity: 1 !important;
 	}
-	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover, input:not([type="radio"]):not([type="checkbox"]):not(#urlbar-input):not(.textbox-input):hover, .findbar-textbox:hover {
+	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover,
+	input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="number"]:hover, input[type="url"]:hover, input[type="password"]:hover,
+	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
-	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), textarea:focus, input:not([type="radio"]):not([type="checkbox"]):not(#urlbar-input):not(.textbox-input):focus, .findbar-textbox:focus {
+	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), textarea:focus,
+	input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="password"]:focus,
+	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: white !important;
 		color: black !important;
 	}
-	textboxt[disabled]:not(#urlbar):not(.searchbar-textbox), input[disabled]:not([type="radio"]):not([type="checkbox"]):not(#urlbar-input):not(.textbox-input), input[disabled]:not([type="radio"]):not([type="checkbox"]):not(#urlbar-input):not(.textbox-input):hover {
+	textboxt[disabled]:not(#urlbar):not(.searchbar-textbox),
+	input[disabled][type="email"], input[disabled][type="tel"], input[disabled][type="text"], input[disabled][type="number"], input[disabled][type="url"], input[disabled][type="url"] {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
@@ -129,7 +136,7 @@
 	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-checked-hover) !important;
 	}
-	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:Active > .checkbox-check {
+	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:active > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-checked-active) !important;
 		background-color: var(--uwp-tags-checkbox-checked-active) !important;
 	}
@@ -162,10 +169,10 @@
 	checkbox[disabled="true"][checked="true"] > .checkbox-check {
 		background-color: var(--uwp-tags-checkbox-disabled) !important;
 	}
-	checkbox[disabled="true"]:hover > .checkbox-check {
+	checkbox[disabled="true"][checked="true"]:hover > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-disabled) !important;
 	}
-	checkbox[disabled="true"]:hover:active > .checkbox-check {
+	checkbox[disabled="true"][checked="true"]:hover:active > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-disabled) !important;
 		background-color: var(--uwp-tags-checkbox-disabled) !important;
 	}
