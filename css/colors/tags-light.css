@@ -1,5 +1,5 @@
 /**/
-
+@media (prefers-color-scheme: light) {
 :root {
 	--uwp-global-front: black;
 	--uwp-global-back: white;
@@ -8,7 +8,7 @@
 	--uwp-tags-button-hover: #7A7A7A;
 	--uwp-tags-button-hover-active: #999999;
 	--uwp-tags-button-color: var(--uwp-global-front);
-	--uwp-tags-button-disabled-text: #858585;
+	--uwp-tags-button-disabled-text: #747474;
 	--uwp-tags-textbox: white;
 	--uwp-tags-textbox-border: #999999;
 	--uwp-tags-textbox-color: var(--uwp-global-front);
@@ -16,7 +16,10 @@
 	--uwp-tags-checkbox: #333333;
 	--uwp-tags-checkbox-checked-hover: black;
 	--uwp-tags-checkbox-checked-active: #666666;
-	--uwp-tags-checkbox-disabled: #666666;
+	--uwp-tags-checkbox-disabled: #999999;
+	--uwp-tags-radio-border: #333333;
+	--uwp-tags-radio-border-hover: black;
+	--uwp-tags-radio-border-active: #666666;
 
 	--uwp-tags-richlistitem-hover: #E6E6E6;
 	--uwp-tags-richlistitem-active: #CCCCCC;
@@ -28,4 +31,6 @@
 	--uwp-tags-progressbar: #CCCCCC;
 
 	--uwp-header-background: #E6E6E6;
+
+}
 }

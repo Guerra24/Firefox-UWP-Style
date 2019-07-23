@@ -33,7 +33,7 @@
 		background: var(--uwp-global-back) !important;
 		border: 1px solid #333333 !important;
 		border-radius: 0px !important;
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
 	}
 	.groupbox-title {
@@ -139,7 +139,7 @@
 		padding-left: 10px !important;
 	}
 	#categories {
-		background-color: #2A2A2A !important;
+		background-color: var(--uwp-pages-sidepanel) !important;
 		padding-top: 8px !important;
 		width: 250px !important;
 		font-size: 12px !important;
@@ -187,7 +187,7 @@
 		background-color: var(--in-content-category-background-selected-active) !important;
 	}
 	#category-box {
-		background-color: #2A2A2A !important;
+		background-color: var(--uwp-pages-sidepanel) !important;
 	}
 	#categories hr {
 		margin: 0px !important;
@@ -421,7 +421,7 @@
 		padding: 0px !important;
 	}
 	.navigation {
-		background-color: #2A2A2A !important;
+		background-color: var(--uwp-pages-sidepanel)  !important;
 	}
 	.accessory-button {
 		height: auto !important;
@@ -505,7 +505,7 @@
 		text-shadow: none !important;
 	}
 	.icon[src=""] {
-		fill: var(--uwp-global-front) !important;
+		fill: var(--uwp-accent-text) !important;
 		-moz-context-properties: fill !important;
 	}
 	.addon-view[notification], .addon-view[pending] {
@@ -547,6 +547,7 @@
 		fill: var(--uwp-accent-color) !important;
 	}
 	.addon.card {
+		background: transparent !important;
 		margin: 0px !important;
 		border: none !important;
 		border-radius: 0px !important;
@@ -559,7 +560,7 @@
 		background: var(--uwp-tags-richlistitem-active) !important;
 	}
 	.card-heading-icon {
-		fill: var(--uwp-global-front) !important;
+		fill: var(--uwp-accent-text) !important;
 		background-color: var(--uwp-accent-color) !important;
 		padding: 4px !important;
 	}
@@ -568,6 +569,9 @@
 	}
 	addon-details, .addon-detail-row {
 		color: var(--uwp-global-front) !important;
+	}
+	recommended-themes-section {
+		display: none !important;
 	}
 }
 

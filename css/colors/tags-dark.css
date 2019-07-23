@@ -1,5 +1,5 @@
 /**/
-
+@media (prefers-color-scheme: dark) {
 :root {
 	--uwp-global-front: white;
 	--uwp-global-back: black;
@@ -17,6 +17,9 @@
 	--uwp-tags-checkbox-checked-hover: #FFFFFF;
 	--uwp-tags-checkbox-checked-active: #999999;
 	--uwp-tags-checkbox-disabled: #666666;
+	--uwp-tags-radio-border: #CCCCCC;
+	--uwp-tags-radio-border-hover: #FFFFFF;
+	--uwp-tags-radio-border-active: #999999;
 	
 	--uwp-tags-richlistitem-hover: #191919;
 	--uwp-tags-richlistitem-active: #333333;
@@ -28,4 +31,6 @@
 	--uwp-tags-progressbar: #333333;
 
 	--uwp-header-background: #1F1F1F;
+
+}
 }

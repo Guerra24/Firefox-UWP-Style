@@ -2,6 +2,13 @@
 
 /* chrome:// specific pages */
 
+@-moz-document regexp("chrome:\/\/(?!devtools).*") {
+	dialog, window, wizard {
+		background: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
+	}
+}
+
 @-moz-document url("chrome://browser/content/places/places.xul") {
 	#placesToolbar {
 		padding: 0px !important;
@@ -59,45 +66,22 @@
 
 @-moz-document url("chrome://browser/content/aboutDialog.xul") {
 	#aboutDialogContainer {
-		background-color: var(--uwp-global-back) !important;
+		background-color: transparent !important;
 		color: var(--uwp-global-front) !important;
 	}
 	#bottomBox {
 		background-color: var(--uwp-bottom-background) !important;
 	}
-	/*#rightBox {
-		background-image: none !important;
-	}
-	#rightBox:before {
-		content: "";
-		position: fixed;
-		top: 20px !important;
-		mask-image: url("chrome://branding/content/about-wordmark.svg") !important;
-		background-color: var(--uwp-global-front) !important;
-		width: 270px !important;
-		height: 48px !important;
-	}*/
-	label {
-		color: var(--uwp-accent-color) !important;
-	}
-	label:hover {
-		color: #999999 !important;
-	}
-	label:active {
-		color: #666666 !important;
+	#rightBox {
+		-moz-context-properties: fill !important;
+		fill: var(--uwp-global-front) !important;
 	}
 	.button-text {
 		color: var(--uwp-global-front) !important;
 	}
 }
 
-@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul"), url("chrome://browser/content/places/bookmarkProperties2.xul") {
-	#bookmarkproperties {
-		background-color: var(--uwp-global-back) !important;
-	}
-	label {
-		color: var(--uwp-global-front) !important;
-	}
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul"), url("chrome://browser/content/places/bookmarkProperties2.xul") {	
 }
 
 @-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xul") {
@@ -148,29 +132,21 @@
 }
 
 @-moz-document url("chrome://global/content/commonDialog.xul") {
-	#commonDialog {
-		background-color: black !important;
-	}
-	label, description {
-		color: white !important;
-	}
-	#infoIcon {
-		display: none !important;
-	}
-	#infoContainer {
-		text-align: center !important;
-	}
 	#checkbox {
 		margin-left: 23px !important;
+	}
+	#infoIcon {
+		-moz-context-properties: fill !important;
+		fill: var(--uwp-global-front) !important;
 	}
 }
 
 @-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xul") {
 	label {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 	.wizard-header {
-		background-color: var(--uwp-header-background) !important;
+		background-color: transparent !important;
 		border-bottom: none !important;
 		height: 40px !important;
 		vertical-align: middle;
@@ -178,17 +154,11 @@
 	.wizard-header-label {
 		margin: 5.75px 12px 0px 12px !important;
 	}
-	.wizard-page-box {
-		color: white !important;
-	}
 	.wizard-buttons-separator {
 		display: none !important;
 	}
 	.wizard-next-deck {
 		margin-left: 10px !important;
-	}
-	#createProfileWizard {
-		background-color: black !important;
 	}
 }
 
@@ -295,13 +265,7 @@
 }
 
 @-moz-document url("chrome://mozapps/content/update/history.xul") {
-	#history {
-		background-color: black !important;
-		color: white !important;
-	}
-	.text-link {
-		color: var(--uwp-accent-color) !important;
-	}
+	
 }
 
 @-moz-document url("chrome://browser/content/sanitize.xul") {

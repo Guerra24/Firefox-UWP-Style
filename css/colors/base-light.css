@@ -1,12 +1,12 @@
 /**/
-
+@media (prefers-color-scheme: light) {
 :root {
 	--uwp-mainwindow: #E6E6E6;
 	--uwp-tabbar-tab-hover: white;
 	--uwp-tabbar-button-hover: #D5D5D5;
 	--uwp-tabbar-button-hover-active: #BBBBBB;
 	--uwp-navbar-background-hover: #DEDEDE;
-	--uwp-browser: #1A1A1A;
+	--uwp-browser: #E6E6E6;
 	--uwp-findbar: #161616;
 	--uwp-autocomplete-list: white;
 	--uwp-autocomplete-oneoffs: #333333;
@@ -30,9 +30,10 @@
 
 	--uwp-titlebar: black;
 
-	--autocomplete-popup-background: #2A2A2A !important;
+	--autocomplete-popup-background: white !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
 	--autocomplete-popup-highlight-background: var(--uwp-accent-color) !important;
+	--autocomplete-popup-highlight-color: var(--uwp-accent-text) !important;
 
 	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
 }
@@ -52,4 +53,5 @@
 
 .tabbrowser-tab:-moz-lwtheme {
 	color: black !important;
+}
 }

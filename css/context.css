@@ -29,7 +29,7 @@
 	menupopup menuitem:hover, menupopup menu:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
-	menupopup menu[open] {
+	menupopup menu[open], menupopup menuitem[selected="true"] {
 		background-image: var(--uwp-context-menuitem-open-image) !important;
 		background-blend-mode: multiply;
 		background-color: var(--uwp-context-menuitem-open) !important;
@@ -96,17 +96,15 @@
 	menulist, menulist[disabled="true"] {
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
-		border: 2px solid #666666 !important;
+		border: 2px solid var(--uwp-tags-textbox-border) !important;
 		border-radius: 0px !important;
-		background-color: transparent !important;
-		color: white !important;
+		background: var(--uwp-tags-textbox) !important;
+		color: var(--uwp-tags-textbox-color) !important;
 		height: auto !important;
 		box-shadow: none !important;
 	}
-	menulist:hover {
-		padding: 4px 6px 4px 6px !important;
-		border: 2px solid #999999 !important;
-		background-color: transparent !important;
+	menulist:hover { /* Finish this */
+		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	menulist[open="true"]  {
 		border: 2px solid #666666 !important;

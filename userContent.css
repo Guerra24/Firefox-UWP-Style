@@ -19,22 +19,13 @@
 @import url(./css/colors/base-dark.css);
 @import url(./css/colors/pagesContent-dark.css);
 
-/*
-@supports -moz-bool-pref("browser.in-content.dark-mode") {
-@media (prefers-color-scheme: dark) {
-*/
-
-/* Light *//*
+/* Light */
 @import url(./css/colors/tags-light.css);
 @import url(./css/colors/context-light.css);
 @import url(./css/colors/base-light.css);
-@import url(./css/colors/pagesContent-light.css);*/
+@import url(./css/colors/pagesContent-light.css);
 
-/* To prevent the root style to go into any page */
-@-moz-document url-prefix("chrome://"), url-prefix("about:") {
-
-	:root {
-		--uwp-accent-color: -moz-win-accentcolor; /* Global Accent Color */
-	}
-
+:root {
+	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
+	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
 }

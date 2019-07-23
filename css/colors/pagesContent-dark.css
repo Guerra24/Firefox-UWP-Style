@@ -1,5 +1,6 @@
 /**/
 
+@media (prefers-color-scheme: dark) {
 @-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	:root {
@@ -22,10 +23,10 @@
 	    --in-content-category-text-active: white !important;
 	    --in-content-category-text-selected: white !important;
 	    --in-content-category-text-selected-active: white !important;
-	    --in-content-category-background-hover: #404040 !important;
-	    --in-content-category-background-active: #555555 !important;
-	    --in-content-category-background-selected-hover: #404040 !important;
-	    --in-content-category-background-selected-active: #555555 !important;
+	    --in-content-category-background-hover: #353535 !important;
+	    --in-content-category-background-active: #4C4C4C !important;
+	    --in-content-category-background-selected-hover: #353535 !important;
+	    --in-content-category-background-selected-active: #4C4C4C !important;
 	    --in-content-tab-color: #424f5a;
 	    --in-content-link-color: var(--uwp-accent-color) !important;
 	    --in-content-link-color-hover: #999999 !important;
@@ -48,6 +49,9 @@
 	    --grey-90-a30: rgba(12, 12, 13, 0.3);
 
 		--exception-button-container-background: black !important;
+
+		--uwp-pages-sidepanel: #1F1F1F;
 	}
 
+}
 }

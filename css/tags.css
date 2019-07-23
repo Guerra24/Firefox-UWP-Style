@@ -7,7 +7,7 @@
 	}
 
 	::selection {
-		color: white !important;
+		color: var(--uwp-accent-text) !important;
 		background-color: var(--uwp-accent-color) !important;
 	}
 
@@ -30,7 +30,7 @@
 		background-color: var(--uwp-tags-button-hover-active) !important;
 		border-color: var(--uwp-tags-button-hover-active) !important;
 	}
-	button[disabled="true"] {
+	button[disabled="true"], button[disabled="true"] .button-text {
 		color: var(--uwp-tags-button-disabled-text) !important;
 	}
 	button[disabled="true"]:hover, button[disabled="true"]:hover:active {
@@ -61,6 +61,7 @@
 	/* Text Box */
 	textbox:not(#urlbar):not(.searchbar-textbox), textarea,
 	input[type="email"], input[type="tel"], input[type="text"], input[type="number"], input[type="url"], input[type="password"],
+	input[value]:not(.textbox-input),
 	.findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -73,11 +74,13 @@
 	}
 	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover,
 	input[type="email"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="number"]:hover, input[type="url"]:hover, input[type="password"]:hover,
+	input[value]:not(.textbox-input):hover,
 	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), textarea:focus,
 	input[type="email"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="password"]:focus,
+	input[value]:not(.textbox-input):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
@@ -85,7 +88,8 @@
 		color: black !important;
 	}
 	textboxt[disabled]:not(#urlbar):not(.searchbar-textbox),
-	input[disabled][type="email"], input[disabled][type="tel"], input[disabled][type="text"], input[disabled][type="number"], input[disabled][type="url"], input[disabled][type="url"] {
+	input[disabled][type="email"], input[disabled][type="tel"], input[disabled][type="text"], input[disabled][type="number"], input[disabled][type="url"], input[disabled][type="url"],
+	input[disabled][value]:not(.textbox-input) {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
@@ -184,7 +188,7 @@
 	radio > .radio-check, input[type="radio"] {
 		-moz-appearance: none !important;
 		padding: 8px !important;
-		border: 2px solid #CCCCCC !important;
+		border: 2px solid var(--uwp-tags-radio-border) !important;
 		border-radius: 100% !important;
 		background: transparent !important;
 		margin-right: 5px !important;
@@ -193,10 +197,10 @@
 		height: auto !important;
 	}
 	radio:hover > .radio-check, input[type="radio"]:hover {
-		border: 2px solid #FFFFFF !important;
+		border: 2px solid var(--uwp-tags-radio-border-hover) !important;
 	}
 	radio:hover:active > .radio-check, input[type="radio"]:hover:active {
-		border: 2px solid #999999 !important;
+		border: 2px solid var(--uwp-tags-radio-border-active) !important;
 	}
 	radio[selected="true"] > .radio-check, input[type="radio"]:checked {
 		border: 2px solid var(--uwp-accent-color) !important;
@@ -211,6 +215,8 @@
 		border: 2px solid #999999 !important;
 	}
 	input[type="radio"] + span {
+		position: relative !important;
+		bottom: 5px !important;
 	}
 	/* Radio Button Disabled */
 	radio[disabled="true"] > .radio-label-box {
@@ -236,16 +242,16 @@
 	radio > .radio-label-box {
 		margin-left: 5px !important;
 	}
-	a {
+	a, label[href] {
 		color: var(--uwp-accent-color) !important;
 	}
-	a:hover {
+	a:hover, label[href]:hover {
 		color: #999999 !important;
 	}
-	a:hover:active{
+	a:hover:active, label[href]:hover:active {
 		color: #666666 !important;
 	}
-	a:visited {
+	a:visited, label[href]:visited {
 		color: gray !important;
 	}
 
@@ -426,10 +432,6 @@
 	progressmeter > .progress-remainder {
 		border: none !important;
 		background: #333333 !important;
-	}
-	/* Window Stuff */
-	window:not([chromemargin]):not([role="alert"]) {
-		background-color: black !important;
 	}
 	/* Customization Page */
 	#customization-content-container {

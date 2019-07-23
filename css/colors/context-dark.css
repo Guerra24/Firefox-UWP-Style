@@ -1,9 +1,9 @@
 /**/
-
+@media (prefers-color-scheme: dark) {
 :root {
 	--uwp-context-background: #2B2B2B;
-	--uwp-context-border: #161616;
-	--uwp-context-separator: #757575;
+	--uwp-context-border: #1C1C1C;
+	--uwp-context-separator: #808080;
 	--uwp-context-menuitem-hover: #404040;
 	--uwp-context-menuitem-active: #555555;
 	--uwp-context-menuitem-open: rgb(80,80,80);
@@ -12,4 +12,5 @@
 	--uwp-context-tooltip-border: #1C1C1C;
 	--uwp-context-menubar-hover: #191919;
 	--uwp-context-menubar-open: #353535;
+}
 }
