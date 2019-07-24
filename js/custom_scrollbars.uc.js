@@ -87,7 +87,7 @@ var custom_scrollbars = {
 		background-color: var(--uwp-scrollbar-thumb-hover) !important;\
 	}\
 	scrollbar thumb:active {\
-		background-color: var(--uwp-scrollbar-thumb) !important;\
+		background-color: var(--uwp-scrollbar-thumb-active) !important;\
 	}\
 	scrollbar scrollbarbutton {\
 		background-color: var(--uwp-scrollbar-button) !important;\
