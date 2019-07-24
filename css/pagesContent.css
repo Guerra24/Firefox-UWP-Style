@@ -14,9 +14,6 @@
 	.menulist-label-box {
 		border: none !important;
 	}
-	.checkbox-icon {
-		filter: invert(1) !important;
-	}
 	.menulist-dropmarker {
 		padding-right: 0px !important;
 	}
@@ -226,6 +223,25 @@
 			padding-left: 0px !important;
 		}
 	}
+}
+
+/* Global Icons */
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
+	.addons-icon {
+	    list-style-image: var(--mdl2-icons-puzzle) !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.help-icon {
+		list-style-image: var(--mdl2-icons-help) !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
+	.preferences-icon {
+		list-style-image: var(--mdl2-icons-settings) !important;
+		width: 16px !important;
+		height: 16px !important;
+    }
 }
 
 @-moz-document url("about:newtab"), url("about:home") {
@@ -454,6 +470,50 @@
 		background-blend-mode: multiply;
 		background-color: rgb(140,140,140) !important;
 	}
+	/* Icons */
+	.category-icon {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	#category-general > .category-icon {
+		list-style-image: var(--mdl2-icons-settings) !important;
+	}
+	#category-home > .category-icon {
+		list-style-image: var(--mdl2-icons-home) !important;
+	}
+	#category-search > .category-icon {
+		list-style-image: var(--mdl2-icons-search) !important;
+	}
+	#category-privacy > .category-icon {
+		list-style-image: var(--mdl2-icons-lock) !important;
+	}
+	#category-sync > .category-icon {
+		list-style-image: var(--mdl2-icons-sync) !important;
+	}
+	#updateSettingCrossUserWarning {
+		background-image: var(--mdl2-icons-info) !important;
+	}
+	.checkbox-icon[src="chrome://browser/skin/search-glass.svg"] {
+		background-image: var(--mdl2-icons-search) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}
+	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-topsites-16.svg"] {
+		background-image: var(--mdl2-icons-tiles) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}
+	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-info-16.svg"] {
+		background-image: var(--mdl2-icons-info) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		padding-left: 16px !important;
+		box-sizing: border-box !important;
+	}
 	/* Fixes FF62~ */
 	.navigation > .help-button {
 		margin-bottom: 8px !important;
@@ -532,6 +592,20 @@
 	#heading {
 		margin-top: 6px !important;
 	}
+	/* Icons */
+	.category-icon {
+		width: 16px !important;
+		height: 16px !important;
+	}
+	#category-extension > .category-icon {
+		list-style-image: var(--mdl2-icons-puzzle) !important;
+	}
+	#category-theme > .category-icon {
+		list-style-image: var(--mdl2-icons-personalize) !important;
+	}
+	#category-dictionary > .category-icon {
+		list-style-image: var(--mdl2-icons-dictionary) !important;
+	}
 	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
@@ -572,6 +646,18 @@
 	}
 	recommended-themes-section {
 		display: none !important;
+	}
+	/* Icons */
+	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
+		/* This should use --uwp-accent-text for fill */
+		background-image: var(--mdl2-icons-puzzle) !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+		background-size: 32px !important;
+		padding-left: 36px !important;
+		box-sizing: border-box !important;
+		width: 40px !important;
+		height: 40px !important;
 	}
 }
 

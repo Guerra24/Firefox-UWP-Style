@@ -12,6 +12,9 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
+/* Icons */
+@import url(./css/icons.css);
+
 /* Colors */
 /* Dark */
 @import url(./css/colors/tags-dark.css);
