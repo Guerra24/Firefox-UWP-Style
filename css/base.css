@@ -121,7 +121,7 @@
 	margin-left: 1px !important;
 	margin-right: 1px !important;
 }
-#content-deck {
+#content-deck, #browser {
 	/*-moz-appearance: -moz-win-exclude-glass !important;*/
 }
 #navigator-toolbox, #navigator-toolbox::after {
@@ -132,6 +132,9 @@
 }
 #urlbar, .searchbar-textbox {
 	box-shadow: none !important;
+}
+#tracking-protection-icon-container, #identity-box {
+	border: none !important;
 }
 /* Findbar */
 .findbar-find-previous, .findbar-find-next {
