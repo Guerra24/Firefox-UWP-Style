@@ -227,7 +227,7 @@
 
 /* Global Icons */
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
-	.addons-icon {
+	/*.addons-icon {
 	    list-style-image: var(--mdl2-icons-puzzle) !important;
 		width: 16px !important;
 		height: 16px !important;
@@ -241,7 +241,7 @@
 		list-style-image: var(--mdl2-icons-settings) !important;
 		width: 16px !important;
 		height: 16px !important;
-    }
+    }*/
 }
 
 @-moz-document url("about:newtab"), url("about:home") {
@@ -471,7 +471,7 @@
 		background-color: rgb(140,140,140) !important;
 	}
 	/* Icons */
-	.category-icon {
+	/*.category-icon {
 		width: 16px !important;
 		height: 16px !important;
 	}
@@ -513,7 +513,7 @@
 		background-repeat: no-repeat !important;
 		padding-left: 16px !important;
 		box-sizing: border-box !important;
-	}
+	}*/
 	/* Fixes FF62~ */
 	.navigation > .help-button {
 		margin-bottom: 8px !important;
@@ -593,7 +593,7 @@
 		margin-top: 6px !important;
 	}
 	/* Icons */
-	.category-icon {
+	/*.category-icon {
 		width: 16px !important;
 		height: 16px !important;
 	}
@@ -605,7 +605,7 @@
 	}
 	#category-dictionary > .category-icon {
 		list-style-image: var(--mdl2-icons-dictionary) !important;
-	}
+	}*/
 	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
