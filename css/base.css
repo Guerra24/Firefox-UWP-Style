@@ -286,6 +286,22 @@ button.searchbar-engine-one-off-item[selected] {
 .urlbarView-row {
 	border-radius: 0px !important;
 }
+.urlbarView:not(.megabar) {
+	border: none !important;
+}
+.urlbarView-results {
+	padding: 0px !important;
+}
+.urlbarView:not(.megabar) .urlbarView-row {
+	padding-top: 6px !important;
+	padding-bottom: 6px !important;
+}
+.urlbarView-title {
+	height: 18px !important;
+}
+.urlbarView {
+	--item-padding-start: 76px !important;
+}
 /* Tracking toggle */
 #appMenu-tp-toggle {
 	margin-top: 6px !important;
