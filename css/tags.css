@@ -80,7 +80,6 @@
 		background: transparent !important;
 		border: none !important;
 	}
-	
 
 	/* Text Box */
 	textbox:not(#urlbar):not(.searchbar-textbox), textarea,

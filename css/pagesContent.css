@@ -752,3 +752,18 @@
 		background-color: transparent !important;
 	}
 }
+
+@-moz-document url-prefix("about:logins") {
+	.buttons button, .buttons button:hover:active, .fxaccounts-avatar-button, .fxaccounts-avatar-button:hover:active {
+		background: transparent !important;
+		border: none !important;
+	}
+	.meta-info {
+		font-weight: 400 !important;
+		font-size: initial !important;
+	}
+	.edit-button, .delete-button {
+		background-position-x: 8px !important;
+		padding-left: 32px !important;
+	}
+}
