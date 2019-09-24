@@ -57,6 +57,30 @@
 		padding: 11px !important;
 		transform: rotate(180deg);
 	}
+	named-deck-button + named-deck-button {
+		margin-left: 24px !important;
+	}
+	button[role="tab"] {
+		background: transparent !important;
+		color: #888888 !important;
+		border: none !important;
+		border-bottom: 2px solid transparent !important;
+		font-size: 20px !important;
+		padding-bottom: 8px !important;
+	}
+	button[role="tab"][aria-selected="true"] {
+		color: #E2E2E2 !important;
+		border-bottom: 2px solid var(--uwp-accent-color) !important;
+		padding-bottom: 8px !important;
+	}
+	button[role="tab"]:hover {
+		color: #B5B5B5 !important;
+	}
+	button[role="tab"]:hover:active {
+		background: transparent !important;
+		border: none !important;
+	}
+	
 
 	/* Text Box */
 	textbox:not(#urlbar):not(.searchbar-textbox), textarea,

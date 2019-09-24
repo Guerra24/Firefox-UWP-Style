@@ -6,7 +6,6 @@
 		background-color: var(--uwp-context-background) !important;
 		border: 1px var(--uwp-context-border) solid !important;
 		border-radius: 0px !important;
-		min-width: 258px !important;
 	}
 	menupopup menuseparator, panel-item-separator {
 		-moz-appearance: none !important;
@@ -16,7 +15,7 @@
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
-	menupopup menuitem, menupopup menu {
+	menupopup menuitem, menupopup menu, button[role="menuitem"] {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		padding: 7px 0px 7px 9px !important;
@@ -26,7 +25,7 @@
 	menupopup menuitem[disabled="true"], menupopup menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menupopup menuitem:hover, menupopup menu:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
+	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
 	menupopup menu[open], menupopup menuitem[selected="true"] {
@@ -34,7 +33,7 @@
 		background-blend-mode: multiply;
 		background-color: var(--uwp-context-menuitem-open) !important;
 	}
-	menupopup menuitem:hover:active, menupopup menu:hover:active, menupopup menuitem[selected] {
+	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, menupopup menuitem[selected] {
 		background-color: var(--uwp-context-menuitem-active) !important;
 	}
 	menugroup {
@@ -143,8 +142,17 @@
 		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
 	}
+	/*panel-list {
+		background-color: transparent !important;
+		backdrop-filter: blur(24px) !important;
+	}*/
 	.arrow.top, .arrow.bottom {
 		display: none !important;
 	}
-
+	button[role="menuitem"] {
+		background-color: transparent !important;
+		background-position-x: 12px !important;
+		padding-left: 40px !important;
+		font-size: 14.5px !important;
+	}
 }
