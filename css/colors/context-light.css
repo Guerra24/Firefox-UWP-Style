@@ -2,6 +2,7 @@
 @media (prefers-color-scheme: light) {
 :root {
 	--uwp-context-background: #F2F2F2;
+	--uwp-context-background-blur: #F2F2F2B0;
 	--uwp-context-border: #D1D1D1;
 	--uwp-context-separator: #919191;
 	--uwp-context-menuitem-hover: #DADADA;

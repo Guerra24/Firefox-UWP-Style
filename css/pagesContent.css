@@ -77,8 +77,8 @@
 		border: none !important;
 	}
 	window {
-		background: black !important;
-		color: white !important;
+		background: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
 	}
 
 	:root > * {

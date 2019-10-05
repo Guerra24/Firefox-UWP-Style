@@ -83,8 +83,7 @@
 
 	/* Text Box */
 	textbox:not(#urlbar):not(.searchbar-textbox), textarea,
-	input[type="email"]:not(.textbox-input), input[type="tel"]:not(.textbox-input), input[type="text"]:not(.textbox-input), input[type="number"]:not(.textbox-input), input[type="url"]:not(.textbox-input), input[type="password"]:not(.textbox-input),
-	input.plain,
+	input:not(#urlbar-input):not(.fake-editable),
 	.findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -96,14 +95,12 @@
 		opacity: 1 !important;
 	}
 	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover,
-	input[type="email"]:not(.textbox-input):hover, input[type="tel"]:not(.textbox-input):hover, input[type="text"]:not(.textbox-input):hover, input[type="number"]:not(.textbox-input):hover, input[type="url"]:not(.textbox-input):hover, input[type="password"]:not(.textbox-input):hover,
-	input.plain:hover,
+	input:not(#urlbar-input):not(.fake-editable):hover,
 	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), textarea:focus,
-	input[type="email"]:not(.textbox-input):focus, input[type="tel"]:not(.textbox-input):focus, input[type="text"]:not(.textbox-input):focus, input[type="number"]:not(.textbox-input):focus, input[type="url"]:not(.textbox-input):focus, input[type="password"]:not(.textbox-input):focus,
-	input.plain:focus,
+	input:not(#urlbar-input):not(.fake-editable):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
@@ -111,10 +108,17 @@
 		color: black !important;
 	}
 	textboxt[disabled]:not(#urlbar):not(.searchbar-textbox),
-	input[disabled][type="email"]:not(.textbox-input), input[disabled][type="tel"]:not(.textbox-input), input[disabled][type="text"]:not(.textbox-input), input[disabled][type="number"]:not(.textbox-input), input[disabled][type="url"]:not(.textbox-input), input[disabled][type="password"]:not(.textbox-input) {
+	input[disabled]:not(#urlbar-input):not(.fake-editable) {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
+	}
+	search-textbox {
+		-moz-appearance: none !important;
+		background: transparent !important;
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
 	}
 	/* Listbox */
 	listbox {
@@ -430,6 +434,10 @@
 		background-clip: border-box !important;
 		outline: none !important;
 		background-color: var(--uwp-tags-richlistitem-selected) !important;
+	}
+	richlistbox:-moz-focusring {
+		border: none !important;
+		box-shadow: none !important;
 	}
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: var(--uwp-accent-color) !important;

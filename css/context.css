@@ -6,6 +6,7 @@
 		background-color: var(--uwp-context-background) !important;
 		border: 1px var(--uwp-context-border) solid !important;
 		border-radius: 0px !important;
+		box-shadow: none !important;
 	}
 	menupopup menuseparator, panel-item-separator {
 		-moz-appearance: none !important;
@@ -142,10 +143,14 @@
 		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
 	}
-	/*panel-list {
-		background-color: transparent !important;
-		backdrop-filter: blur(24px) !important;
-	}*/
+	@supports(backdrop-filter: blur(1px)) {
+		panel-list {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-context-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		}
+	}
 	.arrow.top, .arrow.bottom {
 		display: none !important;
 	}
