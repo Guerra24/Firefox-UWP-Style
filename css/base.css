@@ -108,19 +108,6 @@
 #nav-bar {
 	box-shadow: none !important;
 }
-#nav-bar textbox, #urlbar, #searchbar {
-	background-color: transparent !important;
-}
-#nav-bar textbox:hover, #urlbar:hover, #searchbar:hover {
-	background-color: var(--uwp-navbar-background-hover) !important;
-}
-#urlbar, .searchbar-textbox, #searchbar {
-	border: none !important;
-}
-#urlbar {
-	margin-left: 1px !important;
-	margin-right: 1px !important;
-}
 #content-deck, #browser {
 	/*-moz-appearance: -moz-win-exclude-glass !important;*/
 }
@@ -129,9 +116,6 @@
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
 	background: var(--uwp-browser) !important;
-}
-#urlbar, .searchbar-textbox {
-	box-shadow: none !important;
 }
 #tracking-protection-icon-container, #identity-box {
 	border: none !important;
@@ -249,67 +233,23 @@ panel .text-link {
 #appMenu-notification-popup {
 	margin-top: -2px !important;
 }
-/* URL Panel Pre-68 */
-#PopupAutoCompleteRichResult {
-	border: none !important;
-}
-.autocomplete-richlistbox {
-	padding: 0 !important;
-	background: var(--uwp-autocomplete-list) !important;
-}
-.autocomplete-richlistitem {
-	background: var(--uwp-autocomplete-list) !important;
-}
-.search-panel-one-offs {
-	background-color: var(--uwp-autocomplete-oneoffs) !important;
-}
-.searchbar-engine-one-off-item {
-	min-width: 38px !important;
-}
-.search-setting-button-compact {
-	height: 22px !important;
-}
-button.dummy:hover {
-	border: 2px #333333 solid !important;
-}
-button.searchbar-engine-one-off-item[selected] {
-	color: white !important;
-	border: 2px var(--uwp-tags-button-hover) solid !important;
-}
-/* URL Panel Post-68 */
-#urlbarView-results {
-	padding: 0px !important;
-}
-#urlbar-results {
-	border: none !important;
-}
-.urlbarView-row {
-	border-radius: 0px !important;
-}
-.urlbarView:not(.megabar) {
-	border: none !important;
-}
-.urlbarView-results {
-	padding: 0px !important;
-}
-.urlbarView:not(.megabar) .urlbarView-row {
-	padding-top: 6px !important;
-	padding-bottom: 6px !important;
-}
-.urlbarView-title {
-	height: 18px !important;
-}
-.urlbarView {
-	--item-padding-start: 76px !important;
-}
 /* URL Panel Post-71 */
+#urlbar-background {
+	display: none !important;
+}
+#urlbar {
+	margin: 0px !important;
+}
 #urlbar[breakout][breakout-extend] {
 	top: 0px !important;
 	left: 0px !important;
 	width: 100% !important;
-	background-color: var(--uwp-autocomplete-list) !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	clip-path: inset(0px -20px -30px -20px) !important;
+}
+#urlbar-input-container {
+	border: none !important;
+}
+#urlbar-input-container:hover {
+	background-color: var(--uwp-navbar-background-hover) !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
     height: calc(var(--urlbar-toolbar-height)) !important;
@@ -321,16 +261,25 @@ button.searchbar-engine-one-off-item[selected] {
 }
 .urlbarView-row {
 	padding-inline: 8px !important;
+	border-radius: 0px !important;
+}
+.urlbarView-title {
+	height: 18px !important;
 }
 .urlbarView.megabar {
 	margin-inline: 0px !important;
+	border: none !important;
 	width: 100% !important;
+	background-color: var(--uwp-autocomplete-list) !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	clip-path: inset(0px -20px -30px -20px) !important;
+	animation: none !important;
 }
 .urlbarView.megabar .urlbarView-body-inner {
 	border: none !important;
 }
 @supports(backdrop-filter: blur(1px)) {
-	#urlbar[breakout][breakout-extend] {
+	.urlbarView.megabar {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
 		backdrop-filter: blur(32px) !important;
