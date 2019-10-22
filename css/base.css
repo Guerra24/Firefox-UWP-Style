@@ -332,10 +332,17 @@ body[lwt-sidebar] {
 /* Status Panel */
 #statuspanel-label {
 	background-color: var(--uwp-statuspanel) !important;
-	color: var(--uwp-statuspanel-color) !important;
+	color: var(--uwp-global-front) !important;
 	border: none !important;
 	padding: 4px !important;
 	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
+}
+@supports(backdrop-filter: blur(1px)) {
+	#statuspanel-label {
+		background-image: url(../img/noise-512x512.png) !important;
+		background-color: var(--uwp-urlbar-blur) !important;
+		backdrop-filter: blur(32px) !important;
+	}
 }
 /* Notifications? */
 notification {

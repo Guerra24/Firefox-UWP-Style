@@ -93,6 +93,7 @@
 		color: var(--uwp-tags-textbox-color) !important;
 		box-shadow: none !important;
 		opacity: 1 !important;
+		transition: none !important;
 	}
 	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover,
 	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,

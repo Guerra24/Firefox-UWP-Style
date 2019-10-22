@@ -1,6 +1,6 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
-	menupopup, panel-list {
+	menupopup, panel-list, #PopupAutoComplete {
 		-moz-appearance: none !important;
 		padding: 5px 1px 5px 1px !important;
 		background-color: var(--uwp-context-background) !important;
@@ -16,7 +16,7 @@
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
-	menupopup menuitem, menupopup menu, button[role="menuitem"] {
+	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		padding: 7px 0px 7px 9px !important;
@@ -26,7 +26,7 @@
 	menupopup menuitem[disabled="true"], menupopup menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
+	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
 	menupopup menu[open], menupopup menuitem[selected="true"] {
@@ -34,7 +34,7 @@
 		background-blend-mode: multiply;
 		background-color: var(--uwp-context-menuitem-open) !important;
 	}
-	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, menupopup menuitem[selected] {
+	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
 		background-color: var(--uwp-context-menuitem-active) !important;
 	}
 	menugroup {
@@ -132,9 +132,11 @@
 	.menu-accel {
 		padding: 0px !important;
 	}
-	.menu-text {
+	.menu-text, .menu-iconic-text {
 		margin-top: 1px !important;
 		margin-bottom: 1px !important;
+		padding-top: 0px !important;
+		padding-bottom: 0px !important;
 	}
 	tooltip { /* Also update the js script */
 		-moz-appearance: none !important;
