@@ -32,3 +32,7 @@
 	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
 	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
 }
+
+* {
+	scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar);
+}
