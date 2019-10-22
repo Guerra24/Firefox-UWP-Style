@@ -1,36 +1,38 @@
 /**/
 @media (prefers-color-scheme: dark) {
-:root {
-	--uwp-global-front: white;
-	--uwp-global-back: black;
-	
-	--uwp-tags-button: #333333;
-	--uwp-tags-button-hover: #858585;
-	--uwp-tags-button-hover-active: #666666;
-	--uwp-tags-button-color: var(--uwp-global-front);
-	--uwp-tags-button-disabled-text: #858585;
-	--uwp-tags-textbox: black;
-	--uwp-tags-textbox-border: #666666;
-	--uwp-tags-textbox-color: var(--uwp-global-front);
-	--uwp-tags-textbox-hover: #999999;
-	--uwp-tags-checkbox: #CCCCCC;
-	--uwp-tags-checkbox-checked-hover: #FFFFFF;
-	--uwp-tags-checkbox-checked-active: #999999;
-	--uwp-tags-checkbox-disabled: #666666;
-	--uwp-tags-radio-border: #CCCCCC;
-	--uwp-tags-radio-border-hover: #FFFFFF;
-	--uwp-tags-radio-border-active: #999999;
-	
-	--uwp-tags-richlistitem-hover: #191919;
-	--uwp-tags-richlistitem-active: #333333;
-	--uwp-tags-richlistitem-selected: #171717;
-	
-	--uwp-tags-treechildren-row-hover: #323232;
-	--uwp-tags-treechildren-row-selected: #3C3C3C;
-	
-	--uwp-tags-progressbar: #333333;
+	:root {
+		--uwp-global-front: white;
+		--uwp-global-back: black;
 
-	--uwp-header-background: #1F1F1F;
+		--uwp-tags-button: #333333;
+		--uwp-tags-button-hover: #858585;
+		--uwp-tags-button-hover-active: #666666;
+		--uwp-tags-button-color: var(--uwp-global-front);
+		--uwp-tags-button-disabled-text: #858585;
+		--uwp-tags-textbox: black;
+		--uwp-tags-textbox-border: #666666;
+		--uwp-tags-textbox-color: var(--uwp-global-front);
+		--uwp-tags-textbox-hover: #999999;
+		--uwp-tags-checkbox: #CCCCCC;
+		--uwp-tags-checkbox-checked-hover: #FFFFFF;
+		--uwp-tags-checkbox-checked-active: #999999;
+		--uwp-tags-checkbox-disabled: #666666;
+		--uwp-tags-radio-border: #CCCCCC;
+		--uwp-tags-radio-border-hover: #FFFFFF;
+		--uwp-tags-radio-border-active: #999999;
 
-}
+		--uwp-tags-richlistitem-hover: #191919;
+		--uwp-tags-richlistitem-active: #333333;
+		--uwp-tags-richlistitem-selected: #171717;
+
+		--uwp-tags-treechildren-row-hover: #323232;
+		--uwp-tags-treechildren-row-selected: #3C3C3C;
+
+		--uwp-tags-progressbar: #333333;
+
+		--uwp-header-background: #1F1F1F;
+
+		--uwp-scrollbar: #1B1B1B;
+		--uwp-scrollbar-thumb: #494949;
+	}
 }

@@ -28,10 +28,9 @@
 @import url(./css/colors/base-light.css);
 @import url(./css/colors/pagesChrome-light.css);
 
-/* Load custom JS */
-.titlebar-spacer[type="pre-tabs"] {
-	-moz-binding: url("./userChrome.xml#execute_javascript_code");
-}
+/*
+@supports -moz-bool-pref("pref.here") {
+*/
 
 :root {
 	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */

@@ -4,6 +4,7 @@
 
 	:root {
 		--urlbar-popup-url-color: var(--uwp-accent-color) !important;
+		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
 	}
 
 	::selection {
@@ -280,6 +281,10 @@
 	}
 	a:visited, label[href]:visited {
 		color: gray !important;
+	}
+
+	scrollbar {
+		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
 	}
 
 	.toolbarbutton-text {
