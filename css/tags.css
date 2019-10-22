@@ -284,7 +284,18 @@
 	}
 
 	scrollbar {
+		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
+		scrollbar-width: thin;
+		margin-left: -8px !important;
+		margin-top: 17px !important;
+		margin-bottom: 17px !important;
+	}
+	scrollbar:hover {
 		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
+		scrollbar-width: auto;
+		margin-left: -17px !important;;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
 	}
 
 	.toolbarbutton-text {
