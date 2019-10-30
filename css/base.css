@@ -237,6 +237,7 @@ panel .text-link {
 #urlbar {
 	background-color: var(--uwp-autocomplete-list) !important;
 	border: none !important;
+	box-shadow: none !important;
 }
 /* Megabar */
 #urlbar-background {
