@@ -233,7 +233,12 @@ panel .text-link {
 #appMenu-notification-popup {
 	margin-top: -2px !important;
 }
-/* URL Panel Post-71 */
+/* Old */
+#urlbar {
+	background-color: var(--uwp-autocomplete-list) !important;
+	border: none !important;
+}
+/* Megabar */
 #urlbar-background {
 	display: none !important;
 }
@@ -256,6 +261,21 @@ panel .text-link {
     padding-block: 0px !important;
     padding-inline: 0px !important;
 }
+#urlbar-results {
+	padding: 0px !important;
+}
+.urlbarView {
+	margin-inline: 0px !important;
+	border: none !important;
+	width: 100% !important;
+	background-color: var(--uwp-autocomplete-list) !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	clip-path: inset(0px -20px -30px -20px) !important;
+	animation: none !important;
+}
+.urlbarView .urlbarView-body-inner {
+	border: none !important;
+}
 .urlbarView-results {
 	padding-block: 0px !important;
 }
@@ -266,20 +286,8 @@ panel .text-link {
 .urlbarView-title {
 	height: 18px !important;
 }
-.urlbarView.megabar {
-	margin-inline: 0px !important;
-	border: none !important;
-	width: 100% !important;
-	background-color: var(--uwp-autocomplete-list) !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	clip-path: inset(0px -20px -30px -20px) !important;
-	animation: none !important;
-}
-.urlbarView.megabar .urlbarView-body-inner {
-	border: none !important;
-}
 @supports(backdrop-filter: blur(1px)) {
-	.urlbarView.megabar {
+	.urlbarView {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
 		backdrop-filter: blur(32px) !important;
