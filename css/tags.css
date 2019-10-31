@@ -83,7 +83,7 @@
 	}
 
 	/* Text Box */
-	textbox:not(#urlbar):not(.searchbar-textbox), textarea,
+	textarea,
 	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]),
 	.findbar-textbox {
 		-moz-appearance: none !important;
@@ -96,12 +96,12 @@
 		opacity: 1 !important;
 		transition: none !important;
 	}
-	textbox:not(#urlbar):not(.searchbar-textbox):hover, textarea:hover,
+	textarea:hover,
 	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,
 	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
-	textbox[focused="true"]:not(#urlbar):not(.searchbar-textbox), textarea:focus,
+	textarea:focus,
 	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -109,18 +109,18 @@
 		background: white !important;
 		color: black !important;
 	}
-	textboxt[disabled]:not(#urlbar):not(.searchbar-textbox),
 	input[disabled]:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]) {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
 	}
-	search-textbox {
+	search-textbox, textbox {
 		-moz-appearance: none !important;
 		background: transparent !important;
 		border: none !important;
 		outline: none !important;
 		box-shadow: none !important;
+		cursor: default !important;
 	}
 	/* Listbox */
 	listbox {
