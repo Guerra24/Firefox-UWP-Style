@@ -376,6 +376,23 @@ notification {
 #PanelUI-fxa-menu-syncnow-button[syncstatus="active"] > .toolbarbutton-icon {
 	fill: var(--uwp-accent-color) !important;
 }
+#fullscreen-warning {
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+	background-color: var(--uwp-autocomplete-list) !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+}
+.pointerlockfswarning[ontop] {
+	transform: translate(-50%, 10px) !important;
+}
+@supports(backdrop-filter: blur(1px)) {
+	#fullscreen-warning {
+		background-image: url(../img/noise-512x512.png) !important;
+		background-color: var(--uwp-urlbar-blur) !important;
+		backdrop-filter: blur(32px) !important;
+	}
+}
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
