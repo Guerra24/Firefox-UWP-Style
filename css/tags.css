@@ -260,7 +260,7 @@
 		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
 	}
 	radio[disabled="true"][selected="true"] > .radio-check {
-		border: 2px solid var(--uwp-tags-checkbox-disabled)) !important;
+		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
 		background: url(../img/radio.png) !important;
 	}
 	radio[disabled="true"][selected="true"]:hover > .radio-check {
