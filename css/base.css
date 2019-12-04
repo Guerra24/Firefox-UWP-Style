@@ -235,16 +235,13 @@ panel .text-link {
 }
 /* Old */
 #urlbar {
-	background-color: var(--uwp-autocomplete-list) !important;
 	border: none !important;
 	box-shadow: none !important;
+	font-size: 1.15em !important;
 }
 /* Megabar */
 #urlbar-background {
 	display: none !important;
-}
-#urlbar {
-	margin: 0px !important;
 }
 #urlbar[breakout][breakout-extend] {
 	top: 0px !important;
@@ -258,7 +255,7 @@ panel .text-link {
 	background-color: var(--uwp-navbar-background-hover) !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    height: calc(var(--urlbar-toolbar-height)) !important;
+    height: var(--urlbar-toolbar-height) !important;
     padding-block: 0px !important;
     padding-inline: 0px !important;
 }
@@ -274,7 +271,7 @@ panel .text-link {
 	clip-path: inset(0px -20px -30px -20px) !important;
 	animation: none !important;
 }
-.urlbarView .urlbarView-body-inner {
+.urlbarView {
 	border: none !important;
 }
 .urlbarView-results {
@@ -282,6 +279,13 @@ panel .text-link {
 }
 .urlbarView-row {
 	border-radius: 0px !important;
+	padding-block: 0px !important;
+}
+.urlbarView-row-inner {
+	border-radius: 0px !important;
+}
+.urlbarView-body-inner {
+	border: none !important;
 }
 .urlbarView-title {
 	height: 18px !important;
