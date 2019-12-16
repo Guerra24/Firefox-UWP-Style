@@ -9,7 +9,7 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/places/places.xul") {
+@-moz-document url("chrome://browser/content/places/places.xhtml") {
 	#placesToolbar {
 		padding: 0px !important;
 		background-color: var(--uwp-global-back) !important;
@@ -64,7 +64,7 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/aboutDialog.xul") {
+@-moz-document url("chrome://browser/content/aboutDialog.xhtml") {
 	#aboutDialogContainer {
 		background-color: transparent !important;
 		color: var(--uwp-global-front) !important;
@@ -81,10 +81,10 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/places/bookmarkProperties.xul"), url("chrome://browser/content/places/bookmarkProperties2.xul") {	
+@-moz-document url("chrome://browser/content/places/bookmarkProperties.xhtml"), url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
 }
 
-@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xul") {
+@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
 	#unknownContentType {
 		background-color: var(--uwp-global-back) !important;
 	}
@@ -96,14 +96,14 @@
 	}
 }
 
-@-moz-document url("chrome://global/content/appPicker.xul") {
+@-moz-document url("chrome://global/content/appPicker.xhtml") {
 	#app-picker {
 		background-color: black !important;
 		color: white !important;
 	}
 }
 
-@-moz-document url("chrome://mozapps/content/handling/dialog.xul") {
+@-moz-document url("chrome://mozapps/content/handling/dialog.xhtml") {
 	#handling {
 		background-color: black !important;
 		color: white !important;
@@ -115,7 +115,7 @@
 	}
 }
 
-@-moz-document url("chrome://global/content/alerts/alert.xul") {
+@-moz-document url("chrome://global/content/alerts/alert.xhtml") {
 	#alertBox {
 		box-shadow: none !important;
 		background-color: #1F1F1FF4 !important;
@@ -131,7 +131,7 @@
 	}
 }
 
-@-moz-document url("chrome://global/content/commonDialog.xul") {
+@-moz-document url("chrome://global/content/commonDialog.xhtml") {
 	#checkbox {
 		margin-left: 23px !important;
 	}
@@ -141,7 +141,7 @@
 	}
 }
 
-@-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xul") {
+@-moz-document url("chrome://mozapps/content/profile/createProfileWizard.xhtml") {
 	label {
 		color: var(--uwp-global-front) !important;
 	}
@@ -162,7 +162,7 @@
 	}
 }
 
-@-moz-document url("chrome://pippki/content/exceptionDialog.xul") {
+@-moz-document url("chrome://pippki/content/exceptionDialog.xhtml") {
 	#exceptiondialog {
 		background-color: black !important;
 	}
@@ -182,7 +182,7 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/pageinfo/pageInfo.xul") {
+@-moz-document url("chrome://browser/content/pageinfo/pageInfo.xhtml") {
 	/* Change Header Size */
 	#topBar {
 		background-color: var(--uwp-header-background) !important;
@@ -257,18 +257,18 @@
 	}
 }
 
-@-moz-document url("chrome://pippki/content/certViewer.xul") {
+@-moz-document url("chrome://pippki/content/certViewer.xhtml") {
 	/* Finish This */
 	#certDetails {
 		background-color: black !important;
 	}
 }
 
-@-moz-document url("chrome://mozapps/content/update/history.xul") {
+@-moz-document url("chrome://mozapps/content/update/history.xhtml") {
 	
 }
 
-@-moz-document url("chrome://browser/content/sanitize.xul") {
+@-moz-document url("chrome://browser/content/sanitize.xhtml") {
 	#SanitizeDialog {
 		background: black !important;
 		color: white !important;
