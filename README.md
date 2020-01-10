@@ -13,11 +13,9 @@ From Firefox 69 onwards, new users will have to toggle the `toolkit.legacyUserPr
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
+- firefox-73 > Firefox 73.
 - firefox-70 > Firefox 70, 71 & 72.
 - firefox-68 > Firefox 68 & 69.
-- firefox-65 > Firefox 65, 66 & 67.
-- firefox-61 > Firefox 61, 62, 63 & 64.
-- firefox-58 > Firefox 58, 59 & 60.
 
 ### With Git
 
@@ -35,10 +33,6 @@ Remember to check for newer branch as the supported one can change when firefox 
 Download the code of the branch as ZIP, copy the content inside the folder(where the userChrome.css file is located) into your chrome folder.
 
 Now restart Firefox and the theme will be enabled.
-
-## Acknowledges
-
-Scrollbar JS loading code by [Aris-t2](https://github.com/Aris-t2) (https://github.com/Aris-t2/Scrollbars)
 
 ## Screenshots
 
