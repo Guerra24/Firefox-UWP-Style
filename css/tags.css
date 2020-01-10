@@ -208,6 +208,23 @@
 		border-color: var(--uwp-tags-checkbox-disabled) !important;
 		background-color: var(--uwp-tags-checkbox-disabled) !important;
 	}
+	input[type="checkbox"].toggle-button {
+		background-image: none !important;
+		border-radius: 10px !important;
+		padding: 8px !important;
+		padding-right: 32px !important;
+	}
+	input[type="checkbox"].toggle-button::before {
+	    background: var(--uwp-tags-checkbox) !important;
+	    height: 10px !important;
+	    width: 10x !important;
+	    outline: none !important;
+		margin: 0px !important;
+		transform: translateX(-5px) translateY(-5px) !important;
+	}
+	input[type="checkbox"].toggle-button:checked::before {
+		transform: translateX(19px) translateY(-5px) !important;
+	}
 
 	/* Radio Button */
 	radio {
