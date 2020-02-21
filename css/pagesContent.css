@@ -470,6 +470,11 @@
 		background-blend-mode: multiply;
 		background-color: rgb(140,140,140) !important;
 	}
+	.sync-group {
+		border-radius: 0px !important;
+		background: transparent !important;
+		border: none !important;
+	}
 	/* Icons */
 	/*.category-icon {
 		width: 16px !important;
@@ -647,6 +652,9 @@
 	recommended-themes-section {
 		display: none !important;
 	}
+	button.button-link {
+		text-decoration: none !important;
+	}
 	/* Icons */
 	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
 		/* This should use --uwp-accent-text for fill */
@@ -754,7 +762,7 @@
 }
 
 @-moz-document url-prefix("about:logins") {
-	.buttons button, .buttons button:hover:active, .fxaccounts-avatar-button, .fxaccounts-avatar-button:hover:active {
+	.fxaccounts-avatar-button, .fxaccounts-avatar-button:hover:active {
 		background: transparent !important;
 		border: none !important;
 	}
@@ -765,5 +773,18 @@
 	.edit-button, .delete-button {
 		background-position-x: 8px !important;
 		padding-left: 32px !important;
+	}
+	login-list, div.meta {
+		background-color: var(--uwp-global-back) !important;
+	}
+	.login-list-item {
+		border-bottom: none !important;
+	}
+	.container[role="dialog"] {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid #333333 !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 }

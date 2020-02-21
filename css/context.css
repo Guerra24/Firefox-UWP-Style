@@ -1,6 +1,6 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
-	menupopup, panel-list, #PopupAutoComplete {
+	menupopup, panel-list, ul[role="menu"], #PopupAutoComplete {
 		-moz-appearance: none !important;
 		padding: 5px 1px 5px 1px !important;
 		background-color: var(--uwp-context-background) !important;
@@ -8,7 +8,7 @@
 		border-radius: 0px !important;
 		box-shadow: none !important;
 	}
-	menupopup menuseparator, panel-item-separator {
+	menupopup menuseparator, panel-item-separator, hr[role="separator"] {
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;

@@ -7,7 +7,7 @@
 	    --in-content-page-background: var(--uwp-global-back) !important;
 	    --in-content-text-color: var(--uwp-global-front) !important;
 	    --in-content-selected-text: #fff;
-	    --in-content-box-background: #fff;
+	    --in-content-box-background: white !important;
 	    --in-content-box-background-odd: #f3f6fa;
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;
