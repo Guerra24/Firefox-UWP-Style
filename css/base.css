@@ -273,9 +273,7 @@ panel .text-link {
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	clip-path: inset(0px -20px -30px -20px) !important;
 	animation: none !important;
-}
-.urlbarView {
-	border: none !important;
+	margin-block-start: 0px !important;
 }
 .urlbarView-results {
 	padding-block: 0px !important;
