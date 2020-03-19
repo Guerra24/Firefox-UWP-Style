@@ -36,12 +36,12 @@ Now restart Firefox and the theme will be enabled.
 
 ## Screenshots
 
-![01](.github/screenshots/01.png)
-![02](.github/screenshots/02.png)
-![04](.github/screenshots/03.png)
-![05](.github/screenshots/04.png)
-![05](.github/screenshots/05.png)
-![06](.github/screenshots/06.png)
-![07](.github/screenshots/07.png)
-![08](.github/screenshots/08.png)
-![09](.github/screenshots/09.png)
+![01](https://s3.guerra24.net/projects/firefox-uwp/screenshots/01.png)
+![02](https://s3.guerra24.net/projects/firefox-uwp/screenshots/02.png)
+![04](https://s3.guerra24.net/projects/firefox-uwp/screenshots/03.png)
+![05](https://s3.guerra24.net/projects/firefox-uwp/screenshots/04.png)
+![05](https://s3.guerra24.net/projects/firefox-uwp/screenshots/05.png)
+![06](https://s3.guerra24.net/projects/firefox-uwp/screenshots/06.png)
+![07](https://s3.guerra24.net/projects/firefox-uwp/screenshots/07.png)
+![08](https://s3.guerra24.net/projects/firefox-uwp/screenshots/08.png)
+![09](https://s3.guerra24.net/projects/firefox-uwp/screenshots/09.png)
