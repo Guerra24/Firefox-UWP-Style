@@ -62,7 +62,7 @@
 		margin-left: 24px !important;
 	}
 	button[role="tab"] {
-		background: transparent !important;
+		background-color: transparent !important;
 		color: #888888 !important;
 		border: none !important;
 		border-bottom: 2px solid transparent !important;
@@ -78,8 +78,11 @@
 		color: #B5B5B5 !important;
 	}
 	button[role="tab"]:hover:active {
-		background: transparent !important;
-		border: none !important;
+		background-color: transparent !important;
+	}
+	button[role="tab"][aria-selected="false"]:hover:active {
+		background-color: transparent !important;
+		border-color: transparent !important;
 	}
 
 	/* Text Box */

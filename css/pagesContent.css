@@ -132,9 +132,6 @@
 		height: 18px !important;
 		width: 18px !important;
 	}
-	.category-name {
-		padding-left: 10px !important;
-	}
 	#categories {
 		background-color: var(--uwp-pages-sidepanel) !important;
 		padding-top: 8px !important;
@@ -144,7 +141,27 @@
 		padding-right: 0px !important;
 		margin-top: 0px !important;
 	}
-	#categories > .category {
+	#categories > .category:not(richlistitem) > .category-name {
+		padding-left: 28px !important;
+		font-size: inherit !important;
+	}
+	#categories > .category:not(button) > .category-name {
+		padding-left: 10px !important;
+	}
+	#categories > .category:not(richlistitem) {
+		display: flex !important;
+		border: none !important;
+		padding: 0px !important;
+		margin: 0px !important;
+		min-height: 40px !important;
+		font-size: inherit !important;
+		color: var(--uwp-global-front) !important;
+		background-size: 16px !important;
+		background-repeat: no-repeat !important;
+		background-position-x: 12px !important;
+		background-position-y: 10px !important;
+	}
+	#categories > .category:not(button) {
 		min-height: 40px !important;
 		transition: none !important;
 		padding-left: 0px !important;
@@ -154,22 +171,23 @@
 	}
 	#categories > .category::before {
 		content: "";
-		display: block !important;
+		width: 0 !important;
+		display: block !important; 
 		padding: 12px 3px !important;
 		margin-right: 6px !important;
 		background: transparent !important;
 	}
 	#categories > .category[selected] {
-		background: transparent !important;
+		background-color: : transparent !important;
 	}
 	#categories > .category[selected]::before {
-		content: "";
-		display: block !important;
-		padding: 12px 3px !important;
 		background: var(--uwp-accent-color) !important;
 	}
-	#categories > .category[disabled] {
+	#categories > .category[disabled]:not(button) {
 		opacity: 0.5 !important;
+	}
+	#categories > .category[hidden] {
+		display: none !important;
 	}
 	#categories > .category:hover {
 		background-color: var(--in-content-category-background-hover) !important;
@@ -183,7 +201,7 @@
 	#categories > .category[selected]:hover:active, #categories > .category.selected:hover:active {
 		background-color: var(--in-content-category-background-selected-active) !important;
 	}
-	#category-box {
+	#sidebar, #category-box {
 		background-color: var(--uwp-pages-sidepanel) !important;
 	}
 	#categories hr {
@@ -598,19 +616,10 @@
 		margin-top: 6px !important;
 	}
 	/* Icons */
-	/*.category-icon {
+	.category-icon {
 		width: 16px !important;
 		height: 16px !important;
 	}
-	#category-extension > .category-icon {
-		list-style-image: var(--mdl2-icons-puzzle) !important;
-	}
-	#category-theme > .category-icon {
-		list-style-image: var(--mdl2-icons-personalize) !important;
-	}
-	#category-dictionary > .category-icon {
-		list-style-image: var(--mdl2-icons-dictionary) !important;
-	}*/
 	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
