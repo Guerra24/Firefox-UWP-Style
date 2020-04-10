@@ -239,9 +239,9 @@ panel .text-link {
 	box-shadow: none !important;
 	font-size: 1.15em !important;
 }
-#urlbar:not(.megabar) {
+/*#urlbar:not(.megabar) {
 	background-color: var(--uwp-autocomplete-list) !important;
-}
+}*/
 /* Megabar */
 #urlbar-background {
 	display: none !important;
@@ -278,7 +278,7 @@ panel .text-link {
 .urlbarView-results {
 	padding-block: 0px !important;
 }
-.urlbarView.megabar .urlbarView-row {
+.urlbarView .urlbarView-row {
 	border-radius: 0px !important;
 	padding-block: 0px !important;
 }
