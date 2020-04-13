@@ -135,7 +135,6 @@
 	#categories {
 		background-color: var(--uwp-pages-sidepanel) !important;
 		padding-top: 8px !important;
-		width: 250px !important;
 		font-size: 12px !important;
 		padding-left: 0px !important;
 		padding-right: 0px !important;
@@ -178,7 +177,7 @@
 		background: transparent !important;
 	}
 	#categories > .category[selected] {
-		background-color: : transparent !important;
+		background-color: transparent !important;
 	}
 	#categories > .category[selected]::before {
 		background: var(--uwp-accent-color) !important;
@@ -219,6 +218,9 @@
 	}
 	.anonymous-div {
 		line-height: inherit !important;
+	}
+	:root {
+		--in-content-sidebar-width: 250px !important;
 	}
 }
 /* Move this in the future */
