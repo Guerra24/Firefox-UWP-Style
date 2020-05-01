@@ -369,10 +369,10 @@
 		border: none !important;
 		box-shadow: none !important;
 	}
-    .icon:not(.icon-spacer):hover, .icon:not(.icon-spacer):hover:active {
+    .card-outer:hover .icon:not(.icon-spacer), .top-site-outer:hover .icon:not(.icon-spacer), .icon:not(.icon-spacer):hover, .icon:not(.icon-spacer):hover:active {
 		background-color: var(--uwp-tags-button) !important;
 	}
-	.card-outer .context-menu-button {
+	.card-outer .context-menu-button, .top-site-outer .context-menu-button {
 		top: 0px !important;
 		inset-inline-end: 0px !important;
 		box-shadow: none !important;
