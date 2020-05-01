@@ -51,6 +51,16 @@
 
 		--uwp-pages-sidepanel: #E6E6E6;
 	}
+	body {
+		--newtab-background-color: var(--uwp-mainwindow) !important;
+		--newtab-snippets-background-color: #EFEFEF !important;
+		--newtab-textbox-focus-color: var(--uwp-accent-color) !important;
+		--newtab-link-primary-color: var(--uwp-accent-color) !important;
+		--newtab-card-background-color: var(--uwp-mainwindow) !important;
+		--newtab-card-shadow: none !important;
+		--newtab-search-header-background-color: var(--uwp-mainwindow)!important;
+		--newtab-topsites-icon-shadow: none !important;
+	}
 
 }
 }

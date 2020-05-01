@@ -52,7 +52,7 @@
 	--lwt-toolbarbutton-icon-fill: gray !important;
 }
 
-.tabbrowser-tab:-moz-lwtheme {
+.tabbrowser-tab {
 	color: black !important;
 }
 }

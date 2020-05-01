@@ -52,6 +52,16 @@
 
 		--uwp-pages-sidepanel: #1F1F1F;
 	}
+	body {
+		--newtab-background-color: #1A1A1A !important;
+		--newtab-snippets-background-color: #2A2A2A !important;
+		--newtab-textbox-focus-color: var(--uwp-accent-color) !important;
+		--newtab-link-primary-color: var(--uwp-accent-color) !important;
+		--newtab-card-background-color: #2A2A2A !important;
+		--newtab-card-shadow: none !important;
+		--newtab-search-header-background-color: #2A2A2A !important;
+		--newtab-topsites-icon-shadow: none !important;
+	}
 
 }
 }
