@@ -185,7 +185,7 @@
 	#categories > .category[disabled]:not(button) {
 		opacity: 0.5 !important;
 	}
-	#categories > .category[hidden] {
+	#categories > .category[hidden=""] {
 		display: none !important;
 	}
 	#categories > .category:hover {
