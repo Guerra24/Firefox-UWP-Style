@@ -265,20 +265,6 @@
 }
 
 @-moz-document url("about:newtab"), url("about:home") {
-	body{
-		color: white !important;
-		overflow-y: auto !important;
-		--newtab-background-color: #1A1A1A !important;
-		--newtab-snippets-background-color: #2A2A2A !important;
-		--newtab-textbox-focus-color: var(--uwp-accent-color) !important;
-		--newtab-link-primary-color: var(--uwp-accent-color) !important;
-		--newtab-card-background-color: #2A2A2A !important;
-		--newtab-card-shadow: none !important;
-		--newtab-search-header-background-color: #2A2A2A !important;
-	}
-	#onboarding-overlay-button {
-		display: none !important;
-	}
 	#snippets-container {
 		background: #2A2A2A !important;
 		border-top: none !important;
@@ -328,12 +314,8 @@
 	.card-outer.placeholder {
 		background: var(--newtab-card-background-color) !important;
 	}
-	.icon {
-		fill: #C4C4C4 !important;
-	}
 	.top-site-outer .context-menu-button, .card-outer .context-menu-button {
 		background-clip: padding-box !important;
-		background-image: url("chrome://browser/skin/page-action.svg") !important;
 		background-position: 55% !important;
 		background-repeat: no-repeat !important;
 		transition-property: opacity !important;
@@ -341,12 +323,10 @@
 	}
 	.top-site-outer .context-menu-button:hover:active, .card-outer .context-menu-button:hover:active {
 		background-clip: padding-box !important;
-		background-image: url("chrome://browser/skin/page-action.svg") !important;
 		background-position: 55% !important;
 		background-repeat: no-repeat !important;
 	}
 	.search-wrapper .search-button {
-		background: url("chrome://browser/skin/forward.svg") no-repeat center center !important;
 		background-color: transparent !important;
 		background-size: 16px 16px !important;
 		height: 100% !important;
@@ -356,27 +336,41 @@
 		background-color: transparent !important;
 	}
 	.search-wrapper .search-button:hover:active {
-		background: url("chrome://browser/skin/forward.svg") no-repeat center center !important;
 		background-color: transparent !important;
 		border: none !important;
-	}
-	.icon.icon-settings, .icon.icon-settings:hover:active {
-		background-image: url("chrome://browser/skin/settings.svg") !important;
-	}
-	.collapsible-section .section-top-bar .context-menu-button {
-		background: url("chrome://browser/skin/page-action.svg") no-repeat center center !important;
 	}
 	.prefs-button button, .prefs-button button:hover:active {
 		background-color: transparent !important;
 		padding: 15px !important;
 		border: none !important;
 	}
-	.icon, .icon:hover, .icon:hover:active {
-		background-position: center center !important;
+	.modal {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid #333333 !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+	}
+	.actions {
+		border: none !important;
+	}
+	.a11y-link-button:hover {
+		text-decoration: none !important;
+	}
+	.button:hover:not(.dismiss), .button:focus:not(.dismiss), .actions button:hover:not(.dismiss), .actions button:focus:not(.dismiss) {
+		box-shadow: none !important;
+	}
+	.icon {
+		background-color: transparent !important;
+        background-position: center center !important;
 		background-repeat: no-repeat !important;
 		background-size: 16px !important;
 		height: 16px !important;
 		border: none !important;
+		box-shadow: none !important;
+	}
+    .icon:not(.icon-spacer):hover, .icon:not(.icon-spacer):hover:active {
+		background-color: var(--uwp-tags-button) !important;
 	}
 	.card-outer .context-menu-button {
 		top: 0px !important;
@@ -387,7 +381,6 @@
 		z-index: 1 !important;
 	}
 	.snippet .block-snippet-button {
-		background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cGF0aCBmaWxsPSJjb250ZXh0LWZpbGwiIGQ9Ik05LjQxNCA4bDMuNTMxLTMuNTMxYTEgMSAwIDEgMC0xLjQxNC0xLjQxNEw4IDYuNTg2IDQuNDY5IDMuMDU1YTEgMSAwIDEgMC0xLjQxNCAxLjQxNEw2LjU4NiA4bC0zLjUzMSAzLjUzMWExIDEgMCAxIDAgMS40MTQgMS40MTRMOCA5LjQxNGwzLjUzMSAzLjUzMWExIDEgMCAxIDAgMS40MTQtMS40MTR6Ii8+PC9zdmc+") !important;
 		height: 12px !important;
 		background-color: transparent !important;
 		border: none !important;
@@ -414,7 +407,7 @@
 		margin-left: 48px !important;
 	}
 	.fake-textbox {
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 }
 
@@ -489,6 +482,7 @@
 		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
 		background-blend-mode: multiply;
 		background-color: rgb(140,140,140) !important;
+		color: var(--uwp-accent-text) !important;
 	}
 	.sync-group {
 		border-radius: 0px !important;
