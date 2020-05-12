@@ -253,6 +253,7 @@ panel .text-link {
 }
 #urlbar-input-container {
 	border: none !important;
+	background-color: var(--uwp-urlbar) !important;
 }
 #urlbar-input-container:hover {
 	background-color: var(--uwp-navbar-background-hover) !important;

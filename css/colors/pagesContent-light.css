@@ -12,7 +12,7 @@
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;
 	    --in-content-box-border-color: transparent !important;
-	    --in-content-item-hover: #191919 !important;
+	    --in-content-item-hover: #E6E6E6 !important;
 	    --in-content-item-selected: #0a84ff;
 		--in-content-border-highlight: var(--uwp-accent-color) !important;
 	    --in-content-border-focus: #0a84ff;
@@ -40,7 +40,6 @@
 		--card-shadow: none !important;
 		--card-shadow-hover: none !important;
 		--card-shadow-focus: none !important;
-		--in-content-box-background: black !important;
 	    --grey-20: #ededf0;
 	    --grey-90: #0c0c0d;
 	    --grey-90-a10: rgba(12, 12, 13, 0.1);
