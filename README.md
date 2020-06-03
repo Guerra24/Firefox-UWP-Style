@@ -13,7 +13,7 @@ From Firefox 69 onwards, new users will have to toggle the `toolkit.legacyUserPr
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-76 > Firefox 76.
+- firefox-76 > Firefox 76, 77 & 78.
 - firefox-73 > Firefox 73, 74 & 75.
 - firefox-70 > Firefox 70, 71 & 72.
 
