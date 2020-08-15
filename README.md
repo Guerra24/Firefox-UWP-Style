@@ -4,11 +4,11 @@ This is a very visually simple theme that follows MDL2 styling with the accent c
 
 ## Install
 
-The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issue if you select a theme inside Firefox, to avoid it use the default theme.
+The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid it use the default theme.
 
 Firefox's density modes are supported but only the compact one has been thoroughly tested, if you see any issues please report them here.
 
-From Firefox 69 onwards, new users will have to toggle the `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` to enable both userChrome.css and userContent.css, users that already had a css file will have it enabled by default.
+Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` to enable both userChrome.css and userContent.css.
 
 Select the branch that targets your version of Firefox.
 
@@ -26,11 +26,11 @@ Replace `<branch>` with the one that targets your version of Firefox.
 
 Now restart Firefox and the theme will be enabled.
 
-Remember to check for newer branch as the supported one can change when firefox update.
+Remember to check for newer branches as the supported one can change when firefox updates.
 
 ### Without Git
 
-Download the code of the branch as ZIP, copy the content inside the folder(where the userChrome.css file is located) into your chrome folder.
+Download the code of the branch as ZIP, copy the content inside the folder(where userChrome.css file is located) into your chrome folder.
 
 Now restart Firefox and the theme will be enabled.
 

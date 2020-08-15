@@ -101,11 +101,12 @@
 	.sidebar-footer-button > .text-link {
 		height: 40px !important;
 		margin-inline-start: 0px !important;
-		padding-left: 16px !important;
+		padding-left: 14px !important;
 		color: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-button > .text-link:hover {
 		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-button {
 		padding: 0px !important;
@@ -127,6 +128,22 @@
 		height: 18px !important;
 		width: 18px !important;
 		margin: 0px !important;
+	}
+	.sidebar-footer-link {
+		padding-left: 40px !important;
+		height: 40px !important;
+		fill: var(--uwp-global-front) !important;
+		background-position-x: 14px !important;
+		background-position-y: 11px !important;
+		background-size: 18px !important;
+	}
+	.sidebar-footer-link-text {
+		color: var(--uwp-global-front) !important;
+		padding-bottom: 1px !important;
+	}
+	.sidebar-footer-list {
+		margin-left: 0px !important;
+		margin-bottom: 8px !important;
 	}
 	.category-icon {
 		height: 18px !important;
