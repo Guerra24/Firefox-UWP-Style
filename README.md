@@ -13,7 +13,7 @@ Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:conf
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-76 > Firefox 76 ~ 80.
+- firefox-76 > Firefox 76 ~ 81.
 - firefox-73 > Firefox 73 ~ 75.
 - firefox-70 > Firefox 70 ~ 72.
 

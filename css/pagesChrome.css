@@ -279,4 +279,14 @@
 }
 
 @-moz-document url("chrome://global/content/pictureinpicture/player.xhtml") {
+	.control-item {
+		opacity: 0 !important;
+		transition: opacity 160ms linear !important;
+	}
+	#controls:hover .control-item:hover {
+		opacity: 1 !important;
+	}
+	#controls:hover .control-item {
+		opacity: 0.8 !important;
+	}
 }
