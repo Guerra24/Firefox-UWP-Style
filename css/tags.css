@@ -87,7 +87,7 @@
 
 	/* Text Box */
 	textarea,
-	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]),
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]),
 	.findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -100,19 +100,19 @@
 		transition: none !important;
 	}
 	textarea:hover,
-	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,
 	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	textarea:focus,
-	input:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):focus,
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-accent-color) !important;
 		background: white !important;
 		color: black !important;
 	}
-	input[disabled]:not(#urlbar-input):not(.fake-editable):not([type="radio"]):not([type="checkbox"]) {
+	input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]) {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
@@ -183,6 +183,9 @@
 		height: 0px !important;
 		width: 0px !important;
 		margin-right: 10px !important;
+	}
+	input[type="checkbox"]:-moz-focusring {
+		outline: none !important;
 	}
 	.checkbox-label-box {
 		color: var(--uwp-global-front);
@@ -650,7 +653,7 @@
 	}
 	.identity-popup-expander {
 		border: none !important;
-		background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+		background: url("chrome://global/skin/icons/arrow-left.svg") center no-repeat !important;
 	}
 	.identity-popup-expander:hover, .identity-popup-expander[open] {
 		border: none !important;
@@ -658,7 +661,7 @@
 	.identity-popup-expander:hover:active {
 		border: none !important;
 		fill: currentColor !important;
-		background: url("chrome://browser/skin/arrow-left.svg") center no-repeat !important;
+		background: url("chrome://global/skin/icons/arrow-left.svg") center no-repeat !important;
 		background-color: var(--arrowpanel-dimmed-further) !important;
 	}
 

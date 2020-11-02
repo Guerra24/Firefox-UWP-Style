@@ -251,11 +251,11 @@ panel .text-link {
 	left: 0px !important;
 	width: 100% !important;
 }
-#urlbar-input-container {
+#urlbar-input-container, #searchbar {
 	border: none !important;
 	background-color: var(--uwp-urlbar) !important;
 }
-#urlbar-input-container:hover {
+#urlbar-input-container:hover, #searchbar:hover {
 	background-color: var(--uwp-navbar-background-hover) !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
