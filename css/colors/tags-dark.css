@@ -26,6 +26,9 @@
 		--uwp-tags-richlistitem-active: #333333;
 		--uwp-tags-richlistitem-selected: #171717;
 
+		--uwp-tags-treecol: #191919;
+		--uwp-tags-treecol-hover: #282828;
+		--uwp-tags-treecol-selected: #3C3C3C;
 		--uwp-tags-treechildren-row-hover: #323232;
 		--uwp-tags-treechildren-row-selected: #3C3C3C;
 
@@ -35,5 +38,7 @@
 
 		--uwp-scrollbar: #1B1B1B;
 		--uwp-scrollbar-thumb: #494949;
+
+		--uwp-dropmarker: url(../img/arrowdown.png);
 	}
 }

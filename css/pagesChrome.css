@@ -59,7 +59,7 @@
 	label {
 		color: var(--uwp-global-front) !important;
 	}
-	#placesViewsDeck, #detailsDeck {
+	#placesViewsDeck, #detailsDeck, #detailsPane {
 		background: var(--uwp-global-back) !important;
 	}
 }

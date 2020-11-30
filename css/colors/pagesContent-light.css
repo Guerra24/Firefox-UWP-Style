@@ -16,7 +16,7 @@
 	    --in-content-item-selected: #0a84ff;
 		--in-content-border-highlight: var(--uwp-accent-color) !important;
 	    --in-content-border-focus: #0a84ff;
-	    --in-content-border-color: #282828 !important;
+	    --in-content-border-color: #a8a8a8 !important;
 	    --in-content-category-outline-focus: 1px dotted #0a84ff;
 	    --in-content-category-text: white !important;
 	    --in-content-category-text-active: white !important;

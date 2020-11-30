@@ -73,6 +73,9 @@
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
 	background: var(--uwp-tabbar-tab-hover) !important;
 }
+:root[tabsintitlebar]:not(:-moz-window-inactive) {
+	 color: var(--uwp-global-front) !important;
+}
 .tab-throbber[progress]:not([selected="true"])::before {
     fill: #555555 !important;
 }

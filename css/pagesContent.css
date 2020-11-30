@@ -478,7 +478,7 @@
 		background-color: transparent !important;
 	}
 	description.indent, .indent > description {
-		color: #999 !important;
+		color: var(--uwp-accent-text) !important;
 	}
 	.updateSettingCrossUserWarningContainer {
 		background-color: transparent !important;

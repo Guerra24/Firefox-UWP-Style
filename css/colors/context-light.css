@@ -13,5 +13,7 @@
 	--uwp-context-tooltip-border: #D1D1D1;
 	--uwp-context-menubar-hover: #E6E6E6;
 	--uwp-context-menubar-open: #CCCCCC;
+	--uwp-context-menulist-open: #cccccc;
+	--uwp-context-menulist-open-border: #999999;
 }
 }

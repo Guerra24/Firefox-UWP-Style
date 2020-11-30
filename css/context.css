@@ -110,8 +110,8 @@
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	menulist[open="true"]  {
-		border: 2px solid #666666 !important;
-		background-color: #333333 !important;
+		border: 2px solid var(--uwp-context-menulist-open-border) !important;
+		background-color: var(--uwp-context-menulist-open) !important;
 	}
 	#context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, #context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, #context-bookmarkpage > .menu-iconic-left {
 		padding: 0px !important;
