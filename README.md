@@ -4,7 +4,9 @@ This is a visually simple theme that follows MDL2 styling with the accent color 
 
 ## Install
 
-The theme uses OS-level dark/light setting to apply the correct colors. Light theme is not 100% finished, some rarely used pages may fallback to dark colors.
+The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid it use the default theme.
+
+Light theme is not 100% finished, some rarely used pages may fallback to dark colors.
 
 Firefox's density modes are supported but only the compact one has been thoroughly tested, if you see any issues please report them here.
 
