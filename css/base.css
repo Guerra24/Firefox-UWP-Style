@@ -236,6 +236,10 @@ panel .text-link {
 #appMenu-notification-popup {
 	margin-top: -2px !important;
 }
+.whatsNew-message-body {
+	background: transparent !important;
+	border: none !important;
+}
 /* Old */
 #urlbar {
 	border: none !important;

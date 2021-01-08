@@ -7,6 +7,14 @@
 		background: var(--uwp-global-back) !important;
 		color: var(--uwp-global-front) !important;
 	}
+	.wizard-header {
+		background: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
+		border: none !important;
+	}
+	.wizard-button[dlgtype="back"] {
+		margin-inline-end: 5px !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
