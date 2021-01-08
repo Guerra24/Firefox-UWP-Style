@@ -295,6 +295,40 @@ panel .text-link {
 .urlbarView-title {
 	height: 18px !important;
 }
+.urlbarView-row[type="tip"] > .urlbarView-row-inner {
+    min-height: unset !important;
+	padding-block: 0px !important;
+}
+.urlbarView-row[type="tip"] > .urlbarView-row-inner > .urlbarView-favicon, .urlbarView-row[type="tip"] > .urlbarView-row-inner > .urlbarView-title, .urlbarView-tip-button, .urlbarView-tip-help {
+    margin-block-end: 0px !important;
+}
+.urlbarView-row[type="tip"]:not(:first-child) {
+    margin-top: 0px !important;
+}
+.urlbarView-row[type="tip"]:not(:last-child) {
+    margin-bottom: 0px !important;
+}
+.urlbarView-row[type="tip"] > .urlbarView-row-inner > .urlbarView-favicon {
+    width: 16px !important;
+    height: 16px !important;
+    flex-basis: 16px !important;
+}
+.urlbarView-tip-help {
+	height: 28px !important;
+	box-shadow: none !important;
+}
+.urlbarView-tip-help[selected] {
+	background-color: var(--uwp-tags-button-hover-active) !important;
+}
+.urlbarView-tip-button {
+	font-size: unset !important;
+}
+#urlbar .search-one-offs:not([hidden]) {
+	padding-block: 0px !important;
+}
+#urlbar .searchbar-engine-one-off-item {
+    margin-inline-end: 0px !important;
+}
 @supports(backdrop-filter: blur(1px)) {
 	.urlbarView {
 		background-image: url(../img/noise-512x512.png) !important;

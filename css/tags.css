@@ -13,7 +13,7 @@
 	}
 
 	/* Button */
-	button {
+	button, .urlbarView-tip-button {
 		-moz-appearance: none !important;
 		padding: 3px !important;
 		background-color: var(--uwp-tags-button) !important;
@@ -23,11 +23,12 @@
 		cursor: default !important;
 		transition: none !important;
 		opacity: 1 !important;
+		box-shadow: none !important;
 	}
-	button:hover, button[open] {
+	button:hover, button[open], .urlbarView-tip-button:hover {
 		border-color: var(--uwp-tags-button-hover) !important;
 	}
-	button:hover:active {
+	button:hover:active, .urlbarView-tip-button:hover:active {
 		background-color: var(--uwp-tags-button-hover-active) !important;
 		border-color: var(--uwp-tags-button-hover-active) !important;
 	}
