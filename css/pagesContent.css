@@ -175,7 +175,7 @@
 		background-size: 16px !important;
 		background-repeat: no-repeat !important;
 		background-position-x: 12px !important;
-		background-position-y: 10px !important;
+		background-position-y: 12px !important;
 	}
 	#categories > .category:not(button) {
 		min-height: 40px !important;

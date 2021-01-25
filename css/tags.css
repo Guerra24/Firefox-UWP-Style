@@ -99,6 +99,7 @@
 		box-shadow: none !important;
 		opacity: 1 !important;
 		transition: none !important;
+		outline: none !important;
 	}
 	textarea:hover,
 	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,
@@ -344,6 +345,7 @@
 	}
 	radio > .radio-label-box {
 		margin-left: 5px !important;
+		outline: none !important;
 	}
 	a, label[href] {
 		color: var(--uwp-accent-color) !important;
