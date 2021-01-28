@@ -1,6 +1,6 @@
 /* about: specific pages */
 
-@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!blank).*") {
 
 	treecol {
 		border-inline-start-width: 0px !important;
@@ -28,11 +28,25 @@
 	}
 	.dialogBox {
 		background: var(--uwp-global-back) !important;
-		border: 1px solid #333333 !important;
+		border: 1px solid var(--uwp-accent-color) !important;
 		border-radius: 0px !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+		animation: fadeInScale .3s;
 	}
+	.groove {
+		border: none !important;
+	}
+	/*@supports(backdrop-filter: blur(1px)) {
+		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
+			background: transparent !important;
+		}
+		.dialogBox {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-dialog-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+		}
+	}*/
 	.groupbox-title {
 		background: transparent !important;
 		border-bottom: 0px !important;
@@ -46,18 +60,6 @@
 	}
 	dialog {
 		background: transparent !important;
-	}
-	dialog.prefwindow[type="child"], #history[windowtype="Update:History"] {
-		background: black !important;
-		color: white !important;
-		padding-top: 0px !important;
-		padding-bottom: 0px !important;
-		padding-inline-start: 0px !important;
-		padding-inline-end: 0px !important;
-	}
-	#history[windowtype="Update:History"] #historyItems {
-		border: none !important;
-		border-radius: 0px !important;
 	}
 	.prefpane {
 		background: black !important;
@@ -92,7 +94,7 @@
 }
 
 /* Extra stuff */
-@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!blank).*") {
 	/* Fixes for FF62~ Placed here due to CSS order priority */
 	.help-button > .text-link > hbox {
 		margin-top: 2px !important;
@@ -241,7 +243,7 @@
 	}
 }
 /* Move this in the future */
-@-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
+@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!blank).*") {
 	@media (max-width: 830px) {
 		#categories {
 			width: 40px !important;

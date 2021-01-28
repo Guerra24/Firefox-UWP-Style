@@ -13,7 +13,7 @@
 	}
 
 	/* Button */
-	button, .urlbarView-tip-button {
+	button, .urlbarView-tip-button, .toggle-group-label {
 		-moz-appearance: none !important;
 		padding: 3px !important;
 		background-color: var(--uwp-tags-button) !important;
@@ -25,7 +25,7 @@
 		opacity: 1 !important;
 		box-shadow: none !important;
 	}
-	button:hover, button[open], .urlbarView-tip-button:hover {
+	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover {
 		border-color: var(--uwp-tags-button-hover) !important;
 	}
 	button:hover:active, .urlbarView-tip-button:hover:active {
@@ -45,6 +45,21 @@
 		/*outline-offset: 0px !important;
 		outline: 1px solid black !important;
 		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;*/
+	}
+	.toggle-group-input:enabled:checked + .toggle-group-label {
+		background-color: var(--uwp-accent-color) !important;
+		border-color: var(--uwp-accent-color) !important;
+		color: var(--uwp-accent-text) !important;
+	}
+	.toggle-group-input:enabled:checked + .toggle-group-label:hover {
+		/* linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color))*/
+		background-image: var(--uwp-tags-button-accent) !important;
+		background-blend-mode: multiply;
+		background-color: var(--uwp-tags-button-accent-mod) !important;
+		border-color: var(--uwp-tags-button-hover) !important;
+	}
+	.toggle-group > .toggle-group-label {
+		margin-right: 5px !important;
 	}
 	.expander-down {
 		background: url(../img/arrowdown.png) center center no-repeat !important;
@@ -240,6 +255,11 @@
 		transform: translateX(19px) translateY(-5px) !important;
 	}
 
+	/* Number Input */
+	input[type="number"]::-moz-number-spin-box {
+		display: none !important;
+	}
+
 	/* Radio Button */
 	radio {
 		opacity: 1 !important;
@@ -290,7 +310,7 @@
 	}
 	input[type="radio"] + span {
 		position: relative !important;
-		bottom: 5px !important;
+		bottom: 0px !important;
 	}
 	/* Old radio buttons */
 	radio > .radio-check {
@@ -513,6 +533,8 @@
 	richlistbox {
 		-moz-appearance: none !important;
 		background-color: transparent !important;
+		border: none !important;
+		border-radius: 0px !important;
 	}
 	richlistitem {
 		background-color: transparent !important;
@@ -581,14 +603,6 @@
 		background: none !important;
 		background-color: #00000090 !important;
 		animation: fadeInOpacity .3s;
-	}
-	.dialogBox {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid var(--uwp-accent-color) !important;
-		border-radius: 0px !important;
-		color: var(--uwp-global-front) !important;
-		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
-		animation: fadeInScale .3s;
 	}
 	.buttonContainer > button {
 		padding: 4.5px !important;

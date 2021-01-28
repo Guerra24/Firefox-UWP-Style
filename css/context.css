@@ -19,12 +19,15 @@
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
-	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem {
+	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		padding: 7px 0px 7px 9px !important;
 		border: none !important;
 		font-size: 12px !important;
+	}
+	select > option {
+		padding-inline: 7px 0px 7px 9px !important;
 	}
 	menupopup menuitem[disabled="true"], menupopup menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
@@ -32,7 +35,7 @@
 	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
-	menupopup menu[open], menupopup menuitem[selected="true"] {
+	menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
 		background-image: var(--uwp-context-menuitem-open-image) !important;
 		background-blend-mode: multiply;
 		background-color: var(--uwp-context-menuitem-open) !important;
@@ -96,7 +99,7 @@
 	#ContentSelectDropdown {
 		padding: 0px !important;
 	}
-	menulist, menulist[disabled="true"] {
+	menulist, menulist[disabled="true"], select {
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
@@ -106,12 +109,18 @@
 		height: auto !important;
 		box-shadow: none !important;
 	}
-	menulist:hover { /* Finish this */
+	menulist:hover, select:hover { /* Finish this */
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
-	menulist[open="true"]  {
+	menulist[open="true"] {
 		border: 2px solid var(--uwp-context-menulist-open-border) !important;
 		background-color: var(--uwp-context-menulist-open) !important;
+	}
+	select {
+		line-height: normal !important;
+	}
+	select:-moz-focusring {
+		outline: none !important;
 	}
 	#context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, #context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, #context-bookmarkpage > .menu-iconic-left {
 		padding: 0px !important;

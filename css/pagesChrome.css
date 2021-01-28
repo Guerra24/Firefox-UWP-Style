@@ -15,6 +15,46 @@
 	.wizard-button[dlgtype="back"] {
 		margin-inline-end: 5px !important;
 	}
+	.header-container, .footer-container {
+		border: none !important;
+	}
+	.dialogBox {
+		margin-top: 0px !important;
+		background: transparent !important;
+		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+		animation: fadeInScale .3s;
+	}
+	.dialogFrame {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid var(--uwp-accent-color) !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+	}
+	.previewStack {
+		background: transparent !important;
+	}
+	@supports(backdrop-filter: blur(1px)) {
+		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
+			background: transparent !important;
+		}
+		.dialogFrame, .previewStack {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-dialog-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+		}
+	}
+}
+
+@-moz-document url-prefix("chrome://global/content/print.html") {
+	html {
+		background: transparent !important;
+	}
+	input[type="number"].photon-number {
+		height: unset !important;
+	}
+	#more-settings {
+		border: none !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
