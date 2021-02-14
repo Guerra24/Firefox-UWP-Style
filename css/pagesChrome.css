@@ -7,6 +7,9 @@
 		background: var(--uwp-global-back) !important;
 		color: var(--uwp-global-front) !important;
 	}
+	#window-modal-dialog {
+		background: transparent !important;
+	}
 	.wizard-header {
 		background: var(--uwp-global-back) !important;
 		color: var(--uwp-global-front) !important;

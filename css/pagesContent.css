@@ -635,6 +635,10 @@
 		width: 16px !important;
 		height: 16px !important;
 	}
+	input[type="radio"] + span {
+		position: relative !important;
+		bottom: -3px !important;
+	}
 	/* Fixes for FF62~ */
 	.addon {
 		border-inline-start: none !important;
@@ -643,7 +647,7 @@
 	}
 }
 /* New HTML-based addons page */
-@-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html") {
+@-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html"), url-prefix("about:addons") {
 	:root{
 	}
 	.rating-star {
@@ -655,6 +659,7 @@
 		border: none !important;
 		border-radius: 0px !important;
 		cursor: default !important;
+		padding: 10px !important;
 	}
 	addon-card:not([expanded]) > .addon.card:hover {
 		background: var(--uwp-tags-richlistitem-hover) !important;
@@ -678,6 +683,10 @@
 	}
 	button.button-link {
 		text-decoration: none !important;
+	}
+	.card-heading-image {
+		margin-left: -10px !important;
+		margin-top: 0px !important;
 	}
 	/* Icons */
 	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
