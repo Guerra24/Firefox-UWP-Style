@@ -1,6 +1,6 @@
 # Firefox UWP Style
 
-This is a visually simple theme that follows MDL2 styling with the accent color and gray-on-black elements, combines both while remaining original.
+A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements, combines both while remaining original.
 
 ## Install
 
@@ -10,12 +10,12 @@ Light theme is not 100% finished, some rarely used pages may fallback to dark co
 
 Firefox's density modes are supported but only the compact one has been thoroughly tested, if you see any issues please report them here.
 
-Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` to enable both userChrome.css and userContent.css.
+Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config`.
 
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
-- firefox-76 > Firefox 76 ~ 85.
+- firefox-76 > Firefox 76 ~ 87.
 
 ### With Git
 
