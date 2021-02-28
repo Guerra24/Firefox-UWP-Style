@@ -130,14 +130,20 @@
 		height: 18px !important;
 		width: 18px !important;
 		margin: 0px !important;
+		fill: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-link {
-		padding-left: 40px !important;
+		padding-left: 14px !important;
 		height: 40px !important;
+		border-radius: 0px !important;
 		fill: var(--uwp-global-front) !important;
+		color: var(--uwp-global-front) !important;
 		background-position-x: 14px !important;
 		background-position-y: 11px !important;
 		background-size: 18px !important;
+	}
+	.sidebar-footer-link:hover, .sidebar-footer-label {
+		color: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-link-text {
 		color: var(--uwp-global-front) !important;
