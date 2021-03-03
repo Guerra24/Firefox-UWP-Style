@@ -185,31 +185,32 @@ findbar[hidden] {
 }
 .panel-arrowcontent {
 	border: none !important;
-	box-shadow: none !important;
-	/*box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .40) !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	margin: 30px !important;
 	margin-top: 8px !important;
 	margin-left: 18px !important;
 	margin-right: 18px !important;
-	margin-bottom: 28px !important;*/
+	margin-bottom: 28px !important;
 }
 panel .text-link {
 	color: var(--uwp-accent-color) !important;
 }
 /* Various Panels */
 #appMenu-popup {
-	margin-top: -2px !important;
-	margin-right: -19px !important;
+	margin-top: -6px !important;
+	margin-right: -32px !important;
 }
-#identity-popup {
-	margin-top: 4px !important;
-	margin-left: -21px !important;
+#identity-popup, #permission-popup {
+	margin-top: -5px !important;
+	margin-left: -29px !important;
 }
 #pageActionPanel {
-	margin-top: 0px !important;
+	margin-top: -4px !important;
+	margin-right: -30px !important;
 }
-#editBookmarkPanel .panel-arrowcontent {
-	margin-top: 8px !important;
+#editBookmarkPanel {
+	margin-top: -4px !important;
+	margin-right: -30px !important;
 }
 #editBookmarkPanelFavicon {
 	display: none !important;
@@ -231,7 +232,8 @@ panel .text-link {
 	margin-top: 4px !important;
 }
 #widget-overflow {
-	margin-top: -2px !important;
+	margin-top: -6px !important;
+	margin-right: -32px !important;
 }
 #appMenu-notification-popup {
 	margin-top: -2px !important;
@@ -239,6 +241,10 @@ panel .text-link {
 .whatsNew-message-body {
 	background: transparent !important;
 	border: none !important;
+}
+#protections-popup {
+	margin-top: -5px !important;
+	margin-left: -32px !important;
 }
 /* Old */
 #urlbar {
