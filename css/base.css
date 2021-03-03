@@ -446,6 +446,32 @@ notification {
 		backdrop-filter: blur(32px) !important;
 	}
 }
+.ctrlTab-preview > .ctrlTab-preview-inner, #ctrlTab-showAll {
+	border: 2px solid transparent !important;
+	background: transparent !important;
+}
+.ctrlTab-preview:focus > .ctrlTab-preview-inner, #ctrlTab-showAll:focus {
+	border: 2px solid white !important;
+}
+.ctrlTab-preview, .ctrlTab-preview:hover:active {
+	background: transparent !important;
+	border: none !important;
+}
+.ctrlTab-preview-inner {
+	border: none !important;
+	border-radius: 0px !important;
+}
+.ctrlTab-canvas {
+	box-shadow: none !important;
+	transition: transform 100ms !important;
+}
+.ctrlTab-preview:hover:active .ctrlTab-canvas {
+	transform: scale(0.95) !important;
+	transition: transform 100ms !important;
+}
+#ctrlTab-panel {
+	background-color: var(--uwp-context-background-blur) !important;
+}
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
