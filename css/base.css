@@ -453,6 +453,10 @@ notification {
 .ctrlTab-preview:focus > .ctrlTab-preview-inner, #ctrlTab-showAll:focus {
 	border: 2px solid white !important;
 }
+.ctrlTab-preview, #ctrlTab-showAll {
+	color: var(--uwp-global-front) !important;
+	text-shadow: none !important;
+}
 .ctrlTab-preview, .ctrlTab-preview:hover:active {
 	background: transparent !important;
 	border: none !important;
