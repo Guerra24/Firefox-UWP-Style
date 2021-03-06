@@ -607,41 +607,6 @@
 	.buttonContainer > button {
 		padding: 4.5px !important;
 	}
-	#customization-uidensity-menu {
-		margin-bottom: -4px !important;
-		margin-left: -105px !important;
-	}
-	#customization-uidensity-button {
-		width: 202px !important;
-	}
-	#customization-uidensity-menuitem-compact {
-		width: 190px !important;
-	}
-	#customization-uidensity-autotouchmode-checkbox {
-		width: 175px !important;
-		margin-left: 0px !important;
-	}
-	#customization-lwtheme-menu > .panel-arrowcontainer > box.panel-arrowcontent {
-		background: #2B2B2B !important;
-		border: 1px #2B2B2B solid !important;
-	}
-	#customization-uidensity-menu > .panel-arrowcontainer > box.panel-arrowcontent {
-		background: #2B2B2B !important;
-		border: 1px #2B2B2B solid !important;
-	}
-	#customization-lwtheme-menu {
-		margin-bottom: -4px !important;
-		margin-left: -105px !important;
-	}
-	#customization-lwtheme-button {
-		width: 202px !important;
-	}
-	#customization-lwtheme-menu-header {
-		width: 200px !important;
-	}
-	#customization-lwtheme-menu-recommended, #customization-lwtheme-menu-footer {
-		display: none !important;
-	}
 	/* Dev Tools */
 	.devtools-tab, .breadcrumbs-widget-item, .tooltip-container button {
 		border: none !important;

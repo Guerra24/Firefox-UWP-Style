@@ -236,7 +236,8 @@ panel .text-link {
 	margin-right: -32px !important;
 }
 #appMenu-notification-popup {
-	margin-top: -2px !important;
+	margin-top: -6px !important;
+	margin-right: -33px !important;
 }
 .whatsNew-message-body {
 	background: transparent !important;
@@ -245,6 +246,47 @@ panel .text-link {
 #protections-popup {
 	margin-top: -5px !important;
 	margin-left: -32px !important;
+}
+#customizationui-widget-panel {
+	margin-right: -32px !important;
+}
+#customization-uidensity-menu {
+	margin-bottom: -28px !important;
+	margin-left: -118px !important;
+}
+#customization-uidensity-button {
+	width: 202px !important;
+}
+#customization-uidensity-menuitem-compact {
+	width: 190px !important;
+}
+#customization-uidensity-autotouchmode-checkbox {
+	width: 175px !important;
+	margin-left: 0px !important;
+}
+#customization-lwtheme-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+	background: #2B2B2B !important;
+	border: 1px #2B2B2B solid !important;
+}
+#customization-uidensity-menu > .panel-arrowcontainer > box.panel-arrowcontent {
+	background: #2B2B2B !important;
+	border: 1px #2B2B2B solid !important;
+}
+#customization-lwtheme-menu {
+	margin-bottom: -28px !important;
+	margin-left: -118px !important;
+}
+#customization-lwtheme-button {
+	width: 202px !important;
+}
+#customization-lwtheme-menu-header {
+	width: 200px !important;
+}
+#customization-lwtheme-menu-recommended, #customization-lwtheme-menu-footer {
+	display: none !important;
+}
+#customization-uidensity-touch-spacer {
+	border-top-color: var(--uwp-context-separator) !important;
 }
 /* Old */
 #urlbar {
@@ -357,9 +399,6 @@ panel .text-link {
 }
 #appMenu-tp-toggle > .toolbarbutton-text {
 	padding: 0px !important;
-}
-#customizationui-widget-panel {
-	margin-top: -2px !important;
 }
 /* Customization Page Overflow */
 #customization-panel-container {
