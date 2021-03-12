@@ -229,7 +229,8 @@ panel .text-link {
 	border-bottom: none !important;
 }
 #notification-popup {
-	margin-top: 4px !important;
+	margin-top: 0px !important;
+	margin-left: -30px !important;
 }
 #widget-overflow {
 	margin-top: -6px !important;

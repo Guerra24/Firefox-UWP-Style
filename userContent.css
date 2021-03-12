@@ -28,10 +28,8 @@
 @import url(./css/colors/base-light.css);
 @import url(./css/colors/pagesContent-light.css);
 
-:root {
-	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
-	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
-}
+/* Custom CSS for userContent.css */
+@import url(./customContent.css);
 
 * {
 	scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar);

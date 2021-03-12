@@ -32,8 +32,5 @@
 @supports -moz-bool-pref("pref.here") {
 */
 
-:root {
-	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
-	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
-}
-
+/* Custom CSS for userChrome.css */
+@import url(./customChrome.css);
