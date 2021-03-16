@@ -23,6 +23,9 @@
 		--uwp-tags-radio-border: #333333;
 		--uwp-tags-radio-border-hover: black;
 		--uwp-tags-radio-border-active: #666666;
+		--uwp-tags-pivot: #666666;
+		--uwp-tags-pivot-selected: black;
+		--uwp-tags-pivot-hover: #333333;
 
 		--uwp-tags-richlistitem-hover: #E6E6E6;
 		--uwp-tags-richlistitem-active: #CCCCCC;
