@@ -1,6 +1,6 @@
 /* Custom CSS for userContent.css */
 
 :root {
-	--uwp-accent-color: -moz-win-accentcolor; /* Accent color */
-	--uwp-accent-text: -moz-win-accentcolortext; /* Accent color text */
+	--uwp-accent-color: -moz-accent-color; /* Accent color */
+	--uwp-accent-text: -moz-accent-color-foreground; /* Accent color text */
 }
