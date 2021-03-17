@@ -174,6 +174,10 @@
 	checkbox {
 		opacity: 1 !important;
 	}
+	.checkbox-check {
+		-moz-context-properties: fill !important;
+		fill: var(--uwp-global-front) !important;
+	}
 	checkbox > .checkbox-check, input[type="checkbox"] {
 		-moz-appearance: none !important;
 		width: 20px !important;
@@ -183,7 +187,6 @@
 		margin: 0px !important;
 		box-shadow: none !important;
 		background-color: transparent !important;
-		background-image: none !important;
 	}
 	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-checked-hover) !important;
@@ -196,9 +199,13 @@
 		border-color: var(--uwp-accent-color) !important;
 		background: var(--uwp-accent-color) !important;
 	}
+	checkbox[checked="true"] > .checkbox-check {
+		list-style-image: url("chrome://global/skin/icons/check.svg") !important;
+	}
+	input[type="checkbox"]:checked {
+		background-image: url("chrome://global/skin/icons/check.svg") !important;
+	}
 	input[type="checkbox"] {
-		height: 0px !important;
-		width: 0px !important;
 		margin-right: 10px !important;
 	}
 	input[type="checkbox"]:-moz-focusring {
@@ -228,7 +235,7 @@
 	}
 	checkbox[disabled="true"][checked="true"]:hover:active > .checkbox-check {
 		border-color: var(--uwp-tags-checkbox-disabled) !important;
-		background-color: var(--uwp-tags-checkbox-disabled) !important;
+		background-color: transparent !important;
 	}
 	input[type="checkbox"].toggle-button {
 		background-image: none !important;
