@@ -47,9 +47,9 @@ All the theme vars `--uwp-*` can be overridden, Firefox vars too but only if the
 
 If you want to override the accent color create two new prefs, both string type set to RGB Hex values.
 
-`ui.-moz-accent-color=#FF00FF` Accent color
+`ui.-moz-accent-color`=`#FF00FF` Accent color
 
-`ui.-moz-accent-color-foreground=#FFFFFF` Text color when the background is the accent color.
+`ui.-moz-accent-color-foreground`=`#FFFFFF` Text color when the background is the accent color.
 
 ## Screenshots
 
