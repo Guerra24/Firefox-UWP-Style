@@ -64,8 +64,8 @@
 	--tab-line-color: rgb(128, 128, 128) !important;
 }
 #tabbrowser-tabs {
-	--tab-line-color: var(--uwp-accent-color) !important;
-	--tab-loading-fill: var(--uwp-accent-color) !important;
+	--tab-line-color: -moz-accent-color !important;
+	--tab-loading-fill: -moz-accent-color !important;
 }
 .tabbrowser-tab > .tab-stack > .tab-background {
 	border-top: none !important;
@@ -158,12 +158,12 @@ findbar[hidden] {
 	border: 2px var(--uwp-tags-button-hover-active) solid !important;
 }
 .findbar-button[checked="true"] {
-	background-color: var(--uwp-accent-color) !important;
-	border: 2px var(--uwp-accent-color) solid !important;
-	color: var(--uwp-accent-text) !important;
+	background-color: -moz-accent-color !important;
+	border: 2px -moz-accent-color solid !important;
+	color: -moz-accent-color-foreground !important;
 }
 .findbar-button[checked="true"]:hover {
-	color: var(--uwp-accent-text) !important;
+	color: -moz-accent-color-foreground !important;
 	border: 2px var(--uwp-tags-button-hover) solid !important;
 }
 .findbar-find-previous[disabled="true"]:hover, .findbar-find-next[disabled="true"]:hover, .findbar-find-previous[disabled="true"]:hover:active, .findbar-find-next[disabled="true"]:hover:active {
@@ -196,7 +196,7 @@ findbar[hidden] {
 	margin-bottom: 28px !important;
 }
 panel .text-link {
-	color: var(--uwp-accent-color) !important;
+	color: -moz-accent-color !important;
 }
 /* Various Panels */
 #appMenu-popup {
@@ -398,8 +398,8 @@ panel .text-link {
 	margin-bottom: 6px !important;
 }
 #appMenu-tp-toggle[enabled="true"] {
-	background-color: var(--uwp-accent-color) !important;
-	border: 1px solid var(--uwp-accent-color) !important;
+	background-color: -moz-accent-color !important;
+	border: 1px solid -moz-accent-color !important;
 }
 #appMenu-tp-toggle > .toolbarbutton-text {
 	padding: 0px !important;
@@ -410,7 +410,7 @@ panel .text-link {
 }
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
-	fill: var(--uwp-accent-color) !important;
+	fill: -moz-accent-color !important;
 }
 /* Sidebar */
 #sidebar-header {
@@ -470,7 +470,7 @@ notification {
 	border-color: var(--uwp-tags-button-hover-active) !important;
 }
 #PanelUI-fxa-menu-syncnow-button[syncstatus="active"] > .toolbarbutton-icon {
-	fill: var(--uwp-accent-color) !important;
+	fill: -moz-accent-color !important;
 }
 #fullscreen-warning {
 	border: none !important;

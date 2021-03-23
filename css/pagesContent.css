@@ -28,7 +28,7 @@
 	}
 	.dialogBox {
 		background: var(--uwp-global-back) !important;
-		border: 1px solid var(--uwp-accent-color) !important;
+		border: 1px solid -moz-accent-color !important;
 		border-radius: 0px !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
@@ -205,7 +205,7 @@
 		background-color: transparent !important;
 	}
 	#categories > .category[selected]::before {
-		background: var(--uwp-accent-color) !important;
+		background: -moz-accent-color !important;
 	}
 	#categories > .category[disabled]:not(button) {
 		opacity: 0.5 !important;
@@ -465,7 +465,7 @@
 		border-color: #505050 !important;
 	}
 	.fxaProfileImage.actionable:hover:active {
-		border-color: var(--uwp-accent-color) !important;
+		border-color: -moz-accent-color !important;
 	}
 	.dialogTitleBar {
 		background-color: transparent !important;
@@ -486,7 +486,7 @@
 		background-color: transparent !important;
 	}
 	description.indent, .indent > description {
-		color: var(--uwp-accent-text) !important;
+		color: -moz-accent-color-foreground !important;
 	}
 	.updateSettingCrossUserWarningContainer {
 		background-color: transparent !important;
@@ -504,10 +504,10 @@
 		border: none !important;
 	}
 	.content-blocking-category.selected {
-		background-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color)); !important;
+		background-image: linear-gradient(-moz-accent-color, -moz-accent-color); !important;
 		background-blend-mode: multiply;
 		background-color: rgb(140,140,140) !important;
-		color: var(--uwp-accent-text) !important;
+		color: -moz-accent-color-foreground !important;
 	}
 	.sync-group {
 		border-radius: 0px !important;
@@ -582,7 +582,7 @@
 		cursor: default !important;
 		text-decoration: underline !important;
 		margin: 0px !important;
-		color: var(--uwp-accent-color) !important;
+		color: -moz-accent-color !important;
 	}
 	button.button-link:hover {
 		color: #999999 !important;
@@ -609,7 +609,7 @@
 		text-shadow: none !important;
 	}
 	.icon[src=""] {
-		fill: var(--uwp-accent-text) !important;
+		fill: -moz-accent-color-foreground !important;
 		-moz-context-properties: fill !important;
 	}
 	.addon-view[notification], .addon-view[pending] {
@@ -657,7 +657,7 @@
 	:root{
 	}
 	.rating-star {
-		fill: var(--uwp-accent-color) !important;
+		fill: -moz-accent-color !important;
 	}
 	.addon.card {
 		background: transparent !important;
@@ -674,8 +674,8 @@
 		background: var(--uwp-tags-richlistitem-active) !important;
 	}
 	.card-heading-icon {
-		fill: var(--uwp-accent-text) !important;
-		background-color: var(--uwp-accent-color) !important;
+		fill: -moz-accent-color-foreground !important;
+		background-color: -moz-accent-color !important;
 		padding: 4px !important;
 	}
 	addon-card:not([expanded]) .card-contents {
@@ -736,7 +736,7 @@
 	.firstrun-sign-in {
 		background: rgba(0, 0, 0, 0.5) !important;
 		color: white !important;
-		border: 1px solid var(--uwp-accent-color) !important;
+		border: 1px solid -moz-accent-color !important;
 	}
 	.firstrun-sign-in .extra-links {
 		color: darkgray !important;
@@ -825,5 +825,8 @@
 		border-radius: 0px !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+	.reveal-password-wrapper > input[type="text"], .reveal-password-wrapper > input[type="password"] {
+		margin-right: 12px !important;
 	}
 }

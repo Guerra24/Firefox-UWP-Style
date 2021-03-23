@@ -29,7 +29,7 @@
 	}
 	.dialogFrame {
 		background: var(--uwp-global-back) !important;
-		border: 1px solid var(--uwp-accent-color) !important;
+		border: 1px solid -moz-accent-color !important;
 		border-radius: 0px !important;
 		color: var(--uwp-global-front) !important;
 	}
@@ -98,7 +98,7 @@
 	#clearDownloadsButton {
 		-moz-appearance: none !important;
 		margin-left: 8px !important;
-		color: var(--uwp-accent-color) !important;
+		color: -moz-accent-color !important;
 	}
 	#clearDownloadsButton:hover {
 		color: #999999 !important;
@@ -244,8 +244,8 @@
 		border: none !important;
 	}
 	#mainDeck {
-		background-color: black !important;
-		color: white !important;
+		background-color: var(--uwp-global-back) !important;
+		color: var(--uwp-global-front) !important;
 	}
 	#permHostBox > label {
 		margin-top: 7px !important;
@@ -253,11 +253,11 @@
 	#permList {
 		border: none !important;
 		-moz-appearance: none !important;
-		color: white !important;
+		color: var(--uwp-global-front) !important;
 	}
 	#feedListbox {
 		border: none !important;
-		background-color: black !important;
+		background-color: var(--uwp-global-back) !important;
 		-moz-appearance: none !important;
 	}
 	#feedListbox > richlistitem {
@@ -298,8 +298,8 @@
 	}
 	#viewGroup > radio[selected="true"] {
 		background-color: transparent !important;
-		color: white !important;
-		border-bottom: 3px solid var(--uwp-accent-color);
+		color: var(--uwp-global-front) !important;
+		border-bottom: 3px solid -moz-accent-color;
 		padding-bottom: 6.5px !important;
 	}
 	#viewGroup > radio > .radio-label-box {

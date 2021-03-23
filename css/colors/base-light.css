@@ -34,8 +34,8 @@
 
 	--autocomplete-popup-background: white !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
-	--autocomplete-popup-highlight-background: var(--uwp-accent-color) !important;
-	--autocomplete-popup-highlight-color: var(--uwp-accent-text) !important;
+	--autocomplete-popup-highlight-background: -moz-accent-color !important;
+	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
 
 	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
 }

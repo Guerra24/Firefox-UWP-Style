@@ -3,13 +3,13 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
 	:root {
-		--urlbar-popup-url-color: var(--uwp-accent-color) !important;
+		--urlbar-popup-url-color: -moz-accent-color !important;
 		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
 	}
 
 	::selection {
-		color: var(--uwp-accent-text) !important;
-		background-color: var(--uwp-accent-color) !important;
+		color: -moz-accent-color-foreground !important;
+		background-color: -moz-accent-color !important;
 	}
 
 	/* Button */
@@ -47,12 +47,12 @@
 		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;*/
 	}
 	.toggle-group-input:enabled:checked + .toggle-group-label {
-		background-color: var(--uwp-accent-color) !important;
-		border-color: var(--uwp-accent-color) !important;
-		color: var(--uwp-accent-text) !important;
+		background-color: -moz-accent-color !important;
+		border-color: -moz-accent-color !important;
+		color: -moz-accent-color-foreground !important;
 	}
 	.toggle-group-input:enabled:checked + .toggle-group-label:hover {
-		/* linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color))*/
+		/* linear-gradient(-moz-accent-color, -moz-accent-color)*/
 		background-image: var(--uwp-tags-button-accent) !important;
 		background-blend-mode: multiply;
 		background-color: var(--uwp-tags-button-accent-mod) !important;
@@ -87,7 +87,7 @@
 	}
 	button[role="tab"][aria-selected="true"] {
 		color: var(--uwp-tags-pivot-selected) !important;
-		border-bottom: 2px solid var(--uwp-accent-color) !important;
+		border-bottom: 2px solid -moz-accent-color !important;
 		padding-bottom: 8px !important;
 	}
 	button[role="tab"]:hover {
@@ -125,7 +125,7 @@
 	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
-		border: 2px solid var(--uwp-accent-color) !important;
+		border: 2px solid -moz-accent-color !important;
 		background: white !important;
 		color: black !important;
 	}
@@ -174,11 +174,9 @@
 	checkbox {
 		opacity: 1 !important;
 	}
-	.checkbox-check {
-		-moz-context-properties: fill !important;
-		fill: var(--uwp-global-front) !important;
-	}
 	checkbox > .checkbox-check, input[type="checkbox"] {
+		-moz-context-properties: fill !important;
+		fill: -moz-accent-color-foreground !important;
 		-moz-appearance: none !important;
 		width: 20px !important;
 		height: 20px !important;
@@ -196,8 +194,8 @@
 		background-color: var(--uwp-tags-checkbox-checked-active) !important;
 	}
 	input[type="checkbox"]:checked, checkbox[checked="true"] > .checkbox-check {
-		border-color: var(--uwp-accent-color) !important;
-		background: var(--uwp-accent-color) !important;
+		border-color: -moz-accent-color !important;
+		background: -moz-accent-color !important;
 	}
 	checkbox[checked="true"] > .checkbox-check {
 		list-style-image: url("chrome://global/skin/icons/check.svg") !important;
@@ -244,7 +242,7 @@
 		padding-right: 32px !important;
 	}
 	input[type="checkbox"].toggle-button:hover:checked {
-		border-color: var(--uwp-accent-color) !important;
+		border-color: -moz-accent-color !important;
 	}
 	input[type="checkbox"].toggle-button::before {
 	    background: var(--uwp-tags-checkbox) !important;
@@ -289,10 +287,10 @@
 		border: 2px solid var(--uwp-tags-radio-border-active) !important;
 	}
 	input[type="radio"]:checked {
-		border: 2px solid var(--uwp-accent-color) !important;
+		border: 2px solid -moz-accent-color !important;
 	}
 	input[type="radio"]:checked:hover {
-		border: 2px solid var(--uwp-accent-color) !important;
+		border: 2px solid -moz-accent-color !important;
 	}
 	input[type="radio"]:checked:hover:active {
 		border: 2px solid #999999 !important;
@@ -340,11 +338,12 @@
 	radio[selected="true"] > .radio-check {
 		padding: 0px !important;
 		fill: var(--uwp-tags-radio-border) !important;
-		border: 2px solid var(--uwp-accent-color) !important;
+		list-style-image: url("chrome://global/skin/icons/radio.svg");
+		border: 2px solid -moz-accent-color !important;
 	}
 	radio[selected="true"]:hover > .radio-check {
 		fill: var(--uwp-tags-radio-border-hover) !important;
-		border: 2px solid var(--uwp-accent-color) !important;
+		border: 2px solid -moz-accent-color !important;
 	}
 	radio[selected="true"]:hover:active > .radio-check {
 		fill: var(--uwp-tags-radio-border-active) !important;
@@ -374,7 +373,7 @@
 		outline: none !important;
 	}
 	a, label[href] {
-		color: var(--uwp-accent-color) !important;
+		color: -moz-accent-color !important;
 	}
 	a:hover, label[href]:hover {
 		color: #999999 !important;
@@ -565,7 +564,7 @@
 		outline: none !important;
 	}
 	.downloadButton:hover > .button-box > .button-icon {
-		fill: var(--uwp-accent-color) !important;
+		fill: -moz-accent-color !important;
 	}
 	progressmeter, progress {
 		-moz-appearance: none !important;
@@ -574,7 +573,7 @@
 		height: 8px !important;
 	}
 	progressmeter > .progress-bar, progress::-moz-progress-bar {
-		background-color: var(--uwp-accent-color) !important;
+		background-color: -moz-accent-color !important;
 		margin: 0px !important;
 	}
 	progressmeter[paused="true"] > .progress-bar, progress[paused]::-moz-progress-bar  {
@@ -603,7 +602,7 @@
 		color: white !important;
 		background-color: black !important;
 		border-radius: 0px !important;
-		border: 1px solid var(--uwp-accent-color) !important;
+		border: 1px solid -moz-accent-color !important;
 		animation: fadeInScale .3s;
 	}
 	tabmodalprompt {
@@ -627,7 +626,7 @@
 		border: none !important;
 	}
 	.devtools-tab-line {
-		background: var(--uwp-accent-color) !important;
+		background: -moz-accent-color !important;
 	}
 	.devtools-button {
 		border-radius: 0px !important;
@@ -664,10 +663,10 @@
 	}
 
 	.external {
-		color: var(--uwp-accent-color) !important;
+		color: -moz-accent-color !important;
 	}
 	.external::after {
-		fill: var(--uwp-accent-color) !important;
+		fill: -moz-accent-color !important;
 	}
 
 	@keyframes fadeInScale {

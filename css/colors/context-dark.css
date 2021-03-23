@@ -8,7 +8,7 @@
 	--uwp-context-menuitem-hover: #404040;
 	--uwp-context-menuitem-active: #555555;
 	--uwp-context-menuitem-open: rgb(80,80,80);
-	--uwp-context-menuitem-open-image: linear-gradient(var(--uwp-accent-color), var(--uwp-accent-color));
+	--uwp-context-menuitem-open-image: linear-gradient(-moz-accent-color, -moz-accent-color);
 	--uwp-context-tooltip: #2B2B2B;
 	--uwp-context-tooltip-border: #1C1C1C;
 	--uwp-context-menubar-hover: #191919;
