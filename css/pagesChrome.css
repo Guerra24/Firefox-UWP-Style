@@ -36,6 +36,9 @@
 	.previewStack {
 		background: transparent !important;
 	}
+	.dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {
+		background: transparent !important;
+	}
 	@supports(backdrop-filter: blur(1px)) {
 		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
 			background: transparent !important;

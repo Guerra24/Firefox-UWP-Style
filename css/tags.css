@@ -559,9 +559,10 @@
 		outline: none !important;
 		background-color: var(--uwp-tags-richlistitem-selected) !important;
 	}
-	richlistbox:-moz-focusring {
+	richlistbox:focus-visible {
 		border: none !important;
 		box-shadow: none !important;
+		outline: none !important;
 	}
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: var(--uwp-accent-color) !important;

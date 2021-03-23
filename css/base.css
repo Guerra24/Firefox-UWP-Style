@@ -117,6 +117,9 @@
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
+#navigator-toolbox {
+	background: var(--uwp-mainwindow) !important;
+}
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
 	background: var(--uwp-browser) !important;
 }

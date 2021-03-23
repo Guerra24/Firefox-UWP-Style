@@ -15,6 +15,7 @@ Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:conf
 Select the branch that targets your version of Firefox.
 
 - master > Nightly
+- firefox-88 > Firefox 88.
 - firefox-76 > Firefox 76 ~ 87.
 
 ### With Git
@@ -33,6 +34,21 @@ Remember to check for newer branches as the supported one can change when firefo
 Download the code of the branch as ZIP, copy the content inside the folder(where userChrome.css file is located) into your chrome folder.
 
 Now restart Firefox and the theme will be enabled.
+
+## Customize
+
+### Custom CSS
+
+If you want to change any rules use `customChrome.css` and `customContent.css`.
+
+All the theme vars `--uwp-*` can be overridden, Firefox vars too but only if they are not set using `!important`.
+
+### Accent Color (Only 88+)
+
+If you want to override the accent color create two new prefs, both string type set to RGB Hex values.
+
+`ui.-moz-accent-color=#FF00FF` Accent color
+`ui.-moz-accent-color-foreground=#FFFFFF` Text color when the background is the accent color.
 
 ## Screenshots
 
