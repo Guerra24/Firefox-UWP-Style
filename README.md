@@ -4,7 +4,7 @@ A theme that follows MDL2 styling with the accent color and gray-on-black or gra
 
 ## Install
 
-The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid it use the default theme.
+The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid them use the default theme.
 
 Light theme is not 100% finished, some rarely used pages may fallback to dark colors.
 
