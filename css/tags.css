@@ -319,6 +319,7 @@
 	}
 	/* Old radio buttons */
 	radio > .radio-check {
+		-moz-context-properties: fill !important;
 		-moz-appearance: none !important;
 		padding: 8px !important;
 		border: 2px solid var(--uwp-tags-radio-border) !important;
@@ -338,7 +339,7 @@
 	radio[selected="true"] > .radio-check {
 		padding: 0px !important;
 		fill: var(--uwp-tags-radio-border) !important;
-		list-style-image: url("chrome://global/skin/icons/radio.svg");
+		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
 		border: 2px solid -moz-accent-color !important;
 	}
 	radio[selected="true"]:hover > .radio-check {
