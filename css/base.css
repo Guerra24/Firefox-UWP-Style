@@ -522,6 +522,7 @@ notification {
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
+	--lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
 }
 /* Temporal fix for top border */
 :root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive {

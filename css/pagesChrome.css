@@ -133,6 +133,9 @@
 	.button-text {
 		color: var(--uwp-global-front) !important;
 	}
+	.text-link {
+		color: -moz-accent-color !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/places/bookmarkProperties.xhtml"), url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
