@@ -93,12 +93,7 @@
 .tabbrowser-tab .tab-context-line:-moz-window-inactive {
 	background: rgb(128, 128, 128) !important;
 }
-.tabbrowser-tab[selected="true"] .tab-context-line {
-	height: 2px !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
-}
-.tabbrowser-tab:hover .tab-context-line {
+.tabbrowser-tab[selected="true"] .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
 	height: 2px !important;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
@@ -218,12 +213,16 @@ findbar[hidden] {
 }
 .panel-arrowcontent {
 	border: none !important;
+	border-radius: 0px !important;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	margin: 30px !important;
 	margin-top: 8px !important;
 	margin-left: 18px !important;
 	margin-right: 18px !important;
 	margin-bottom: 28px !important;
+}
+.panel-subview-footer-button {
+	margin-bottom: 0px !important;
 }
 panel .text-link {
 	color: -moz-accent-color !important;
@@ -238,7 +237,7 @@ panel .text-link {
 	margin-left: -29px !important;
 }
 #pageActionPanel {
-	margin-top: -4px !important;
+	margin-top: -5px !important;
 	margin-right: -30px !important;
 }
 #editBookmarkPanel {
@@ -559,6 +558,10 @@ notification {
 	--lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
 	--toolbarbutton-outer-padding: 0px !important;
 	--uwp-urlbar-height: 32px !important;
+	--arrowpanel-menuitem-margin: 0px !important;
+	--arrowpanel-menuitem-border-radius: 0px !important;
+	--panel-subview-body-padding: 0px !important;
+	--arrowpanel-menuitem-padding: 8px !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
