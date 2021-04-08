@@ -224,6 +224,15 @@ findbar[hidden] {
 .panel-subview-footer-button {
 	margin-bottom: 0px !important;
 }
+.addon-banner-item, .panel-banner-item {
+	border-radius: 0px !important;
+	margin: 0px !important;
+	margin-inline: 0px !important;
+	padding: var(--arrowpanel-menuitem-padding) !important;
+}
+.addon-banner-item > .toolbarbutton-text, .panel-banner-item > .toolbarbutton-text {
+	margin: 0px !important;
+}
 panel .text-link {
 	color: -moz-accent-color !important;
 }
@@ -561,7 +570,9 @@ notification {
 	--arrowpanel-menuitem-margin: 0px !important;
 	--arrowpanel-menuitem-border-radius: 0px !important;
 	--panel-subview-body-padding: 0px !important;
-	--arrowpanel-menuitem-padding: 8px !important;
+	--arrowpanel-menuitem-padding: 8px 10px !important;
+	--panel-banner-item-background-color: transparent !important;
+	--toolbar-start-end-padding: 0px !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
