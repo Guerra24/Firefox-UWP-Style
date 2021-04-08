@@ -67,11 +67,41 @@
 	--tab-line-color: -moz-accent-color !important;
 	--tab-loading-fill: -moz-accent-color !important;
 }
+.tabbrowser-tab {
+	padding: 0px !important;
+}
 .tabbrowser-tab > .tab-stack > .tab-background {
 	border-top: none !important;
+	margin: 0px !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
 }
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
 	background: var(--uwp-tabbar-tab-hover) !important;
+}
+.tabbrowser-tab .tab-context-line {
+	height: 0px !important;
+	background: var(--identity-tab-color) !important;
+	margin-left: 16px !important;
+	margin-right: 16px !important;
+	transition: margin 200ms !important;
+	margin-top: 0px !important;
+}
+.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
+	background: -moz-accent-color !important;
+}
+.tabbrowser-tab .tab-context-line:-moz-window-inactive {
+	background: rgb(128, 128, 128) !important;
+}
+.tabbrowser-tab[selected="true"] .tab-context-line {
+	height: 2px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+.tabbrowser-tab:hover .tab-context-line {
+	height: 2px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
 }
 :root[tabsintitlebar]:not(:-moz-window-inactive) {
 	 color: var(--uwp-global-front) !important;
@@ -297,6 +327,10 @@ panel .text-link {
 	border: none !important;
 	box-shadow: none !important;
 	font-size: 1.15em !important;
+	--urlbar-toolbar-height: var(--uwp-urlbar-height) !important;
+}
+#urlbar-container {
+	--urlbar-container-height: var(--uwp-urlbar-height) !important;
 }
 /*#urlbar:not(.megabar) {
 	background-color: var(--uwp-autocomplete-list) !important;
@@ -523,6 +557,13 @@ notification {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
 	--lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
+	--toolbarbutton-outer-padding: 0px !important;
+	--uwp-urlbar-height: 32px !important;
+}
+:root[uidensity="touch"] {
+	--tab-min-height: 42px !important;
+	--uwp-urlbar-height: 42px !important;
+	--toolbarbutton-inner-padding: 8px !important;
 }
 /* Temporal fix for top border */
 :root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive {
