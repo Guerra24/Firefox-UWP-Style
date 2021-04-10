@@ -105,7 +105,7 @@
 	fill: var(--uwp-global-front) !important;
 	fill-opacity: 1 !important;
 }
-.tab-icon-stack[soundplaying="true"] .tab-icon-image {
+.tab-icon-stack .tab-icon-image {
 	opacity: 1 !important;
 }
 :root[tabsintitlebar]:not(:-moz-window-inactive) {
