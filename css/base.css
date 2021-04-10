@@ -98,6 +98,16 @@
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 }
+.tab-icon-overlay {
+	opacity: 1 !important;
+	left: 4px !important;
+	bottom: 4px !important;
+	fill: var(--uwp-global-front) !important;
+	fill-opacity: 1 !important;
+}
+.tab-icon-stack[soundplaying="true"] .tab-icon-image {
+	opacity: 1 !important;
+}
 :root[tabsintitlebar]:not(:-moz-window-inactive) {
 	 color: var(--uwp-global-front) !important;
 }
