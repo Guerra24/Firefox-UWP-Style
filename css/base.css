@@ -422,9 +422,6 @@ panel .text-link {
     height: 16px !important;
     flex-basis: 16px !important;
 }
-.urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
-	background: var(--urlbar-result-hover-bgcolor) !important;
-}
 .urlbarView-row[selected] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
 	color: var(--uwp-global-front) !important;
 }
@@ -591,6 +588,7 @@ notification {
 	--panel-banner-item-background-color: transparent !important;
 	--toolbar-start-end-padding: 0px !important;
 	--urlbarView-item-inline-padding: 8px !important;
+	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
