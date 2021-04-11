@@ -36,6 +36,7 @@
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
 	--autocomplete-popup-highlight-background: -moz-accent-color !important;
 	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
+	--urlbar-result-hover-bgcolor: #CDCDCD !important;
 
 	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
 }

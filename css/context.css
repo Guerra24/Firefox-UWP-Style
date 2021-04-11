@@ -3,13 +3,25 @@
 	.context-menu {
 		border-radius: 0px !important;
 	}
-	menupopup, panel-list, ul[role="menu"], #PopupAutoComplete {
+	menupopup {
+		-moz-window-shadow: none !important;
+		border: none !important;
+		margin-left: -20px !important;
+		margin-top: -16px !important;
+	}
+	.menupopup-arrowscrollbox {
+		margin-top: 10px !important;
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+		margin-bottom: 30px !important;
+	}
+	.menupopup-arrowscrollbox, panel-list, ul[role="menu"], #PopupAutoComplete {
 		-moz-appearance: none !important;
 		padding: 5px 1px 5px 1px !important;
 		background-color: var(--uwp-context-background) !important;
 		border: 1px var(--uwp-context-border) solid !important;
 		border-radius: 0px !important;
-		box-shadow: none !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 	menupopup menuseparator, panel-item-separator, hr[role="separator"] {
 		-moz-appearance: none !important;
@@ -22,7 +34,8 @@
 	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
-		padding: 7px 0px 7px 9px !important;
+		padding-top: 7px !important;
+		padding-bottom: 7px !important;
 		border: none !important;
 		font-size: 12px !important;
 	}
@@ -49,34 +62,16 @@
 	}
 	menupopup menuitem > .menu-text, menupopup menuitem > .menu-iconic-text {
 		color: var(--uwp-global-front) !important;
+		margin-top: 1px !important;
+		margin-bottom: 1px !important;
 		padding: 0px !important;
 	}
-	menupopup menuitem[type="checkbox"], menupopup menuitem[type="radio"] {
-		padding-left: 17px !important;
-	}
-	menupopup menuitem[type="checkbox"] > .menu-iconic-text, menupopup menuitem[type="radio"] > .menu-iconic-text {
-		padding-left: 5px !important;
-	}
-	menupopup menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
-		padding: 7px 0px 0px 0px !important;
-		border: solid var(--uwp-global-front);
-		border-width: 0 0 2px 2px;
-		transform: rotate(-45deg) scale(.75);
-		margin-bottom: 4px !important;
-	}
-	menupopup menuitem[checked="true"][type="radio"] > .menu-iconic-left {
-		padding: 1px !important;
-		border: solid var(--uwp-global-front);
-		height: 17px !important;
-		border-radius: 100%;
-		background: var(--uwp-global-front);
-		transform: scale(.5); 
+	.menu-accel {
+		color: gray !important;
 	}
 	menupopup menucaption {
 		background-color: transparent !important;
 		color: white !important;
-	}
-	menubar {
 	}
 	menubar > menu {
 		-moz-appearance: none !important;
@@ -128,27 +123,11 @@
 	#context-navigation > menuitem {
 		padding-left: 0px !important;
 	}
-	.menu-iconic-left {
-		-moz-appearance: none !important;
-		padding: 0px 5px 0px 9px !important;
+	#context-navigation > .menuitem-iconic:first-child, #context-navigation > .menuitem-iconic:last-child  {
+		-moz-box-pack: center !important;
 	}
-	.menu-right {
-		-moz-appearance: none !important;
-		padding: 7px !important;
-		margin-right: 12px !important;
-		color: white !important;
-		border: solid var(--uwp-global-front);
-		border-width: 0 2px 2px 0px;
-		transform: rotate(-45deg) scale(.55);
-	}
-	.menu-accel {
-		padding: 0px !important;
-	}
-	.menu-text, .menu-iconic-text {
-		margin-top: 1px !important;
-		margin-bottom: 1px !important;
-		padding-top: 0px !important;
-		padding-bottom: 0px !important;
+	#context-navigation > .menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"]) > .menu-iconic-left > .menu-iconic-icon {
+		background: transparent !important;
 	}
 	tooltip { /* Also update the js script */
 		-moz-appearance: none !important;

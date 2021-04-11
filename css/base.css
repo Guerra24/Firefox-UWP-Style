@@ -226,10 +226,10 @@ findbar[hidden] {
 	border-radius: 0px !important;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	margin: 30px !important;
-	margin-top: 8px !important;
-	margin-left: 18px !important;
-	margin-right: 18px !important;
-	margin-bottom: 28px !important;
+	margin-top: 10px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	margin-bottom: 30px !important;
 }
 .panel-subview-footer-button {
 	margin-bottom: 0px !important;
@@ -248,20 +248,20 @@ panel .text-link {
 }
 /* Various Panels */
 #appMenu-popup {
-	margin-top: -6px !important;
-	margin-right: -32px !important;
+	margin-top: -10px !important;
+	margin-right: -33px !important;
 }
 #identity-popup, #permission-popup {
-	margin-top: -5px !important;
-	margin-left: -29px !important;
+	margin-top: -10px !important;
+	margin-left: -31px !important;
 }
 #pageActionPanel {
 	margin-top: -5px !important;
 	margin-right: -30px !important;
 }
 #editBookmarkPanel {
-	margin-top: -4px !important;
-	margin-right: -30px !important;
+	margin-top: -10px !important;
+	margin-right: -32px !important;
 }
 #editBookmarkPanelFavicon {
 	display: none !important;
@@ -284,11 +284,11 @@ panel .text-link {
 	margin-left: -30px !important;
 }
 #widget-overflow {
-	margin-top: -6px !important;
-	margin-right: -32px !important;
+	margin-top: -10px !important;
+	margin-right: -34px !important;
 }
 #appMenu-notification-popup {
-	margin-top: -6px !important;
+	margin-top: -10px !important;
 	margin-right: -33px !important;
 }
 .whatsNew-message-body {
@@ -296,21 +296,22 @@ panel .text-link {
 	border: none !important;
 }
 #protections-popup {
-	margin-top: -5px !important;
-	margin-left: -32px !important;
+	margin-top: -10px !important;
+	margin-left: -31px !important;
 }
 #customizationui-widget-panel {
-	margin-right: -32px !important;
+	margin-right: -34px !important;
+	margin-top: -10px !important;
 }
 #customization-uidensity-menu {
-	margin-bottom: -28px !important;
-	margin-left: -118px !important;
+	margin-bottom: -30px !important;
+	margin-left: -120px !important;
 }
 #customization-uidensity-button {
-	width: 202px !important;
+	width: 200px !important;
 }
 #customization-uidensity-menuitem-compact {
-	width: 190px !important;
+	width: 184px !important;
 }
 #customization-uidensity-autotouchmode-checkbox {
 	width: 175px !important;
@@ -325,11 +326,11 @@ panel .text-link {
 	border: 1px #2B2B2B solid !important;
 }
 #customization-lwtheme-menu {
-	margin-bottom: -28px !important;
-	margin-left: -118px !important;
+	margin-bottom: -30px !important;
+	margin-left: -120px !important;
 }
 #customization-lwtheme-button {
-	width: 202px !important;
+	width: 200px !important;
 }
 #customization-lwtheme-menu-header {
 	width: 200px !important;
@@ -365,14 +366,14 @@ panel .text-link {
 #urlbar-input-container, #searchbar {
 	border: none !important;
 	background-color: var(--uwp-urlbar) !important;
+	padding-left: 1px !important;
+	padding-right: 1px !important;
 }
 #urlbar-input-container:hover, #searchbar:hover {
 	background-color: var(--uwp-navbar-background-hover) !important;
 }
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
     height: var(--urlbar-toolbar-height) !important;
-    padding-block: 0px !important;
-    padding-inline: 0px !important;
 }
 #urlbar-results {
 	padding: 0px !important;
@@ -420,6 +421,12 @@ panel .text-link {
     width: 16px !important;
     height: 16px !important;
     flex-basis: 16px !important;
+}
+.urlbarView-row > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+	background: var(--urlbar-result-hover-bgcolor) !important;
+}
+.urlbarView-row[selected] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+	color: var(--uwp-global-front) !important;
 }
 .urlbarView-tip-help {
 	height: 28px !important;
@@ -583,6 +590,7 @@ notification {
 	--arrowpanel-menuitem-padding: 8px 10px !important;
 	--panel-banner-item-background-color: transparent !important;
 	--toolbar-start-end-padding: 0px !important;
+	--urlbarView-item-inline-padding: 8px !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

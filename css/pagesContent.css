@@ -694,6 +694,15 @@
 		margin-left: -10px !important;
 		margin-top: 0px !important;
 	}
+	.tab-group {
+		border: none !important;
+	}
+	.addon-detail-row {
+		border: none !important;
+	}
+	input[type="radio"] + span {
+		bottom: 1px !important;
+	}
 	/* Icons */
 	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
 		/* This should use --uwp-accent-text for fill */
