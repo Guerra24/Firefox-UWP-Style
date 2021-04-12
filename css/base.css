@@ -136,6 +136,9 @@
 .toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
 	background: none !important;
 }
+toolbarbutton.subviewbutton {
+	box-shadow: none !important;
+}
 #PlacesToolbar .bookmark-item {
 	padding: 4px !important;
 }
@@ -495,7 +498,7 @@ body[lwt-sidebar] {
 	color: var(--uwp-global-front) !important;
 	border: none !important;
 	padding: 4px !important;
-	box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
+	box-shadow: -10px 10px 10px 14px rgba(0, 0, 0, .5) !important;
 }
 @supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
@@ -589,6 +592,8 @@ notification {
 	--toolbar-start-end-padding: 0px !important;
 	--urlbarView-item-inline-padding: 8px !important;
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
+	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
+	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

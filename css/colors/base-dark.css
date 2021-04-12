@@ -17,6 +17,7 @@
 	--uwp-sidebar-box: black;
 	--uwp-statuspanel: #2A2A2A;
 	--uwp-statuspanel-color: lightgray;
+	--uwp-navbar-button-hover: #555555;
 	
 	--titlebar-min-max-hover-bg-color: rgba(42, 42, 42, 1);
 	--titlebar-min-max-active-bg-color: #444;
@@ -27,6 +28,7 @@
 	--chrome-background-color: black !important;
 	--chrome-secondary-background-color: #2A2A2A !important;
 	--toolbar-bgcolor: #2A2A2A !important;
+	--toolbar-color: var(--uwp-global-front) !important;
 
 	--uwp-bottom-background: #161616;
 	
