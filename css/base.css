@@ -117,11 +117,16 @@
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;
 }
-.scrollbutton-up, .scrollbutton-down {
+#scrollbutton-up, #scrollbutton-down {
 	margin-bottom: 0px !important;
+    border: none !important;
+	border-radius: 0 !important;
 }
-.scrollbutton-up[disabled], .scrollbutton-up[disabled]:active, .scrollbutton-down[disabled], .scrollbutton-down[disabled]:active {
-	background: transparent !important;
+#scrollbutton-up:hover, #scrollbutton-down:hover {
+	background: var(--uwp-tabbar-button-hover) !important;
+}
+#scrollbutton-up:hover:active, #scrollbutton-down:hover:active {
+	background: var(--uwp-tabbar-button-hover-active) !important;
 }
 /* Toolbar buttons */
 .toolbar-items .toolbarbutton-1 {
@@ -343,6 +348,9 @@ panel .text-link {
 }
 #customization-uidensity-touch-spacer {
 	border-top-color: var(--uwp-context-separator) !important;
+}
+.customization-uidensity-menuitem, .customization-lwtheme-menu-theme {
+	border-radius: 0px !important;
 }
 /* Old */
 #urlbar {
@@ -595,6 +603,8 @@ notification {
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
 	--urlbar-box-bgcolor: transparent !important;
+	--tab-border-radius: 0px !important;
+	--toolbarbutton-hover-background: none !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

@@ -42,6 +42,8 @@
 
 	--panelview-toolbarbutton-hover-bgcolor: #E0E0E0 !important;
 	--panelview-toolbarbutton-active-bgcolor: #CFCFCF !important;
+	--button-hover-bgcolor: var(--panelview-toolbarbutton-hover-bgcolor) !important;
+	--button-active-bgcolor: var(--panelview-toolbarbutton-active-bgcolor) !important;
 
 	--lwt-sidebar-background-color: var(--uwp-global-back) !important;
 }
