@@ -213,10 +213,10 @@
 	#categories > .category[hidden=""] {
 		display: none !important;
 	}
-	#categories > .category:hover {
+	#categories > .category:hover, .sidebar-footer-link:hover {
 		background-color: var(--in-content-category-background-hover) !important;
 	}
-	#categories > .category:hover:active {
+	#categories > .category:hover:active, .sidebar-footer-link:hover:active {
 		background-color: var(--in-content-category-background-active) !important;
 	}
 	#categories > .category[selected]:hover, #categories > .category.selected:hover {
@@ -433,6 +433,11 @@
 	}
 	.fake-textbox {
 		color: var(--uwp-global-front) !important;
+	}
+}
+@-moz-document url("about:privatebrowsing")  {
+	.info, .info h1, #private-browsing-vpn-text {
+		color: white !important;
 	}
 }
 

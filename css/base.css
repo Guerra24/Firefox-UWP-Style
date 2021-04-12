@@ -594,6 +594,7 @@ notification {
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
+	--urlbar-box-bgcolor: transparent !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

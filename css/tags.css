@@ -24,6 +24,7 @@
 		transition: none !important;
 		opacity: 1 !important;
 		box-shadow: none !important;
+		font-weight: normal !important;
 	}
 	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover {
 		border-color: var(--uwp-tags-button-hover) !important;
@@ -62,13 +63,13 @@
 		margin-right: 5px !important;
 	}
 	.expander-down {
-		background: url(../img/arrowdown.png) center center no-repeat !important;
+		background: var(--uwp-dropmarker) center center no-repeat !important;
 		background-color: #000000A0 !important;
 		list-style-image: none !important;
 		padding: 11px !important;
 	}
 	.expander-up {
-		background: url(../img/arrowdown.png) center center no-repeat !important;
+		background: var(--uwp-dropmarker) center center no-repeat !important;
 		background-color: #000000A0 !important;
 		list-style-image: none !important;
 		padding: 11px !important;
@@ -160,12 +161,12 @@
 	listitem[selected="true"] {
 		background: #404040 !important;
 	}
-	dropmarker { /* Change this */
+	dropmarker:not([native]) { /* Change this */
 		-moz-appearance: none !important;
-		margin-right: 0px !important;
+		/*margin-right: 0px !important;
 		padding-right: 20px !important;
 		list-style-image: none !important;
-		background: var(--uwp-dropmarker) center center no-repeat !important;
+		background: var(--uwp-dropmarker) center center no-repeat !important;*/
 	}
 	dropmarker > .dropmarker-icon {
 		list-style-image: none !important;
@@ -498,12 +499,12 @@
 		background-color: rgb(25, 25, 25) !important;
 	}
 	treecol[sortDirection="descending"]:not([hideheader="true"]) > *.treecol-sortdirection, .treecol-sortdirection[sortDirection="descending"] {
-		list-style-image: url(../img/arrowdown.png) !important;
+		list-style-image: var(--uwp-dropmarker) !important;
 		width: 14px !important;
 		height: 10px !important;
 	}
 	treecol[sortDirection="ascending"]:not([hideheader="true"]) > *.treecol-sortdirection, .treecol-sortdirection[sortDirection="ascending"] {
-		list-style-image: url(../img/arrowdown.png) !important;
+		list-style-image: var(--uwp-dropmarker) !important;
 		transform: rotate(180deg);
 		width: 14px !important;
 		height: 10px !important;
@@ -512,6 +513,7 @@
 		box-shadow: none !important;
 		padding-bottom: 0px !important;
 		border: none !important;
+		border-radius: 0px !important;
 	}
 
 	/* Removes padding effect on click */
