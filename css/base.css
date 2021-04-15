@@ -169,6 +169,9 @@ toolbarbutton.subviewbutton {
 #tracking-protection-icon-container, #identity-box {
 	border: none !important;
 }
+#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button {
+	background: transparent !important;
+}
 /* Findbar */
 .findbar-find-previous, .findbar-find-next {
 	border: none !important;
@@ -617,7 +620,6 @@ notification {
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
 	--urlbar-box-bgcolor: transparent !important;
 	--tab-border-radius: 0px !important;
-	--toolbarbutton-hover-background: none !important;
 	--panel-font-size: 12px !important;
 }
 :root[uidensity="touch"] {
