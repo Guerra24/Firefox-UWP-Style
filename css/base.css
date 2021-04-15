@@ -288,8 +288,8 @@ panel .text-link {
 	border-bottom: none !important;
 }
 #notification-popup {
-	margin-top: 0px !important;
-	margin-left: -30px !important;
+	margin-top: -2px !important;
+	margin-left: -32px !important;
 }
 #widget-overflow {
 	margin-top: -10px !important;
@@ -586,6 +586,19 @@ notification {
 #ctrlTab-panel {
 	background-color: var(--uwp-context-background-blur) !important;
 }
+.container.infobar {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+}
+.container.infobar::before {
+	display: none !important;
+}
+.infobar > .icon {
+	color: -moz-accent-color !important;
+	margin-left: 8px !important;
+}
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
@@ -605,6 +618,7 @@ notification {
 	--urlbar-box-bgcolor: transparent !important;
 	--tab-border-radius: 0px !important;
 	--toolbarbutton-hover-background: none !important;
+	--panel-font-size: 12px !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
