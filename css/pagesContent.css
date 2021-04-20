@@ -34,6 +34,11 @@
 		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
 		animation: fadeInScale .3s;
 	}
+	.dialogClose {
+		margin: 0px !important;
+		width: 25px !important;
+		height: 25px !important;
+	}
 	.groove {
 		border: none !important;
 	}
@@ -130,10 +135,12 @@
 		height: 18px !important;
 		width: 18px !important;
 		margin: 0px !important;
+		translate: none !important;
+		scale: 100% !important;
 		fill: var(--uwp-global-front) !important;
 	}
 	.sidebar-footer-link {
-		padding-left: 14px !important;
+		padding-left: 12px !important;
 		height: 40px !important;
 		border-radius: 0px !important;
 		fill: var(--uwp-global-front) !important;
@@ -141,6 +148,7 @@
 		background-position-x: 14px !important;
 		background-position-y: 11px !important;
 		background-size: 18px !important;
+		margin-left: 0px !important;
 	}
 	.sidebar-footer-link:hover, .sidebar-footer-label {
 		color: var(--uwp-global-front) !important;
@@ -270,150 +278,11 @@
 	}
 }
 
-/* Global Icons */
-@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
-	/*.addons-icon {
-	    list-style-image: var(--mdl2-icons-puzzle) !important;
-		width: 16px !important;
-		height: 16px !important;
-	}
-	.help-icon {
-		list-style-image: var(--mdl2-icons-help) !important;
-		width: 16px !important;
-		height: 16px !important;
-	}
-	.preferences-icon {
-		list-style-image: var(--mdl2-icons-settings) !important;
-		width: 16px !important;
-		height: 16px !important;
-    }*/
-}
-
 @-moz-document url("about:newtab"), url("about:home") {
-	#snippets-container {
-		background: #2A2A2A !important;
-		border-top: none !important;
-		box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
-	}
-	.search-wrapper input {
-		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
-		border-radius: 0px !important;
-		transition: box-shadow 150ms !important;
-	}
-	.search-wrapper input:hover, .search-wrapper input[keepfocus] {
-		box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, .5) !important;
-		transition: box-shadow 150ms !important;
-	}
-	.contentSearchSuggestionTable[hidden] {
-		box-shadow: none !important;
-	}
-	.contentSearchSuggestionTable {
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .5) !important;
-		transform: none !important;
-	}
-	.fixed-search .search-wrapper {
-		border-bottom: none !important;
-		box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .5) !important;
-	}
-	.top-site-outer .tile {
-		background: var(--newtab-card-background-color) !important;
-	}
-	.top-site-outer .tile, .card-outer {
-		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
-		transition: box-shadow 150ms, transform 150ms !important;
-	}
-	.top-sites-list:not(.dnd-active) .top-site-outer:-moz-any(.active, :focus, :hover) .tile, .card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) {
-		box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, .5) !important;
-		transform: translateY(-5px) !important;
-		transition: box-shadow 150ms, transform 150ms !important;
-	}
-	.top-site-outer .tile, .card-outer .card, .card-outer, .top-site-icon .rich-icon, .top-site-outer .top-site-icon, .top-site-outer .screenshot, .card-outer .card-preview-image-outer {
-		border-radius: 0px !important;
-	}
-	.top-site-outer .top-site-icon {
-		background-color: transparent !important;
-	}
-	.card-outer.placeholder .card, .card-outer > a:-moz-any(.active, :focus) .card {
-		box-shadow: none !important;
-	}
-	.card-outer.placeholder {
-		background: var(--newtab-card-background-color) !important;
-	}
-	.top-site-outer .context-menu-button, .card-outer .context-menu-button {
-		background-clip: padding-box !important;
-		background-position: 55% !important;
-		background-repeat: no-repeat !important;
-		transition-property: opacity !important;
-		transform: initial !important;
-	}
-	.top-site-outer .context-menu-button:hover:active, .card-outer .context-menu-button:hover:active {
-		background-clip: padding-box !important;
-		background-position: 55% !important;
-		background-repeat: no-repeat !important;
-	}
-	.search-wrapper .search-button {
-		background-color: transparent !important;
-		background-size: 16px 16px !important;
-		height: 100% !important;
-		border: none !important;
-	}
-	.search-wrapper .search-button:hover{
-		background-color: transparent !important;
-	}
-	.search-wrapper .search-button:hover:active {
-		background-color: transparent !important;
-		border: none !important;
-	}
-	.prefs-button button, .prefs-button button:hover:active {
-		background-color: transparent !important;
-		padding: 15px !important;
-		border: none !important;
-	}
-	.modal {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid #333333 !important;
-		border-radius: 0px !important;
-		color: var(--uwp-global-front) !important;
-		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
-	}
-	.actions {
-		border: none !important;
-	}
-	.a11y-link-button:hover {
+	.external-link {
+		padding-left: 24px !important;
+		background-position-x: 4px !important;
 		text-decoration: none !important;
-	}
-	.button:hover:not(.dismiss), .button:focus:not(.dismiss), .actions button:hover:not(.dismiss), .actions button:focus:not(.dismiss) {
-		box-shadow: none !important;
-	}
-	.icon {
-		background-color: transparent !important;
-        background-position: center center !important;
-		background-repeat: no-repeat !important;
-		background-size: 16px !important;
-		height: 16px !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-    .card-outer:hover .icon:not(.icon-spacer), .top-site-outer:hover .icon:not(.icon-spacer), .icon:not(.icon-spacer):hover, .icon:not(.icon-spacer):hover:active {
-		background-color: var(--uwp-tags-button) !important;
-	}
-	.card-outer .context-menu-button, .top-site-outer .context-menu-button {
-		top: 0px !important;
-		inset-inline-end: 0px !important;
-		box-shadow: none !important;
-	}
-	.card-outer:-moz-any(.active):not(.placeholder) {
-		z-index: 1 !important;
-	}
-	.snippet .block-snippet-button {
-		height: 12px !important;
-		background-color: transparent !important;
-		border: none !important;
-		fill: white !important;
-		-moz-context-properties: fill !important;
-	}
-	.snippet .block-snippet-button:active {
-		border: none !important;
 	}
 }
 

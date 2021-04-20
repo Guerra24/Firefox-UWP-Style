@@ -60,6 +60,8 @@
 		--newtab-card-shadow: none !important;
 		--newtab-search-header-background-color: var(--uwp-mainwindow)!important;
 		--newtab-topsites-icon-shadow: none !important;
+
+		--customize-menu-background: #EFEFEF !important;
 	}
 
 }
