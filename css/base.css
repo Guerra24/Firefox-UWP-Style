@@ -294,7 +294,7 @@ panel .text-link {
 	margin-top: -2px !important;
 	margin-left: -32px !important;
 }
-#widget-overflow {
+#widget-overflow, #downloadsPanel {
 	margin-top: -10px !important;
 	margin-right: -34px !important;
 }

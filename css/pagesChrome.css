@@ -8,7 +8,9 @@
 		color: var(--uwp-global-front) !important;
 	}
 	#window-modal-dialog {
+		margin-top: auto !important;
 		background: transparent !important;
+		padding: 30px !important;
 	}
 	.wizard-header {
 		background: var(--uwp-global-back) !important;
@@ -24,7 +26,7 @@
 	.dialogBox {
 		margin-top: 0px !important;
 		background: transparent !important;
-		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 		animation: fadeInScale .3s;
 		border-radius: 0px !important;
 	}
