@@ -75,6 +75,7 @@
 	margin: 0px !important;
 	box-shadow: none !important;
 	border-radius: 0px !important;
+	opacity: 1 !important;
 }
 .tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
 	background: var(--uwp-tabbar-tab-hover) !important;
@@ -93,7 +94,7 @@
 .tabbrowser-tab .tab-context-line:-moz-window-inactive {
 	background: rgb(128, 128, 128) !important;
 }
-.tabbrowser-tab[selected="true"] .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
+.tabbrowser-tab:is([selected="true"], [multiselected="true"]) .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
 	height: 2px !important;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
@@ -104,6 +105,7 @@
 	bottom: 4px !important;
 	fill: var(--uwp-global-front) !important;
 	fill-opacity: 1 !important;
+	padding: 0px !important;
 }
 .tab-icon-stack .tab-icon-image {
 	opacity: 1 !important;
@@ -116,6 +118,10 @@
 }
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;
+}
+.all-tabs-item {
+	margin-inline: 0px !important;
+	border-radius: 0px !important;
 }
 #scrollbutton-up, #scrollbutton-down {
 	margin-bottom: 0px !important;
@@ -169,7 +175,7 @@ toolbarbutton.subviewbutton {
 #tracking-protection-icon-container, #identity-box {
 	border: none !important;
 }
-#identity-box[pageproxystate="valid"].chromeUI > .identity-box-button {
+#identity-box[pageproxystate="valid"]  .identity-box-button {
 	background: transparent !important;
 }
 /* Findbar */
