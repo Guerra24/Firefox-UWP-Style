@@ -56,9 +56,9 @@
 		--newtab-snippets-background-color: #EFEFEF !important;
 		--newtab-textbox-focus-color: -moz-accent-color !important;
 		--newtab-link-primary-color: -moz-accent-color !important;
-		--newtab-card-background-color: var(--uwp-mainwindow) !important;
+		--newtab-card-background-color: white !important;
 		--newtab-card-shadow: none !important;
-		--newtab-search-header-background-color: var(--uwp-mainwindow)!important;
+		--newtab-textbox-background-color: white !important;
 		--newtab-topsites-icon-shadow: none !important;
 		--customize-menu-background: #EFEFEF !important;
 	}

@@ -236,29 +236,57 @@
 		border-color: var(--uwp-tags-checkbox-disabled) !important;
 		background-color: transparent !important;
 	}
-	input[type="checkbox"].toggle-button {
+	input[type="checkbox"].toggle-button, input + .slider {
 		background-image: none !important;
 		border-radius: 10px !important;
 		padding: 8px !important;
 		padding-right: 32px !important;
+		border-width: 2px !important;
 	}
 	input[type="checkbox"].toggle-button:hover:checked {
 		border-color: -moz-accent-color !important;
 	}
-	input[type="checkbox"].toggle-button::before {
+	input[type="checkbox"].toggle-button:hover:active:checked{
+		border-color: var(--uwp-tags-checkbox-checked-active) !important;
+	}
+	input[type="checkbox"].toggle-button::before, input + .slider::before {
 	    background: var(--uwp-tags-checkbox) !important;
 	    height: 10px !important;
-	    width: 10x !important;
+	    width: 10px !important;
 	    outline: none !important;
 		margin: 0px !important;
+		transition: transform 200ms !important;
 		transform: translateX(-5px) translateY(-5px) !important;
 	}
-	input[type="checkbox"].toggle-button:hover::before {
+	input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before {
 		background: var(--uwp-tags-checkbox-checked-hover) !important;
 	}
-	input[type="checkbox"].toggle-button:checked::before {
+	input[type="checkbox"].toggle-button:checked::before, input:checked + .slider::before {
 		background: var(--uwp-tags-toggle-checked) !important;
 		transform: translateX(19px) translateY(-5px) !important;
+	}
+	.slider::before {
+		bottom: 0px !important;
+		inset-inline-start: 0px !important;
+		display: block !important;
+	}
+	input[type="checkbox"] + .slider {
+		border: 2px solid var(--uwp-tags-checkbox) !important;
+		background-color: transparent !important;
+	}
+	input[type="checkbox"]:is(:active, :checked:active, :hover:active) + .slider {
+		border-color: var(--uwp-tags-checkbox-checked-active) !important;
+		background-color: var(--uwp-tags-checkbox-checked-active) !important;
+	}
+	input[type="checkbox"]:is(:checked) + .slider {
+		border-color: -moz-accent-color !important;
+		background: -moz-accent-color !important;
+	}
+	input[type="checkbox"] + .slider::before {
+		transform: translateX(3px) translateY(-3px) !important;
+	}
+	input[type="checkbox"]:checked + .slider::before {
+		transform: translateX(27px) translateY(-3px) !important;
 	}
 
 	/* Number Input */

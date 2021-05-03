@@ -279,23 +279,95 @@
 }
 
 @-moz-document url("about:newtab"), url("about:home") {
+	body {
+		--newtab-topsites-outer-card-hover: none !important;
+		--newtab-topsites-background-color: var(--newtab-card-background-color) !important;
+		--newtab-overlay-color: none !important;
+	}
 	.external-link {
 		padding-left: 24px !important;
 		background-position-x: 4px !important;
 		text-decoration: none !important;
 	}
+	.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active, .customize-menu.customize-animate-enter {
+		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+	.outer-wrapper.newtab-experience .top-site-outer .tile, .outer-wrapper.newtab-experience .ds-card-grid.ds-card-grid-border .ds-card, .outer-wrapper.newtab-experience .card-outer .card {
+		box-shadow: none !important;
+		transition: box-shadow 200ms !important;
+	}
+	.outer-wrapper.newtab-experience .top-site-outer .tile:hover, .outer-wrapper.newtab-experience .ds-card-grid.ds-card-grid-border .ds-card:hover, .outer-wrapper.newtab-experience .card-outer .card:hover {
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+	.ds-hero-item .context-menu-button, .ds-list-item .context-menu-button, .ds-card .context-menu-button, .ds-signup .context-menu-button, .outer-wrapper.newtab-experience .top-site-outer .context-menu-button, .card-outer .context-menu-button {
+		fill: var(--uwp-global-front) !important;
+		background-color: transparent !important;
+		border: none !important;
+		transform: unset !important;
+	}
+	.ds-hero-item .context-menu-button, .ds-list-item .context-menu-button, .ds-card .context-menu-button, .ds-signup .context-menu-button, .card-outer .context-menu-button {
+		fill: black !important;
+		top: 0px !important;
+		right: 0px !important;
+	}
+	.ds-hero-item .context-menu-button:active, .ds-list-item .context-menu-button:active, .ds-card .context-menu-button:active, .ds-signup .context-menu-button:active, .card-outer .context-menu-button:active {
+		background-color: transparent !important;
+	}
+	.ds-card-grid.ds-card-grid-border .ds-card {
+		background: var(--newtab-card-background-color) !important;
+	}
+	.ds-card .meta .source, .ds-card .ds-card-link:hover header {
+		color: -moz-accent-color !important;
+	}
+	.ds-card .ds-card-link:is(:active, :focus) header {
+		color: #666666 !important;
+	}
+	.outer-wrapper.newtab-experience .ds-card .ds-card-link {
+		box-shadow: none !important;
+	}
+	.a11y-link-button {
+		text-decoration: none !important;
+	}
+	input[type="text"]:focus + .icon-clear-input {
+		fill: black !important;
+	}
+	.icon-clear-input, .icon-clear-input:hover:active {
+		background-color: transparent !important;
+		border: none !important;
+	}
+	.edit-topsites-wrapper .modal {
+		background: var(--uwp-global-back) !important;
+		border: 1px solid -moz-accent-color !important;
+		border-radius: 0px !important;
+		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5) !important;
+		animation: fadeInScale .3s;
+	}
+	@supports(backdrop-filter: blur(1px)) {
+		.edit-topsites-wrapper .modal {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-context-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+		}
+	}
 }
 
 @-moz-document url("about:newtab"), url("about:home"), url("about:privatebrowsing") {
-	.search-handoff-button, .search-handoff-button:hover {
+	.search-handoff-button, .search-handoff-button:hover, .search-handoff-button:hover:active {
+		background-color: var(--newtab-textbox-background-color) !important;
 		border: none !important;
+		border-radius: 3px !important;
 	}
-	.search-handoff-button {
-		box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .5) !important;
-		transition: box-shadow 150ms, opacity 200ms, visibility 0s 2s  !important;
+	body:not(.inline-onboarding) .fixed-search .search-wrapper {
+		border: none !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
-	.fake-focus .search-handoff-button, .search-handoff-button:hover {
-		box-shadow: 0px 4px 20px 8px rgba(0, 0, 0, .5) !important;
+	@supports(backdrop-filter: blur(1px)) {
+		body:not(.inline-onboarding) .fixed-search .search-wrapper {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-context-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+		}
 	}
 	.search-handoff-button .fake-textbox {
 		margin-left: 48px !important;
