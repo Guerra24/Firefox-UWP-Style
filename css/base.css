@@ -623,10 +623,11 @@ notification {
 	--urlbarView-item-inline-padding: 8px !important;
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
-	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
+	--toolbarbutton-active-background: var(--uwp-tabbar-button-hover-active) !important;
 	--urlbar-box-bgcolor: transparent !important;
 	--tab-border-radius: 0px !important;
 	--panel-font-size: 12px !important;
+	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
