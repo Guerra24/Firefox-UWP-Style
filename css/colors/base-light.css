@@ -38,6 +38,7 @@
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
 	--autocomplete-popup-highlight-background: -moz-accent-color !important;
 	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
+	--autocomplete-popup-hover-background: #cccccc !important;
 	--urlbar-result-hover-bgcolor: #CDCDCD !important;
 
 	--panelview-toolbarbutton-hover-bgcolor: #E0E0E0 !important;

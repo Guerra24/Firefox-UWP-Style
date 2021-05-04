@@ -322,7 +322,7 @@ panel .text-link {
 }
 #customization-uidensity-menu {
 	margin-bottom: -30px !important;
-	margin-left: -120px !important;
+	margin-left: -20px !important;
 }
 #customization-uidensity-button {
 	width: 200px !important;
@@ -344,7 +344,7 @@ panel .text-link {
 }
 #customization-lwtheme-menu {
 	margin-bottom: -30px !important;
-	margin-left: -120px !important;
+	margin-left: -20px !important;
 }
 #customization-lwtheme-button {
 	width: 200px !important;
@@ -360,6 +360,9 @@ panel .text-link {
 }
 .customization-uidensity-menuitem, .customization-lwtheme-menu-theme {
 	border-radius: 0px !important;
+}
+.identity-popup-security-connection:not(.identity-button) .identity-popup-connection-secure {
+	margin-left: 38px !important;
 }
 /* Old */
 #urlbar {
@@ -608,6 +611,9 @@ notification {
 	color: -moz-accent-color !important;
 	margin-left: 8px !important;
 }
+#urlbar-zoom-button {
+	background: transparent !important;
+}
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
@@ -623,8 +629,7 @@ notification {
 	--urlbarView-item-inline-padding: 8px !important;
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
-	--toolbarbutton-active-background: var(--uwp-tabbar-button-hover-active) !important;
-	--urlbar-box-bgcolor: transparent !important;
+	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
 	--tab-border-radius: 0px !important;
 	--panel-font-size: 12px !important;
 	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;

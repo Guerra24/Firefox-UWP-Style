@@ -64,13 +64,13 @@
 	}
 	.expander-down {
 		background: var(--uwp-dropmarker) center center no-repeat !important;
-		background-color: #000000A0 !important;
+		background-color: transparent !important;
 		list-style-image: none !important;
 		padding: 11px !important;
 	}
 	.expander-up {
 		background: var(--uwp-dropmarker) center center no-repeat !important;
-		background-color: #000000A0 !important;
+		background-color: transparent !important;
 		list-style-image: none !important;
 		padding: 11px !important;
 		transform: rotate(180deg);
@@ -104,7 +104,7 @@
 
 	/* Text Box */
 	textarea,
-	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]),
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]),
 	.findbar-textbox {
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
@@ -118,19 +118,19 @@
 		outline: none !important;
 	}
 	textarea:hover,
-	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):hover,
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):hover,
 	.findbar-textbox:hover {
 		border: 2px solid var(--uwp-tags-textbox-hover) !important;
 	}
 	textarea:focus,
-	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):focus,
+	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid -moz-accent-color !important;
 		background: white !important;
 		color: black !important;
 	}
-	input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]) {
+	input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]) {
 		background-color: var(--uwp-tags-button) !important;
 		border-color: var(--uwp-tags-button) !important;
 		color: var(--uwp-tags-button-disabled-text) !important;
@@ -402,6 +402,28 @@
 		margin-left: 5px !important;
 		outline: none !important;
 	}
+
+	input[type="range"] {
+		-moz-appearance: none !important;
+		border: none !important;
+		background: var(--uwp-tags-slider) !important;
+		height: 2px !important;
+	}
+	input[type="range"]:hover {
+		background: var(--uwp-tags-slider-hover) !important;
+	}
+	input[type="range"]::-moz-range-progress {
+		background: -moz-accent-color !important;
+		height: 2px !important;
+	}
+	input[type="range"]::-moz-range-thumb {
+		background: -moz-accent-color !important;
+		border: none !important;
+		width: 20px !important;
+		height: 20px !important;
+		border-radius: 50% !important;
+	}
+
 	a, label[href] {
 		color: -moz-accent-color !important;
 	}
@@ -566,21 +588,24 @@
 	}
 
 	/* Richlist Stuff */
-	richlistbox {
+	richlistbox, .options-container {
 		-moz-appearance: none !important;
 		background-color: transparent !important;
 		border: none !important;
 		border-radius: 0px !important;
 	}
-	richlistitem {
+	richlistitem, .options-container .option {
 		background-color: transparent !important;
 		color: var(--uwp-global-front) !important;
 		border-radius: 0px !important;
 	}
-	richlistitem:hover {
+	.options-container .option {
+		padding-left: 10px !important;
+	}
+	richlistitem:hover, .options-container .option:hover {
 		background-color: var(--uwp-tags-richlistitem-hover) !important;
 	}
-	richlistitem:hover:active {
+	richlistitem:hover:active, .options-container .option:hover:active {
 		background-color: var(--uwp-tags-richlistitem-active) !important;
 	}
 	richlistitem[selected="true"] {

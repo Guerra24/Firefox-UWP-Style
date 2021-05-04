@@ -51,6 +51,7 @@
 		--exception-button-container-background: black !important;
 
 		--uwp-pages-sidepanel: #1F1F1F;
+		--uwp-section-highlight-background-color: #383838 !important;
 	}
 	body {
 		--newtab-background-color: #1A1A1A !important;
