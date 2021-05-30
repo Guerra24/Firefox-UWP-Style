@@ -1,5 +1,18 @@
 /* about: specific pages */
 
+@-moz-document regexp("about:blank") {
+	@media (prefers-color-scheme: dark) {
+		body {
+			background-color: #1A1A1A;
+		}
+	}
+	@media (prefers-color-scheme: light) {
+		body {
+			background-color: #E6E6E6;
+		}
+	}
+}
+
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!blank).*") {
 
 	treecol {
@@ -264,7 +277,7 @@
 			width: 40px !important;
 		}
 		#categories > .category {
-			padding-inline-start: 0px; !important;
+			padding-inline-start: 0px !important;
 			margin-inline-end: 0px !important;
 			padding-right: 2px !important;
 		}

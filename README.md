@@ -1,42 +1,25 @@
 # Firefox UWP Style
 
-A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements, combines both while remaining original.
+A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements.
 
 ## Install
 
-The theme uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid them use the default theme.
+Uses OS-level dark/light setting to apply the correct colors. This can cause color issues if you select a theme inside Firefox, to avoid them use the default theme.
 
-Light theme is not 100% finished, some rarely used pages may fallback to dark colors.
+Select the appropriate file:
 
-Firefox's density modes are supported but only the compact one has been thoroughly tested, if you see any issues please report them here.
+- [Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/master.zip)
+- [Firefox 89](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
+- [Firefox 88](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-88.zip)
+- [Firefox 76 ~ 87](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-76.zip)
 
-Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config`.
+Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
-Select the branch that targets your version of Firefox.
-
-- master > Nightly
-- firefox-89 > Firefox 89.
-- firefox-88 > Firefox 88.
-- firefox-76 > Firefox 76 ~ 87.
-
-### With Git
-
-Go into your Firefox profile folder and clone the repo:
-`git clone -b <branch> https://github.com/Guerra24/Firefox-UWP-Style.git chrome`
-
-Replace `<branch>` with the one that targets your version of Firefox.
-
-Now restart Firefox and the theme will be enabled.
-
-Remember to check for newer branches as the supported one can change when firefox updates.
-
-### Without Git
-
-Download the code of the branch as ZIP, copy the content inside the folder(where userChrome.css file is located) into your chrome folder.
-
-Now restart Firefox and the theme will be enabled.
+Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` and restart Firefox.
 
 ## Customize
+
+Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in some menus.
 
 ### Custom CSS
 

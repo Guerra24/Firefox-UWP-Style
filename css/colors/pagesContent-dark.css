@@ -1,5 +1,4 @@
 /**/
-
 @media (prefers-color-scheme: dark) {
 @-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
