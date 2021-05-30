@@ -248,6 +248,9 @@ findbar[hidden] {
 	margin-right: 20px !important;
 	margin-bottom: 30px !important;
 }
+.panel-arrowcontent {
+	margin: 0px !important;
+}
 .panel-subview-footer-button {
 	margin-bottom: 0px !important;
 }
