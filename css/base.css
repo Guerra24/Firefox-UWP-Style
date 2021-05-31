@@ -246,6 +246,9 @@ slot[part="content"] {
 	box-shadow: none !important;
 	border: 1px solid var(--panel-border-color, none) !important;
 }
+.panel-arrowcontent {
+	margin: 0px !important;
+}
 .panel-arrowcontainer {
 	border: none !important;
 	border-radius: 0px !important;
