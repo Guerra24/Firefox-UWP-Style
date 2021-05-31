@@ -9,9 +9,9 @@ Uses OS-level dark/light setting to apply the correct colors. This can cause col
 Select the appropriate file:
 
 - [Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/master.zip)
-- [Firefox 89](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
+- [Firefox 89 - 90](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 - [Firefox 88](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-88.zip)
-- [Firefox 76 ~ 87](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-76.zip)
+- [Firefox 76 - 87](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-76.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
