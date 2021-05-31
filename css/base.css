@@ -238,6 +238,14 @@ findbar[hidden] {
 .panel-arrowbox {
 	display: none !important;
 }
+slot[part="content"] {
+	border: none !important;
+}
+.panel-arrowbox + slot[part="content"] {
+	margin: 0px !important;
+	box-shadow: none !important;
+	border: 1px solid var(--panel-border-color, none) !important;
+}
 .panel-arrowcontainer {
 	border: none !important;
 	border-radius: 0px !important;
@@ -247,15 +255,6 @@ findbar[hidden] {
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 	margin-bottom: 30px !important;
-}
-.panel-arrowcontent {
-	margin: 0px !important;
-}
-/* Limit just in case */
-@-moz-document url("chrome://browser/content/browser.xhtml") {
-	slot { /* Shadow DOM back at it again */
-		margin: 0px !important;
-	}
 }
 .panel-subview-footer-button {
 	margin-bottom: 0px !important;
@@ -640,6 +639,7 @@ notification {
 	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
 	--arrowpanel-border-radius: 0px !important;
 	--arrowpanel-border-color: var(--uwp-context-border) !important;
+	--zoom-controls-bgcolor: transparent !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
