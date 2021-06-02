@@ -381,6 +381,23 @@ panel .text-link {
 #urlbar-container {
 	--urlbar-container-height: var(--uwp-urlbar-height) !important;
 }
+#search-container {
+   margin: 0px !important;
+   padding: 0px !important;
+}
+#searchbar {
+   box-shadow: none !important;
+}
+#PopupSearchAutoComplete {
+   --panel-background: var(--autocomplete-popup-background) !important;
+}
+.searchbar-separator {
+   display: none !important;
+}
+.search-panel-header {
+   padding-top: 4px !important;
+   padding-block: 4px !important;
+}
 /*#urlbar:not(.megabar) {
 	background-color: var(--uwp-autocomplete-list) !important;
 }*/
