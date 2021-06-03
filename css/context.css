@@ -5,6 +5,8 @@
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 	menupopup {
+		-moz-appearance: none !important;
+		background: transparent !important;
 		-moz-window-shadow: none !important;
 		border: none !important;
 		margin-left: -22px !important;
@@ -93,6 +95,7 @@
 	}
 	menubar > menu {
 		-moz-appearance: none !important;
+		color: var(--uwp-global-front) !important;
 		padding-left: 5px !important;
 		padding-right: 5px !important;
 		padding-top: 5px !important;
