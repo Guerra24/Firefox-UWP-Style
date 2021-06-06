@@ -641,7 +641,7 @@ notification {
 	transition: transform 100ms !important;
 }
 #ctrlTab-panel {
-	background-color: var(--uwp-context-background-blur) !important;
+	--panel-background: var(--uwp-context-background-blur) !important;
 }
 .container.infobar {
 	background: transparent !important;
@@ -682,6 +682,7 @@ notification {
 	--arrowpanel-border-color: var(--uwp-context-border) !important;
 	--zoom-controls-bgcolor: transparent !important;
 	--toolbar-bgimage: none !important;
+	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
