@@ -12,9 +12,9 @@
 	--uwp-urlbar: transparent;
 	--uwp-urlbar-blur: #FFFFFFC0;
 	--uwp-autocomplete-oneoffs: #333333;
-	--uwp-sidebar: #2A2A2A;
-	--uwp-sidebar-search: black;
-	--uwp-sidebar-box: black;
+	--uwp-sidebar: white;
+	--uwp-sidebar-search: white;
+	--uwp-sidebar-box: white;
 	--uwp-statuspanel: white;
 	--uwp-statuspanel-color: lightgray;
 	--uwp-navbar-button-hover: #E0E0E0;
