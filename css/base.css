@@ -542,6 +542,12 @@ panel .text-link {
 	color: var(--uwp-global-front) !important;
 	border-bottom: none !important;
 }
+#sidebar-switcher-target:hover {
+  background: var(--uwp-tabbar-button-hover) !important;  
+}
+#sidebar-switcher-target.active {
+  background: var(--uwp-tabbar-button-hover-active) !important;
+}
 #sidebar-switcher-target > #sidebar-icon {
 	fill: var(--uwp-global-front) !important;
 }
