@@ -570,6 +570,7 @@ body[lwt-sidebar] {
 	border: none !important;
 	padding: 4px !important;
 	box-shadow: -10px 10px 10px 14px rgba(0, 0, 0, .5) !important;
+	clip-path: inset(-20px -20px 0px 0px) !important;
 }
 @supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
