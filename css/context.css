@@ -115,6 +115,9 @@
 	#ContentSelectDropdown {
 		padding: 0px !important;
 	}
+	#context-navigation > .menuitem-iconic[_moz-menuactive="true"][disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+		background: transparent !important;
+	}
 	menulist, menulist[disabled="true"], select {
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
