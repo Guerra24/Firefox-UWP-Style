@@ -53,18 +53,17 @@
 	#main-window {
 		background-color: var(--uwp-mainwindow) !important;
 	}
+	#main-window[sizemode="normal"][tabsintitlebar="true"] {
+		-moz-appearance: -moz-win-glass !important;
+		margin-top: 1px !important;
+	}
+	.toolbar-items, .titlebar-spacer {
+		appearance: -moz-win-exclude-glass !important;
+	}
 }
 :root:not([tabsintitlebar]) #main-window {
 	background-color: var(--uwp-mainwindow) !important;
 }
-/*
-#main-window[chromemargin] {
-	background-color: var(--uwp-mainwindow) !important;
-	-moz-appearance: -moz-win-glass !important;
-}
-#main-window[sizemode="normal"][tabsintitlebar="true"] {
-	margin-top: 1px !important;
-}*/
 /* Tabs */
 .toolbar-items > spacer:first-of-type {
 	display: none !important;
