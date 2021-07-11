@@ -72,10 +72,15 @@
 	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-menuitem-hover) !important;
 	}
-	menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
-		background-image: var(--uwp-context-menuitem-open-image) !important;
-		background-blend-mode: multiply;
-		background-color: var(--uwp-context-menuitem-open) !important;
+	@media (prefers-color-scheme: light) {
+		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
+			background-color: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
+			background-color: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+		}
 	}
 	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
 		background-color: var(--uwp-context-menuitem-active) !important;
@@ -122,7 +127,7 @@
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
-		border-radius: 0px !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		background: var(--uwp-tags-textbox) !important;
 		color: var(--uwp-tags-textbox-color) !important;
 		height: auto !important;

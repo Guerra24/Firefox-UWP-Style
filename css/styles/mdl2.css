@@ -1,0 +1,18 @@
+/* MDL2 */
+
+@import url(./mdl2/tags-dark.css);
+@import url(./mdl2/context-dark.css);
+@import url(./mdl2/base-dark.css);
+@import url(./mdl2/pagesContent-dark.css);
+
+@import url(./mdl2/tags-light.css);
+@import url(./mdl2/context-light.css);
+@import url(./mdl2/base-light.css);
+@import url(./mdl2/pagesContent-light.css);
+
+@supports not -moz-bool-pref("uwp.sun-valley") {
+    :root {
+        --uwp-tags-control-radius: 0px;
+        --uwp-tags-overlay-radius: 0px;
+    }
+}

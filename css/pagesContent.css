@@ -447,8 +447,6 @@
 		-moz-context-properties: fill !important;
 		background-color: transparent !important;
 	}
-	description.indent, .indent > description {
-	}
 	.updateSettingCrossUserWarningContainer {
 		background-color: transparent !important;
 	}
@@ -619,8 +617,6 @@
 }
 /* New HTML-based addons page */
 @-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html"), url-prefix("about:addons") {
-	:root{
-	}
 	.rating-star {
 		fill: -moz-accent-color !important;
 	}

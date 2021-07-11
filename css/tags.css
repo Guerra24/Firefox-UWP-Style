@@ -15,11 +15,12 @@
 	/* Button */
 	button, .urlbarView-tip-button, .toggle-group-label {
 		-moz-appearance: none !important;
-		padding: 3px !important;
-		background-color: var(--uwp-tags-button) !important;
-		border: 2px var(--uwp-tags-button) solid !important;
-		border-radius: 0px !important;
-		color: var(--uwp-tags-button-color) !important;
+		background-clip: padding-box !important;
+		padding: 5px 11px 5px 11px !important;
+		background-color: var(--uwp-control-fill-default) !important;
+		border: var(--uwp-control-elevation-border) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		color: var(--uwp-text-fill-primary) !important;
 		cursor: default !important;
 		transition: none !important;
 		opacity: 1 !important;
@@ -27,18 +28,17 @@
 		font-weight: normal !important;
 	}
 	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover {
-		border-color: var(--uwp-tags-button-hover) !important;
+		background-color: var(--uwp-control-fill-secondary) !important;
 	}
 	button:hover:active, .urlbarView-tip-button:hover:active {
-		background-color: var(--uwp-tags-button-hover-active) !important;
-		border-color: var(--uwp-tags-button-hover-active) !important;
+		background-color: var(--uwp-control-fill-tertiary) !important;
+		border-color: var(--uwp-control-stroke-default) !important;
+		color: var(--uwp-text-fill-secondary) !important;
 	}
-	button[disabled="true"], button[disabled="true"] .button-text {
-		color: var(--uwp-tags-button-disabled-text) !important;
-	}
-	button[disabled="true"]:hover, button[disabled="true"]:hover:active {
-		background-color: var(--uwp-tags-button) !important;
-		border-color: var(--uwp-tags-button) !important;
+	button[disabled="true"], button[disabled="true"]:hover, button[disabled="true"]:hover:active {
+		background-color: var(--uwp-control-fill-disabled) !important;
+		border-color: var(--uwp-control-stroke-default) !important;
+		color: var(--uwp-text-fill-disabled) !important;
 	}
 	button:-moz-focusring {
 		outline: none !important;
@@ -109,7 +109,7 @@
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
 		border: 2px solid var(--uwp-tags-textbox-border) !important;
-		border-radius: 0px !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		background: var(--uwp-tags-textbox) !important;
 		color: var(--uwp-tags-textbox-color) !important;
 		box-shadow: none !important;
@@ -181,8 +181,8 @@
 		-moz-appearance: none !important;
 		width: 20px !important;
 		height: 20px !important;
-		border: 2px solid var(--uwp-tags-checkbox) !important;
-		border-radius: 0px !important;
+		border: var(--uwp-control-strong-stroke-default-border) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		margin: 0px !important;
 		box-shadow: none !important;
 		background-color: transparent !important;

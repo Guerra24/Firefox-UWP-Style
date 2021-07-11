@@ -1,8 +1,29 @@
 /**/
+@supports -moz-bool-pref("uwp.sun-valley") {
 @media (prefers-color-scheme: dark) {
 	:root {
 		--uwp-global-front: white;
 		--uwp-global-back: black;
+		
+		--uwp-text-fill-primary: #FFFFFF;
+		--uwp-text-fill-secondary: #FFFFFFC5;
+		--uwp-text-fill-tertiary: #FFFFFF87;
+		--uwp-text-fill-disabled: #FFFFFF5D;
+		
+		--uwp-control-fill-default: #FFFFFF0F;
+		--uwp-control-fill-secondary: #FFFFFF15;
+		--uwp-control-fill-tertiary: #FFFFFF08;
+		--uwp-control-fill-disabled: #FFFFFF0B;
+		
+		--uwp-control-stroke-default: #FFFFFF12;
+		
+		--uwp-control-strong-stroke-default: #FFFFFF8B;
+		--uwp-control-strong-stroke-disabled: #FFFFFF28;
+		
+		--uwp-control-elevation-border: 1px solid var(--uwp-control-fill-secondary);
+		
+		--uwp-control-strong-stroke-default-border: 1px solid var(--uwp-control-strong-stroke-default);
+		--uwp-control-strong-stroke-disabled-border: 1px solid var(--uwp-control-strong-stroke-disabled);
 
 		--uwp-tags-button: #333333;
 		--uwp-tags-button-hover: #858585;
@@ -51,4 +72,5 @@
 
 		--uwp-dropmarker: url(../img/arrowdown.png);
 	}
+}
 }

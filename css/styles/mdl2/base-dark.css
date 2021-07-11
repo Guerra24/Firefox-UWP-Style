@@ -1,4 +1,5 @@
 /**/
+@supports not -moz-bool-pref("uwp.sun-valley") {
 @media (prefers-color-scheme: dark) {
 :root {
 	--uwp-mainwindow: black;
@@ -50,5 +51,6 @@
 
 :root:-moz-window-inactive {
 	--uwp-titlebar: #CCCCCC;
+}
 }
 }
