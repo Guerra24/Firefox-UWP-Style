@@ -17,6 +17,21 @@ Copy the content inside the folder where userChrome.css file is located into you
 
 Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` and restart Firefox.
 
+
+## Styles
+
+### MDL2
+
+The original 2015 UWP design. Follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements.
+
+Enabled by default.
+
+### Sun Valley
+
+The 2021 Fluent Design refresh. Features heavy use of rounded corners and smoother colors.
+
+Create `uwp.sun-valley`=`true` pref to enable.
+
 ## Customize
 
 Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in some menus.
