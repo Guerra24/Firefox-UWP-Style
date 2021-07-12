@@ -272,19 +272,16 @@ slot[part="content"] {
 }
 .panel-arrowcontent {
 	margin: 0px !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 }
 .panel-arrowcontainer {
 	border: none !important;
 	border-radius: 0px !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	margin: 30px !important;
 	margin-top: 10px !important;
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 	margin-bottom: 30px !important;
-}
-.panel-subview-footer-button {
-	margin-bottom: 0px !important;
 }
 .addon-banner-item, .panel-banner-item {
 	border-radius: 0px !important;
@@ -675,9 +672,6 @@ notification {
 	--lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
 	--toolbarbutton-outer-padding: 0px !important;
 	--uwp-urlbar-height: 32px !important;
-	--arrowpanel-menuitem-margin: 0px !important;
-	--arrowpanel-menuitem-border-radius: 0px !important;
-	--panel-subview-body-padding: 0px !important;
 	--arrowpanel-menuitem-padding: 8px 10px !important;
 	--panel-banner-item-background-color: transparent !important;
 	--toolbar-start-end-padding: 0px !important;
@@ -688,8 +682,7 @@ notification {
 	--tab-border-radius: 0px !important;
 	--panel-font-size: 12px !important;
 	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
-	--arrowpanel-border-radius: 0px !important;
-	--arrowpanel-border-color: var(--uwp-context-border) !important;
+
 	--zoom-controls-bgcolor: transparent !important;
 	--toolbar-bgimage: none !important;
 	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;

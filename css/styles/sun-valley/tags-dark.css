@@ -14,16 +14,29 @@
 		--uwp-control-fill-secondary: #FFFFFF15;
 		--uwp-control-fill-tertiary: #FFFFFF08;
 		--uwp-control-fill-disabled: #FFFFFF0B;
+		--uwp-control-fill-input-active: #1E1E1EB3;
 		
 		--uwp-control-stroke-default: #FFFFFF12;
+		--uwp-control-stroke-secondary: #FFFFFF18;
+
+		--uwp-control-stroke-default-border: 1px solid var(--uwp-control-stroke-default);
 		
 		--uwp-control-strong-stroke-default: #FFFFFF8B;
 		--uwp-control-strong-stroke-disabled: #FFFFFF28;
 		
-		--uwp-control-elevation-border: 1px solid var(--uwp-control-fill-secondary);
+		--uwp-control-elevation-border: 1px solid var(--uwp-control-stroke-secondary);
+		--uwp-input-elevation-border: 1px solid var(--uwp-control-stroke-default);
 		
 		--uwp-control-strong-stroke-default-border: 1px solid var(--uwp-control-strong-stroke-default);
 		--uwp-control-strong-stroke-disabled-border: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-divider-stroke-default: #FFFFFF15;
+
+		--uwp-subtle-fill-transparent: #FFFFFF00;
+		--uwp-subtle-fill-secondary: #FFFFFF0F;
+		--uwp-subtle-fill-tertiary: #FFFFFF0A;
+
+		--uwp-surface-stroke: #00000033;
 
 		--uwp-tags-button: #333333;
 		--uwp-tags-button-hover: #858585;

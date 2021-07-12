@@ -41,8 +41,6 @@
 	--autocomplete-popup-highlight-background: -moz-accent-color !important;
 	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
 
-	--panelview-toolbarbutton-hover-bgcolor: #404040 !important;
-	--panelview-toolbarbutton-active-bgcolor: #606060 !important;
 	--button-hover-bgcolor: var(--panelview-toolbarbutton-hover-bgcolor) !important;
 	--button-active-bgcolor: var(--panelview-toolbarbutton-active-bgcolor) !important;
 

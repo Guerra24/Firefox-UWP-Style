@@ -11,8 +11,82 @@
 @import url(./mdl2/pagesContent-light.css);
 
 @supports not -moz-bool-pref("uwp.sun-valley") {
-    :root {
-        --uwp-tags-control-radius: 0px;
-        --uwp-tags-overlay-radius: 0px;
-    }
+	:root {
+		--uwp-tags-control-radius: 0px;
+		--uwp-tags-overlay-radius: 0px;
+
+		--uwp-button-color: var(--uwp-global-front);
+		--uwp-button-background: var(--uwp-tags-button);
+		--uwp-button-border: 2px solid var(--uwp-tags-button);
+
+		--uwp-button-color-hover: var(--uwp-global-front);
+		--uwp-button-background-hover: var(--uwp-tags-button);
+		--uwp-button-border-hover: 2px solid var(--uwp-tags-button-hover);
+
+		--uwp-button-color-active: var(--uwp-global-front);
+		--uwp-button-background-active: var(--uwp-tags-button-hover-active);
+		--uwp-button-border-active: 2px solid var(--uwp-tags-button-hover-active);
+
+		--uwp-button-color-disabled: var(--uwp-tags-button-disabled-text);
+		--uwp-button-background-disabled: var(--uwp-tags-button);
+		--uwp-button-border-disabled: 2px solid var(--uwp-tags-button);
+
+		--uwp-input-color: var(--uwp-global-front);
+		--uwp-input-background: var(--uwp-tags-textbox);
+		--uwp-input-border: 2px solid var(--uwp-tags-textbox-border);
+
+		--uwp-input-color-hover: var(--uwp-global-front);
+		--uwp-input-background-hover: var(--uwp-tags-textbox);
+		--uwp-input-border-hover: 2px solid var(--uwp-tags-textbox-hover);
+
+		--uwp-input-color-focus: black;
+		--uwp-input-background-focus: white;
+		--uwp-input-border-focus: unset;
+
+		--uwp-input-color-disabled: var(--uwp-tags-button-disabled-text);
+		--uwp-input-background-disabled: var(--uwp-tags-button);
+		--uwp-input-border-disabled: 2px solid var(--uwp-tags-button);
+
+		--uwp-combo-color: var(--uwp-global-front);
+		--uwp-combo-background: transparent;
+		--uwp-combo-border: 2px solid var(--uwp-tags-textbox-border);
+
+		--uwp-combo-color-hover: var(--uwp-global-front);
+		--uwp-combo-background-hover: transparent;
+		--uwp-combo-border-hover: 2px solid var(--uwp-tags-textbox-hover);
+
+		--uwp-combo-color-active: var(--uwp-global-front);
+		--uwp-combo-background-active: var(--uwp-tags-button);
+		--uwp-combo-border-active: 2px solid var(--uwp-tags-textbox-border);
+
+		--uwp-combo-color-disabled: var(--uwp-tags-button-disabled-text);
+		--uwp-combo-background-disabled: var(--uwp-tags-button);
+		--uwp-combo-border-disabled: 2px solid var(--uwp-tags-button);
+
+		--uwp-context-item-background: transparent;
+
+		--uwp-context-item-background-hover: var(--uwp-context-menuitem-hover);
+
+		--uwp-context-item-background-active: var(--uwp-context-menuitem-active);
+
+		--uwp-context-item-margin: 0px;
+		--uwp-context-separator-margin: 4px 11px 4px 11px;
+		--uwp-context-margin: 5px 1px 5px 1px;
+	}
+
+	:root {
+		--arrowpanel-menuitem-margin: var(--uwp-context-item-margin) !important;
+		--arrowpanel-menuitem-border-radius: var(--uwp-tags-control-radius) !important;
+		--arrowpanel-border-radius: var(--uwp-tags-overlay-radius) !important;
+		--arrowpanel-border-color: var(--uwp-context-border) !important;
+		--panel-subview-body-padding: 0px !important;
+	}
+
+	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
+		textarea:focus,
+		input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):focus,
+		.findbar-textbox:focus {
+			border: 2px solid -moz-accent-color !important;
+		}
+	}
 }

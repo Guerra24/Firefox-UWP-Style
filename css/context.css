@@ -23,11 +23,12 @@
 	}
 	.menupopup-arrowscrollbox, panel-list, ul[role="menu"], #PopupAutoComplete {
 		-moz-appearance: none !important;
-		padding: 5px 1px 5px 1px !important;
+		padding: var(--uwp-context-margin) !important;
 		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
 		background-image: none !important;
 		border: 1px var(--uwp-context-border) solid !important;
-		border-radius: 0px !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 	ul[role="menu"] {
@@ -37,7 +38,7 @@
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;
-		margin: 4px 11px 4px 11px !important;
+		margin: var(--uwp-context-separator-margin) !important;
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
@@ -50,12 +51,14 @@
 	}
 	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option {
 		-moz-appearance: none !important;
-		color: var(--uwp-global-front) !important;
-		background-color: var(--uwp-context-background) !important;
+		color: var(--uwp-context-item-color) !important;
+		background-color: var(--uwp-context-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		padding-top: 7px !important;
 		padding-bottom: 7px !important;
 		border: none !important;
 		font-size: 12px !important;
+		margin: var(--uwp-context-item-margin) !important;
 	}
 	button[role="menuitem"] {
 		background-color: transparent !important;
@@ -70,7 +73,7 @@
 		color: gray !important;
 	}
 	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
-		background-color: var(--uwp-context-menuitem-hover) !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
 	}
 	@media (prefers-color-scheme: light) {
 		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
@@ -83,7 +86,7 @@
 		}
 	}
 	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
-		background-color: var(--uwp-context-menuitem-active) !important;
+		background-color: var(--uwp-context-item-background-active) !important;
 	}
 	menugroup {
 		padding: 0px !important;
@@ -126,19 +129,23 @@
 	menulist, menulist[disabled="true"], select {
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
-		border: 2px solid var(--uwp-tags-textbox-border) !important;
+		color: var(--uwp-combo-color) !important;
+		background-color: var(--uwp-combo-background) !important;
+		border: var(--uwp-combo-border) !important;
+		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
-		background: var(--uwp-tags-textbox) !important;
-		color: var(--uwp-tags-textbox-color) !important;
 		height: auto !important;
 		box-shadow: none !important;
 	}
 	menulist:hover, select:hover { /* Finish this */
-		border: 2px solid var(--uwp-tags-textbox-hover) !important;
+		color: var(--uwp-combo-color-hover) !important;
+		background-color: var(--uwp-combo-background-hover) !important;
+		border: var(--uwp-combo-border-hover) !important;
 	}
 	menulist[open="true"] {
-		border: 2px solid var(--uwp-context-menulist-open-border) !important;
-		background-color: var(--uwp-context-menulist-open) !important;
+		color: var(--uwp-combo-color-active) !important;
+		background-color: var(--uwp-combo-background-active) !important;
+		border: var(--uwp-combo-border-active) !important;
 	}
 	#label-box:not([native]) {
 		font-weight: normal !important;
@@ -162,11 +169,14 @@
 		background: transparent !important;
 	}
 	tooltip { /* Also update the js script */
+		-moz-window-shadow: cliprounded !important;
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		background-color: var(--uwp-context-tooltip) !important;
+		background-clip: padding-box !important;
 		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
+		border-radius: var(--uwp-tags-control-radius) !important
 	}
 	@supports(backdrop-filter: blur(1px)) {
 		 ul[role="menu"] {

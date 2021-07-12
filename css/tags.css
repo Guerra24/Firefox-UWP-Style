@@ -14,13 +14,13 @@
 
 	/* Button */
 	button, .urlbarView-tip-button, .toggle-group-label {
-		-moz-appearance: none !important;
+		color: var(--uwp-button-color) !important;
+		background-color: var(--uwp-button-background) !important;
+		border: var(--uwp-button-border) !important;
 		background-clip: padding-box !important;
-		padding: 5px 11px 5px 11px !important;
-		background-color: var(--uwp-control-fill-default) !important;
-		border: var(--uwp-control-elevation-border) !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
-		color: var(--uwp-text-fill-primary) !important;
+		-moz-appearance: none !important;
+		padding: 5px 11px 5px 11px !important;
 		cursor: default !important;
 		transition: none !important;
 		opacity: 1 !important;
@@ -28,17 +28,19 @@
 		font-weight: normal !important;
 	}
 	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover {
-		background-color: var(--uwp-control-fill-secondary) !important;
+		color: var(--uwp-button-color-hover) !important;
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
 	}
 	button:hover:active, .urlbarView-tip-button:hover:active {
-		background-color: var(--uwp-control-fill-tertiary) !important;
-		border-color: var(--uwp-control-stroke-default) !important;
-		color: var(--uwp-text-fill-secondary) !important;
+		color: var(--uwp-button-color-active) !important;
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
 	}
 	button[disabled="true"], button[disabled="true"]:hover, button[disabled="true"]:hover:active {
-		background-color: var(--uwp-control-fill-disabled) !important;
-		border-color: var(--uwp-control-stroke-default) !important;
-		color: var(--uwp-text-fill-disabled) !important;
+		color: var(--uwp-button-color-disabled) !important;
+		background-color: var(--uwp-button-background-disabled) !important;
+		border: var(--uwp-button-border-disabled) !important;
 	}
 	button:-moz-focusring {
 		outline: none !important;
@@ -106,12 +108,12 @@
 	textarea,
 	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]),
 	.findbar-textbox {
+		color: var(--uwp-input-color) !important;
+		background: var(--uwp-input-background) !important;
+		border: var(--uwp-input-border) !important;
 		-moz-appearance: none !important;
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
-		border: 2px solid var(--uwp-tags-textbox-border) !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
-		background: var(--uwp-tags-textbox) !important;
-		color: var(--uwp-tags-textbox-color) !important;
 		box-shadow: none !important;
 		opacity: 1 !important;
 		transition: none !important;
@@ -120,20 +122,22 @@
 	textarea:hover,
 	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):hover,
 	.findbar-textbox:hover {
-		border: 2px solid var(--uwp-tags-textbox-hover) !important;
+		color: var(--uwp-input-color-hover) !important;
+		background: var(--uwp-input-background-hover) !important;
+		border: var(--uwp-input-border-hover) !important;
 	}
 	textarea:focus,
 	input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):focus,
 	.findbar-textbox:focus {
 		padding: 5.5px 5.5px 5.5px 5.5px !important;
-		border: 2px solid -moz-accent-color !important;
-		background: white !important;
-		color: black !important;
+		color: var(--uwp-input-color-focus) !important;
+		background: var(--uwp-input-background-focus) !important;
+		border: var(--uwp-input-border-focus) !important;
 	}
 	input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]) {
-		background-color: var(--uwp-tags-button) !important;
-		border-color: var(--uwp-tags-button) !important;
-		color: var(--uwp-tags-button-disabled-text) !important;
+		color: var(--uwp-input-color-disabled) !important;
+		background: var(--uwp-input-background-disabled) !important;
+		border: var(--uwp-input-border-disabled) !important;
 	}
 	search-textbox, textbox {
 		-moz-appearance: none !important;
@@ -652,9 +656,6 @@
 	#customization-footer {
 		border-top: none !important;
 		background-color: var(--uwp-bottom-background) !important;
-	}
-	.customizationmode-button {
-		border-radius: 0px !important;
 	}
 	.mainContainer, .tabmodalprompt-mainContainer {
 		color: white !important;
