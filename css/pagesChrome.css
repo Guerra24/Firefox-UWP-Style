@@ -4,8 +4,8 @@
 
 @-moz-document regexp("chrome:\/\/(?!devtools).*") {
 	dialog, window, wizard {
-		background: var(--uwp-global-back) !important;
-		color: var(--uwp-global-front) !important;
+		background: var(--uwp-background) !important;
+		color: var(--uwp-foreground) !important;
 	}
 	#window-modal-dialog {
 		margin-top: auto !important;

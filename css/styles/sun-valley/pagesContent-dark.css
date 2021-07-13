@@ -5,11 +5,11 @@
 
 	:root {
 		--in-content-accent-color: -moz-accent-color !important;
-	    --in-content-page-color: white !important;
-	    --in-content-page-background: #272727 !important;
+	    --in-content-page-color: var(--uwp-foreground) !important;
+	    --in-content-page-background: var(--uwp-background) !important;
 	    --in-content-text-color: lightgray !important;
 	    --in-content-selected-text: #fff;
-	    --in-content-box-background: black !important;
+	    --in-content-box-background: var(--uwp-background) !important;
 	    --in-content-box-background-odd: #f3f6fa;
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;

@@ -4,6 +4,8 @@
 	:root {
 		--uwp-global-front: white;
 		--uwp-global-back: black;
+
+		--uwp-background-fill-base: #202020;
 		
 		--uwp-text-fill-primary: #FFFFFF;
 		--uwp-text-fill-secondary: #FFFFFFC5;
@@ -35,6 +37,8 @@
 		--uwp-subtle-fill-transparent: #FFFFFF00;
 		--uwp-subtle-fill-secondary: #FFFFFF0F;
 		--uwp-subtle-fill-tertiary: #FFFFFF0A;
+
+		--uwp-layer-fill-default: #3A3A3A4C;
 
 		--uwp-surface-stroke: #00000033;
 

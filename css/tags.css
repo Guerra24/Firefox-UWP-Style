@@ -20,7 +20,7 @@
 		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
 		-moz-appearance: none !important;
-		padding: 5px 11px 5px 11px !important;
+		padding: 5px 11px 6px 11px !important;
 		cursor: default !important;
 		transition: none !important;
 		opacity: 1 !important;

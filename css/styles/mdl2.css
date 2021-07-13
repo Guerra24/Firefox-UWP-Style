@@ -15,6 +15,9 @@
 		--uwp-tags-control-radius: 0px;
 		--uwp-tags-overlay-radius: 0px;
 
+		--uwp-background: var(--uwp-global-back);
+		--uwp-foreground: var(--uwp-global-front);
+
 		--uwp-button-color: var(--uwp-global-front);
 		--uwp-button-background: var(--uwp-tags-button);
 		--uwp-button-border: 2px solid var(--uwp-tags-button);
@@ -63,6 +66,31 @@
 		--uwp-combo-background-disabled: var(--uwp-tags-button);
 		--uwp-combo-border-disabled: 2px solid var(--uwp-tags-button);
 
+		--uwp-nav-content-background: var(--uwp-background);
+		--uwp-nav-item-height: 40px;
+		--uwp-nav-item-selector-height: 24px;
+		--uwp-nav-item-selector-width: 6px;
+		--uwp-nav-item-selector-radius: 0px;
+
+		--uwp-nav-item-color: var(--uwp-global-front);
+		--uwp-nav-item-background: transparent;
+
+		--uwp-nav-item-color-hover: var(--uwp-global-front);
+		--uwp-nav-item-background-hover: var(--in-content-category-background-hover);
+
+		--uwp-nav-item-color-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-background-active: var(--in-content-category-background-active);
+
+		--uwp-nav-item-color-selected: var(--uwp-global-front);
+		--uwp-nav-item-background-selected: transparent;
+
+		--uwp-nav-item-color-selected-hover: var(--uwp-global-front);
+		--uwp-nav-item-background-selected-hover: var(--in-content-category-background-selected-hover);
+
+		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-background-selected-active: var(--in-content-category-background-selected-active);
+
+		--uwp-context-item-color: var(--uwp-global-front);
 		--uwp-context-item-background: transparent;
 
 		--uwp-context-item-background-hover: var(--uwp-context-menuitem-hover);
@@ -70,8 +98,8 @@
 		--uwp-context-item-background-active: var(--uwp-context-menuitem-active);
 
 		--uwp-context-item-margin: 0px;
-		--uwp-context-separator-margin: 4px 11px 4px 11px;
-		--uwp-context-margin: 5px 1px 5px 1px;
+		--uwp-context-separator-margin: 4px 11px;
+		--uwp-context-margin: 5px 1px;
 	}
 
 	:root {
