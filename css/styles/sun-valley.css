@@ -107,6 +107,9 @@
 		--uwp-context-tooltip-border: var(--uwp-surface-stroke);
 
 		--uwp-context-item-margin: 2px 4px;
+		--uwp-context-item-margin-width: 8px;
+		--uwp-context-item-padding-top: 5px;
+		--uwp-context-item-padding-bottom: 5px;
 		--uwp-context-separator-margin: 1px 0px;
 		--uwp-context-margin: 2px 0px;
 	}

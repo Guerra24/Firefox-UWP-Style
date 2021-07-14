@@ -1,9 +1,5 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
-	.context-menu {
-		border-radius: 0px !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	}
 	menupopup {
 		-moz-appearance: none !important;
 		background: transparent !important;
@@ -21,7 +17,7 @@
 		padding: 0px !important;
 		border-radius: 0px !important;
 	}
-	.menupopup-arrowscrollbox, panel-list, ul[role="menu"], #PopupAutoComplete {
+	.menupopup-arrowscrollbox, panel-list, .context-menu, #PopupAutoComplete {
 		-moz-appearance: none !important;
 		padding: var(--uwp-context-margin) !important;
 		background-color: var(--uwp-context-background) !important;
@@ -31,8 +27,11 @@
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
-	ul[role="menu"] {
-		box-shadow: none !important;
+	.context-menu > ul {
+		padding: 0px !important;
+	}
+	.context-menu > ul > li {
+		width: calc(100% - var(--uwp-context-item-margin-width)) !important;
 	}
 	menupopup menuseparator, panel-item-separator, hr[role="separator"], .context-menu > ul > li.separator {
 		-moz-appearance: none !important;
@@ -54,17 +53,15 @@
 		color: var(--uwp-context-item-color) !important;
 		background-color: var(--uwp-context-item-background) !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
-		padding-top: 7px !important;
-		padding-bottom: 7px !important;
+		padding-top: var(--uwp-context-item-padding-top) !important;
+		padding-bottom: var(--uwp-context-item-padding-bottom) !important;
 		border: none !important;
 		font-size: 12px !important;
 		margin: var(--uwp-context-item-margin) !important;
 	}
 	button[role="menuitem"] {
-		background-color: transparent !important;
 		background-position-x: 12px !important;
-		padding-left: 40px !important;
-		padding-right: 34px !important;
+		padding-left: 12px !important;
 	}
 	select > option {
 		padding-inline: 7px 0px 7px 9px !important;
@@ -74,6 +71,7 @@
 	}
 	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
 		background-color: var(--uwp-context-item-background-hover) !important;
+		border: none !important;
 	}
 	@media (prefers-color-scheme: light) {
 		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
@@ -87,6 +85,7 @@
 	}
 	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
 		background-color: var(--uwp-context-item-background-active) !important;
+		border: none !important;
 	}
 	menugroup {
 		padding: 0px !important;
@@ -179,9 +178,6 @@
 		border-radius: var(--uwp-tags-control-radius) !important
 	}
 	@supports(backdrop-filter: blur(1px)) {
-		 ul[role="menu"] {
-			background-color: transparent !important;
-		}
 		panel-list, .context-menu {
 			background-image: url(../img/noise-512x512.png) !important;
 			background-color: var(--uwp-context-background-blur) !important;

@@ -98,6 +98,9 @@
 		--uwp-context-item-background-active: var(--uwp-context-menuitem-active);
 
 		--uwp-context-item-margin: 0px;
+		--uwp-context-item-margin-width: 0px;
+		--uwp-context-item-padding-top: 7px;
+		--uwp-context-item-padding-bottom: 7px;
 		--uwp-context-separator-margin: 4px 11px;
 		--uwp-context-margin: 5px 1px;
 	}

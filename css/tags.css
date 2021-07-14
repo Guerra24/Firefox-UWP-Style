@@ -56,10 +56,8 @@
 	}
 	.toggle-group-input:enabled:checked + .toggle-group-label:hover {
 		/* linear-gradient(-moz-accent-color, -moz-accent-color)*/
-		background-image: var(--uwp-tags-button-accent) !important;
-		background-blend-mode: multiply;
-		background-color: var(--uwp-tags-button-accent-mod) !important;
-		border-color: var(--uwp-tags-button-hover) !important;
+		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		border: var(--uwp-button-border-hover) !important;
 	}
 	.toggle-group > .toggle-group-label {
 		margin-right: 5px !important;
