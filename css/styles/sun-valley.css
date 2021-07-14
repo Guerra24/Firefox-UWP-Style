@@ -53,6 +53,22 @@
 		--uwp-input-background-disabled: var(--uwp-control-fill-disabled) padding-box;
 		--uwp-input-border-disabled: var(--uwp-control-stroke-default-border);
 
+		--uwp-checkbox-background: var(--uwp-control-alt-fill-secondary);
+		--uwp-checkbox-border: 1px solid var(--uwp-control-strong-stroke-default);
+
+		--uwp-checkbox-background-hover: var(--uwp-control-alt-fill-tertiary);
+		--uwp-checkbox-border-hover: 1px solid var(--uwp-control-strong-stroke-default);
+
+		--uwp-checkbox-background-active: var(--uwp-control-alt-fill-quarternary);
+		--uwp-checkbox-border-active: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-checkbox-color-disabled: var(--uwp-text-accent-fill-disabled);
+		--uwp-checkbox-background-disabled: var(--uwp-control-alt-fill-disabled);
+		--uwp-checkbox-border-disabled: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-checkbox-background-checked-disabled: var(--uwp-accent-fill-disabled);
+		--uwp-checkbox-border-checked-disabled: 1px solid var(--uwp-control-strong-stroke-disabled);
+
 		--uwp-combo-color: var(--uwp-text-fill-primary);
 		--uwp-combo-background: var(--uwp-control-fill-default);
 		--uwp-combo-border: var(--uwp-control-elevation-border);
@@ -112,6 +128,7 @@
 		--uwp-context-item-padding-bottom: 5px;
 		--uwp-context-separator-margin: 1px 0px;
 		--uwp-context-margin: 2px 0px;
+		--uwp-context-scrollbar-width: thin;
 	}
 
 	:root {

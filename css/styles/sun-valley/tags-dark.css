@@ -11,6 +11,8 @@
 		--uwp-text-fill-secondary: #FFFFFFC5;
 		--uwp-text-fill-tertiary: #FFFFFF87;
 		--uwp-text-fill-disabled: #FFFFFF5D;
+
+		--uwp-text-accent-fill-disabled: #FFFFFF87;
 		
 		--uwp-control-fill-default: #FFFFFF0F;
 		--uwp-control-fill-secondary: #FFFFFF15;
@@ -37,6 +39,14 @@
 		--uwp-subtle-fill-transparent: #FFFFFF00;
 		--uwp-subtle-fill-secondary: #FFFFFF0F;
 		--uwp-subtle-fill-tertiary: #FFFFFF0A;
+
+		--uwp-control-alt-fill-transparent: #FFFFFF00;
+		--uwp-control-alt-fill-secondary: #00000019;
+		--uwp-control-alt-fill-tertiary: #FFFFFF0B;
+		--uwp-control-alt-fill-quarternary: #FFFFFF12;
+		--uwp-control-alt-fill-disabled: #FFFFFF00;
+
+		--uwp-accent-fill-disabled: #FFFFFF28;
 
 		--uwp-layer-fill-default: #3A3A3A4C;
 

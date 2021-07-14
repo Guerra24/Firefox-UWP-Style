@@ -37,7 +37,7 @@
 		background-color: var(--uwp-button-background-active) !important;
 		border: var(--uwp-button-border-active) !important;
 	}
-	button[disabled="true"], button[disabled="true"]:hover, button[disabled="true"]:hover:active {
+	button[disabled="true"], button[disabled="true"]:is(:hover, :hover:active) {
 		color: var(--uwp-button-color-disabled) !important;
 		background-color: var(--uwp-button-background-disabled) !important;
 		border: var(--uwp-button-border-disabled) !important;
@@ -178,33 +178,52 @@
 		opacity: 1 !important;
 	}
 	checkbox > .checkbox-check, input[type="checkbox"] {
+		background-color: var(--uwp-checkbox-background) !important;
+		border: var(--uwp-checkbox-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		-moz-context-properties: fill !important;
 		fill: -moz-accent-color-foreground !important;
 		-moz-appearance: none !important;
 		width: 20px !important;
 		height: 20px !important;
-		border: var(--uwp-control-strong-stroke-default-border) !important;
-		border-radius: var(--uwp-tags-control-radius) !important;
 		margin: 0px !important;
 		box-shadow: none !important;
-		background-color: transparent !important;
 	}
-	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover, input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
-		border-color: var(--uwp-tags-checkbox-checked-hover) !important;
+	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover {
+		background-color: var(--uwp-checkbox-background-hover) !important;
+		border: var(--uwp-checkbox-border-hover) !important;
 	}
-	checkbox:active > .checkbox-check, input[type="checkbox"]:active, input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:active > .checkbox-check {
-		border-color: var(--uwp-tags-checkbox-checked-active) !important;
-		background-color: var(--uwp-tags-checkbox-checked-active) !important;
+	checkbox:active > .checkbox-check, input[type="checkbox"]:active {
+		background-color: var(--uwp-checkbox-background-active) !important;
+		border: var(--uwp-checkbox-border-active) !important;
 	}
 	input[type="checkbox"]:checked, checkbox[checked="true"] > .checkbox-check {
-		border-color: -moz-accent-color !important;
-		background: -moz-accent-color !important;
+		background: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+	}
+	input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
+		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+	}
+	input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:active > .checkbox-check {
+		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		fill: color-mix(in srgb, -moz-accent-color-foreground 60%, #808080) !important;
 	}
 	checkbox[checked="true"] > .checkbox-check {
-		list-style-image: url("chrome://global/skin/icons/check.svg") !important;
+		background-image: url("chrome://global/skin/icons/check.svg") !important;
+		background-repeat: no-repeat !important;
+		background-size: 12px !important;
+		background-position-x: 3px !important;
+		background-position-y: 3px !important;
 	}
 	input[type="checkbox"]:checked {
 		background-image: url("chrome://global/skin/icons/check.svg") !important;
+		background-repeat: no-repeat !important;
+		background-size: 12px !important;
+		background-position-x: 3px !important;
+		background-position-y: 3px !important;
 	}
 	input[type="checkbox"] {
 		margin-right: 10px !important;
@@ -216,27 +235,20 @@
 		color: var(--uwp-global-front);
 		margin-left: 10px !important;
 	}
-	.checkbox-icon {
-		fill: var(--uwp-global-front) !important;
-	}
 
 	/* Check Box Disabled */
 	checkbox[disabled="true"] > .checkbox-label-box {
 		color: var(--uwp-tags-checkbox-disabled) !important;
 	}
 	checkbox[disabled="true"] > .checkbox-check {
-		border-color: var(--uwp-tags-checkbox-disabled) !important;
-		background-color: transparent !important;
+		background-color: var(--uwp-checkbox-background-disabled) !important;
+		border: var(--uwp-checkbox-border-disabled) !important;
+		fill: var(--uwp-checkbox-color-disabled) !important;
 	}
-	checkbox[disabled="true"][checked="true"] > .checkbox-check {
-		fill: var(--uwp-tags-checkbox-disabled) !important;
-	}
-	checkbox[disabled="true"][checked="true"]:hover > .checkbox-check {
-		border-color: var(--uwp-tags-checkbox-disabled) !important;
-	}
-	checkbox[disabled="true"][checked="true"]:hover:active > .checkbox-check {
-		border-color: var(--uwp-tags-checkbox-disabled) !important;
-		background-color: transparent !important;
+	checkbox[disabled="true"][checked="true"] > .checkbox-check, checkbox[disabled="true"][checked="true"]:is(:hover, :hover:active) > .checkbox-check  {
+		background-color: var(--uwp-checkbox-background-checked-disabled) !important;
+		border: var(--uwp-checkbox-border-checked-disabled) !important;
+		fill: var(--uwp-checkbox-color-disabled) !important;
 	}
 	input[type="checkbox"].toggle-button, input + .slider {
 		background-image: none !important;

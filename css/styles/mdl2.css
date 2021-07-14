@@ -50,6 +50,22 @@
 		--uwp-input-background-disabled: var(--uwp-tags-button);
 		--uwp-input-border-disabled: 2px solid var(--uwp-tags-button);
 
+		--uwp-checkbox-background: transparent;
+		--uwp-checkbox-border: 2px solid var(--uwp-tags-checkbox);
+
+		--uwp-checkbox-background-hover: transparent;
+		--uwp-checkbox-border-hover: 2px solid var(--uwp-tags-checkbox-checked-hover);
+
+		--uwp-checkbox-background-active: var(--uwp-tags-checkbox-checked-active);
+		--uwp-checkbox-border-active: 2px solid var(--uwp-tags-checkbox-checked-active);
+
+		--uwp-checkbox-color-disabled: var(--uwp-tags-checkbox-disabled);
+		--uwp-checkbox-background-disabled: transparent;
+		--uwp-checkbox-border-disabled: 2px solid var(--uwp-tags-checkbox-disabled);
+
+		--uwp-checkbox-background-checked-disabled: transparent;
+		--uwp-checkbox-border-checked-disabled: 2px solid var(--uwp-tags-checkbox-disabled);
+
 		--uwp-combo-color: var(--uwp-global-front);
 		--uwp-combo-background: transparent;
 		--uwp-combo-border: 2px solid var(--uwp-tags-textbox-border);
@@ -103,6 +119,7 @@
 		--uwp-context-item-padding-bottom: 7px;
 		--uwp-context-separator-margin: 4px 11px;
 		--uwp-context-margin: 5px 1px;
+		--uwp-context-scrollbar-width: initial;
 	}
 
 	:root {
