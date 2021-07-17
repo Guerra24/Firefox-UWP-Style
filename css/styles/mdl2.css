@@ -106,6 +106,10 @@
 		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
 		--uwp-nav-item-background-selected-active: var(--in-content-category-background-selected-active);
 
+		--uwp-dialog-border: transparent;
+		--uwp-dialog-separator: transparent;
+		--uwp-dialog-smoke: transparent;
+
 		--uwp-context-item-color: var(--uwp-global-front);
 		--uwp-context-item-background: transparent;
 

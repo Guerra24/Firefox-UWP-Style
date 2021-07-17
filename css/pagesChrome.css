@@ -6,14 +6,24 @@
 	dialog, window, wizard {
 		background: var(--uwp-background) !important;
 		color: var(--uwp-foreground) !important;
+		padding: 0px !important;
 	}
 	#window-modal-dialog {
 		margin-top: auto !important;
-		background: transparent !important;
-		padding: 30px !important;
+		background: transparent !important;;
+	}
+	#window-modal-dialog::before {
+		content: '' !important;
+		z-index: -1 !important;
+		position: fixed !important;
+		left: 0 !important;
+		top: 0 !important;
+		background: var(--uwp-dialog-smoke) !important;
+		width: 100vw !important;
+		height: 100vh !important;
 	}
 	.wizard-header {
-		background: var(--uwp-global-back) !important;
+		background: transparent !important;
 		color: var(--uwp-global-front) !important;
 		border: none !important;
 	}
@@ -25,12 +35,27 @@
 	}
 	.dialogBox {
 		margin-top: 0px !important;
-		background: var(--uwp-global-back) !important;
+		background-color: var(--uwp-background-fill-base) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-		border: 1px solid -moz-accent-color !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	.dialog-content-box {
+		padding: 24px !important;
+		margin-bottom: 24px !important;
+		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
+		background-color: var(--uwp-layer-fill-alt) !important;
+		background-clip: padding-box !important;
+	}
+	.dialog-button-box {
+		padding: 0px 24px 24px 24px !important;
+	}
+	.dialog-button-box > button + button {
+		margin-left: 4px !important;
+		margin-right: 0px !important;
 	}
 	.titleIcon {
 		background-color: transparent !important;
@@ -44,14 +69,19 @@
 	#label-box[native] {
 		outline: none !important;
 	}
-	@supports(backdrop-filter: blur(1px)) {
-		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
-			background: transparent !important;
-		}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.dialogBox {
-			background-image: url(../img/noise-512x512.png) !important;
-			background-color: var(--uwp-dialog-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			border: 1px solid -moz-accent-color !important;
+		}
+		@supports(backdrop-filter: blur(1px)) {
+			body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
+				background: transparent !important;
+			}
+			.dialogBox {
+				background-image: url(../img/noise-512x512.png) !important;
+				background-color: var(--uwp-dialog-background-blur) !important;
+				backdrop-filter: blur(32px) !important;
+			}
 		}
 	}
 }

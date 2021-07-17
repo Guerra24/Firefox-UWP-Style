@@ -111,7 +111,11 @@
 
 		--uwp-context-separator: var(--uwp-divider-stroke-default);
 
-		--uwp-context-border: var(--uwp-surface-stroke);
+		--uwp-context-border: var(--uwp-surface-stroke-flyout);
+
+		--uwp-dialog-border: var(--uwp-surface-stroke-default);
+		--uwp-dialog-separator: var(--uwp-card-stroke-default);
+		--uwp-dialog-smoke: var(--uwp-smoke-fill-default);
 
 		--uwp-context-item-color: var(--uwp-text-fill-primary);
 		--uwp-context-item-background: var(--uwp-subtle-fill-transparent);
@@ -120,7 +124,7 @@
 
 		--uwp-context-item-background-active: var(--uwp-subtle-fill-tertiary);
 
-		--uwp-context-tooltip-border: var(--uwp-surface-stroke);
+		--uwp-context-tooltip-border: var(--uwp-surface-stroke-flyout);
 
 		--uwp-context-item-margin: 2px 4px;
 		--uwp-context-item-margin-width: 8px;
@@ -142,6 +146,8 @@
 		--panel-subview-body-padding: var(--uwp-context-margin) !important;
 		--panel-separator-color: var(--uwp-context-separator) !important;
 		--panel-separator-margin: var(--uwp-context-separator-margin) !important;
+
+		--toolbar-bgcolor: var(--uwp-background-fill-base) !important;
 	}
 
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {

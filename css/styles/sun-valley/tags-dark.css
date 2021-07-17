@@ -34,6 +34,8 @@
 		--uwp-control-strong-stroke-default-border: 1px solid var(--uwp-control-strong-stroke-default);
 		--uwp-control-strong-stroke-disabled-border: 1px solid var(--uwp-control-strong-stroke-disabled);
 
+		--uwp-card-stroke-default: #00000019;
+
 		--uwp-divider-stroke-default: #FFFFFF15;
 
 		--uwp-subtle-fill-transparent: #FFFFFF00;
@@ -49,8 +51,12 @@
 		--uwp-accent-fill-disabled: #FFFFFF28;
 
 		--uwp-layer-fill-default: #3A3A3A4C;
+		--uwp-layer-fill-alt: #FFFFFF0D;
 
-		--uwp-surface-stroke: #00000033;
+		--uwp-surface-stroke-default: #75757566;
+		--uwp-surface-stroke-flyout: #00000033;
+
+		--uwp-smoke-fill-default: #0000004D;
 
 		--uwp-tags-button: #333333;
 		--uwp-tags-button-hover: #858585;
