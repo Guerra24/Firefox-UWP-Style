@@ -104,21 +104,32 @@
 	.menu-accel {
 		color: gray !important;
 	}
+	menubar {
+		height: 40px !important;
+	}
 	menubar > menu {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
-		padding-left: 5px !important;
-		padding-right: 5px !important;
-		padding-top: 5px !important;
-		padding-bottom: 5px !important;
+		margin: 4px !important;
+		padding: 4px 10px !important;
 		font-size: 14px !important;
 		border: none !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		background-color: var(--uwp-menubar-item-background) !important;
+	}
+	menubar > menu > .menubar-text {
+		margin: 0px !important;
 	}
 	menubar > menu:hover {
-		background-color: var(--uwp-context-menubar-hover) !important;
+		color: var(--uwp-button-color-hover) !important;
+		background-color: var(--uwp-menubar-item-background-hover) !important;
+	}
+	menubar > menu:hover:active {
+		color: var(--uwp-button-color-active) !important;
+		background-color: var(--uwp-menubar-item-background-active) !important;
 	}
 	menubar > menu[open] {
-		background-color: var(--uwp-context-menubar-open) !important;
+		background-color: var(--uwp-menubar-item-background-selected) !important;
 	}
 	#ContentSelectDropdown > menupopup {
 		background-image: none !important;

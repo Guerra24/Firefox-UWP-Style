@@ -509,7 +509,7 @@ panel .text-link {
 	padding-block: 0px !important;
 }
 #urlbar .searchbar-engine-one-off-item {
-    margin-inline-end: 0px !important;
+    margin-inline-end: 2px !important;
 }
 @supports(backdrop-filter: blur(1px)) {
 	.urlbarView {

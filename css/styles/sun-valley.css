@@ -86,6 +86,7 @@
 		--uwp-combo-border-disabled: var(--uwp-control-stroke-default-border);
 
 		--uwp-nav-content-background: var(--uwp-layer-fill-default);
+		--uwp-nav-content-border: 1px solid red;
 		--uwp-nav-item-height: 36px;
 		--uwp-nav-item-selector-height: 16px;
 		--uwp-nav-item-selector-width: 3px;
@@ -108,6 +109,14 @@
 
 		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
 		--uwp-nav-item-background-selected-active: var(--uwp-subtle-fill-secondary);
+
+		--uwp-menubar-item-background: var(--uwp-subtle-fill-transparent) !important;
+
+		--uwp-menubar-item-background-hover: var(--uwp-subtle-fill-secondary) !important;
+
+		--uwp-menubar-item-background-active: var(--uwp-subtle-fill-tertiary) !important;
+
+		--uwp-menubar-item-background-selected: var(--uwp-subtle-fill-tertiary) !important;
 
 		--uwp-context-separator: var(--uwp-divider-stroke-default);
 
@@ -133,6 +142,8 @@
 		--uwp-context-separator-margin: 1px 0px;
 		--uwp-context-margin: 2px 0px;
 		--uwp-context-scrollbar-width: thin;
+
+		--uwp-mainwindow: #151515;
 	}
 
 	:root {
@@ -148,6 +159,18 @@
 		--panel-separator-margin: var(--uwp-context-separator-margin) !important;
 
 		--toolbar-bgcolor: var(--uwp-background-fill-base) !important;
+
+		--toolbarbutton-border-radius: var(--uwp-tags-control-radius) !important;
+		--toolbarbutton-inner-padding: 6px !important;
+		--toolbarbutton-outer-padding: 1px !important;
+		--toolbar-start-end-padding: 2px !important;
+
+		--autocomplete-popup-separator-color: var(--uwp-context-separator) !important;
+
+		--organizer-toolbar-background: var(--uwp-background) !important;
+		--organizer-pane-background: transparent !important;
+		--organizer-content-background: transparent !important;
+		--organizer-selected-background: transparent !important;
 	}
 
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {

@@ -101,17 +101,16 @@
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
 	#placesToolbar {
 		padding: 0px !important;
-		background-color: var(--uwp-global-back) !important;
 	}
 	toolbarbutton {
 		-moz-appearance: none !important;
 		padding: 8px !important;
 	}
 	toolbarbutton:not([disabled]):hover {
-		background-color: var(--uwp-context-menubar-hover) !important;
+		background-color: var(--uwp-menubar-item-background-hover) !important;
 	}
 	toolbarbutton:not([disabled]):hover:active {
-		background-color: var(--uwp-context-menubar-open) !important;
+		background-color: var(--uwp-menubar-item-background-active) !important;
 	}
 	toolbarbutton > .toolbarbutton-icon {
 		fill: var(--uwp-global-front) !important;
@@ -147,9 +146,6 @@
 	}
 	label {
 		color: var(--uwp-global-front) !important;
-	}
-	#placesViewsDeck, #detailsDeck, #detailsPane {
-		background: var(--uwp-global-back) !important;
 	}
 }
 
