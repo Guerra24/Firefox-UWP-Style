@@ -378,3 +378,9 @@
 		opacity: 0.8 !important;
 	}
 }
+
+@-moz-document url("chrome://browser/content/migration/migration.xhtml") {
+	#dataSources {
+		appearance: none !important;
+	}
+}

@@ -105,13 +105,13 @@
 		color: gray !important;
 	}
 	menubar {
-		height: 40px !important;
+		height: var(--uwp-menubar-height)!important;
 	}
 	menubar > menu {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
-		margin: 4px !important;
-		padding: 4px 10px !important;
+		margin: var(--uwp-menubar-item-margin) !important;
+		padding: var(--uwp-menubar-item-padding) !important;
 		font-size: 14px !important;
 		border: none !important;
 		border-radius: var(--uwp-tags-control-radius) !important;

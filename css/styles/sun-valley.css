@@ -86,7 +86,7 @@
 		--uwp-combo-border-disabled: var(--uwp-control-stroke-default-border);
 
 		--uwp-nav-content-background: var(--uwp-layer-fill-default);
-		--uwp-nav-content-border: 1px solid red;
+		--uwp-nav-content-border: 1px solid var(--uwp-card-stroke-default);
 		--uwp-nav-item-height: 36px;
 		--uwp-nav-item-selector-height: 16px;
 		--uwp-nav-item-selector-width: 3px;
@@ -109,6 +109,10 @@
 
 		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
 		--uwp-nav-item-background-selected-active: var(--uwp-subtle-fill-secondary);
+
+		--uwp-menubar-height: 40px;
+		--uwp-menubar-item-padding: 4px 10px;
+		--uwp-menubar-item-margin: 4px;
 
 		--uwp-menubar-item-background: var(--uwp-subtle-fill-transparent) !important;
 
@@ -142,6 +146,25 @@
 		--uwp-context-separator-margin: 1px 0px;
 		--uwp-context-margin: 2px 0px;
 		--uwp-context-scrollbar-width: thin;
+
+		--uwp-infobar-background: var(--uwp-system-attention-background);
+		--uwp-infobar-border: 1px solid var(--uwp-card-stroke-default);
+
+		--uwp-expander-color: var(--uwp-text-fill-primary);
+		--uwp-expander-background: var(--uwp-card-background-fill-default);
+		--uwp-expander-border: 1px solid var(--uwp-card-stroke-default);
+
+		--uwp-expander-color-hover: var(--uwp-text-fill-primary);
+		--uwp-expander-background-hover: var(--uwp-button-background-hover);
+		--uwp-expander-border-hover: var(--uwp-button-border-hover);
+
+		--uwp-expander-color-active: var(--uwp-text-fill-primary);
+		--uwp-expander-background-active: var(--uwp-control-fill-tertiary);
+		--uwp-expander-border-active: var(--uwp-button-border-active);
+
+		--uwp-expander-color-selected: var(--uwp-text-fill-primary);
+		--uwp-expander-background-selected: var(--uwp-button-background-hover);
+		--uwp-expander-border-selected: var(--uwp-button-border-hover);
 
 		--uwp-mainwindow: #151515;
 	}

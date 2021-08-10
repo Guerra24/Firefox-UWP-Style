@@ -90,12 +90,16 @@
 		color: var(--uwp-tags-pivot-selected) !important;
 		border-bottom: 2px solid -moz-accent-color !important;
 		padding-bottom: 8px !important;
+		border-radius: 0px !important;
 	}
 	button[role="tab"]:hover {
 		color: var(--uwp-tags-pivot-hover) !important;
 	}
 	button[role="tab"]:hover:active {
 		background-color: transparent !important;
+		border-top-width: 0px !important;
+		border-left-width: 0px !important;
+		border-right-width: 0px !important;
 	}
 	button[role="tab"][aria-selected="false"]:hover:active {
 		background-color: transparent !important;
@@ -475,39 +479,117 @@
 		border: none !important;
 	}
 	/* Tree */
-	
+	tree {
+		appearance: none !important;
+		background: transparent !important;
+	}
+	treechildren::-moz-tree-image {
+		fill: var(--uwp-foreground) !important;
+	}
+	treechildren::-moz-tree-twisty {
+		fill: var(--uwp-foreground) !important;
+	}
+	treechildren::-moz-tree-row {
+		background-color: transparent !important;
+		background-clip: padding-box !important;
+		outline: none !important;
+		border: none !important;
+	}
+	treechildren::-moz-tree-row(hover) {
+		background-color: var(--uwp-button-background) !important;
+	}
+	treechildren::-moz-tree-row(selected) {
+		background-color: var(--uwp-button-background-hover)  !important;
+	}
+	treechildren::-moz-tree-cell-text {
+		color: var(--uwp-foreground) !important;
+	}
+	treechildren::-moz-tree-cell-text(hover) {
+		color: var(--uwp-foreground) !important;
+	}
+	treechildren::-moz-tree-cell-text(selected) {
+		color: var(--uwp-foreground) !important;
+	}
+	treecol {
+		appearance: none !important;
+		background-clip: padding-box !important;
+		background: transparent !important;
+		border: none !important;
+		fill: var(--uwp-foreground) !important;
+		color: var(--uwp-foreground) !important;
+		padding: 4px !important;
+	}
+	treecol:hover {
+		background-color: var(--uwp-button-background) !important;
+	}
+	treecol:hover:active {
+		background-color: var(--uwp-button-background-hover) !important;
+	}
+	/* List Header */
+	listheader {
+		box-shadow: none !important;
+		border: none !important;
+		padding: 0px !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+	}
 
 	/* Richlist Stuff */
 	richlistbox, .options-container {
-		-moz-appearance: none !important;
-		background-color: transparent !important;
+		appearance: none !important;
+		background: transparent !important;
+		border-radius: 0px !important;
 		border: none !important;
-		border-radius: 0px !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
 	}
-	richlistitem, .options-container .option {
-		background-color: transparent !important;
-		color: var(--uwp-global-front) !important;
-		border-radius: 0px !important;
+	richlistitem:not(.category), .options-container .option {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+		min-height: 51px !important;
 	}
 	.options-container .option {
 		padding-left: 10px !important;
 	}
-	richlistitem:hover, .options-container .option:hover {
-		background-color: var(--uwp-tags-richlistitem-hover) !important;
+	richlistitem:not(.category):hover, .options-container .option:hover {
+		color: var(--uwp-expander-color-hover) !important;
+		border: var(--uwp-expander-border-hover) !important;
+		background-color: var(--uwp-expander-background-hover) !important;
 	}
-	richlistitem:hover:active, .options-container .option:hover:active {
-		background-color: var(--uwp-tags-richlistitem-active) !important;
+	richlistitem:not(.category):hover:active, .options-container .option:hover:active {
+		color: var(--uwp-expander-color-active) !important;
+		border: var(--uwp-expander-border-active) !important;
+		background-color: var(--uwp-expander-background-active) !important;
 	}
-	richlistitem[selected="true"] {
-		background-image: none !important;
-		background-clip: border-box !important;
+	richlistitem:not(.category)[selected="true"] {
+		color: var(--uwp-expander-color-selected) !important;
+		border: var(--uwp-expander-border-selected) !important;
+		background-color: var(--uwp-expander-background-selected) !important;
 		outline: none !important;
-		background-color: var(--uwp-tags-richlistitem-selected) !important;
+	}
+	richlistitem + richlistitem {
+		margin-top: 3px !important;
 	}
 	richlistbox:focus-visible {
 		border: none !important;
 		box-shadow: none !important;
 		outline: none !important;
+	}
+	richlistbox .actionsMenu {
+		flex: 1 !important;
+		max-height: 32px !important;
+		margin: auto !important;
+	}
+	richlistbox .actionsMenuContainer {
+		display: flex !important;
+	}
+	richlistbox .actionsMenuContainer[hidden="true"] {
+		display: none !important;
 	}
 	.downloadButton:hover > .button-box > .button-icon {
 		fill: -moz-accent-color !important;
@@ -535,58 +617,12 @@
 		border: none !important;
 		background: #333333 !important;
 	}
-	/* Customization Page */
-	#customization-content-container {
-		background-color: var(--uwp-global-back) !important;
-	}
-	#customization-footer {
-		border-top: none !important;
-		background-color: var(--uwp-bottom-background) !important;
-	}
-	.mainContainer, .tabmodalprompt-mainContainer {
-		color: white !important;
-		background-color: black !important;
-		border-radius: 0px !important;
-		border: 1px solid -moz-accent-color !important;
-		animation: fadeInScale .3s;
-	}
-	tabmodalprompt {
-		background: none !important;
-		background-color: #00000090 !important;
-		animation: fadeInOpacity .3s;
-	}
-	.buttonContainer > button {
-		padding: 4.5px !important;
-	}
-	/* Dev Tools */
-	.devtools-tab, .breadcrumbs-widget-item, .tooltip-container button {
-		border: none !important;
-		background: transparent !important;
-	}
-	.devtools-tab:hover, .breadcrumbs-widget-item:hover, .tooltip-container button:hover {
-		border: none !important;
-		background: #353535 !important;
-	}
-	.devtools-tab:hover:active, .breadcrumbs-widget-item:hover:active, .tooltip-container button:hover:active {
-		border: none !important;
-	}
-	.devtools-tab-line {
-		background: -moz-accent-color !important;
-	}
-	.devtools-button {
-		border-radius: 0px !important;
-		background: transparent !important;
-		border: none !important;
-	}
-	.devtools-button:hover {
-		background: #353535 !important;
-		border: none !important;
-	}
-	.devtools-button:hover:active {
-		border: none !important;
-	}
-	.styleinspector-propertyeditor {
-		color: black !important;
+	
+	/* Message-bar */
+	message-bar {
+		background: var(--uwp-infobar-background) !important;
+		border: var(--uwp-card-stroke-default) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 	}
 
 	/* Permissions */

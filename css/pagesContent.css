@@ -21,9 +21,6 @@
 	listheader {
 		border-bottom: 0px !important;
 	}
-	richlistbox {
-		border: none !important;
-	}
 	.menulist-label-box {
 		border: none !important;
 	}
@@ -567,13 +564,6 @@
 		background: transparent !important;
 		border: none !important;
 	}
-	.addon label, .addon {
-		margin: 0px !important;
-		cursor: default !important;
-	}
-	.addon:not([selected]) {
-		border-bottom: 0px !important;
-	}
 	.button-box {
 		padding: 0px 5px !important;
 	}
@@ -605,9 +595,6 @@
 		padding-bottom: 3px !important;
 		background-color: #404040 !important;
 	}
-	.addon {
-		border: none !important;
-	}
 	#heading {
 		margin-top: 6px !important;
 	}
@@ -628,19 +615,33 @@
 	.rating-star {
 		fill: -moz-accent-color !important;
 	}
-	.addon.card {
+	.card.addon {
 		background: transparent !important;
-		margin: 0px !important;
-		border: none !important;
-		border-radius: 0px !important;
+	}
+	addon-card:not([expanded]) .card.addon, recommended-addon-card .card.addon {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding: 16px !important;
+		min-height: 51px !important;
 		cursor: default !important;
-		padding: 10px !important;
+		margin-bottom: 3px !important;
 	}
-	addon-card:not([expanded]) > .addon.card:hover {
-		background: var(--uwp-tags-richlistitem-hover) !important;
+	addon-card:not([expanded]) .card.addon:hover, recommended-addon-card .card.addon:hover {
+		color: var(--uwp-expander-color-hover) !important;
+		border: var(--uwp-expander-border-hover) !important;
+		background-color: var(--uwp-expander-background-hover) !important;
 	}
-	addon-card:not([expanded]) > .addon.card:hover:active {
-		background: var(--uwp-tags-richlistitem-active) !important;
+	addon-card:not([expanded]) .card.addon:hover:active, recommended-addon-card .card.addon:hover:active {
+		color: var(--uwp-expander-color-active) !important;
+		border: var(--uwp-expander-border-active) !important;
+		background-color: var(--uwp-expander-background-active) !important;
+	}
+	.addon-name-container {
+		margin: 0px !important;
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.card-heading-icon {
@@ -652,43 +653,21 @@
 	.card-heading-icon {
 		fill: var(--uwp-foreground) !important;
 		padding: 4px !important;
+		margin-top: auto !important;
+		margin-bottom: auto !important;
 	}
-	addon-card:not([expanded]) .card-contents {
-		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size) - 6px) !important;
+	.card-contents {
+		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size)) !important;
 	}
-	addon-details, .addon-detail-row {
-		color: var(--uwp-global-front) !important;
+	.disco-description-statistics, recommended-addon-card .addon-description {
+		margin-top: 4px !important;
 	}
-	recommended-themes-section {
-		display: none !important;
-	}
-	button.button-link {
-		text-decoration: none !important;
+	.addon-name-link, .addon-name-link:hover, .addon-name-link:hover:active {
+		color: var(--uwp-foreground) !important;
+		cursor: default !important;
 	}
 	.card-heading-image {
-		margin-left: -10px !important;
-		margin-top: 0px !important;
-	}
-	.tab-group {
-		border: none !important;
-	}
-	.addon-detail-row {
-		border: none !important;
-	}
-	input[type="radio"] + span {
-		bottom: 1px !important;
-	}
-	/* Icons */
-	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
-		/* This should use --uwp-accent-text for fill */
-		background-image: var(--mdl2-icons-puzzle) !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		background-size: 32px !important;
-		padding-left: 36px !important;
-		box-sizing: border-box !important;
-		width: 40px !important;
-		height: 40px !important;
+		    width: calc(var(--section-width) - 2px) !important;
 	}
 }
 

@@ -36,6 +36,9 @@
 
 		--uwp-card-stroke-default: #00000019;
 
+		--uwp-card-background-fill-default: #FFFFFF0D;
+		--uwp-card-background-fill-secondary: #FFFFFF08;
+
 		--uwp-divider-stroke-default: #FFFFFF15;
 
 		--uwp-subtle-fill-transparent: #FFFFFF00;
@@ -57,6 +60,8 @@
 		--uwp-surface-stroke-flyout: #00000033;
 
 		--uwp-smoke-fill-default: #0000004D;
+
+		--uwp-system-attention-background: #FFFFFF08;
 
 		--uwp-tags-button: #333333;
 		--uwp-tags-button-hover: #858585;
