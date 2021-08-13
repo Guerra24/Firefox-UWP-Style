@@ -75,6 +75,11 @@
 		padding: 11px !important;
 		transform: rotate(180deg);
 	}
+	.arrowhead {
+		padding: 8px !important;
+		max-height: unset !important;
+		max-width: unset !important;
+	}
 	named-deck-button + named-deck-button {
 		margin-left: 24px !important;
 	}
@@ -215,19 +220,12 @@
 		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
 		fill: color-mix(in srgb, -moz-accent-color-foreground 60%, #808080) !important;
 	}
-	checkbox[checked="true"] > .checkbox-check {
+	checkbox[checked="true"] > .checkbox-check , input[type="checkbox"]:checked {
 		background-image: url("chrome://global/skin/icons/check.svg") !important;
 		background-repeat: no-repeat !important;
-		background-size: 12px !important;
-		background-position-x: 3px !important;
-		background-position-y: 3px !important;
-	}
-	input[type="checkbox"]:checked {
-		background-image: url("chrome://global/skin/icons/check.svg") !important;
-		background-repeat: no-repeat !important;
-		background-size: 12px !important;
-		background-position-x: 3px !important;
-		background-position-y: 3px !important;
+		background-size: var(--uwp-checkbox-check-size) !important;
+		background-position-x: var(--uwp-checkbox-check-position) !important;
+		background-position-y: var(--uwp-checkbox-check-position) !important;
 	}
 	input[type="checkbox"] {
 		margin-right: 10px !important;
@@ -549,9 +547,9 @@
 		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
 		box-shadow: none !important;
-		padding-left: 16px !important;
-		padding-right: 16px !important;
-		min-height: 51px !important;
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		min-height: var(--uwp-expander-min-height) !important;
 	}
 	.options-container .option {
 		padding-left: 10px !important;
@@ -573,7 +571,7 @@
 		outline: none !important;
 	}
 	richlistitem + richlistitem {
-		margin-top: 3px !important;
+		margin-top: var(--uwp-expander-spacing) !important;
 	}
 	richlistbox:focus-visible {
 		border: none !important;
@@ -619,7 +617,7 @@
 	}
 	
 	/* Message-bar */
-	message-bar {
+	message-bar, .content-blocking-warning {
 		background: var(--uwp-infobar-background) !important;
 		border: var(--uwp-card-stroke-default) !important;
 		border-radius: var(--uwp-tags-control-radius) !important;

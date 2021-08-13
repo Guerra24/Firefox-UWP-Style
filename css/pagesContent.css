@@ -443,6 +443,75 @@
 }
 
 @-moz-document url-prefix("about:preferences") {
+
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		:root {
+			--uwp-expander-background: var(--uwp-tags-richlistitem-hover) !important;
+		}
+	}
+
+	.content-blocking-category {
+		color: var(--uwp-expander-color) !important;
+		background: transparent !important;
+		box-shadow: none !important;
+		padding: 0px !important;
+		min-height: var(--uwp-expander-min-height) !important;
+		margin-top: 0px !important;
+		border: none !important;
+	}
+	.content-blocking-category > hbox {
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		padding-top: var(--uwp-expander-hor-padding) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		border: var(--uwp-expander-border) !important;
+		border-bottom-width: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	.content-blocking-category > .indent {
+		margin-inline-end: 0px !important;
+		margin-inline-start: 0px !important;
+	}
+	.content-blocking-category > .indent > label {
+		width: 100%;
+	}
+	.content-blocking-category > .indent > * {
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		border: var(--uwp-expander-border) !important;
+		border-top-width: 0px !important;
+		border-bottom-left-radius: var(--uwp-tags-control-radius) !important;
+		border-bottom-right-radius: var(--uwp-tags-control-radius) !important;
+	}
+	.content-blocking-category > .indent > vbox {
+		background-color: var(--uwp-expander-content-background) !important;
+		background-clip: padding-box !important;
+	}
+	.content-blocking-category > .indent > :not(vbox) {
+		padding-bottom: var(--uwp-expander-hor-padding) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		border: var(--uwp-expander-border) !important;
+		border-top-width: 0px !important;
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+	}
+	.content-blocking-category:is(.expanded, .selected) > .indent > :not(vbox) {
+		border-radius: 0px !important;
+	}
+	.content-blocking-reload-desc-container > .content-blocking-info-image {
+		margin-top: unset !important;
+		align-self: unset !important;
+	}
+	.content-blocking-reload-description {
+		display: inline-flex !important;
+		align-items: center !important;
+	}
+
 	.main-content {
 		border-top-left-radius: var(--uwp-tags-overlay-radius);
 		background-color: var(--uwp-nav-content-background) !important;
@@ -498,20 +567,6 @@
 		-moz-context-properties: fill, stroke;
 		fill: var(--chrome-secondary-background-color) !important;
 		stroke: gray !important;
-	}
-	.content-blocking-category {
-		border-radius: 0px !important;
-		border: none !important;
-	}
-	.content-blocking-category.selected {
-		background-image: linear-gradient(-moz-accent-color, -moz-accent-color) !important;
-		background-blend-mode: multiply;
-		background-color: rgb(140,140,140) !important;
-		color: -moz-accent-color-foreground !important;
-	}
-	.content-blocking-warning {
-		background: var(--uwp-section-highlight-background-color) !important;
-		color: var(--uwp-global-front) !important;
 	}
 	.sync-group {
 		border-radius: 0px !important;
@@ -649,6 +704,9 @@
 			background-color: -moz-accent-color !important;
 			padding: 4px !important;
 		}
+	}
+	addon-card .card-heading-icon {
+		margin-bottom: unset !important;
 	}
 	.card-heading-icon {
 		fill: var(--uwp-foreground) !important;

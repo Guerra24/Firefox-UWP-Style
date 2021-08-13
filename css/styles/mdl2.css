@@ -18,15 +18,15 @@
 		--uwp-background: var(--uwp-global-back);
 		--uwp-foreground: var(--uwp-global-front);
 
-		--uwp-button-color: var(--uwp-global-front);
+		--uwp-button-color: var(--uwp-foreground);
 		--uwp-button-background: var(--uwp-tags-button);
 		--uwp-button-border: 2px solid var(--uwp-tags-button);
 
-		--uwp-button-color-hover: var(--uwp-global-front);
+		--uwp-button-color-hover: var(--uwp-foreground);
 		--uwp-button-background-hover: var(--uwp-tags-button);
 		--uwp-button-border-hover: 2px solid var(--uwp-tags-button-hover);
 
-		--uwp-button-color-active: var(--uwp-global-front);
+		--uwp-button-color-active: var(--uwp-foreground);
 		--uwp-button-background-active: var(--uwp-tags-button-hover-active);
 		--uwp-button-border-active: 2px solid var(--uwp-tags-button-hover-active);
 
@@ -34,11 +34,11 @@
 		--uwp-button-background-disabled: var(--uwp-tags-button);
 		--uwp-button-border-disabled: 2px solid var(--uwp-tags-button);
 
-		--uwp-input-color: var(--uwp-global-front);
+		--uwp-input-color: var(--uwp-foreground);
 		--uwp-input-background: var(--uwp-tags-textbox);
 		--uwp-input-border: 2px solid var(--uwp-tags-textbox-border);
 
-		--uwp-input-color-hover: var(--uwp-global-front);
+		--uwp-input-color-hover: var(--uwp-foreground);
 		--uwp-input-background-hover: var(--uwp-tags-textbox);
 		--uwp-input-border-hover: 2px solid var(--uwp-tags-textbox-hover);
 
@@ -49,6 +49,9 @@
 		--uwp-input-color-disabled: var(--uwp-tags-button-disabled-text);
 		--uwp-input-background-disabled: var(--uwp-tags-button);
 		--uwp-input-border-disabled: 2px solid var(--uwp-tags-button);
+
+		--uwp-checkbox-check-position: 0px;
+		--uwp-checkbox-check-size: 16px;
 
 		--uwp-checkbox-background: transparent;
 		--uwp-checkbox-border: 2px solid var(--uwp-tags-checkbox);
@@ -66,15 +69,15 @@
 		--uwp-checkbox-background-checked-disabled: transparent;
 		--uwp-checkbox-border-checked-disabled: 2px solid var(--uwp-tags-checkbox-disabled);
 
-		--uwp-combo-color: var(--uwp-global-front);
+		--uwp-combo-color: var(--uwp-foreground);
 		--uwp-combo-background: transparent;
 		--uwp-combo-border: 2px solid var(--uwp-tags-textbox-border);
 
-		--uwp-combo-color-hover: var(--uwp-global-front);
+		--uwp-combo-color-hover: var(--uwp-foreground);
 		--uwp-combo-background-hover: transparent;
 		--uwp-combo-border-hover: 2px solid var(--uwp-tags-textbox-hover);
 
-		--uwp-combo-color-active: var(--uwp-global-front);
+		--uwp-combo-color-active: var(--uwp-foreground);
 		--uwp-combo-background-active: var(--uwp-tags-button);
 		--uwp-combo-border-active: 2px solid var(--uwp-tags-textbox-border);
 
@@ -88,29 +91,41 @@
 		--uwp-nav-item-selector-width: 6px;
 		--uwp-nav-item-selector-radius: 0px;
 
-		--uwp-nav-item-color: var(--uwp-global-front);
+		--uwp-nav-item-color: var(--uwp-foreground);
 		--uwp-nav-item-background: transparent;
 
-		--uwp-nav-item-color-hover: var(--uwp-global-front);
+		--uwp-nav-item-color-hover: var(--uwp-foreground);
 		--uwp-nav-item-background-hover: var(--in-content-category-background-hover);
 
-		--uwp-nav-item-color-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-color-active: var(--uwp-foreground);
 		--uwp-nav-item-background-active: var(--in-content-category-background-active);
 
-		--uwp-nav-item-color-selected: var(--uwp-global-front);
+		--uwp-nav-item-color-selected: var(--uwp-foreground);
 		--uwp-nav-item-background-selected: transparent;
 
-		--uwp-nav-item-color-selected-hover: var(--uwp-global-front);
+		--uwp-nav-item-color-selected-hover: var(--uwp-foreground);
 		--uwp-nav-item-background-selected-hover: var(--in-content-category-background-selected-hover);
 
-		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-color-selected-active: var(--uwp-foreground);
 		--uwp-nav-item-background-selected-active: var(--in-content-category-background-selected-active);
+
+		--uwp-menubar-height: 32px;
+		--uwp-menubar-item-padding: 4px 10px;
+		--uwp-menubar-item-margin: 0px;
+
+		--uwp-menubar-item-background: transparent !important;
+
+		--uwp-menubar-item-background-hover: var(--uwp-context-menubar-hover) !important;
+
+		--uwp-menubar-item-background-active: var(--uwp-context-menubar-open) !important;
+
+		--uwp-menubar-item-background-selected: var(--uwp-context-menubar-open) !important;
 
 		--uwp-dialog-border: transparent;
 		--uwp-dialog-separator: transparent;
 		--uwp-dialog-smoke: transparent;
 
-		--uwp-context-item-color: var(--uwp-global-front);
+		--uwp-context-item-color: var(--uwp-foreground);
 		--uwp-context-item-background: transparent;
 
 		--uwp-context-item-background-hover: var(--uwp-context-menuitem-hover);
@@ -124,6 +139,31 @@
 		--uwp-context-separator-margin: 4px 11px;
 		--uwp-context-margin: 5px 1px;
 		--uwp-context-scrollbar-width: initial;
+
+		--uwp-infobar-background: var(--uwp-tags-richlistitem-active);
+		--uwp-infobar-border: 0px solid transparent;
+
+		--uwp-expander-color: var(--uwp-foreground);
+		--uwp-expander-background: transparent;
+		--uwp-expander-border: 0px solid transparent;
+
+		--uwp-expander-color-hover: var(--uwp-foreground);
+		--uwp-expander-background-hover: var(--uwp-tags-richlistitem-hover);
+		--uwp-expander-border-hover: 0px solid transparent;
+
+		--uwp-expander-color-active: var(--uwp-foreground);
+		--uwp-expander-background-active: var(--uwp-tags-richlistitem-active);
+		--uwp-expander-border-active: 0px solid transparent;
+
+		--uwp-expander-color-selected: var(--uwp-foreground);
+		--uwp-expander-background-selected: var(--uwp-tags-richlistitem-selected);
+		--uwp-expander-border-selected: 0px solid transparent;
+
+		--uwp-expander-content-background: var(--uwp-tags-richlistitem-hover);
+
+		--uwp-expander-min-height: 32px;
+		--uwp-expander-hor-padding: 8px;
+		--uwp-expander-spacing: 0px;
 	}
 
 	:root {

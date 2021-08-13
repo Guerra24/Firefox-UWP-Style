@@ -53,6 +53,9 @@
 		--uwp-input-background-disabled: var(--uwp-control-fill-disabled) padding-box;
 		--uwp-input-border-disabled: var(--uwp-control-stroke-default-border);
 
+		--uwp-checkbox-check-position: 3px;
+		--uwp-checkbox-check-size: 12px;
+
 		--uwp-checkbox-background: var(--uwp-control-alt-fill-secondary);
 		--uwp-checkbox-border: 1px solid var(--uwp-control-strong-stroke-default);
 
@@ -165,6 +168,12 @@
 		--uwp-expander-color-selected: var(--uwp-text-fill-primary);
 		--uwp-expander-background-selected: var(--uwp-button-background-hover);
 		--uwp-expander-border-selected: var(--uwp-button-border-hover);
+
+		--uwp-expander-content-background: var(--uwp-card-background-fill-secondary);
+
+		--uwp-expander-min-height: 51px;
+		--uwp-expander-hor-padding: 16px;
+		--uwp-expander-spacing: 3px;
 
 		--uwp-mainwindow: #151515;
 	}
