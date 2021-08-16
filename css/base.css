@@ -21,10 +21,10 @@
 	.titlebar-min {
 		padding-bottom: 7px !important;
 	}
-	.titlebar-min:hover, .titlebar-max:hover, #minimize-button:hover, #restore-button:hover {
+	.titlebar-min:hover, .titlebar-max:hover, .titlebar-restore:hover, #minimize-button:hover, #restore-button:hover {
 		background-color: var(--titlebar-min-max-hover-bg-color) !important;
 	}
-	.titlebar-min:hover:active, .titlebar-max:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
+	.titlebar-min:hover:active, .titlebar-max:hover:active, .titlebar-restore:hover:active, #minimize-button:hover:active, #restore-button:hover:active {
 		background-color: var(--titlebar-min-max-active-bg-color) !important;
 	}
 	.titlebar-close:hover, #close-button:hover {

@@ -9,7 +9,7 @@ Uses OS-level dark/light setting to apply the correct colors. This can cause col
 Select the appropriate file:
 
 - [Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 89 - 91](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
+- [Firefox 89 - 92](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 - [Firefox 88](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-88.zip)
 - [Firefox 76 - 87](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-76.zip)
 
