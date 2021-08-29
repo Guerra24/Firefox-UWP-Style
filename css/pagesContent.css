@@ -225,6 +225,7 @@
 		padding-left: 0px !important;
 	}
 	#categories > .category:not(richlistitem) {
+		cursor: default !important;
 		display: flex !important;
 		border: none !important;
 		padding: 0px !important;
@@ -236,29 +237,32 @@
 		background-position-x: 12px !important;
 		background-position-y: calc(var(--uwp-nav-item-height) / 2 - 8px) !important;
 	}
-	#categories > .category:not(button) {
+	#categories > .category:is(richlistitem) {
 		position: absolute !important;
 		min-height: var(--uwp-nav-item-height) !important;
 		transition: none !important;
 		padding-left: 0px !important;
 		cursor: default !important;
 	}
+	#categories > .category:is(div) > .category-name {
+		margin-left: 40px !important;
+	}
 	#categories > .category::before {
 		content: "";
 		width: 0 !important;
-		display: block !important; 
+		display: block !important;
 		padding: calc(var(--uwp-nav-item-selector-height) / 2) calc(var(--uwp-nav-item-selector-width) / 2) !important;
 		background: transparent !important;
 		border-radius: var(--uwp-nav-item-selector-radius);
 	}
 
 	@media (prefers-color-scheme: light) {
-		#categories > .category[selected]::before {
+		#categories > .category:is([selected], .selected)::before {
 			background: color-mix(in srgb, -moz-accent-color 60%, black) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
-		#categories > .category[selected]::before {
+		#categories > .category:is([selected], .selected)::before {
 			background: color-mix(in srgb, -moz-accent-color 60%, white) !important;
 		}
 	}
@@ -297,6 +301,13 @@
 	.message-bar {
 		background: transparent !important;
 		color: white !important;
+	}
+	.main-content {
+		border-top-left-radius: var(--uwp-tags-overlay-radius);
+		background-color: var(--uwp-nav-content-background) !important;
+		border: var(--uwp-nav-content-border) !important;
+		border-right-width: 0px !important;
+		border-bottom-width: 0px !important;
 	}
 	/* Font Fixes */
 	textbox {
@@ -510,14 +521,6 @@
 	.content-blocking-reload-description {
 		display: inline-flex !important;
 		align-items: center !important;
-	}
-
-	.main-content {
-		border-top-left-radius: var(--uwp-tags-overlay-radius);
-		background-color: var(--uwp-nav-content-background) !important;
-		border: var(--uwp-nav-content-border) !important;
-		border-right-width: 0px !important;
-		border-bottom-width: 0px !important;
 	}
 	.sticky-container {
 		background-color: transparent !important;
@@ -835,7 +838,8 @@
 		padding-left: 32px !important;
 	}
 	login-list, div.meta {
-		background-color: var(--uwp-global-back) !important;
+		background-color: transparent !important;
+		border: none !important;
 	}
 	.login-list-item {
 		border-bottom: none !important;

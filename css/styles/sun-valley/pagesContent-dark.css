@@ -9,7 +9,7 @@
 	    --in-content-page-background: var(--uwp-background) !important;
 	    --in-content-text-color: lightgray !important;
 	    --in-content-selected-text: #fff;
-	    --in-content-box-background: var(--uwp-background) !important;
+	    --in-content-box-background: transparent !important;
 	    --in-content-box-background-odd: #f3f6fa;
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;
@@ -36,7 +36,7 @@
 	    --in-content-primary-button-background: #0a84ff;
 	    --in-content-primary-button-background-hover: #0060df;
 	    --in-content-primary-button-background-active: #003EAA;
-	    --in-content-table-background: black !important;
+	    --in-content-table-background: transparent !important;
 	    --in-content-table-border-dark-color: #282828 !important;
 	    --in-content-table-header-background: -moz-accent-color !important;
 		--card-shadow: none !important;

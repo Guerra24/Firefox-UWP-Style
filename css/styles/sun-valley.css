@@ -197,12 +197,14 @@
 		--toolbarbutton-outer-padding: 1px !important;
 		--toolbar-start-end-padding: 2px !important;
 
-		--autocomplete-popup-separator-color: var(--uwp-context-separator) !important;
+		--autocomplete-popup-separator-color: transparent !important;
 
 		--organizer-toolbar-background: var(--uwp-background) !important;
 		--organizer-pane-background: transparent !important;
 		--organizer-content-background: transparent !important;
 		--organizer-selected-background: transparent !important;
+		
+		--urlbarView-item-inline-padding: 10px !important;
 	}
 
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {

@@ -101,6 +101,10 @@
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
 	#placesToolbar {
 		padding: 0px !important;
+		border: none !important;
+	}
+	#detailsPane {
+		border: none !important;
 	}
 	toolbarbutton {
 		-moz-appearance: none !important;
