@@ -87,8 +87,10 @@
 		border-top: 0px !important;
 	}
 	.advanced-panel {
-		background-color: black !important;
 		border: none !important;
+	}
+	#advancedPanelButtonContainer {
+		background: transparent !important;
 	}
 	.windowDialog {
 		color: white !important;
