@@ -172,6 +172,9 @@ toolbarbutton.subviewbutton {
 	-moz-appearance: none !important;
 	padding: 0px !important;
 }
+toolbarbutton.close-icon {
+	border-radius: 0px !important;
+}
 /* navbar stuff */
 #nav-bar {
 	box-shadow: none !important;

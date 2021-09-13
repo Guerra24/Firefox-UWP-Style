@@ -627,10 +627,12 @@
 		border: none !important;
 		background: var(--uwp-tags-progressbar) !important;
 		height: 8px !important;
+		border-radius: 0px !important;
 	}
 	progressmeter > .progress-bar, progress::-moz-progress-bar {
 		background-color: -moz-accent-color !important;
 		margin: 0px !important;
+		border-radius: 0px !important;
 	}
 	progressmeter[paused="true"] > .progress-bar, progress[paused]::-moz-progress-bar  {
 		background-color: GrayText !important;
