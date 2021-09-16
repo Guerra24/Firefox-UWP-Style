@@ -381,8 +381,9 @@ panel .text-link {
    display: none !important;
 }
 .search-panel-header {
-   padding-top: 4px !important;
-   padding-block: 4px !important;
+	padding-top: 4px !important;
+	padding-block: 4px !important;
+	margin-bottom: 1px !important;
 }
 /*#urlbar:not(.megabar) {
 	background-color: var(--uwp-autocomplete-list) !important;
@@ -556,7 +557,7 @@ panel .text-link {
 	#urlbar[breakout][breakout-extend] #urlbar-background {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 /* Tracking toggle */
@@ -619,7 +620,7 @@ body[lwt-sidebar] {
 	#statuspanel-label {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 /* Notifications? */
@@ -660,7 +661,7 @@ notification {
 	#fullscreen-warning {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 .ctrlTab-preview > .ctrlTab-preview-inner, #ctrlTab-showAll {
@@ -722,13 +723,15 @@ notification {
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
-	--tab-border-radius: 0px !important;
+	--tab-border-radius: var(--uwp-tags-control-radius) !important;
 	--panel-font-size: 12px !important;
 	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
 
 	--zoom-controls-bgcolor: transparent !important;
 	--toolbar-bgimage: none !important;
 	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;
+
+	--toolbar-field-focus-background-color: var(--uwp-button-background) !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

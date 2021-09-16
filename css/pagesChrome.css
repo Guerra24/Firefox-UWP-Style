@@ -80,7 +80,7 @@
 			.dialogBox {
 				background-image: url(../img/noise-512x512.png) !important;
 				background-color: var(--uwp-dialog-background-blur) !important;
-				backdrop-filter: blur(32px) !important;
+				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 			}
 		}
 	}

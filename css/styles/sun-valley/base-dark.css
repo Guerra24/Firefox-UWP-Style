@@ -4,7 +4,7 @@
 :root {
 	--uwp-mainwindow: #151515;
 	--uwp-tabbar-tab-hover: var(--uwp-background-fill-base);
-	--uwp-tabbar-button-hover: #2A2A2A;
+	--uwp-tabbar-button-hover: var(--uwp-background-fill-base);
 	--uwp-tabbar-button-hover-active: #444;
 	--uwp-navbar-background-hover: #4B4B4B;
 	--uwp-browser: #1A1A1A;

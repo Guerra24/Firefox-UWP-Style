@@ -201,6 +201,8 @@
 		--uwp-expander-min-height: 51px;
 		--uwp-expander-hor-padding: 16px;
 		--uwp-expander-spacing: 3px;
+
+		--uwp-acrylic-backdrop: saturate(2) blur(32px);
 	}
 
 	:root {
