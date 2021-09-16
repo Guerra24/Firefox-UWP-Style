@@ -39,6 +39,11 @@
 		--uwp-card-background-fill-default: #FFFFFF0D;
 		--uwp-card-background-fill-secondary: #FFFFFF08;
 
+		--uwp-smoke-fill-default: #0000004D;
+
+		--uwp-layer-fill-default: #3A3A3A4C;
+		--uwp-layer-fill-alt: #FFFFFF0D;
+
 		--uwp-divider-stroke-default: #FFFFFF15;
 
 		--uwp-subtle-fill-transparent: #FFFFFF00;
@@ -53,13 +58,8 @@
 
 		--uwp-accent-fill-disabled: #FFFFFF28;
 
-		--uwp-layer-fill-default: #3A3A3A4C;
-		--uwp-layer-fill-alt: #FFFFFF0D;
-
 		--uwp-surface-stroke-default: #75757566;
 		--uwp-surface-stroke-flyout: #00000033;
-
-		--uwp-smoke-fill-default: #0000004D;
 
 		--uwp-system-attention-background: #FFFFFF08;
 

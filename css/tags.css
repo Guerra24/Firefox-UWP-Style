@@ -48,15 +48,15 @@
 		border: var(--uwp-button-border-disabled) !important;
 	}
 	button[dlgtype="accept"] {
-		color: black !important;
+		color: -moz-accent-color-foreground !important;
 		background-color: color-mix(in srgb, -moz-accent-color 90%, #808080) !important;
 	}
 	button[dlgtype="accept"]:hover {
-		color: black !important;
+		color: -moz-accent-color-foreground !important;
 		background-color: color-mix(in srgb, -moz-accent-color 70%, #808080) !important;
 	}
 	button[dlgtype="accept"]:hover:active {
-		color: #101010 !important;
+		color: -moz-accent-color-foreground !important;
 		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
 		border-color: transparent !important;
 	}

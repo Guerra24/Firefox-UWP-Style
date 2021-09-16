@@ -52,6 +52,8 @@
 
 		--uwp-pages-sidepanel: #202020;
 		--uwp-section-highlight-background-color: #383838 !important;
+
+		--uwp-sticky-container-hack: #272727;
 	}
 	body {
 		--newtab-background-color: #1A1A1A !important;

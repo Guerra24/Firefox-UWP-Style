@@ -5,6 +5,67 @@
 		--uwp-global-front: black;
 		--uwp-global-back: white;
 
+		--uwp-background-fill-base: #F3F3F3;
+
+		--uwp-text-fill-primary: #000000E4;
+		--uwp-text-fill-secondary: #0000009E;
+		--uwp-text-fill-tertiary: #00000072;
+		--uwp-text-fill-disabled: #0000005C;
+
+		--uwp-text-accent-fill-disabled: #0000005C;
+
+		--uwp-control-fill-default: #FFFFFFB3;
+		--uwp-control-fill-secondary: #F9F9F980;
+		--uwp-control-fill-tertiary: #F9F9F94D;
+		--uwp-control-fill-disabled: #F9F9F94D;
+		--uwp-control-fill-input-active: #FFFFFF;
+
+		--uwp-control-stroke-default: #0000000F;
+		--uwp-control-stroke-secondary: #00000029;
+
+		--uwp-control-stroke-default-border: 1px solid var(--uwp-control-stroke-default);
+
+		--uwp-control-strong-stroke-default: #00000072;
+		--uwp-control-strong-stroke-disabled: #00000037;
+
+		--uwp-control-elevation-border: 1px solid var(--uwp-control-stroke-secondary);
+		--uwp-input-elevation-border: 1px solid var(--uwp-control-stroke-default);
+
+		--uwp-control-strong-stroke-default-border: 1px solid var(--uwp-control-strong-stroke-default);
+		--uwp-control-strong-stroke-disabled-border: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-card-stroke-default: #0000000F;
+
+		--uwp-card-background-fill-default: #FFFFFFB3;
+		--uwp-card-background-fill-secondary: #F6F6F680;
+
+		--uwp-smoke-fill-default: #0000004D;
+
+		--uwp-layer-fill-default: #FFFFFF80;
+		--uwp-layer-fill-alt: #FFFFFF;
+
+		--uwp-divider-stroke-default: #0000000F;
+
+		--uwp-subtle-fill-transparent: #FFFFFF00;
+		--uwp-subtle-fill-secondary: #00000009;
+		--uwp-subtle-fill-tertiary: #00000006;
+
+		--uwp-control-alt-fill-transparent: #FFFFFF00;
+		--uwp-control-alt-fill-secondary: #00000006;
+		--uwp-control-alt-fill-tertiary: #0000000F;
+		--uwp-control-alt-fill-quarternary: #00000018;
+		--uwp-control-alt-fill-disabled: #FFFFFF00;
+
+		--uwp-accent-fill-disabled: #00000037;
+
+		--uwp-surface-stroke-default: #75757566;
+		--uwp-surface-stroke-flyout: #0000000F;
+
+		--uwp-system-attention-background: #F6F6F680;
+
+		--uwp-system-caution: #FCE100;
+		--uwp-system-critical: #FF99A4;
+
 		--uwp-tags-button: #CCCCCC;
 		--uwp-tags-button-hover: #7A7A7A;
 		--uwp-tags-button-hover-active: #999999;

@@ -201,8 +201,6 @@
 		--uwp-expander-min-height: 51px;
 		--uwp-expander-hor-padding: 16px;
 		--uwp-expander-spacing: 3px;
-
-		--uwp-mainwindow: #151515;
 	}
 
 	:root {
@@ -225,6 +223,7 @@
 		--toolbar-start-end-padding: 2px !important;
 
 		--autocomplete-popup-separator-color: transparent !important;
+		--autocomplete-popup-highlight-color: var(--uwp-foreground) !important;
 
 		--organizer-toolbar-background: var(--uwp-background) !important;
 		--organizer-pane-background: transparent !important;

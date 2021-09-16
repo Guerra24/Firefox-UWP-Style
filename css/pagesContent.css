@@ -529,7 +529,7 @@
 		align-items: center !important;
 	}
 	.sticky-container {
-		background-color: transparent !important;
+		background-color: var(--uwp-sticky-container-hack) !important;
 	}
 	.help-button > .text-link {
 		border-radius: 0px !important;
@@ -606,7 +606,7 @@
 		background-color: var(--uwp-nav-content-background) !important;
 	}
 	.sticky-container, .main-heading, .main-search {
-		background-color: transparent !important;
+		background-color: var(--uwp-sticky-container-hack) !important;
 	}
 	#sidebar {
 		background-color: var(--uwp-pages-sidepanel) !important;

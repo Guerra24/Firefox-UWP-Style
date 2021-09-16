@@ -5,8 +5,8 @@
 
 	:root {
 		--in-content-accent-color: -moz-accent-color !important;
-	    --in-content-page-color: var(--uwp-global-front) !important;
-	    --in-content-page-background: var(--uwp-global-back) !important;
+	    --in-content-page-color: var(--uwp-foreground) !important;
+	    --in-content-page-background: var(--uwp-background) !important;
 	    --in-content-text-color: var(--uwp-global-front) !important;
 	    --in-content-selected-text: #fff;
 	    --in-content-box-background: white !important;
@@ -50,8 +50,10 @@
 
 		--exception-button-container-background: black !important;
 
-		--uwp-pages-sidepanel: #E6E6E6;
+		--uwp-pages-sidepanel: #F3F3F3;
 		--uwp-section-highlight-background-color: #f0f0f0 !important;
+
+		--uwp-sticky-container-hack: #F9F9F9;
 	}
 	body {
 		--newtab-background-color: var(--uwp-mainwindow) !important;

@@ -2,8 +2,8 @@
 @supports -moz-bool-pref("uwp.sun-valley") {
 @media (prefers-color-scheme: dark) {
 :root {
-	--uwp-mainwindow: black;
-	--uwp-tabbar-tab-hover: #2A2A2A;
+	--uwp-mainwindow: #151515;
+	--uwp-tabbar-tab-hover: var(--uwp-background-fill-base);
 	--uwp-tabbar-button-hover: #2A2A2A;
 	--uwp-tabbar-button-hover-active: #444;
 	--uwp-navbar-background-hover: #4B4B4B;
@@ -38,7 +38,6 @@
 	--autocomplete-popup-background: #2A2A2A !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
 	--autocomplete-popup-highlight-background: -moz-accent-color !important;
-	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
 
 	--button-hover-bgcolor: var(--panelview-toolbarbutton-hover-bgcolor) !important;
 	--button-active-bgcolor: var(--panelview-toolbarbutton-active-bgcolor) !important;

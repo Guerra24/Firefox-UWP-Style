@@ -508,15 +508,6 @@ panel .text-link {
 		border-radius: var(--uwp-nav-item-selector-radius) !important;
 		margin-right: 7px !important;
 	}
-	.urlbarView-action {
-		background: transparent !important;
-		background-clip: padding-box !important;
-		border: var(--uwp-button-border) !important;
-	}
-	.urlbarView-action:hover {
-		background-color: var(--uwp-button-background-hover) !important;
-		border: var(--uwp-button-border-hover) !important;
-	}
 }
 .urlbarView-body-inner {
 	border: none !important;
