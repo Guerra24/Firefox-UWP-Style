@@ -88,6 +88,24 @@
 		--uwp-combo-background-disabled: var(--uwp-control-fill-disabled);
 		--uwp-combo-border-disabled: var(--uwp-control-stroke-default-border);
 
+		--uwp-radio-dot-size: 10px;
+		--uwp-radio-border-padding: 4px;
+		--uwp-radio-dot-size-hover: 12px;
+		--uwp-radio-border-padding-hover: 3px;
+
+		--uwp-radio-color: var(--uwp-text-fill-primary);
+		--uwp-radio-background: var(--uwp-control-alt-fill-secondary);
+		--uwp-radio-border: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-radio-background-hover: var(--uwp-control-alt-fill-tertiary);
+		--uwp-radio-border-hover: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-radio-background-active: var(--uwp-control-alt-fill-quarternary);
+		--uwp-radio-border-active: var(--uwp-control-strong-stroke-disabled-border);
+
+		--uwp-radio-background-disabled: var(--uwp-control-alt-fill-disabled);
+		--uwp-radio-border-disabled: var(--uwp-control-strong-stroke-disabled-border);
+
 		--uwp-nav-content-background: var(--uwp-layer-fill-default);
 		--uwp-nav-content-border: 1px solid var(--uwp-card-stroke-default);
 		--uwp-nav-item-height: 36px;

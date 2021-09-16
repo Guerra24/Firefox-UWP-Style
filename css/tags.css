@@ -333,10 +333,12 @@
 		opacity: 1 !important;
 	}
 	input[type="radio"] {
-		-moz-appearance: none !important;
-		border: 2px solid var(--uwp-tags-radio-border) !important;
+		appearance: none !important;
+		background-clip: padding-box !important;
+		background-color: var(--uwp-radio-background) !important;
+		border: var(--uwp-radio-border) !important;
+
 		border-radius: 100% !important;
-		background: transparent !important;
 		margin-right: 5px !important;
 		box-shadow: none !important;
 		width: auto !important;
@@ -344,37 +346,50 @@
 		list-style: none !important;
 	}
 	input[type="radio"]:hover {
-		border: 2px solid var(--uwp-tags-radio-border-hover) !important;
+		background-color: var(--uwp-radio-background-hover) !important;
+		border: var(--uwp-radio-border-hover) !important;
 	}
 	input[type="radio"]:hover:active {
-		border: 2px solid var(--uwp-tags-radio-border-active) !important;
+		background-color: var(--uwp-radio-background-active) !important;
+		border: var(--uwp-radio-border-active) !important;
 	}
 	input[type="radio"]:checked {
-		border: 2px solid -moz-accent-color !important;
+		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
 	}
 	input[type="radio"]:checked:hover {
-		border: 2px solid -moz-accent-color !important;
+		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
 	}
 	input[type="radio"]:checked:hover:active {
-		border: 2px solid #999999 !important;
+		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
 	}
 	input[type="radio"]::before {
 		display: block !important;
 		content: "" !important;
 		background: transparent !important;
-		height: 10px !important;
-		width: 10px !important;
-		margin: 3px !important;
-		border-radius: 10px !important;
+		height: var(--uwp-radio-dot-size) !important;
+		width: var(--uwp-radio-dot-size) !important;
+		margin: var(--uwp-radio-border-padding) !important;
+		border-radius: 100% !important;
+	}
+	input[type="radio"]:hover::before {
+		height: var(--uwp-radio-dot-size-hover) !important;
+		width: var(--uwp-radio-dot-size-hover) !important;
+		margin: var(--uwp-radio-border-padding-hover) !important;
+	}
+	input[type="radio"]:hover:active::before {
+		background: -moz-accent-color-foreground !important;
 	}
 	input[type="radio"]:checked::before {
-		background: var(--uwp-tags-radio-border) !important;
+		background: -moz-accent-color-foreground !important;
 	}
 	input[type="radio"]:checked:hover::before {
-		background: var(--uwp-tags-radio-border-hover) !important;
+		background: -moz-accent-color-foreground !important;
 	}
 	input[type="radio"]:checked:hover:active::before {
-		background: var(--uwp-tags-radio-border-active) !important;
+		background: -moz-accent-color-foreground !important;
 	}
 	input[type="radio"] + span {
 		position: relative !important;
@@ -383,35 +398,44 @@
 	/* Old radio buttons */
 	radio > .radio-check {
 		-moz-context-properties: fill !important;
-		-moz-appearance: none !important;
-		padding: 8px !important;
-		border: 2px solid var(--uwp-tags-radio-border) !important;
-		border-radius: 100% !important;
-		background: transparent !important;
+		appearance: none !important;
+
+		appearance: none !important;
+		background-clip: padding-box !important;
+		background-color: var(--uwp-radio-background) !important;
+		border: var(--uwp-radio-border) !important;
+
+		padding: calc(var(--uwp-radio-border-padding) + var(--uwp-radio-dot-size) / 2) !important;
 		margin-right: 5px !important;
 		box-shadow: none !important;
 		width: auto !important;
 		height: auto !important;
 	}
 	radio:hover > .radio-check {
-		border: 2px solid var(--uwp-tags-radio-border-hover) !important;
+		background-color: var(--uwp-radio-background-hover) !important;
+		border: var(--uwp-radio-border-hover) !important;
 	}
 	radio:hover:active > .radio-check {
-		border: 2px solid var(--uwp-tags-radio-border-active) !important;
+		background-color: var(--uwp-radio-background-active) !important;
+		border: var(--uwp-radio-border-active) !important;
 	}
 	radio[selected="true"] > .radio-check {
-		padding: 0px !important;
-		fill: var(--uwp-tags-radio-border) !important;
+		padding: 1px !important;
+		fill: -moz-accent-color-foreground !important;
 		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
-		border: 2px solid -moz-accent-color !important;
+
+		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
 	}
 	radio[selected="true"]:hover > .radio-check {
-		fill: var(--uwp-tags-radio-border-hover) !important;
-		border: 2px solid -moz-accent-color !important;
+		fill: -moz-accent-color-foreground !important;
+		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
 	}
 	radio[selected="true"]:hover:active > .radio-check {
-		fill: var(--uwp-tags-radio-border-active) !important;
-		border: 2px solid var(--uwp-tags-radio-border-active) !important;
+		fill: -moz-accent-color-foreground !important;
+		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
 	}
 	/* Radio Button Disabled */
 	radio[disabled="true"] > .radio-label-box {

@@ -400,18 +400,24 @@
 		border: none !important;
 	}
 	.edit-topsites-wrapper .modal {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid -moz-accent-color !important;
-		border-radius: 0px !important;
+		background-color: var(--uwp-background-fill-base) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
 	}
-	@supports(backdrop-filter: blur(1px)) {
+	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.edit-topsites-wrapper .modal {
-			background-image: url(../img/noise-512x512.png) !important;
-			background-color: var(--uwp-context-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			border: 1px solid -moz-accent-color !important;
+		}
+		@supports(backdrop-filter: blur(1px)) {
+			.edit-topsites-wrapper .modal {
+				background-image: url(../img/noise-512x512.png) !important;
+				background-color: var(--uwp-context-background-blur) !important;
+				backdrop-filter: blur(32px) !important;
+			}
 		}
 	}
 }
@@ -659,7 +665,6 @@
 	/* Icons */
 	input[type="radio"] + span {
 		position: relative !important;
-		bottom: -3px !important;
 	}
 	/* Fixes for FF62~ */
 	.addon {
