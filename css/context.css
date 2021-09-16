@@ -64,8 +64,8 @@
 		margin: var(--uwp-context-item-margin) !important;
 	}
 	button[role="menuitem"] {
-		background-position-x: 12px !important;
-		padding-left: 12px !important;
+		background-position-x: 10px !important;
+		padding-left: 36px !important;
 	}
 	select > option {
 		padding-inline: 7px 0px 7px 9px !important;

@@ -13,7 +13,8 @@
 	}
 
 	/* Button */
-	button, .urlbarView-tip-button, .toggle-group-label {
+	button, .urlbarView-tip-button, .toggle-group-label,
+	.findbar-find-previous, .findbar-find-next  {
 		color: var(--uwp-button-color) !important;
 		background-color: var(--uwp-button-background) !important;
 		border: var(--uwp-button-border) !important;
@@ -27,17 +28,21 @@
 		box-shadow: none !important;
 		font-weight: normal !important;
 	}
-	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover {
+	button:hover, button[open], .urlbarView-tip-button:hover, .toggle-group-label:hover,
+	.findbar-find-previous:hover, .findbar-find-next:hover {
 		color: var(--uwp-button-color-hover) !important;
 		background-color: var(--uwp-button-background-hover) !important;
 		border: var(--uwp-button-border-hover) !important;
 	}
-	button:hover:active, .urlbarView-tip-button:hover:active {
+	button:hover:active, .urlbarView-tip-button:hover:active,
+	.findbar-find-previous:hover:activ, .findbar-find-next:hover:active {
 		color: var(--uwp-button-color-active) !important;
 		background-color: var(--uwp-button-background-active) !important;
 		border: var(--uwp-button-border-active) !important;
 	}
-	button[disabled="true"], button[disabled="true"]:is(:hover, :hover:active) {
+	button[disabled="true"], button[disabled="true"]:is(:hover, :hover:active),
+	.findbar-find-previous[disabled="true"], .findbar-find-previous[disabled="true"]:is(:hover, :hover:active),
+	.findbar-find-next[disabled="true"], .findbar-find-next[disabled="true"]:is(:hover, :hover:active) {
 		color: var(--uwp-button-color-disabled) !important;
 		background-color: var(--uwp-button-background-disabled) !important;
 		border: var(--uwp-button-border-disabled) !important;
