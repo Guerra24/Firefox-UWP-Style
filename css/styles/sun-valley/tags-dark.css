@@ -63,6 +63,9 @@
 
 		--uwp-system-attention-background: #FFFFFF08;
 
+		--uwp-system-caution: #FCE100;
+		--uwp-system-critical: #FF99A4;
+
 		--uwp-tags-button: #333333;
 		--uwp-tags-button-hover: #858585;
 		--uwp-tags-button-hover-active: #666666;

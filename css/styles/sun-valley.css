@@ -106,6 +106,14 @@
 		--uwp-radio-background-disabled: var(--uwp-control-alt-fill-disabled);
 		--uwp-radio-border-disabled: var(--uwp-control-strong-stroke-disabled-border);
 
+		--uwp-progress-bar-height: 1px;
+		--uwp-progress-bar-margin: -1px 0px 0px 0px;
+		--uwp-progress-bar-radius: 3px;
+		--uwp-progress-bar-fill-height: 3px;
+		--uwp-progress-bar: var(--uwp-control-strong-stroke-default);
+
+		--uwp-progress-bar-paused: var(--uwp-system-caution);
+
 		--uwp-nav-content-background: var(--uwp-layer-fill-default);
 		--uwp-nav-content-border: 1px solid var(--uwp-card-stroke-default);
 		--uwp-nav-item-height: 36px;

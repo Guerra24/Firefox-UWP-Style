@@ -392,6 +392,7 @@ panel .text-link {
 	background: transparent !important;
 	border: none !important;
 	box-shadow: none !important;
+	outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
 	top: 0px !important;

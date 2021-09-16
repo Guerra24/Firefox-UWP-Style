@@ -404,6 +404,7 @@
 		background-clip: padding-box !important;
 		background-color: var(--uwp-radio-background) !important;
 		border: var(--uwp-radio-border) !important;
+		border-radius: 100% !important;
 
 		padding: calc(var(--uwp-radio-border-padding) + var(--uwp-radio-dot-size) / 2) !important;
 		margin-right: 5px !important;
@@ -618,6 +619,7 @@
 		color: var(--uwp-expander-color-selected) !important;
 		border: var(--uwp-expander-border-selected) !important;
 		background-color: var(--uwp-expander-background-selected) !important;
+		background-image: none !important;
 		outline: none !important;
 	}
 	richlistitem + richlistitem {
@@ -645,17 +647,19 @@
 	progressmeter, progress {
 		-moz-appearance: none !important;
 		border: none !important;
-		background: var(--uwp-tags-progressbar) !important;
-		height: 8px !important;
+		background-clip: padding-box !important;
+		background-color: var(--uwp-progress-bar) !important;
+		height: var(--uwp-progress-bar-height) !important;
 		border-radius: 0px !important;
 	}
 	progressmeter > .progress-bar, progress::-moz-progress-bar {
 		background-color: -moz-accent-color !important;
-		margin: 0px !important;
-		border-radius: 0px !important;
+		margin: var(--uwp-progress-bar-margin) !important;
+		border-radius: var(--uwp-progress-bar-radius) !important;
+		height: var(--uwp-progress-bar-fill-height) !important;
 	}
 	progressmeter[paused="true"] > .progress-bar, progress[paused]::-moz-progress-bar  {
-		background-color: GrayText !important;
+		background-color: var(--uwp-progress-bar-paused) !important;
 	}
 	progressmeter[mode="undetermined"] > .progress-bar, progress:not([value])::-moz-progress-bar {
 		background-image: none !important;
@@ -663,7 +667,7 @@
 	}
 	progressmeter > .progress-remainder {
 		border: none !important;
-		background: #333333 !important;
+		background: transparent !important;
 	}
 	
 	/* Message-bar */

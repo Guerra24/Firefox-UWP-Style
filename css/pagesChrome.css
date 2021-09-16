@@ -99,6 +99,12 @@
 }
 
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
+
+	.downloadButton > .button-box {
+		padding: 0px !important;
+		background: transparent !important;
+	}
+
 	#placesToolbar {
 		padding: 0px !important;
 		border: none !important;
@@ -170,28 +176,6 @@
 	}
 	.text-link {
 		color: -moz-accent-color !important;
-	}
-}
-
-@-moz-document url("chrome://browser/content/places/bookmarkProperties.xhtml"), url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
-}
-
-@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
-	#unknownContentType {
-		background-color: var(--uwp-global-back) !important;
-	}
-	label, description {
-		color: var(--uwp-global-front) !important;
-	}
-	caption {
-		background-color: black !important;
-	}
-}
-
-@-moz-document url("chrome://global/content/appPicker.xhtml") {
-	#app-picker {
-		background-color: black !important;
-		color: white !important;
 	}
 }
 
