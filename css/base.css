@@ -79,34 +79,93 @@
 .tabbrowser-tab {
 	padding: 0px !important;
 }
-.tabbrowser-tab > .tab-stack > .tab-background {
-	border-top: none !important;
-	margin: 0px !important;
-	box-shadow: none !important;
-	border-radius: 0px !important;
-	opacity: 1 !important;
+
+@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	.tabbrowser-tab > .tab-stack > .tab-background {
+		background-color: transparent !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: var(--uwp-button-border) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 2px 0px !important;
+		box-shadow: none !important;
+		opacity: 1 !important;
+		overflow: hidden !important;
+		transition: background-color 83ms !important;
+	}
+	.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background) !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.tabbrowser-tab:hover:active > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	/* Toolbar buttons */
+	.toolbar-items .toolbarbutton-1 {
+		color: var(--uwp-button-color) !important;
+		background-color: var(--uwp-button-background) !important;
+		border: var(--uwp-button-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 2px !important;
+		transition: background-color 83ms !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover {
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover:active {
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+		--toolbarbutton-inner-padding: 6px !important;
+	}
 }
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
-	background: var(--uwp-tabbar-tab-hover) !important;
-}
-.tabbrowser-tab .tab-context-line {
-	height: 0px !important;
-	background: var(--identity-tab-color) !important;
-	margin-left: 16px !important;
-	margin-right: 16px !important;
-	transition: margin 200ms !important;
-	margin-top: 0px !important;
-}
-.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
-	background: -moz-accent-color !important;
-}
-.tabbrowser-tab .tab-context-line:-moz-window-inactive {
-	background: rgb(128, 128, 128) !important;
-}
-.tabbrowser-tab:is([selected="true"], [multiselected="true"]) .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
-	height: 2px !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
+@supports not -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	.tabbrowser-tab > .tab-stack > .tab-background {
+		border-top: none !important;
+		margin: 0px !important;
+		box-shadow: none !important;
+		border-radius: 0px !important;
+		opacity: 1 !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
+		background: var(--uwp-tabbar-tab-hover) !important;
+	}
+	.tabbrowser-tab .tab-context-line {
+		height: 0px !important;
+		background: var(--identity-tab-color) !important;
+		margin-left: 16px !important;
+		margin-right: 16px !important;
+		transition: margin 200ms !important;
+		margin-top: 0px !important;
+	}
+	.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
+		background: -moz-accent-color !important;
+	}
+	.tabbrowser-tab .tab-context-line:-moz-window-inactive {
+		background: rgb(128, 128, 128) !important;
+	}
+	.tabbrowser-tab:is([selected="true"], [multiselected="true"]) .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
+		height: 2px !important;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	/* Toolbar buttons */
+	.toolbar-items .toolbarbutton-1 {
+		margin-bottom: 0px !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover {
+		background: var(--uwp-tabbar-button-hover) !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover:active {
+		background: var(--uwp-tabbar-button-hover-active) !important;
+	}
 }
 .tab-icon-overlay {
 	opacity: 1 !important;
@@ -146,16 +205,6 @@
 #TabsToolbar {
 	color: var(--uwp-global-front) !important;
 }
-/* Toolbar buttons */
-.toolbar-items .toolbarbutton-1 {
-	margin-bottom: 0px !important;
-}
-.toolbar-items .toolbarbutton-1:hover {
-	background: var(--uwp-tabbar-button-hover) !important;
-}
-.toolbar-items .toolbarbutton-1:hover:active {
-	background: var(--uwp-tabbar-button-hover-active) !important;
-}
 .toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
 	background: none !important;
 }
@@ -188,6 +237,11 @@ toolbarbutton.close-icon {
 @media (-moz-windows-compositor) {
 	#navigator-toolbox {
 		background: var(--uwp-mainwindow) !important;
+	}
+	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+		#navigator-toolbox {
+			background: var(--uwp-background) !important;
+		}
 	}
 }
 :root:not([tabsintitlebar]) #navigator-toolbox {

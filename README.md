@@ -35,6 +35,8 @@ Create `uwp.sun-valley`=`true` pref to enable.
 
 Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in some menus.
 
+Toggle `uwp.sun-valley.round-tabs` pref to enable rounded tabs when using Sun Valley style.
+
 ### Custom CSS
 
 If you want to change any rules use `customChrome.css` and `customContent.css`.
