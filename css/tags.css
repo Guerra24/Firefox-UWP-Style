@@ -597,6 +597,9 @@
 		scrollbar-width: thin !important;
 		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
 	}
+	richlistbox {
+		padding: 1px !important;
+	}
 	richlistitem:not(.category), .options-container .option {
 		color: var(--uwp-expander-color) !important;
 		border: var(--uwp-expander-border) !important;
