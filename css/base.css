@@ -399,73 +399,124 @@ panel .text-link {
 	left: 0px !important;
 	width: 100% !important;
 }
-#urlbar[breakout][breakout-extend] #urlbar-background {
-	display: block !important;
-	background: var(--uwp-autocomplete-list) !important;
-	background-clip: padding-box !important;
-	border: 1px solid var(--uwp-surface-stroke-flyout) !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	border-radius: var(--uwp-tags-overlay-radius) !important;
+@supports not -moz-bool-pref("uwp.sun-valley") {
+	#urlbar-input-container, #searchbar {
+		border: none !important;
+		background-color: var(--uwp-urlbar) !important;
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+	#urlbar-input-container:hover, #searchbar:hover {
+		background-color: var(--uwp-navbar-background-hover) !important;
+	}
+	#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+		height: var(--urlbar-toolbar-height) !important;
+	}
+	#urlbar-results {
+		padding: 0px !important;
+	}
+	.urlbarView {
+		margin-inline: 0px !important;
+		border: none !important;
+		width: 100% !important;
+		background-color: transparent !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		clip-path: inset(0px -20px -30px -20px) !important;
+		animation: none !important;
+		margin-block-start: 0px !important;
+	}
+	#urlbar[breakout][breakout-extend] #urlbar-background {
+		background: var(--uwp-autocomplete-list) !important;
+	}
+	.urlbarView-results {
+		padding-block: 0px !important;
+	}
+	.urlbarView .urlbarView-row {
+		border-radius: 0px !important;
+		padding-block: 0px !important;
+	}
+	.urlbarView-row-inner {
+		border-radius: 0px !important;
+	}
 }
-#urlbar-input-container, #searchbar {
-	border: 1px solid transparent !important;
-	background-clip: padding-box !important;
-	background-color: transparent !important;
-	padding-left: 1px !important;
-	padding-right: 1px !important;
-}
-#urlbar-input-container:hover, #searchbar:hover {
-	background-color: var(--uwp-navbar-background-hover) !important;
-}
-#urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    height: var(--urlbar-toolbar-height) !important;
-	border-radius: var(--uwp-tags-overlay-radius) !important;
-	border-bottom-left-radius: 0px !important;
-	border-bottom-right-radius: 0px !important;
-}
-#urlbar-results {
-	padding: var(--uwp-context-margin) !important;
-}
-.urlbarView {
-	margin-inline: 0px !important;
-	width: 100% !important;
-	border: none !important;
-	background: transparent !important;
-	animation: none !important;
-	margin-block-start: 0px !important;
-	border-bottom-left-radius: var(--uwp-tags-overlay-radius) !important;
-	border-bottom-right-radius: var(--uwp-tags-overlay-radius) !important;
-}
-.urlbarView-results {
-	padding-block: 0px !important;
-}
-.urlbarView .urlbarView-row {
-	border-radius: 0px !important;
-	padding-block: 0px !important;
-	padding: var(--uwp-context-item-margin) !important;
-}
-.urlbarView-row-inner {
-	background: transparent !important;
-	border-radius: var(--uwp-tags-control-radius) !important;
-}
-.urlbarView-row-inner:hover {
-	background-color: var(--uwp-context-item-background-hover) !important;
-}
-.urlbarView-row-inner:hover:active {
-	background-color: var(--uwp-context-item-background-active) !important;
-}
-.urlbarView-row[selected] .urlbarView-row-inner {
-	padding-left: 0px !important;
-	background-color: var(--uwp-context-item-background-hover) !important;
-}
-.urlbarView-row[selected] .urlbarView-row-inner::before {
-	content: "";
-	width: 0 !important;
-	display: block !important;
-	background-color: -moz-accent-color !important;
-	padding: 8px 1.5px !important;
-	border-radius: var(--uwp-nav-item-selector-radius) !important;
-	margin-right: 7px !important;
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#urlbar[breakout][breakout-extend] #urlbar-background {
+		display: block !important;
+		background: var(--uwp-autocomplete-list) !important;
+		background-clip: padding-box !important;
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	#urlbar-input-container, #searchbar {
+		border: 1px solid transparent !important;
+		background-clip: padding-box !important;
+		background-color: transparent !important;
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+	#urlbar-input-container:hover, #searchbar:hover {
+		background-color: var(--uwp-navbar-background-hover) !important;
+	}
+	#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+		height: var(--urlbar-toolbar-height) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	#urlbar-results {
+		padding: var(--uwp-context-margin) !important;
+	}
+	.urlbarView {
+		margin-inline: 0px !important;
+		width: 100% !important;
+		border: none !important;
+		background: transparent !important;
+		animation: none !important;
+		margin-block-start: 0px !important;
+		border-bottom-left-radius: var(--uwp-tags-overlay-radius) !important;
+		border-bottom-right-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	.urlbarView-results {
+		padding-block: 0px !important;
+	}
+	.urlbarView .urlbarView-row {
+		border-radius: 0px !important;
+		padding-block: 0px !important;
+		padding: var(--uwp-context-item-margin) !important;
+	}
+	.urlbarView-row-inner {
+		background: transparent !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+	}
+	.urlbarView-row-inner:hover {
+		background-color: var(--uwp-context-item-background-hover) !important;
+	}
+	.urlbarView-row-inner:hover:active {
+		background-color: var(--uwp-context-item-background-active) !important;
+	}
+	.urlbarView-row[selected] .urlbarView-row-inner {
+		padding-left: 0px !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
+	}
+	.urlbarView-row[selected] .urlbarView-row-inner::before {
+		content: "";
+		width: 0 !important;
+		display: block !important;
+		background-color: -moz-accent-color !important;
+		padding: 8px 1.5px !important;
+		border-radius: var(--uwp-nav-item-selector-radius) !important;
+		margin-right: 7px !important;
+	}
+	.urlbarView-action {
+		background: transparent !important;
+		background-clip: padding-box !important;
+		border: var(--uwp-button-border) !important;
+	}
+	.urlbarView-action:hover {
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
 }
 .urlbarView-body-inner {
 	border: none !important;
@@ -509,15 +560,6 @@ panel .text-link {
 }
 #urlbar .searchbar-engine-one-off-item {
     margin-inline-end: 2px !important;
-}
-.urlbarView-action {
-	background: transparent !important;
-	background-clip: padding-box !important;
-	border: var(--uwp-button-border) !important;
-}
-.urlbarView-action:hover {
-	background-color: var(--uwp-button-background-hover) !important;
-	border: var(--uwp-button-border-hover) !important;
 }
 @supports(backdrop-filter: blur(1px)) {
 	#urlbar[breakout][breakout-extend] #urlbar-background {

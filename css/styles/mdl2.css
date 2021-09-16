@@ -85,6 +85,33 @@
 		--uwp-combo-background-disabled: var(--uwp-tags-button);
 		--uwp-combo-border-disabled: 2px solid var(--uwp-tags-button);
 
+		--uwp-radio-dot-size: 10px;
+		--uwp-radio-border-padding: 4px;
+		--uwp-radio-dot-size-hover: 10px;
+		--uwp-radio-border-padding-hover: 4px;
+		--uwp-radio-selected-padding: 1px;
+
+		--uwp-radio-color: var(--uwp-foreground);
+		--uwp-radio-background: transparent;
+		--uwp-radio-border: 2px solid var(--uwp-tags-radio-border);
+
+		--uwp-radio-background-hover: transparent;
+		--uwp-radio-border-hover: 2px solid var(--uwp-tags-radio-border-hover);
+
+		--uwp-radio-background-active: transparent;
+		--uwp-radio-border-active: 2px solid var(--uwp-tags-radio-border-active);
+
+		--uwp-radio-background-disabled: transparent;
+		--uwp-radio-border-disabled: 2px solid var(--uwp-tags-checkbox-disabled);
+
+		--uwp-progress-bar-height: 8px;
+		--uwp-progress-bar-margin: 0px 0px 0px 0px;
+		--uwp-progress-bar-radius: 0px;
+		--uwp-progress-bar-fill-height: 8px;
+		--uwp-progress-bar: var(--uwp-tags-progressbar);
+
+		--uwp-progress-bar-paused: GrayText;
+
 		--uwp-nav-content-background: var(--uwp-background);
 		--uwp-nav-item-height: 40px;
 		--uwp-nav-item-selector-height: 24px;
@@ -172,6 +199,11 @@
 		--arrowpanel-border-radius: var(--uwp-tags-overlay-radius) !important;
 		--arrowpanel-border-color: var(--uwp-context-border) !important;
 		--panel-subview-body-padding: 0px !important;
+
+		--organizer-toolbar-background: var(--uwp-background) !important;
+		--organizer-pane-background: transparent !important;
+		--organizer-content-background: transparent !important;
+		--organizer-selected-background: transparent !important;
 	}
 
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {

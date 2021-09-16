@@ -784,24 +784,38 @@
 
 @-moz-document url-prefix("about:reader") {
 	.toolbar {
-		border: none !important;
-		background-color: #2A2A2A !important;
-		width: 40px !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px var(--uwp-context-border) solid !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		width: 38px !important;
+	}
+	.reader-controls {
+		width: 48px !
 	}
 	button {
-		fill: white !important;
-		background-color: transparent !important;
+		fill: var(--uwp-context-item-color) !important;
+		background-color: var(--uwp-context-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		padding-top: var(--uwp-context-item-padding-top) !important;
+		padding-bottom: var(--uwp-context-item-padding-bottom) !important;
 		border: none !important;
+		font-size: 12px !important;
+		margin: var(--uwp-context-item-margin) !important;
 	}
 	button:hover {
-		background-color: #525252 !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
 	}
 	.dropdown-popup {
 		/* Backdrop filter here... */
-		background-color: #2B2B2B !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5) !important;
-		border-radius: 0px !important;
-		border: none !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px var(--uwp-context-border) solid !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 		opacity: 0 !important;
 		transition: opacity 150ms, visibility 0s 2s !important;
 	}
@@ -812,14 +826,18 @@
 	.dropdown-arrow {
 		display: none !important;
 	}
-	.dropdown.open {
-		background-color: #666666 !important;
-	}
 	.narrate-row:not(:first-child) {
 		border: none !important;
 	}
 	.font-type-buttons > button > .description {
 		color: #BEBEBE !important;
+	}
+	@supports(backdrop-filter: blur(1px)) {
+		.dropdown-popup {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-context-background-blur) !important;
+			backdrop-filter: blur(32px) !important;
+		}
 	}
 }
 

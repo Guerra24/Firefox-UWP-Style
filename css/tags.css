@@ -421,7 +421,7 @@
 		border: var(--uwp-radio-border-active) !important;
 	}
 	radio[selected="true"] > .radio-check {
-		padding: 1px !important;
+		padding: var(--uwp-radio-selected-padding) !important;
 		fill: -moz-accent-color-foreground !important;
 		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
 
@@ -525,6 +525,12 @@
 		border: var(--uwp-expander-border) !important;
 		background: var(--uwp-expander-content-background) !important;
 		background-clip: padding-box !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		tree {
+			border: transparent !important;
+			background: transparent !important;
+		}
 	}
 	treechildren::-moz-tree-image {
 		fill: var(--uwp-foreground) !important;
