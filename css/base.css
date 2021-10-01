@@ -670,10 +670,19 @@ body[lwt-sidebar] {
 	box-shadow: -10px 10px 10px 14px rgba(0, 0, 0, .5) !important;
 	clip-path: inset(-20px -20px 0px 0px) !important;
 }
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#statuspanel-label {
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 0px 0px 2px 2px !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		clip-path: unset !important;
+	}
+}
 @supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
 		background-image: url(../img/noise-512x512.png) !important;
-		background-color: var(--uwp-urlbar-blur) !important;
+		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
@@ -703,18 +712,24 @@ notification {
 }
 #fullscreen-warning {
 	border: none !important;
-	box-shadow: none !important;
-	border-radius: 0px !important;
+	border-radius: var(--uwp-tags-overlay-radius) !important;
 	background-color: var(--uwp-autocomplete-list) !important;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 }
 .pointerlockfswarning[ontop] {
 	transform: translate(-50%, 10px) !important;
 }
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#fullscreen-warning  {
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		margin: 0px 0px 2px 2px !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+}
 @supports(backdrop-filter: blur(1px)) {
 	#fullscreen-warning {
 		background-image: url(../img/noise-512x512.png) !important;
-		background-color: var(--uwp-urlbar-blur) !important;
+		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
