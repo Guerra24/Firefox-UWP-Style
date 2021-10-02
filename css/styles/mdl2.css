@@ -151,6 +151,7 @@
 		--uwp-dialog-border: transparent;
 		--uwp-dialog-separator: transparent;
 		--uwp-dialog-smoke: transparent;
+		--uwp-dialog-background: var(--uwp-background);
 
 		--uwp-context-item-color: var(--uwp-foreground);
 		--uwp-context-item-background: transparent;

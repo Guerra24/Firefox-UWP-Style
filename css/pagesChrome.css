@@ -45,13 +45,25 @@
 	}
 	.dialog-content-box {
 		padding: 24px !important;
-		margin-bottom: 24px !important;
 		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
 		background-color: var(--uwp-layer-fill-alt) !important;
 		background-clip: padding-box !important;
 	}
 	.dialog-button-box {
-		padding: 0px 24px 24px 24px !important;
+		padding: 0px 16px 16px 16px !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		.dialog-content-box {
+			padding-bottom: 0px !important;
+		}
+	}
+	@supports -moz-bool-pref("uwp.sun-valley") {
+		.dialog-content-box {
+			margin-bottom: 24px !important;
+		}
+		.dialog-button-box {
+			padding: 0px 24px 24px 24px !important;
+		}
 	}
 	.dialog-button-box > button + button {
 		margin-left: 4px !important;
@@ -72,16 +84,6 @@
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.dialogBox {
 			border: 1px solid -moz-accent-color !important;
-		}
-		@supports(backdrop-filter: blur(1px)) {
-			body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
-				background: transparent !important;
-			}
-			.dialogBox {
-				background-image: url(../img/noise-512x512.png) !important;
-				background-color: var(--uwp-dialog-background-blur) !important;
-				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
-			}
 		}
 	}
 }

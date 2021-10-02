@@ -345,8 +345,36 @@
 @-moz-document url("about:newtab"), url("about:home") {
 	body {
 		--newtab-topsites-outer-card-hover: none !important;
-		--newtab-topsites-background-color: var(--newtab-card-background-color) !important;
 		--newtab-overlay-color: none !important;
+	}
+	.top-site-outer .tile {
+		color: var(--uwp-button-color) !important;
+		background-color: var(--uwp-button-background) !important;
+		border: var(--uwp-button-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+	}
+	.top-site-outer .tile:hover {
+		color: var(--uwp-button-color-hover) !important;
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.top-site-outer .tile:hover:active {
+		color: var(--uwp-button-color-active) !important;
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover), .rich-icon {
+		background-color: transparent !important;
+	}
+	.top-site-outer .context-menu-button {
+		opacity: 0 !important;
+		fill: var(--uwp-button-color-hover)  !important;
+		transition: opacity 200ms !important;
+	}
+	.top-site-outer:is(:hover) .context-menu-button {
+		opacity: 1 !important;
 	}
 	.icon-settings {
 		padding: 12px !important;
@@ -403,7 +431,7 @@
 		border: none !important;
 	}
 	.modal {
-		background-color: var(--uwp-background-fill-base) !important;
+		background-color: var(--uwp-dialog-background) !important;
 		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
@@ -415,12 +443,11 @@
 		.edit-topsites-wrapper .modal {
 			border: 1px solid -moz-accent-color !important;
 		}
-		@supports(backdrop-filter: blur(1px)) {
-			.modal {
-				background-image: url(../img/noise-512x512.png) !important;
-				background-color: var(--uwp-context-background-blur) !important;
-				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
-			}
+		.customize-menu {
+			background: var(--uwp-sidebar) !important;
+		}
+		.modal {
+			border: 1px solid -moz-accent-color !important;
 		}
 	}
 	@supports -moz-bool-pref("uwp.sun-valley") {
