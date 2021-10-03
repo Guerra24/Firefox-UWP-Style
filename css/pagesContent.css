@@ -446,6 +446,8 @@
 		max-width: unset !important;
 		background-color: var(--uwp-dialog-overlay) !important;
 		background-clip: padding-box !important;
+		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
+		border-top-right-radius: var(--uwp-tags-overlay-radius) !important;
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.edit-topsites-wrapper .modal {
