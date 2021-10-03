@@ -424,7 +424,7 @@
 		padding: var(--uwp-radio-selected-padding) !important;
 		fill: -moz-accent-color-foreground !important;
 		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
-
+		background-clip: border-box !important;
 		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
 		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
 	}
@@ -442,20 +442,13 @@
 	radio[disabled="true"] > .radio-label-box {
 		color: var(--uwp-tags-checkbox-disabled) !important;
 	}
-	radio[disabled="true"] > .radio-check {
-		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
+	radio:is([disabled="true"], [disabled="true"][selected="true"]) > .radio-check {
+		background-color: var(--uwp-radio-background-disabled) !important;
+		border: var(--uwp-radio-border-disabled) !important;
 	}
-	radio[disabled="true"]:hover > .radio-check {
-		border: 2px solid  var(--uwp-tags-checkbox-disabled) !important;
-	}
-	radio[disabled="true"]:active > .radio-check {
-		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
-	}
-	radio[disabled="true"][selected="true"] > .radio-check {
-		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
-	}
-	radio[disabled="true"][selected="true"]:hover > .radio-check {
-		border: 2px solid var(--uwp-tags-checkbox-disabled) !important;
+	radio:is([disabled="true"], [disabled="true"][selected="true"]):is(:hover, :hover:active) > .radio-check {
+		background-color: var(--uwp-radio-background-disabled) !important;
+		border: var(--uwp-radio-border-disabled) !important;
 	}
 	radio > .radio-label-box {
 		margin-left: 5px !important;
