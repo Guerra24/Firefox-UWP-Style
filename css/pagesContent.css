@@ -439,6 +439,14 @@
 		animation: fadeInScale .3s;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 	}
+	.modal .actions {
+		border-top-color: var(--uwp-dialog-separator) !important;
+	}
+	.modal .form-input-container {
+		max-width: unset !important;
+		background-color: var(--uwp-dialog-overlay) !important;
+		background-clip: padding-box !important;
+	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.edit-topsites-wrapper .modal {
 			border: 1px solid -moz-accent-color !important;

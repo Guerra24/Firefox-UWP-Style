@@ -104,6 +104,13 @@
 	.menu-accel {
 		color: gray !important;
 	}
+	menupopup:not(#contentAreaContextMenu) menuitem .menu-iconic-icon {
+		margin-right: 8px !important;
+	}
+	#context-navigation > .menuitem-iconic {
+		width: auto !important;
+		flex-grow: 1 !important;
+	}
 	menubar {
 		height: var(--uwp-menubar-height)!important;
 	}

@@ -160,6 +160,7 @@
 		--uwp-dialog-separator: var(--uwp-card-stroke-default);
 		--uwp-dialog-smoke: var(--uwp-smoke-fill-default);
 		--uwp-dialog-background: var(--uwp-background-fill-base);
+		--uwp-dialog-overlay: var(--uwp-layer-fill-alt);
 
 		--uwp-context-item-color: var(--uwp-text-fill-primary);
 		--uwp-context-item-background: var(--uwp-subtle-fill-transparent);
