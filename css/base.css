@@ -287,7 +287,8 @@ slot[part="content"] {
 .panel-arrowbox + slot[part="content"] {
 	margin: 0px !important;
 	box-shadow: none !important;
-	border: 1px solid var(--panel-border-color, none) !important;
+	background-clip: padding-box !important;
+	border: 1px solid var(--uwp-context-border) !important;
 }
 .panel-arrowcontent {
 	margin: 0px !important;
@@ -410,6 +411,9 @@ panel .text-link {
 }
 .identity-popup-security-connection:not(.identity-button) .identity-popup-connection-secure {
 	margin-left: 38px !important;
+}
+#DateTimePickerPanel {
+    --arrowpanel-background: var(--uwp-context-background) !important;
 }
 /* Old */
 #urlbar {
@@ -801,6 +805,7 @@ notification {
 	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;
 
 	--toolbar-field-focus-background-color: var(--uwp-button-background) !important;
+	--urlbar-box-focus-bgcolor: var(--uwp-button-background) !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

@@ -216,6 +216,7 @@
 		--arrowpanel-menuitem-border-radius: var(--uwp-tags-control-radius) !important;
 		--arrowpanel-border-radius: var(--uwp-tags-overlay-radius) !important;
 		--arrowpanel-border-color: var(--uwp-context-border) !important;
+		--arrowpanel-background: var(--uwp-context-background) !important;
 		--panel-subview-body-padding: var(--uwp-context-margin) !important;
 		--panel-separator-color: var(--uwp-context-separator) !important;
 		--panel-separator-margin: var(--uwp-context-separator-margin) !important;

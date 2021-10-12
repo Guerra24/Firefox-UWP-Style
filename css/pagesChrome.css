@@ -374,3 +374,28 @@
 		appearance: none !important;
 	}
 }
+
+@-moz-document url("chrome://global/content/datepicker.xhtml") {
+	body {
+		background: transparent !important;
+		--disabled-fill-color: var(--uwp-button-background-disabled) !important;
+		--selected-fill-color: -moz-accent-color !important;
+		--border: var(--uwp-button-border) !important;
+	}
+	.spinner {
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
+	}
+	.week-header > div {
+		opacity: 1 !important;
+	}
+	.month-year-view {
+		background: var(--uwp-context-background) !important;
+	}
+	.month-year-container {
+		height: auto !important;
+	}
+	.month-year {
+		width: 120px !important;
+	}
+}

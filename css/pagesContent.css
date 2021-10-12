@@ -50,7 +50,7 @@
 	.dialogOverlay[topmost="true"] {
 		background: var(--uwp-dialog-smoke) !important;
 	}
-	.dialogBox {
+	.dialogBox, .container[role="dialog"] {
 		background-color: var(--uwp-background-fill-base) !important;
 		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
@@ -58,8 +58,9 @@
 		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
+		overflow: hidden !important;
 	}
-	.dialog-content-box {
+	.dialog-content-box, .container[role="dialog"] > .content {
 		padding: 24px !important;
 		margin-bottom: 24px !important;
 		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
@@ -646,6 +647,7 @@
 @-moz-document url("about:downloads") {
 	#contentAreaDownloadsView {
 		padding: 0px !important;
+		background-color: var(--uwp-background) !important;
 	}
 }
 
@@ -916,13 +918,6 @@
 	.login-list-item {
 		border-bottom: none !important;
 	}
-	.container[role="dialog"] {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid #333333 !important;
-		border-radius: 0px !important;
-		color: var(--uwp-global-front) !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	}
 	.reveal-password-wrapper > input[type="text"], .reveal-password-wrapper > input[type="password"] {
 		margin-right: 12px !important;
 	}
@@ -960,6 +955,9 @@
 		background: transparent !important;
 		margin-right: var(--uwp-expander-hor-padding) !important;
 		border-radius: var(--uwp-nav-item-selector-radius);
+	}
+	header {
+		border-bottom: none !important;
 	}
 
 	@media (prefers-color-scheme: light) {

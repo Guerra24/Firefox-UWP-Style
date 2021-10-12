@@ -334,7 +334,7 @@
 	}
 	input[type="radio"] {
 		appearance: none !important;
-		background-clip: padding-box !important;
+		background-clip: border-box !important;
 		background-color: var(--uwp-radio-background) !important;
 		border: var(--uwp-radio-border) !important;
 
