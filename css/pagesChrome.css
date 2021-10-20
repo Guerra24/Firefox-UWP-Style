@@ -111,6 +111,9 @@
 		padding: 0px !important;
 		border: none !important;
 	}
+	#placesToolbox {
+		appearance: none !important;
+	}
 	#detailsPane {
 		border: none !important;
 	}

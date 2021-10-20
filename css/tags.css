@@ -567,7 +567,7 @@
 	treecol:hover:active {
 		background-color: var(--uwp-button-background-hover) !important;
 	}
-	splitter:not(.tree-splitter) {
+	splitter:not(.tree-splitter):not(.devtools-horizontal-splitter) {
 		margin: -4.5px !important;
 		width: 8px !important;
 		background: transparent !important;
