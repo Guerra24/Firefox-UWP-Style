@@ -283,6 +283,7 @@ findbar[hidden] {
 }
 slot[part="content"] {
 	border: none !important;
+	background: transparent !important;
 }
 .panel-arrowbox + slot[part="content"] {
 	margin: 0px !important;
