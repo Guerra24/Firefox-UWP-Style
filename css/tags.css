@@ -668,6 +668,9 @@
 		border: none !important;
 		background: transparent !important;
 	}
+	#downloadsListBox > richlistitem {
+		margin-bottom: 0px !important;
+	}
 	
 	/* Message-bar */
 	message-bar, .content-blocking-warning {

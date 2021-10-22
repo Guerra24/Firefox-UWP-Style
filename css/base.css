@@ -281,7 +281,7 @@ findbar[hidden] {
 .panel-arrowbox {
 	display: none !important;
 }
-slot[part="content"] {
+slot[part="content"]:only-child {
 	border: none !important;
 	background: transparent !important;
 }
