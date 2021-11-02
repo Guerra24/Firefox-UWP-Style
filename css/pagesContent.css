@@ -652,6 +652,9 @@
 }
 
 @-moz-document url("about:addons") {
+	.theme-enable-button {
+		height: unset !important;
+	}
 	#content {
 		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
 		background-color: var(--uwp-nav-content-background) !important;

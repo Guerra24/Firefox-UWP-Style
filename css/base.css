@@ -133,6 +133,7 @@
 		box-shadow: none !important;
 		border-radius: 0px !important;
 		opacity: 1 !important;
+		border: none !important;
 	}
 	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
 		background: var(--uwp-tabbar-tab-hover) !important;
@@ -655,7 +656,7 @@ panel .text-link {
 	fill: var(--uwp-global-front) !important;
 }
 #sidebar-search-container {
-	background: var(--uwp-sidebar-search) !important;
+	background: var(--uwp-sidebar) !important;
 }
 #sidebar-splitter {
 	border: none !important;

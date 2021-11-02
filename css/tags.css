@@ -561,6 +561,9 @@
 		color: var(--uwp-foreground) !important;
 		padding: 4px !important;
 	}
+	treecol[hideheader="true"] {
+		padding: 0px !important;
+	}
 	treecol:hover {
 		background-color: var(--uwp-button-background) !important;
 	}
