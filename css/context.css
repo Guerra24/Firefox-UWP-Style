@@ -63,6 +63,9 @@
 		font-size: 12px !important;
 		margin: var(--uwp-context-item-margin) !important;
 	}
+	.menuitem-iconic > .menu-iconic-left {
+		padding-top: 0px !important;
+	}
 	button[role="menuitem"] {
 		background-position-x: 10px !important;
 		padding-left: 36px !important;

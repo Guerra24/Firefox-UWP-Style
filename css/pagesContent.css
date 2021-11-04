@@ -974,3 +974,24 @@
 		}
 	}
 }
+
+@-moz-document url-prefix("about:debugging") {
+	:root {
+		--bg-color: var(--uwp-background) !important;
+	}
+	.card {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding: 16px !important;
+		min-height: 51px !important;
+		cursor: default !important;
+		margin-bottom: 3px !important;
+	}
+	.default-input {
+		line-height: normal !important;
+	}
+}

@@ -197,18 +197,22 @@
 }
 
 @-moz-document url("chrome://global/content/alerts/alert.xhtml") {
-	#alertBox {
-		box-shadow: none !important;
-		background-color: #1F1F1FF4 !important;
-		border: 1px solid #1F1F1F !important;
-		border-radius: 0px !important;
-		color: white !important;
-	}
-	#alertTitleLabel {
-		padding-top: 0px !important;
-	}
 	#alertNotification {
-		padding: 0px 20px 0px 0px !important;
+		background: transparent !important;
+		padding-top: 8px !important;
+		padding-left: 8px !important;
+		padding-right: 8px !important;
+		padding-bottom: 12px !important;
+	}
+	#alertBox {
+		color: var(--uwp-context-item-color) !important;
+		padding: 8px !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .32) !important;
 	}
 }
 

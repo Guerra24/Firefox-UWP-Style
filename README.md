@@ -8,9 +8,8 @@ Uses OS-level dark/light setting to apply the correct colors. This can cause col
 
 Select the appropriate file:
 
-- [MDL2 Style Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [MDL2 Style Firefox 89+](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
-- [MDL2 + Sun Valley Style (BETA) Firefox 89+](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/sun-valley.zip)
+- [MDL2 + Sun Valley Style Firefox 89+](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
+- [MDL2 Style Firefox 89+ (Legacy)](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
@@ -30,8 +29,6 @@ Enabled by default.
 The 2021 Fluent Design refresh. Features heavy use of rounded corners and smoother colors.
 
 Create boolean `uwp.sun-valley`=`true` pref to enable.
-
-Create boolean `uwp.sun-valley.round-tabs`=`true` pref to enable rounded tabs when using Sun Valley style.
 
 ## Customize
 
