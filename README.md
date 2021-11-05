@@ -48,7 +48,7 @@ If you want to override the accent color create two new prefs, both string type 
 
 `ui.-moz-accent-color-foreground`=`#FFFFFF` Text color when the background is the accent color.
 
-## Screenshots
+## Screenshots (Sun Valley)
 
 ![01](https://s3.guerra24.net/projects/firefox-uwp/screenshots/01.png)
 ![02](https://s3.guerra24.net/projects/firefox-uwp/screenshots/02.png)
