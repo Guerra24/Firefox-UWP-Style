@@ -79,34 +79,94 @@
 .tabbrowser-tab {
 	padding: 0px !important;
 }
-.tabbrowser-tab > .tab-stack > .tab-background {
-	border-top: none !important;
-	margin: 0px !important;
-	box-shadow: none !important;
-	border-radius: 0px !important;
-	opacity: 1 !important;
+
+@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	.tabbrowser-tab > .tab-stack > .tab-background {
+		background-color: transparent !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: var(--uwp-button-border) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 2px 0px !important;
+		box-shadow: none !important;
+		opacity: 1 !important;
+		overflow: hidden !important;
+		transition: background-color 83ms !important;
+	}
+	.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background) !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.tabbrowser-tab:hover:active > .tab-stack > .tab-background {
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	/* Toolbar buttons */
+	.toolbar-items .toolbarbutton-1 {
+		color: var(--uwp-button-color) !important;
+		background-color: var(--uwp-button-background) !important;
+		border: var(--uwp-button-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 2px !important;
+		transition: background-color 83ms !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover {
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover:active {
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+		--toolbarbutton-inner-padding: 6px !important;
+	}
 }
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
-	background: var(--uwp-tabbar-tab-hover) !important;
-}
-.tabbrowser-tab .tab-context-line {
-	height: 0px !important;
-	background: var(--identity-tab-color) !important;
-	margin-left: 16px !important;
-	margin-right: 16px !important;
-	transition: margin 200ms !important;
-	margin-top: 0px !important;
-}
-.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
-	background: -moz-accent-color !important;
-}
-.tabbrowser-tab .tab-context-line:-moz-window-inactive {
-	background: rgb(128, 128, 128) !important;
-}
-.tabbrowser-tab:is([selected="true"], [multiselected="true"]) .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
-	height: 2px !important;
-	margin-left: 0px !important;
-	margin-right: 0px !important;
+@supports not -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	.tabbrowser-tab > .tab-stack > .tab-background {
+		border-top: none !important;
+		margin: 0px !important;
+		box-shadow: none !important;
+		border-radius: 0px !important;
+		opacity: 1 !important;
+		border: none !important;
+	}
+	.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected]) {
+		background: var(--uwp-tabbar-tab-hover) !important;
+	}
+	.tabbrowser-tab .tab-context-line {
+		height: 0px !important;
+		background: var(--identity-tab-color) !important;
+		margin-left: 16px !important;
+		margin-right: 16px !important;
+		transition: margin 200ms !important;
+		margin-top: 0px !important;
+	}
+	.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
+		background: -moz-accent-color !important;
+	}
+	.tabbrowser-tab .tab-context-line:-moz-window-inactive {
+		background: rgb(128, 128, 128) !important;
+	}
+	.tabbrowser-tab:is([selected="true"], [multiselected="true"]) .tab-context-line, .tabbrowser-tab:hover .tab-context-line {
+		height: 2px !important;
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+	/* Toolbar buttons */
+	.toolbar-items .toolbarbutton-1 {
+		margin-bottom: 0px !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover {
+		background: var(--uwp-tabbar-button-hover) !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover:active {
+		background: var(--uwp-tabbar-button-hover-active) !important;
+	}
 }
 .tab-icon-overlay {
 	opacity: 1 !important;
@@ -146,16 +206,6 @@
 #TabsToolbar {
 	color: var(--uwp-global-front) !important;
 }
-/* Toolbar buttons */
-.toolbar-items .toolbarbutton-1 {
-	margin-bottom: 0px !important;
-}
-.toolbar-items .toolbarbutton-1:hover {
-	background: var(--uwp-tabbar-button-hover) !important;
-}
-.toolbar-items .toolbarbutton-1:hover:active {
-	background: var(--uwp-tabbar-button-hover-active) !important;
-}
 .toolbar-items .toolbarbutton-1 > .toolbarbutton-icon {
 	background: none !important;
 }
@@ -173,7 +223,7 @@ toolbarbutton.subviewbutton {
 	padding: 0px !important;
 }
 toolbarbutton.close-icon {
-	border-radius: 0px !important;
+	border-radius: var(--uwp-tags-control-radius) !important;
 }
 /* navbar stuff */
 #nav-bar {
@@ -188,6 +238,11 @@ toolbarbutton.close-icon {
 @media (-moz-windows-compositor) {
 	#navigator-toolbox {
 		background: var(--uwp-mainwindow) !important;
+	}
+	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+		#navigator-toolbox {
+			background: var(--uwp-background) !important;
+		}
 	}
 }
 :root:not([tabsintitlebar]) #navigator-toolbox {
@@ -217,41 +272,6 @@ findbar[hidden] {
 	margin-bottom: -40px !important;
 	opacity: 1 !important;
 }
-.findbar-button, .findbar-find-previous, .findbar-find-next {
-	-moz-appearance: none !important;
-	padding: 3px !important;
-	background-color: var(--uwp-tags-button) !important;
-	border: 2px var(--uwp-tags-button) solid !important;
-	color: var(--uwp-global-front) !important;
-}
-.findbar-button:hover, .findbar-find-previous:hover, .findbar-find-next:hover {
-	color: var(--uwp-global-front) !important;
-	border: 2px var(--uwp-tags-button-hover) solid !important;
-}
-.findbar-button:hover:active, .findbar-find-previous:hover:active, .findbar-find-next:hover:active {
-	color: var(--uwp-global-front) !important;
-	background-color: var(--uwp-tags-button-hover-active) !important;
-	border: 2px var(--uwp-tags-button-hover-active) solid !important;
-}
-.findbar-button[checked="true"] {
-	background-color: -moz-accent-color !important;
-	border: 2px -moz-accent-color solid !important;
-	color: -moz-accent-color-foreground !important;
-}
-.findbar-button[checked="true"]:hover {
-	color: -moz-accent-color-foreground !important;
-	border: 2px var(--uwp-tags-button-hover) solid !important;
-}
-.findbar-find-previous[disabled="true"]:hover, .findbar-find-next[disabled="true"]:hover, .findbar-find-previous[disabled="true"]:hover:active, .findbar-find-next[disabled="true"]:hover:active {
-	border: 2px var(--uwp-tags-button) solid !important;
-	background-color: var(--uwp-tags-button) !important;
-}
-.findbar-button > .toolbarbutton-text {
-	padding: 3px !important;
-}
-.findbar-button > .toolbarbutton-text {
-	background-color: transparent !important;
-}
 .findbar-find-previous > .toolbarbutton-text, .findbar-find-next > .toolbarbutton-text {
 	padding: 0 !important;
 }
@@ -262,29 +282,28 @@ findbar[hidden] {
 .panel-arrowbox {
 	display: none !important;
 }
-slot[part="content"] {
+slot[part="content"]:only-child {
 	border: none !important;
+	background: transparent !important;
 }
 .panel-arrowbox + slot[part="content"] {
 	margin: 0px !important;
 	box-shadow: none !important;
-	border: 1px solid var(--panel-border-color, none) !important;
+	background-clip: padding-box !important;
+	border: 1px solid var(--uwp-context-border) !important;
 }
 .panel-arrowcontent {
 	margin: 0px !important;
 }
 .panel-arrowcontainer {
 	border: none !important;
-	border-radius: 0px !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	border-radius: var(--uwp-tags-overlay-radius) !important;
 	margin: 30px !important;
 	margin-top: 10px !important;
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 	margin-bottom: 30px !important;
-}
-.panel-subview-footer-button {
-	margin-bottom: 0px !important;
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 }
 .addon-banner-item, .panel-banner-item {
 	border-radius: 0px !important;
@@ -395,6 +414,9 @@ panel .text-link {
 .identity-popup-security-connection:not(.identity-button) .identity-popup-connection-secure {
 	margin-left: 38px !important;
 }
+#DateTimePickerPanel {
+    --arrowpanel-background: var(--uwp-context-background) !important;
+}
 /* Old */
 #urlbar {
 	border: none !important;
@@ -419,55 +441,134 @@ panel .text-link {
    display: none !important;
 }
 .search-panel-header {
-   padding-top: 4px !important;
-   padding-block: 4px !important;
+	padding-top: 4px !important;
+	padding-block: 4px !important;
+	margin-bottom: 1px !important;
 }
 /*#urlbar:not(.megabar) {
 	background-color: var(--uwp-autocomplete-list) !important;
 }*/
 /* Megabar */
 #urlbar-background {
-	display: none !important;
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
 	top: 0px !important;
 	left: 0px !important;
 	width: 100% !important;
 }
-#urlbar-input-container, #searchbar {
-	border: none !important;
-	background-color: var(--uwp-urlbar) !important;
-	padding-left: 1px !important;
-	padding-right: 1px !important;
+@supports not -moz-bool-pref("uwp.sun-valley") {
+	#urlbar-input-container, #searchbar {
+		border: none !important;
+		background-color: var(--uwp-urlbar) !important;
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+	#urlbar-input-container:hover, #searchbar:hover {
+		background-color: var(--uwp-navbar-background-hover) !important;
+	}
+	#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+		height: var(--urlbar-toolbar-height) !important;
+	}
+	#urlbar-results {
+		padding: 0px !important;
+	}
+	.urlbarView {
+		margin-inline: 0px !important;
+		border: none !important;
+		width: 100% !important;
+		background-color: transparent !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		clip-path: inset(0px -20px -30px -20px) !important;
+		animation: none !important;
+		margin-block-start: 0px !important;
+	}
+	#urlbar[breakout][breakout-extend] #urlbar-background {
+		background: var(--uwp-autocomplete-list) !important;
+	}
+	.urlbarView-results {
+		padding-block: 0px !important;
+	}
+	.urlbarView .urlbarView-row {
+		border-radius: 0px !important;
+		padding-block: 0px !important;
+	}
+	.urlbarView-row-inner {
+		border-radius: 0px !important;
+	}
 }
-#urlbar-input-container:hover, #searchbar:hover {
-	background-color: var(--uwp-navbar-background-hover) !important;
-}
-#urlbar[breakout][breakout-extend] > #urlbar-input-container {
-    height: var(--urlbar-toolbar-height) !important;
-}
-#urlbar-results {
-	padding: 0px !important;
-}
-.urlbarView {
-	margin-inline: 0px !important;
-	border: none !important;
-	width: 100% !important;
-	background-color: var(--uwp-autocomplete-list) !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	clip-path: inset(0px -20px -30px -20px) !important;
-	animation: none !important;
-	margin-block-start: 0px !important;
-}
-.urlbarView-results {
-	padding-block: 0px !important;
-}
-.urlbarView .urlbarView-row {
-	border-radius: 0px !important;
-	padding-block: 0px !important;
-}
-.urlbarView-row-inner {
-	border-radius: 0px !important;
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#urlbar[breakout][breakout-extend] #urlbar-background {
+		display: block !important;
+		background: var(--uwp-autocomplete-list) !important;
+		background-clip: padding-box !important;
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	#urlbar-input-container, #searchbar {
+		border: 1px solid transparent !important;
+		background-clip: padding-box !important;
+		background-color: transparent !important;
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+	#urlbar-input-container:hover, #searchbar:hover {
+		background-color: var(--uwp-navbar-background-hover) !important;
+	}
+	#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+		height: var(--urlbar-toolbar-height) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	#urlbar-results {
+		padding: var(--uwp-context-margin) !important;
+	}
+	.urlbarView {
+		margin-inline: 0px !important;
+		width: 100% !important;
+		border: none !important;
+		background: transparent !important;
+		animation: none !important;
+		margin-block-start: 0px !important;
+		border-bottom-left-radius: var(--uwp-tags-overlay-radius) !important;
+		border-bottom-right-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	.urlbarView-results {
+		padding-block: 0px !important;
+	}
+	.urlbarView .urlbarView-row {
+		border-radius: 0px !important;
+		padding-block: 0px !important;
+		padding: var(--uwp-context-item-margin) !important;
+	}
+	.urlbarView-row-inner {
+		background: transparent !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+	}
+	.urlbarView-row-inner:hover {
+		background-color: var(--uwp-context-item-background-hover) !important;
+	}
+	.urlbarView-row-inner:hover:active {
+		background-color: var(--uwp-context-item-background-active) !important;
+	}
+	.urlbarView-row[selected] .urlbarView-row-inner {
+		padding-left: 0px !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
+	}
+	.urlbarView-row[selected] .urlbarView-row-inner::before {
+		content: "";
+		width: 0 !important;
+		display: block !important;
+		background-color: -moz-accent-color !important;
+		padding: 8px 1.5px !important;
+		border-radius: var(--uwp-nav-item-selector-radius) !important;
+		margin-right: 7px !important;
+	}
 }
 .urlbarView-body-inner {
 	border: none !important;
@@ -510,13 +611,13 @@ panel .text-link {
 	padding-block: 0px !important;
 }
 #urlbar .searchbar-engine-one-off-item {
-    margin-inline-end: 0px !important;
+    margin-inline-end: 2px !important;
 }
 @supports(backdrop-filter: blur(1px)) {
-	.urlbarView {
+	#urlbar[breakout][breakout-extend] #urlbar-background {
 		background-image: url(../img/noise-512x512.png) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 /* Tracking toggle */
@@ -555,7 +656,7 @@ panel .text-link {
 	fill: var(--uwp-global-front) !important;
 }
 #sidebar-search-container {
-	background: var(--uwp-sidebar-search) !important;
+	background: var(--uwp-sidebar) !important;
 }
 #sidebar-splitter {
 	border: none !important;
@@ -575,11 +676,20 @@ body[lwt-sidebar] {
 	box-shadow: -10px 10px 10px 14px rgba(0, 0, 0, .5) !important;
 	clip-path: inset(-20px -20px 0px 0px) !important;
 }
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#statuspanel-label {
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		margin: 0px 0px 2px 2px !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		clip-path: unset !important;
+	}
+}
 @supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
 		background-image: url(../img/noise-512x512.png) !important;
-		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		background-color: var(--uwp-context-background-blur) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 /* Notifications? */
@@ -608,19 +718,25 @@ notification {
 }
 #fullscreen-warning {
 	border: none !important;
-	box-shadow: none !important;
-	border-radius: 0px !important;
+	border-radius: var(--uwp-tags-overlay-radius) !important;
 	background-color: var(--uwp-autocomplete-list) !important;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 }
 .pointerlockfswarning[ontop] {
 	transform: translate(-50%, 10px) !important;
 }
+@supports -moz-bool-pref("uwp.sun-valley") {
+	#fullscreen-warning  {
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		margin: 0px 0px 2px 2px !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	}
+}
 @supports(backdrop-filter: blur(1px)) {
 	#fullscreen-warning {
 		background-image: url(../img/noise-512x512.png) !important;
-		background-color: var(--uwp-urlbar-blur) !important;
-		backdrop-filter: blur(32px) !important;
+		background-color: var(--uwp-context-background-blur) !important;
+		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
 }
 .ctrlTab-preview > .ctrlTab-preview-inner, #ctrlTab-showAll {
@@ -675,9 +791,6 @@ notification {
 	--lwt-selected-tab-background-color: var(--toolbar-bgcolor) !important;
 	--toolbarbutton-outer-padding: 0px !important;
 	--uwp-urlbar-height: 32px !important;
-	--arrowpanel-menuitem-margin: 0px !important;
-	--arrowpanel-menuitem-border-radius: 0px !important;
-	--panel-subview-body-padding: 0px !important;
 	--arrowpanel-menuitem-padding: 8px 10px !important;
 	--panel-banner-item-background-color: transparent !important;
 	--toolbar-start-end-padding: 0px !important;
@@ -685,14 +798,16 @@ notification {
 	--urlbar-box-bgcolor: var(--urlbar-result-hover-bgcolor) !important;
 	--toolbarbutton-hover-background: var(--uwp-navbar-button-hover) !important;
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
-	--tab-border-radius: 0px !important;
+	--tab-border-radius: var(--uwp-tags-control-radius) !important;
 	--panel-font-size: 12px !important;
 	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
-	--arrowpanel-border-radius: 0px !important;
-	--arrowpanel-border-color: var(--uwp-context-border) !important;
+
 	--zoom-controls-bgcolor: transparent !important;
 	--toolbar-bgimage: none !important;
 	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;
+
+	--toolbar-field-focus-background-color: var(--uwp-button-background) !important;
+	--urlbar-box-focus-bgcolor: var(--uwp-button-background) !important;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;

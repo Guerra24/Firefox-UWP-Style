@@ -1,4 +1,5 @@
 /**/
+@supports not -moz-bool-pref("uwp.sun-valley") {
 @media (prefers-color-scheme: dark) {
 :root {
 	--uwp-context-background: #2B2B2B;
@@ -7,13 +8,12 @@
 	--uwp-context-separator: #808080;
 	--uwp-context-menuitem-hover: #404040;
 	--uwp-context-menuitem-active: #555555;
-	--uwp-context-menuitem-open: rgb(80,80,80);
-	--uwp-context-menuitem-open-image: linear-gradient(-moz-accent-color, -moz-accent-color);
 	--uwp-context-tooltip: #2B2B2B;
 	--uwp-context-tooltip-border: #1C1C1C;
 	--uwp-context-menubar-hover: #191919;
 	--uwp-context-menubar-open: #353535;
 	--uwp-context-menulist-open: #333333;
 	--uwp-context-menulist-open-border: #666666;
+}
 }
 }

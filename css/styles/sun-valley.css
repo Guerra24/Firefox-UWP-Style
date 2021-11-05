@@ -1,0 +1,267 @@
+/* Sun Valley */
+
+@import url(./sun-valley/tags-dark.css);
+@import url(./sun-valley/context-dark.css);
+@import url(./sun-valley/base-dark.css);
+@import url(./sun-valley/pagesContent-dark.css);
+
+@import url(./sun-valley/tags-light.css);
+@import url(./sun-valley/context-light.css);
+@import url(./sun-valley/base-light.css);
+@import url(./sun-valley/pagesContent-light.css);
+
+@supports -moz-bool-pref("uwp.sun-valley") {
+	:root {
+		--uwp-tags-control-radius: 4px;
+		--uwp-tags-overlay-radius: 8px;
+
+		--uwp-background: var(--uwp-background-fill-base);
+		--uwp-foreground: var(--uwp-text-fill-primary);
+
+		--uwp-button-color: var(--uwp-text-fill-primary);
+		--uwp-button-background: var(--uwp-control-fill-default);
+		--uwp-button-border: var(--uwp-control-elevation-border);
+
+		--uwp-button-color-hover: var(--uwp-text-fill-primary);
+		--uwp-button-background-hover: var(--uwp-control-fill-secondary);
+		--uwp-button-border-hover: var(--uwp-control-elevation-border);
+
+		--uwp-button-color-active: var(--uwp-text-fill-secondary);
+		--uwp-button-background-active: var(--uwp-control-fill-tertiary);
+		--uwp-button-border-active: var(--uwp-control-stroke-default-border);
+
+		--uwp-button-color-disabled: var(--uwp-text-fill-disabled);
+		--uwp-button-background-disabled: var(--uwp-control-fill-disabled);
+		--uwp-button-border-disabled: var(--uwp-control-stroke-default-border);
+
+		--uwp-input-color: var(--uwp-text-fill-primary);
+		--uwp-input-background: var(--uwp-control-fill-default) padding-box;
+		--uwp-input-border: var(--uwp-input-elevation-border);
+		--uwp-input-border-bottom: var(--uwp-control-strong-stroke-default);
+
+		--uwp-input-color-hover: var(--uwp-text-fill-primary);
+		--uwp-input-background-hover: var(--uwp-control-fill-secondary) padding-box;
+		--uwp-input-border-hover: var(--uwp-input-elevation-border);
+		--uwp-input-border-bottom-hover: var(--uwp-control-strong-stroke-default);
+
+		--uwp-input-color-focus: var(--uwp-text-fill-secondary);
+		--uwp-input-background-focus: var(--uwp-control-fill-input-active) padding-box;
+		--uwp-input-border-focus: var(--uwp-control-stroke-default-border);
+		--uwp-input-border-bottom-focus: var(--button-primary-bgcolor);
+
+		--uwp-input-color-disabled: var(--uwp-text-fill-disabled);
+		--uwp-input-background-disabled: var(--uwp-control-fill-disabled) padding-box;
+		--uwp-input-border-disabled: var(--uwp-control-stroke-default-border);
+
+		--uwp-checkbox-check-position: 3px;
+		--uwp-checkbox-check-size: 12px;
+
+		--uwp-checkbox-background: var(--uwp-control-alt-fill-secondary);
+		--uwp-checkbox-border: 1px solid var(--uwp-control-strong-stroke-default);
+
+		--uwp-checkbox-background-hover: var(--uwp-control-alt-fill-tertiary);
+		--uwp-checkbox-border-hover: 1px solid var(--uwp-control-strong-stroke-default);
+
+		--uwp-checkbox-background-active: var(--uwp-control-alt-fill-quarternary);
+		--uwp-checkbox-border-active: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-checkbox-color-disabled: var(--uwp-text-accent-fill-disabled);
+		--uwp-checkbox-background-disabled: var(--uwp-control-alt-fill-disabled);
+		--uwp-checkbox-border-disabled: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-checkbox-background-checked-disabled: var(--uwp-accent-fill-disabled);
+		--uwp-checkbox-border-checked-disabled: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-combo-color: var(--uwp-text-fill-primary);
+		--uwp-combo-background: var(--uwp-control-fill-default);
+		--uwp-combo-border: var(--uwp-control-elevation-border);
+
+		--uwp-combo-color-hover: var(--uwp-text-fill-primary);
+		--uwp-combo-background-hover: var(--uwp-control-fill-secondary);
+		--uwp-combo-border-hover: var(--uwp-control-elevation-border);
+
+		--uwp-combo-color-active: var(--uwp-text-fill-secondary);
+		--uwp-combo-background-active: var(--uwp-control-fill-tertiary);
+		--uwp-combo-border-active: var(--uwp-control-stroke-default-border);
+
+		--uwp-combo-color-disabled: var(--uwp-text-fill-disabled);
+		--uwp-combo-background-disabled: var(--uwp-control-fill-disabled);
+		--uwp-combo-border-disabled: var(--uwp-control-stroke-default-border);
+
+		--uwp-radio-dot-size: 10px;
+		--uwp-radio-border-padding: 4px;
+		--uwp-radio-dot-size-hover: 12px;
+		--uwp-radio-border-padding-hover: 3px;
+		--uwp-radio-selected-padding: 1px;
+
+		--uwp-radio-color: var(--uwp-text-fill-primary);
+		--uwp-radio-background: var(--uwp-control-alt-fill-secondary);
+		--uwp-radio-border: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-radio-background-hover: var(--uwp-control-alt-fill-tertiary);
+		--uwp-radio-border-hover: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-radio-background-active: var(--uwp-control-alt-fill-quarternary);
+		--uwp-radio-border-active: var(--uwp-control-strong-stroke-disabled-border);
+
+		--uwp-radio-background-disabled: var(--uwp-control-alt-fill-disabled);
+		--uwp-radio-border-disabled: var(--uwp-control-strong-stroke-disabled-border);
+
+		--uwp-progress-bar-height: 1px;
+		--uwp-progress-bar-margin: -1px 0px 0px 0px;
+		--uwp-progress-bar-radius: 3px;
+		--uwp-progress-bar-fill-height: 3px;
+		--uwp-progress-bar: var(--uwp-control-strong-stroke-default);
+
+		--uwp-progress-bar-paused: var(--uwp-system-caution);
+
+		--uwp-nav-content-background: var(--uwp-layer-fill-default);
+		--uwp-nav-content-border: 1px solid var(--uwp-card-stroke-default);
+		--uwp-nav-item-height: 36px;
+		--uwp-nav-item-selector-height: 16px;
+		--uwp-nav-item-selector-width: 3px;
+		--uwp-nav-item-selector-radius: 2px;
+
+		--uwp-nav-item-color: var(--uwp-text-fill-primary);
+		--uwp-nav-item-background: var(--uwp-subtle-fill-transparent);
+
+		--uwp-nav-item-color-hover: var(--uwp-text-fill-primary);
+		--uwp-nav-item-background-hover: var(--uwp-subtle-fill-secondary);
+
+		--uwp-nav-item-color-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-background-active: var(--uwp-subtle-fill-tertiary);
+
+		--uwp-nav-item-color-selected: var(--uwp-text-fill-primary);
+		--uwp-nav-item-background-selected: var(--uwp-subtle-fill-secondary);
+
+		--uwp-nav-item-color-selected-hover: var(--uwp-text-fill-primary);
+		--uwp-nav-item-background-selected-hover: var(--uwp-subtle-fill-tertiary);
+
+		--uwp-nav-item-color-selected-active: var(--uwp-text-fill-secondary);
+		--uwp-nav-item-background-selected-active: var(--uwp-subtle-fill-secondary);
+
+		--uwp-menubar-height: 40px;
+		--uwp-menubar-item-padding: 4px 10px;
+		--uwp-menubar-item-margin: 4px;
+
+		--uwp-menubar-item-background: var(--uwp-subtle-fill-transparent) !important;
+
+		--uwp-menubar-item-background-hover: var(--uwp-subtle-fill-secondary) !important;
+
+		--uwp-menubar-item-background-active: var(--uwp-subtle-fill-tertiary) !important;
+
+		--uwp-menubar-item-background-selected: var(--uwp-subtle-fill-tertiary) !important;
+
+		--uwp-context-separator: var(--uwp-divider-stroke-default);
+
+		--uwp-context-border: var(--uwp-surface-stroke-flyout);
+
+		--uwp-dialog-border: var(--uwp-surface-stroke-default);
+		--uwp-dialog-separator: var(--uwp-card-stroke-default);
+		--uwp-dialog-smoke: var(--uwp-smoke-fill-default);
+		--uwp-dialog-background: var(--uwp-background-fill-base);
+		--uwp-dialog-overlay: var(--uwp-layer-fill-alt);
+
+		--uwp-context-item-color: var(--uwp-text-fill-primary);
+		--uwp-context-item-background: var(--uwp-subtle-fill-transparent);
+
+		--uwp-context-item-background-hover: var(--uwp-subtle-fill-secondary);
+
+		--uwp-context-item-background-active: var(--uwp-subtle-fill-tertiary);
+
+		--uwp-context-tooltip-border: var(--uwp-surface-stroke-flyout);
+
+		--uwp-context-item-margin: 2px 4px;
+		--uwp-context-item-margin-width: 8px;
+		--uwp-context-item-padding-top: 5px;
+		--uwp-context-item-padding-bottom: 5px;
+		--uwp-context-separator-margin: 1px 0px;
+		--uwp-context-margin: 2px 0px;
+		--uwp-context-scrollbar-width: thin;
+
+		--uwp-infobar-background: var(--uwp-system-attention-background);
+		--uwp-infobar-border: 1px solid var(--uwp-card-stroke-default);
+
+		--uwp-expander-color: var(--uwp-text-fill-primary);
+		--uwp-expander-background: var(--uwp-card-background-fill-default);
+		--uwp-expander-border: 1px solid var(--uwp-card-stroke-default);
+
+		--uwp-expander-color-hover: var(--uwp-text-fill-primary);
+		--uwp-expander-background-hover: var(--uwp-button-background-hover);
+		--uwp-expander-border-hover: var(--uwp-button-border-hover);
+
+		--uwp-expander-color-active: var(--uwp-text-fill-primary);
+		--uwp-expander-background-active: var(--uwp-control-fill-tertiary);
+		--uwp-expander-border-active: var(--uwp-button-border-active);
+
+		--uwp-expander-color-selected: var(--uwp-text-fill-primary);
+		--uwp-expander-background-selected: var(--uwp-button-background-hover);
+		--uwp-expander-border-selected: var(--uwp-button-border-hover);
+
+		--uwp-expander-content-background: var(--uwp-card-background-fill-secondary);
+
+		--uwp-expander-min-height: 51px;
+		--uwp-expander-hor-padding: 16px;
+		--uwp-expander-spacing: 3px;
+
+		--uwp-acrylic-backdrop: saturate(2) blur(32px);
+	}
+
+	:root {
+		--panelview-toolbarbutton-hover-bgcolor: var(--uwp-context-item-background-hover) !important;
+		--panelview-toolbarbutton-active-bgcolor: var(--uwp-context-item-background-active) !important;
+
+		--arrowpanel-menuitem-padding: 6px 12px !important;
+		--arrowpanel-menuitem-margin: var(--uwp-context-item-margin) !important;
+		--arrowpanel-menuitem-border-radius: var(--uwp-tags-control-radius) !important;
+		--arrowpanel-border-radius: var(--uwp-tags-overlay-radius) !important;
+		--arrowpanel-border-color: var(--uwp-context-border) !important;
+		--arrowpanel-background: var(--uwp-context-background) !important;
+		--panel-subview-body-padding: var(--uwp-context-margin) !important;
+		--panel-separator-color: var(--uwp-context-separator) !important;
+		--panel-separator-margin: var(--uwp-context-separator-margin) !important;
+		--panel-item-hover-bgcolor: var(--uwp-context-item-background-hover) !important;
+		--panel-item-active-bgcolor: var(--uwp-context-item-background-active) !important;
+
+		--toolbar-bgcolor: var(--uwp-background-fill-base) !important;
+
+		--toolbarbutton-border-radius: var(--uwp-tags-control-radius) !important;
+		--toolbarbutton-inner-padding: 6px !important;
+		--toolbarbutton-outer-padding: 1px !important;
+		--toolbar-start-end-padding: 2px !important;
+
+		--autocomplete-popup-separator-color: transparent !important;
+		--autocomplete-popup-highlight-color: var(--uwp-foreground) !important;
+
+		--organizer-toolbar-background: var(--uwp-background) !important;
+		--organizer-pane-background: transparent !important;
+		--organizer-content-background: transparent !important;
+		--organizer-selected-background: transparent !important;
+		
+		--urlbarView-item-inline-padding: 10px !important;
+	}
+
+	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
+		/* Text Box */
+		textarea,
+		input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]),
+		.findbar-textbox {
+			border-bottom-color: var(--uwp-input-border-bottom) !important;
+		}
+		textarea:hover,
+		input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):hover,
+		.findbar-textbox:hover {
+			border-bottom-color: var(--uwp-input-border-bottom-hover) !important;
+		}
+		textarea:focus,
+		input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):focus,
+		.findbar-textbox:focus {
+			padding: 5.5px 5.5px 4.5px 5.5px !important;
+			border-bottom-width: 2px !important;
+			border-bottom-color: color-mix(in srgb, -moz-accent-color 40%, white) !important;
+		}
+		input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]) {
+			border-bottom: var(--uwp-input-border-disabled) !important;
+		}
+	}
+}

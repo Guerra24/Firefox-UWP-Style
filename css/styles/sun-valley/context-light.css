@@ -1,19 +1,19 @@
 /**/
+@supports -moz-bool-pref("uwp.sun-valley") {
 @media (prefers-color-scheme: light) {
 :root {
 	--uwp-context-background: #F2F2F2;
 	--uwp-context-background-blur: #F2F2F2B0;
-	--uwp-context-border: #D1D1D1;
-	--uwp-context-separator: #919191;
+
 	--uwp-context-menuitem-hover: #DADADA;
 	--uwp-context-menuitem-active: #C2C2C2;
-	--uwp-context-menuitem-open: #6B6B6B;
-	--uwp-context-menuitem-open-image: none;
+
 	--uwp-context-tooltip: #F2F2F2;
-	--uwp-context-tooltip-border: #D1D1D1;
+
 	--uwp-context-menubar-hover: #E6E6E6;
 	--uwp-context-menubar-open: #CCCCCC;
 	--uwp-context-menulist-open: #cccccc;
 	--uwp-context-menulist-open-border: #999999;
+}
 }
 }

@@ -1,6 +1,6 @@
 # Firefox UWP Style
 
-A theme that follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements.
+A theme that follows UWP styling.
 
 ## Install
 
@@ -8,14 +8,27 @@ Uses OS-level dark/light setting to apply the correct colors. This can cause col
 
 Select the appropriate file:
 
-- [Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 89 - 92](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
-- [Firefox 88](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-88.zip)
-- [Firefox 76 - 87](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-76.zip)
+- [MDL2 + Sun Valley Style Firefox 89+](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
+- [MDL2 Style Firefox 89+ (Legacy)](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
 Toggle `toolkit.legacyUserProfileCustomizations.stylesheets` pref in `about:config` and restart Firefox.
+
+
+## Styles
+
+### MDL2
+
+The original 2015 UWP design. Follows MDL2 styling with the accent color and gray-on-black or gray-on-white elements.
+
+Enabled by default.
+
+### Sun Valley
+
+The 2021 Fluent Design refresh. Features heavy use of rounded corners and smoother colors.
+
+Create boolean `uwp.sun-valley`=`true` pref to enable.
 
 ## Customize
 

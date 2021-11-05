@@ -4,16 +4,26 @@
 
 @-moz-document regexp("chrome:\/\/(?!devtools).*") {
 	dialog, window, wizard {
-		background: var(--uwp-global-back) !important;
-		color: var(--uwp-global-front) !important;
+		background: var(--uwp-background) !important;
+		color: var(--uwp-foreground) !important;
+		padding: 0px !important;
 	}
 	#window-modal-dialog {
 		margin-top: auto !important;
-		background: transparent !important;
-		padding: 30px !important;
+		background: transparent !important;;
+	}
+	#window-modal-dialog::before {
+		content: '' !important;
+		z-index: -1 !important;
+		position: fixed !important;
+		left: 0 !important;
+		top: 0 !important;
+		background: var(--uwp-dialog-smoke) !important;
+		width: 100vw !important;
+		height: 100vh !important;
 	}
 	.wizard-header {
-		background: var(--uwp-global-back) !important;
+		background: transparent !important;
 		color: var(--uwp-global-front) !important;
 		border: none !important;
 	}
@@ -25,16 +35,42 @@
 	}
 	.dialogBox {
 		margin-top: 0px !important;
-		background: transparent !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-		animation: fadeInScale .3s;
-		border-radius: 0px !important;
-	}
-	.dialogFrame {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid -moz-accent-color !important;
-		border-radius: 0px !important;
+		background-color: var(--uwp-background-fill-base) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
+		animation: fadeInScale .3s;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	.dialog-content-box {
+		padding: 24px !important;
+		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
+		background-color: var(--uwp-layer-fill-alt) !important;
+		background-clip: padding-box !important;
+	}
+	.dialog-button-box {
+		padding: 0px 16px 16px 16px !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		.dialog-content-box {
+			padding-bottom: 0px !important;
+		}
+	}
+	@supports -moz-bool-pref("uwp.sun-valley") {
+		.dialog-content-box {
+			margin-bottom: 24px !important;
+		}
+		.dialog-button-box {
+			padding: 0px 24px 24px 24px !important;
+		}
+	}
+	.dialog-button-box > button + button {
+		margin-left: 4px !important;
+		margin-right: 0px !important;
+	}
+	.titleIcon {
+		background-color: transparent !important;
 	}
 	.previewStack {
 		background: transparent !important;
@@ -42,14 +78,12 @@
 	.dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {
 		background: transparent !important;
 	}
-	@supports(backdrop-filter: blur(1px)) {
-		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
-			background: transparent !important;
-		}
-		.dialogFrame, .previewStack {
-			background-image: url(../img/noise-512x512.png) !important;
-			background-color: var(--uwp-dialog-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+	#label-box[native] {
+		outline: none !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		.dialogBox {
+			border: 1px solid -moz-accent-color !important;
 		}
 	}
 }
@@ -67,19 +101,31 @@
 }
 
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
+
+	.downloadButton > .button-box {
+		padding: 0px !important;
+		background: transparent !important;
+	}
+
 	#placesToolbar {
 		padding: 0px !important;
-		background-color: var(--uwp-global-back) !important;
+		border: none !important;
+	}
+	#placesToolbox {
+		appearance: none !important;
+	}
+	#detailsPane {
+		border: none !important;
 	}
 	toolbarbutton {
 		-moz-appearance: none !important;
 		padding: 8px !important;
 	}
 	toolbarbutton:not([disabled]):hover {
-		background-color: var(--uwp-context-menubar-hover) !important;
+		background-color: var(--uwp-menubar-item-background-hover) !important;
 	}
 	toolbarbutton:not([disabled]):hover:active {
-		background-color: var(--uwp-context-menubar-open) !important;
+		background-color: var(--uwp-menubar-item-background-active) !important;
 	}
 	toolbarbutton > .toolbarbutton-icon {
 		fill: var(--uwp-global-front) !important;
@@ -116,9 +162,6 @@
 	label {
 		color: var(--uwp-global-front) !important;
 	}
-	#placesViewsDeck, #detailsDeck, #detailsPane {
-		background: var(--uwp-global-back) !important;
-	}
 }
 
 @-moz-document url("chrome://browser/content/aboutDialog.xhtml") {
@@ -141,28 +184,6 @@
 	}
 }
 
-@-moz-document url("chrome://browser/content/places/bookmarkProperties.xhtml"), url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
-}
-
-@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
-	#unknownContentType {
-		background-color: var(--uwp-global-back) !important;
-	}
-	label, description {
-		color: var(--uwp-global-front) !important;
-	}
-	caption {
-		background-color: black !important;
-	}
-}
-
-@-moz-document url("chrome://global/content/appPicker.xhtml") {
-	#app-picker {
-		background-color: black !important;
-		color: white !important;
-	}
-}
-
 @-moz-document url("chrome://mozapps/content/handling/dialog.xhtml") {
 	#handling {
 		background-color: black !important;
@@ -176,18 +197,22 @@
 }
 
 @-moz-document url("chrome://global/content/alerts/alert.xhtml") {
-	#alertBox {
-		box-shadow: none !important;
-		background-color: #1F1F1FF4 !important;
-		border: 1px solid #1F1F1F !important;
-		border-radius: 0px !important;
-		color: white !important;
-	}
-	#alertTitleLabel {
-		padding-top: 0px !important;
-	}
 	#alertNotification {
-		padding: 0px 20px 0px 0px !important;
+		background: transparent !important;
+		padding-top: 8px !important;
+		padding-left: 8px !important;
+		padding-right: 8px !important;
+		padding-bottom: 12px !important;
+	}
+	#alertBox {
+		color: var(--uwp-context-item-color) !important;
+		padding: 8px !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .32) !important;
 	}
 }
 
@@ -348,5 +373,36 @@
 	}
 	#controls:hover .control-item {
 		opacity: 0.8 !important;
+	}
+}
+
+@-moz-document url("chrome://browser/content/migration/migration.xhtml") {
+	#dataSources {
+		appearance: none !important;
+	}
+}
+
+@-moz-document url("chrome://global/content/datepicker.xhtml") {
+	body {
+		background: transparent !important;
+		--disabled-fill-color: var(--uwp-button-background-disabled) !important;
+		--selected-fill-color: -moz-accent-color !important;
+		--border: var(--uwp-button-border) !important;
+	}
+	.spinner {
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
+	}
+	.week-header > div {
+		opacity: 1 !important;
+	}
+	.month-year-view {
+		background: var(--uwp-context-background) !important;
+	}
+	.month-year-container {
+		height: auto !important;
+	}
+	.month-year {
+		width: 120px !important;
 	}
 }

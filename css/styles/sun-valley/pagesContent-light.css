@@ -1,32 +1,33 @@
 /**/
-@media (prefers-color-scheme: dark) {
+@supports -moz-bool-pref("uwp.sun-valley") {
+@media (prefers-color-scheme: light) {
 @-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	:root {
 		--in-content-accent-color: -moz-accent-color !important;
-	    --in-content-page-color: white !important;
-	    --in-content-page-background: black !important;
-	    --in-content-text-color: lightgray !important;
+	    --in-content-page-color: var(--uwp-foreground) !important;
+	    --in-content-page-background: var(--uwp-background) !important;
+	    --in-content-text-color: var(--uwp-global-front) !important;
 	    --in-content-selected-text: #fff;
-	    --in-content-box-background: black !important;
+	    --in-content-box-background: white !important;
 	    --in-content-box-background-odd: #f3f6fa;
 	    --in-content-box-background-hover: #ebebeb;
 	    --in-content-box-background-active: #dadada;
 	    --in-content-box-border-color: transparent !important;
-	    --in-content-item-hover: #191919 !important;
+	    --in-content-item-hover: #E6E6E6 !important;
 	    --in-content-item-selected: #0a84ff;
 		--in-content-border-highlight: -moz-accent-color !important;
 	    --in-content-border-focus: #0a84ff;
-	    --in-content-border-color: #282828 !important;
+	    --in-content-border-color: #a8a8a8 !important;
 	    --in-content-category-outline-focus: 1px dotted #0a84ff;
 	    --in-content-category-text: white !important;
 	    --in-content-category-text-active: white !important;
 	    --in-content-category-text-selected: white !important;
 	    --in-content-category-text-selected-active: white !important;
-	    --in-content-category-background-hover: #353535 !important;
-	    --in-content-category-background-active: #4C4C4C !important;
-	    --in-content-category-background-selected-hover: #353535 !important;
-	    --in-content-category-background-selected-active: #4C4C4C !important;
+	    --in-content-category-background-hover: #CFCFCF !important;
+	    --in-content-category-background-active: #B8B8B8 !important;
+	    --in-content-category-background-selected-hover: #CFCFCF !important;
+	    --in-content-category-background-selected-active: #B8B8B8 !important;
 	    --in-content-tab-color: #424f5a;
 	    --in-content-link-color: -moz-accent-color !important;
 	    --in-content-link-color-hover: #999999 !important;
@@ -35,7 +36,7 @@
 	    --in-content-primary-button-background: #0a84ff;
 	    --in-content-primary-button-background-hover: #0060df;
 	    --in-content-primary-button-background-active: #003EAA;
-	    --in-content-table-background: black !important;
+	    --in-content-table-background: var(--uwp-global-back) !important;
 	    --in-content-table-border-dark-color: #282828 !important;
 	    --in-content-table-header-background: -moz-accent-color !important;
 		--card-shadow: none !important;
@@ -49,21 +50,23 @@
 
 		--exception-button-container-background: black !important;
 
-		--uwp-pages-sidepanel: #1F1F1F;
-		--uwp-section-highlight-background-color: #383838 !important;
+		--uwp-pages-sidepanel: #F3F3F3;
+		--uwp-section-highlight-background-color: #f0f0f0 !important;
+
+		--uwp-sticky-container-hack: #F9F9F9;
 	}
 	body {
-		--newtab-background-color: #1A1A1A !important;
-		--newtab-snippets-background-color: #2A2A2A !important;
+		--newtab-background-color: var(--uwp-mainwindow) !important;
+		--newtab-snippets-background-color: #EFEFEF !important;
 		--newtab-textbox-focus-color: -moz-accent-color !important;
 		--newtab-link-primary-color: -moz-accent-color !important;
-		--newtab-card-background-color: #2A2A2A !important;
+		--newtab-card-background-color: white !important;
 		--newtab-card-shadow: none !important;
-		--newtab-search-header-background-color: #2A2A2A !important;
+		--newtab-textbox-background-color: white !important;
 		--newtab-topsites-icon-shadow: none !important;
-		--customize-menu-background: #2A2A2A !important;
-		--newtab-textbox-background-color: #2A2A2A !important;
+		--customize-menu-background: #EFEFEF !important;
 	}
 
+}
 }
 }

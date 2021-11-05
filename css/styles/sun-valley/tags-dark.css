@@ -1,0 +1,117 @@
+/**/
+@supports -moz-bool-pref("uwp.sun-valley") {
+@media (prefers-color-scheme: dark) {
+	:root {
+		--uwp-global-front: white;
+		--uwp-global-back: black;
+
+		--uwp-background-fill-base: #202020;
+		
+		--uwp-text-fill-primary: #FFFFFF;
+		--uwp-text-fill-secondary: #FFFFFFC5;
+		--uwp-text-fill-tertiary: #FFFFFF87;
+		--uwp-text-fill-disabled: #FFFFFF5D;
+
+		--uwp-text-accent-fill-disabled: #FFFFFF87;
+		
+		--uwp-control-fill-default: #FFFFFF0F;
+		--uwp-control-fill-secondary: #FFFFFF15;
+		--uwp-control-fill-tertiary: #FFFFFF08;
+		--uwp-control-fill-disabled: #FFFFFF0B;
+		--uwp-control-fill-input-active: #1E1E1EB3;
+		
+		--uwp-control-stroke-default: #FFFFFF12;
+		--uwp-control-stroke-secondary: #FFFFFF18;
+
+		--uwp-control-stroke-default-border: 1px solid var(--uwp-control-stroke-default);
+		
+		--uwp-control-strong-stroke-default: #FFFFFF8B;
+		--uwp-control-strong-stroke-disabled: #FFFFFF28;
+		
+		--uwp-control-elevation-border: 1px solid var(--uwp-control-stroke-secondary);
+		--uwp-input-elevation-border: 1px solid var(--uwp-control-stroke-default);
+		
+		--uwp-control-strong-stroke-default-border: 1px solid var(--uwp-control-strong-stroke-default);
+		--uwp-control-strong-stroke-disabled-border: 1px solid var(--uwp-control-strong-stroke-disabled);
+
+		--uwp-card-stroke-default: #00000019;
+
+		--uwp-card-background-fill-default: #FFFFFF0D;
+		--uwp-card-background-fill-secondary: #FFFFFF08;
+
+		--uwp-smoke-fill-default: #0000004D;
+
+		--uwp-layer-fill-default: #3A3A3A4C;
+		--uwp-layer-fill-alt: #FFFFFF0D;
+
+		--uwp-divider-stroke-default: #FFFFFF15;
+
+		--uwp-subtle-fill-transparent: #FFFFFF00;
+		--uwp-subtle-fill-secondary: #FFFFFF0F;
+		--uwp-subtle-fill-tertiary: #FFFFFF0A;
+
+		--uwp-control-alt-fill-transparent: #FFFFFF00;
+		--uwp-control-alt-fill-secondary: #00000019;
+		--uwp-control-alt-fill-tertiary: #FFFFFF0B;
+		--uwp-control-alt-fill-quarternary: #FFFFFF12;
+		--uwp-control-alt-fill-disabled: #FFFFFF00;
+
+		--uwp-accent-fill-disabled: #FFFFFF28;
+
+		--uwp-surface-stroke-default: #75757566;
+		--uwp-surface-stroke-flyout: #00000033;
+
+		--uwp-system-attention-background: #FFFFFF08;
+
+		--uwp-system-caution: #FCE100;
+		--uwp-system-critical: #FF99A4;
+
+		--uwp-tags-button: #333333;
+		--uwp-tags-button-hover: #858585;
+		--uwp-tags-button-hover-active: #666666;
+		--uwp-tags-button-color: var(--uwp-global-front);
+		--uwp-tags-button-disabled-text: #858585;
+		--uwp-tags-button-accent: linear-gradient(-moz-accent-color, -moz-accent-color);
+		--uwp-tags-button-accent-mod: #D0D0D0;
+		--uwp-tags-textbox: black;
+		--uwp-tags-textbox-border: #666666;
+		--uwp-tags-textbox-color: var(--uwp-global-front);
+		--uwp-tags-textbox-hover: #999999;
+		--uwp-tags-checkbox: #CCCCCC;
+		--uwp-tags-checkbox-checked-hover: #FFFFFF;
+		--uwp-tags-checkbox-checked-active: #999999;
+		--uwp-tags-checkbox-disabled: #666666;
+		--uwp-tags-toggle-checked: white;
+		--uwp-tags-radio-border: #CCCCCC;
+		--uwp-tags-radio-border-hover: #FFFFFF;
+		--uwp-tags-radio-border-active: #999999;
+		--uwp-tags-pivot: #888888;
+		--uwp-tags-pivot-selected: #E2E2E2;
+		--uwp-tags-pivot-hover: #B5B5B5;
+
+		--uwp-tags-richlistitem-hover: #191919;
+		--uwp-tags-richlistitem-active: #333333;
+		--uwp-tags-richlistitem-selected: #171717;
+
+		--uwp-tags-treecol: #191919;
+		--uwp-tags-treecol-hover: #282828;
+		--uwp-tags-treecol-selected: #3C3C3C;
+		--uwp-tags-treechildren-row-hover: #323232;
+		--uwp-tags-treechildren-row-selected: #3C3C3C;
+
+		--uwp-tags-progressbar: #333333;
+
+		--uwp-tags-slider: #666666;
+		--uwp-tags-slider-hover: #999999;
+
+		--uwp-header-background: #1F1F1F;
+
+		--uwp-scrollbar: #1B1B1B;
+		--uwp-scrollbar-thumb: #494949;
+
+		--uwp-dialog-background-blur: #101010D0;
+
+		--uwp-dropmarker: url(../img/arrowdown.png);
+	}
+}
+}

@@ -1,5 +1,6 @@
 /*AGENT_SHEET*/
 
+/* MDL2 */
 /* Base Theme */
 @import url(./css/base.css);
 
@@ -12,21 +13,9 @@
 /* Pages */
 @import url(./css/pagesChrome.css);
 
-/* Icons */
-@import url(./css/icons.css);
-
-/* Colors */
-/* Dark */
-@import url(./css/colors/tags-dark.css);
-@import url(./css/colors/context-dark.css);
-@import url(./css/colors/base-dark.css);
-@import url(./css/colors/pagesChrome-dark.css);
-
-/* Light */
-@import url(./css/colors/tags-light.css);
-@import url(./css/colors/context-light.css);
-@import url(./css/colors/base-light.css);
-@import url(./css/colors/pagesChrome-light.css);
+/* Styles */
+@import url(./css/styles/mdl2.css);
+@import url(./css/styles/sun-valley.css);
 
 /*
 @supports -moz-bool-pref("pref.here") {

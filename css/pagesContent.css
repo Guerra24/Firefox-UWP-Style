@@ -21,9 +21,6 @@
 	listheader {
 		border-bottom: 0px !important;
 	}
-	richlistbox {
-		border: none !important;
-	}
 	.menulist-label-box {
 		border: none !important;
 	}
@@ -39,30 +36,65 @@
 	* {
 		outline: none !important;
 	}
-	.dialogBox {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid -moz-accent-color !important;
-		border-radius: 0px !important;
+	window, dialog {
+		background-color: transparent !important;
+		padding: 0px !important;
+	}
+	.dialogFrame {
+		margin: 0px !important;
+	}
+	.dialogTitleBar {
+		background-color: var(--uwp-layer-fill-alt) !important;
+		border-bottom: none !important;
+	}
+	.dialogOverlay[topmost="true"] {
+		background: var(--uwp-dialog-smoke) !important;
+	}
+	.dialogBox, .container[role="dialog"] {
+		background-color: var(--uwp-background-fill-base) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		overflow: hidden !important;
+	}
+	.dialog-content-box, .container[role="dialog"] > .content {
+		padding: 24px !important;
+		margin-bottom: 24px !important;
+		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
+		background-color: var(--uwp-layer-fill-alt) !important;
+		background-clip: padding-box !important;
+	}
+	.dialog-button-box {
+		padding: 0px 24px 24px 24px !important;
+	}
+	.dialog-button-box > button + button {
+		margin-left: 4px !important;
+		margin-right: 0px !important;
 	}
 	.dialogClose {
 		margin: 0px !important;
-		width: 25px !important;
+		width: 40px !important;
 		height: 25px !important;
 	}
 	.groove {
 		border: none !important;
 	}
-	@supports(backdrop-filter: blur(1px)) {
-		body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
-			background: transparent !important;
-		}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.dialogBox {
-			background-image: url(../img/noise-512x512.png) !important;
-			background-color: var(--uwp-dialog-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			border: 1px solid -moz-accent-color !important;
+		}
+		@supports(backdrop-filter: blur(1px)) {
+			body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
+				background: transparent !important;
+			}
+			.dialogBox {
+				background-image: url(../img/noise-512x512.png) !important;
+				background-color: var(--uwp-dialog-background-blur) !important;
+				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
+			}
 		}
 	}
 	.groupbox-title {
@@ -72,12 +104,6 @@
 	}
 	.dialogBox > caption {
 		padding: 0px !important;
-	}
-	.dialogOverlay[topmost="true"] {
-		background-color: transparent !important;
-	}
-	dialog {
-		background: transparent !important;
 	}
 	.prefpane {
 		background: black !important;
@@ -98,11 +124,6 @@
 	.list > scrollbox > .scrollbox-innerbox {
 		border: none !important;
 	}
-	window {
-		background: var(--uwp-global-back) !important;
-		color: var(--uwp-global-front) !important;
-	}
-
 	:root > * {
 		font-size: 14px !important;
 	}
@@ -157,14 +178,15 @@
 	}
 	.sidebar-footer-link {
 		padding-left: 12px !important;
-		height: 40px !important;
-		border-radius: 0px !important;
-		fill: var(--uwp-global-front) !important;
-		color: var(--uwp-global-front) !important;
+		height: var(--uwp-nav-item-height) !important;
+		fill: currentColor !important;
+		color: var(--uwp-nav-item-color) !important;
+		background-color: var(--uwp-nav-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		margin: var(--uwp-context-item-margin) !important;
 		background-position-x: 14px !important;
 		background-position-y: 11px !important;
 		background-size: 18px !important;
-		margin-left: 0px !important;
 	}
 	.sidebar-footer-link:hover, .sidebar-footer-label {
 		color: var(--uwp-global-front) !important;
@@ -178,59 +200,74 @@
 		margin-bottom: 8px !important;
 	}
 	.category-icon {
+		margin-left: calc(12px - var(--uwp-nav-item-selector-width)) !important;
 		height: 16px !important;
 		width: 16px !important;
+		margin-right: 16px !important;
 	}
 	#categories {
-		background-color: var(--uwp-pages-sidepanel) !important;
 		padding-top: 8px !important;
 		font-size: 12px !important;
 		padding-left: 0px !important;
 		padding-right: 0px !important;
 		margin-top: 0px !important;
 	}
+	#categories > .category {
+		color: var(--uwp-nav-item-color) !important;
+		background-color: var(--uwp-nav-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		margin: var(--uwp-context-item-margin) !important;
+	}
 	#categories > .category:not(richlistitem) > .category-name {
-		padding-left: 26px !important;
+		padding-left: calc(44px - var(--uwp-nav-item-selector-width)) !important;
 		font-size: inherit !important;
 	}
 	#categories > .category:not(button) > .category-name {
-		padding-left: 10px !important;
+		padding-left: 0px !important;
 	}
 	#categories > .category:not(richlistitem) {
+		cursor: default !important;
 		display: flex !important;
 		border: none !important;
 		padding: 0px !important;
-		margin: 0px !important;
-		min-height: 40px !important;
+		margin: var(--uwp-context-item-margin) !important;
+		min-height: var(--uwp-nav-item-height) !important;
 		font-size: inherit !important;
-		color: var(--uwp-global-front) !important;
 		background-size: 16px !important;
 		background-repeat: no-repeat !important;
 		background-position-x: 12px !important;
-		background-position-y: 12px !important;
+		background-position-y: calc(var(--uwp-nav-item-height) / 2 - 8px) !important;
 	}
-	#categories > .category:not(button) {
-		min-height: 40px !important;
+	#categories > .category:is(richlistitem) {
+		position: absolute !important;
+		min-height: var(--uwp-nav-item-height) !important;
 		transition: none !important;
 		padding-left: 0px !important;
-		margin-inline-start: 0px !important;
-		border-radius: 0px !important;
 		cursor: default !important;
+	}
+	#categories > .category:is(div) > .category-name {
+		margin-left: 40px !important;
 	}
 	#categories > .category::before {
 		content: "";
 		width: 0 !important;
-		display: block !important; 
-		padding: 12px 3px !important;
-		margin-right: 6px !important;
+		display: block !important;
+		padding: calc(var(--uwp-nav-item-selector-height) / 2) calc(var(--uwp-nav-item-selector-width) / 2) !important;
 		background: transparent !important;
+		border-radius: var(--uwp-nav-item-selector-radius);
 	}
-	#categories > .category[selected] {
-		background-color: transparent !important;
+
+	@media (prefers-color-scheme: light) {
+		#categories > .category:is([selected], .selected)::before {
+			background: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+		}
 	}
-	#categories > .category[selected]::before {
-		background: -moz-accent-color !important;
+	@media (prefers-color-scheme: dark) {
+		#categories > .category:is([selected], .selected)::before {
+			background: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+		}
 	}
+
 	#categories > .category[disabled]:not(button) {
 		opacity: 0.5 !important;
 	}
@@ -238,19 +275,24 @@
 		display: none !important;
 	}
 	#categories > .category:hover, .sidebar-footer-link:hover {
-		background-color: var(--in-content-category-background-hover) !important;
+		color: var(--uwp-nav-item-color-hover) !important;
+		background-color: var(--uwp-nav-item-background-hover) !important;
 	}
 	#categories > .category:hover:active, .sidebar-footer-link:hover:active {
-		background-color: var(--in-content-category-background-active) !important;
+		color: var(--uwp-nav-item-color-active) !important;
+		background-color: var(--uwp-nav-item-background-active) !important;
+	}
+	#categories > .category[selected], #categories > .category.selected {
+		color: var(--uwp-nav-item-color-selected) !important;
+		background-color: var(--uwp-nav-item-background-selected) !important;
 	}
 	#categories > .category[selected]:hover, #categories > .category.selected:hover {
-		background-color: var(--in-content-category-background-selected-hover) !important;
+		color: var(--uwp-nav-item-color-selected-hover) !important;
+		background-color: var(--uwp-nav-item-background-selected-hover) !important;
 	}
 	#categories > .category[selected]:hover:active, #categories > .category.selected:hover:active {
-		background-color: var(--in-content-category-background-selected-active) !important;
-	}
-	#sidebar, #category-box {
-		background-color: var(--uwp-pages-sidepanel) !important;
+		color: var(--uwp-nav-item-color-selected-active) !important;
+		background-color: var(--uwp-nav-item-background-selected-active) !important;
 	}
 	#categories hr {
 		margin: 0px !important;
@@ -260,6 +302,13 @@
 	.message-bar {
 		background: transparent !important;
 		color: white !important;
+	}
+	.main-content {
+		border-top-left-radius: var(--uwp-tags-overlay-radius);
+		background-color: var(--uwp-nav-content-background) !important;
+		border: var(--uwp-nav-content-border) !important;
+		border-right-width: 0px !important;
+		border-bottom-width: 0px !important;
 	}
 	/* Font Fixes */
 	textbox {
@@ -297,15 +346,46 @@
 @-moz-document url("about:newtab"), url("about:home") {
 	body {
 		--newtab-topsites-outer-card-hover: none !important;
-		--newtab-topsites-background-color: var(--newtab-card-background-color) !important;
 		--newtab-overlay-color: none !important;
+	}
+	.top-site-outer .tile {
+		color: var(--uwp-button-color) !important;
+		background-color: var(--uwp-button-background) !important;
+		border: var(--uwp-button-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+	}
+	.top-site-outer .tile:hover {
+		color: var(--uwp-button-color-hover) !important;
+		background-color: var(--uwp-button-background-hover) !important;
+		border: var(--uwp-button-border-hover) !important;
+	}
+	.top-site-outer .tile:hover:active {
+		color: var(--uwp-button-color-active) !important;
+		background-color: var(--uwp-button-background-active) !important;
+		border: var(--uwp-button-border-active) !important;
+	}
+	.top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover), .rich-icon {
+		background-color: transparent !important;
+	}
+	.top-site-outer .context-menu-button {
+		opacity: 0 !important;
+		fill: var(--uwp-button-color-hover)  !important;
+		transition: opacity 200ms !important;
+	}
+	.top-site-outer:is(:hover) .context-menu-button {
+		opacity: 1 !important;
+	}
+	.icon-settings {
+		padding: 12px !important;
 	}
 	.external-link {
 		padding-left: 24px !important;
 		background-position-x: 4px !important;
 		text-decoration: none !important;
 	}
-	.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active, .customize-menu.customize-animate-enter {
+	.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active, .customize-menu.customize-animate-enter, .customize-menu.customize-animate-exit {
 		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 	.outer-wrapper.newtab-experience .top-site-outer .tile, .outer-wrapper.newtab-experience .ds-card-grid.ds-card-grid-border .ds-card, .outer-wrapper.newtab-experience .card-outer .card {
@@ -351,19 +431,43 @@
 		background-color: transparent !important;
 		border: none !important;
 	}
-	.edit-topsites-wrapper .modal {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid -moz-accent-color !important;
-		border-radius: 0px !important;
+	.modal {
+		background-color: var(--uwp-dialog-background) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
 	}
-	@supports(backdrop-filter: blur(1px)) {
+	.modal .actions {
+		border-top-color: var(--uwp-dialog-separator) !important;
+	}
+	.modal .form-input-container {
+		max-width: unset !important;
+		background-color: var(--uwp-dialog-overlay) !important;
+		background-clip: padding-box !important;
+		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
+		border-top-right-radius: var(--uwp-tags-overlay-radius) !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.edit-topsites-wrapper .modal {
-			background-image: url(../img/noise-512x512.png) !important;
-			background-color: var(--uwp-context-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			border: 1px solid -moz-accent-color !important;
+		}
+		.customize-menu {
+			background: var(--uwp-sidebar) !important;
+		}
+		.modal {
+			border: 1px solid -moz-accent-color !important;
+		}
+	}
+	@supports -moz-bool-pref("uwp.sun-valley") {
+		@supports(backdrop-filter: blur(1px)) {
+			.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active, .customize-menu.customize-animate-enter, .customize-menu.customize-animate-exit {
+				background-image: url(../img/noise-512x512.png) !important;
+				background-color: var(--uwp-context-background-blur) !important;
+				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
+			}
 		}
 	}
 }
@@ -382,7 +486,7 @@
 		body:not(.inline-onboarding) .fixed-search .search-wrapper {
 			background-image: url(../img/noise-512x512.png) !important;
 			background-color: var(--uwp-context-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}
 	}
 	.search-handoff-button .fake-textbox {
@@ -406,6 +510,77 @@
 }
 
 @-moz-document url-prefix("about:preferences") {
+
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		:root {
+			--uwp-expander-background: var(--uwp-tags-richlistitem-hover) !important;
+		}
+	}
+
+	.content-blocking-category {
+		color: var(--uwp-expander-color) !important;
+		background: transparent !important;
+		box-shadow: none !important;
+		padding: 0px !important;
+		min-height: var(--uwp-expander-min-height) !important;
+		margin-top: 0px !important;
+		border: none !important;
+	}
+	.content-blocking-category > hbox {
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		padding-top: var(--uwp-expander-hor-padding) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		border: var(--uwp-expander-border) !important;
+		border-bottom-width: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
+	.content-blocking-category > .indent {
+		margin-inline-end: 0px !important;
+		margin-inline-start: 0px !important;
+	}
+	.content-blocking-category > .indent > label {
+		width: 100%;
+	}
+	.content-blocking-category > .indent > * {
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		border: var(--uwp-expander-border) !important;
+		border-top-width: 0px !important;
+		border-bottom-left-radius: var(--uwp-tags-control-radius) !important;
+		border-bottom-right-radius: var(--uwp-tags-control-radius) !important;
+	}
+	.content-blocking-category > .indent > vbox {
+		background-color: var(--uwp-expander-content-background) !important;
+		background-clip: padding-box !important;
+	}
+	.content-blocking-category > .indent > :not(vbox) {
+		padding-bottom: var(--uwp-expander-hor-padding) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		border: var(--uwp-expander-border) !important;
+		border-top-width: 0px !important;
+		border-top-left-radius: 0px !important;
+		border-top-right-radius: 0px !important;
+	}
+	.content-blocking-category:is(.expanded, .selected) > .indent > :not(vbox) {
+		border-radius: 0px !important;
+	}
+	.content-blocking-reload-desc-container > .content-blocking-info-image {
+		margin-top: unset !important;
+		align-self: unset !important;
+	}
+	.content-blocking-reload-description {
+		display: inline-flex !important;
+		align-items: center !important;
+	}
+	.sticky-container {
+		background-color: var(--uwp-sticky-container-hack) !important;
+	}
 	.help-button > .text-link {
 		border-radius: 0px !important;
 	}
@@ -429,15 +604,8 @@
 	.fxaProfileImage.actionable:hover:active {
 		border-color: -moz-accent-color !important;
 	}
-	.dialogTitleBar {
-		background-color: transparent !important;
-		border-bottom: none !important;
-	}
 	#categories > scrollbox > box {
 		padding: 0px !important;
-	}
-	.navigation {
-		background-color: var(--uwp-pages-sidepanel)  !important;
 	}
 	.accessory-button {
 		height: auto !important;
@@ -447,12 +615,11 @@
 		-moz-context-properties: fill !important;
 		background-color: transparent !important;
 	}
-	description.indent, .indent > description {
-	}
 	.updateSettingCrossUserWarningContainer {
 		background-color: transparent !important;
 	}
 	.navigation {
+		background-color: var(--uwp-pages-sidepanel) !important;
 		overflow-y: hidden !important;
 	}
 	.searchBarImage {
@@ -460,69 +627,12 @@
 		fill: var(--chrome-secondary-background-color) !important;
 		stroke: gray !important;
 	}
-	.content-blocking-category {
-		border-radius: 0px !important;
-		border: none !important;
-	}
-	.content-blocking-category.selected {
-		background-image: linear-gradient(-moz-accent-color, -moz-accent-color) !important;
-		background-blend-mode: multiply;
-		background-color: rgb(140,140,140) !important;
-		color: -moz-accent-color-foreground !important;
-	}
-	.content-blocking-warning {
-		background: var(--uwp-section-highlight-background-color) !important;
-		color: var(--uwp-global-front) !important;
-	}
 	.sync-group {
 		border-radius: 0px !important;
 		background: transparent !important;
 		border: none !important;
 	}
 	/* Icons */
-	/*.category-icon {
-		width: 16px !important;
-		height: 16px !important;
-	}
-	#category-general > .category-icon {
-		list-style-image: var(--mdl2-icons-settings) !important;
-	}
-	#category-home > .category-icon {
-		list-style-image: var(--mdl2-icons-home) !important;
-	}
-	#category-search > .category-icon {
-		list-style-image: var(--mdl2-icons-search) !important;
-	}
-	#category-privacy > .category-icon {
-		list-style-image: var(--mdl2-icons-lock) !important;
-	}
-	#category-sync > .category-icon {
-		list-style-image: var(--mdl2-icons-sync) !important;
-	}
-	#updateSettingCrossUserWarning {
-		background-image: var(--mdl2-icons-info) !important;
-	}
-	.checkbox-icon[src="chrome://browser/skin/search-glass.svg"] {
-		background-image: var(--mdl2-icons-search) !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		padding-left: 16px !important;
-		box-sizing: border-box !important;
-	}
-	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-topsites-16.svg"] {
-		background-image: var(--mdl2-icons-tiles) !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		padding-left: 16px !important;
-		box-sizing: border-box !important;
-	}
-	.checkbox-icon[src="resource://activity-stream/data/content/assets/glyph-info-16.svg"] {
-		background-image: var(--mdl2-icons-info) !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		padding-left: 16px !important;
-		box-sizing: border-box !important;
-	}*/
 	/* Fixes FF62~ */
 	.navigation > .help-button {
 		margin-bottom: 8px !important;
@@ -537,10 +647,25 @@
 @-moz-document url("about:downloads") {
 	#contentAreaDownloadsView {
 		padding: 0px !important;
+		background-color: var(--uwp-background) !important;
 	}
 }
 
 @-moz-document url("about:addons") {
+	.theme-enable-button {
+		height: unset !important;
+	}
+	#content {
+		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
+		background-color: var(--uwp-nav-content-background) !important;
+	}
+	.sticky-container, .main-heading, .main-search {
+		background-color: var(--uwp-sticky-container-hack) !important;
+	}
+	#sidebar {
+		background-color: var(--uwp-pages-sidepanel) !important;
+	}
+
 	button.button-link {
 		background: transparent !important;
 		border: none !important;
@@ -556,13 +681,6 @@
 		color: #666666 !important;
 		background: transparent !important;
 		border: none !important;
-	}
-	.addon label, .addon {
-		margin: 0px !important;
-		cursor: default !important;
-	}
-	.addon:not([selected]) {
-		border-bottom: 0px !important;
 	}
 	.button-box {
 		padding: 0px 5px !important;
@@ -595,20 +713,12 @@
 		padding-bottom: 3px !important;
 		background-color: #404040 !important;
 	}
-	.addon {
-		border: none !important;
-	}
 	#heading {
 		margin-top: 6px !important;
 	}
 	/* Icons */
-	.category-icon {
-		width: 16px !important;
-		height: 16px !important;
-	}
 	input[type="radio"] + span {
 		position: relative !important;
-		bottom: -3px !important;
 	}
 	/* Fixes for FF62~ */
 	.addon {
@@ -619,66 +729,65 @@
 }
 /* New HTML-based addons page */
 @-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html"), url-prefix("about:addons") {
-	:root{
-	}
 	.rating-star {
 		fill: -moz-accent-color !important;
 	}
-	.addon.card {
+	.card.addon {
 		background: transparent !important;
-		margin: 0px !important;
-		border: none !important;
-		border-radius: 0px !important;
+	}
+	addon-card:not([expanded]) .card.addon, recommended-addon-card .card.addon {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding: 16px !important;
+		min-height: 51px !important;
 		cursor: default !important;
-		padding: 10px !important;
+		margin-bottom: 3px !important;
 	}
-	addon-card:not([expanded]) > .addon.card:hover {
-		background: var(--uwp-tags-richlistitem-hover) !important;
+	addon-card:not([expanded]) .card.addon:hover, recommended-addon-card .card.addon:hover {
+		color: var(--uwp-expander-color-hover) !important;
+		border: var(--uwp-expander-border-hover) !important;
+		background-color: var(--uwp-expander-background-hover) !important;
 	}
-	addon-card:not([expanded]) > .addon.card:hover:active {
-		background: var(--uwp-tags-richlistitem-active) !important;
+	addon-card:not([expanded]) .card.addon:hover:active, recommended-addon-card .card.addon:hover:active {
+		color: var(--uwp-expander-color-active) !important;
+		border: var(--uwp-expander-border-active) !important;
+		background-color: var(--uwp-expander-background-active) !important;
+	}
+	.addon-name-container {
+		margin: 0px !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		.card-heading-icon {
+			fill: -moz-accent-color-foreground !important;
+			background-color: -moz-accent-color !important;
+			padding: 4px !important;
+		}
+	}
+	addon-card .card-heading-icon {
+		margin-bottom: unset !important;
 	}
 	.card-heading-icon {
-		fill: -moz-accent-color-foreground !important;
-		background-color: -moz-accent-color !important;
+		fill: var(--uwp-foreground) !important;
 		padding: 4px !important;
+		margin-top: auto !important;
+		margin-bottom: auto !important;
 	}
-	addon-card:not([expanded]) .card-contents {
-		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size) - 6px) !important;
+	.card-contents {
+		width: calc(var(--section-width) - var(--card-padding) * 4 - var(--addon-icon-size)) !important;
 	}
-	addon-details, .addon-detail-row {
-		color: var(--uwp-global-front) !important;
+	.disco-description-statistics, recommended-addon-card .addon-description {
+		margin-top: 4px !important;
 	}
-	recommended-themes-section {
-		display: none !important;
-	}
-	button.button-link {
-		text-decoration: none !important;
+	.addon-name-link, .addon-name-link:hover, .addon-name-link:hover:active {
+		color: var(--uwp-foreground) !important;
+		cursor: default !important;
 	}
 	.card-heading-image {
-		margin-left: -10px !important;
-		margin-top: 0px !important;
-	}
-	.tab-group {
-		border: none !important;
-	}
-	.addon-detail-row {
-		border: none !important;
-	}
-	input[type="radio"] + span {
-		bottom: 1px !important;
-	}
-	/* Icons */
-	.addon-icon[src="chrome://mozapps/skin/extensions/extensionGeneric.svg"] {
-		/* This should use --uwp-accent-text for fill */
-		background-image: var(--mdl2-icons-puzzle) !important;
-		background-position: center center !important;
-		background-repeat: no-repeat !important;
-		background-size: 32px !important;
-		padding-left: 36px !important;
-		box-sizing: border-box !important;
-		width: 40px !important;
-		height: 40px !important;
+		    width: calc(var(--section-width) - 2px) !important;
 	}
 }
 
@@ -729,24 +838,38 @@
 
 @-moz-document url-prefix("about:reader") {
 	.toolbar {
-		border: none !important;
-		background-color: #2A2A2A !important;
-		width: 40px !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px var(--uwp-context-border) solid !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		width: 38px !important;
+	}
+	.reader-controls {
+		width: 48px !
 	}
 	button {
-		fill: white !important;
-		background-color: transparent !important;
+		fill: var(--uwp-context-item-color) !important;
+		background-color: var(--uwp-context-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		padding-top: var(--uwp-context-item-padding-top) !important;
+		padding-bottom: var(--uwp-context-item-padding-bottom) !important;
 		border: none !important;
+		font-size: 12px !important;
+		margin: var(--uwp-context-item-margin) !important;
 	}
 	button:hover {
-		background-color: #525252 !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
 	}
 	.dropdown-popup {
 		/* Backdrop filter here... */
-		background-color: #2B2B2B !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5) !important;
-		border-radius: 0px !important;
-		border: none !important;
+		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
+		background-image: none !important;
+		border: 1px var(--uwp-context-border) solid !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 		opacity: 0 !important;
 		transition: opacity 150ms, visibility 0s 2s !important;
 	}
@@ -757,14 +880,18 @@
 	.dropdown-arrow {
 		display: none !important;
 	}
-	.dropdown.open {
-		background-color: #666666 !important;
-	}
 	.narrate-row:not(:first-child) {
 		border: none !important;
 	}
 	.font-type-buttons > button > .description {
 		color: #BEBEBE !important;
+	}
+	@supports(backdrop-filter: blur(1px)) {
+		.dropdown-popup {
+			background-image: url(../img/noise-512x512.png) !important;
+			background-color: var(--uwp-context-background-blur) !important;
+			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
+		}
 	}
 }
 
@@ -788,19 +915,83 @@
 		padding-left: 32px !important;
 	}
 	login-list, div.meta {
-		background-color: var(--uwp-global-back) !important;
+		background-color: transparent !important;
+		border: none !important;
 	}
 	.login-list-item {
 		border-bottom: none !important;
 	}
-	.container[role="dialog"] {
-		background: var(--uwp-global-back) !important;
-		border: 1px solid #333333 !important;
-		border-radius: 0px !important;
-		color: var(--uwp-global-front) !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	}
 	.reveal-password-wrapper > input[type="text"], .reveal-password-wrapper > input[type="password"] {
 		margin-right: 12px !important;
+	}
+	input.reveal-password-checkbox {
+		fill: var(--uwp-foreground) !important;
+		background-position-x: 1px !important;
+		background-position-y: 1px !important;
+	}
+	.login-list-item {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding-left: 0!important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		min-height: var(--uwp-expander-min-height) !important;
+	}
+	.login-list-item:hover {
+		color: var(--uwp-expander-color-hover) !important;
+		border: var(--uwp-expander-border-hover) !important;
+		background-color: var(--uwp-expander-background-hover) !important;
+	}
+	.login-list-item:hover:active {
+		color: var(--uwp-expander-color-active) !important;
+		border: var(--uwp-expander-border-active) !important;
+		background-color: var(--uwp-expander-background-active) !important;
+	}
+	.login-list-item::before {
+		content: "";
+		width: 0 !important;
+		display: block !important;
+		padding: var(--uwp-nav-item-selector-height) calc(var(--uwp-nav-item-selector-width) / 2) !important;
+		background: transparent !important;
+		margin-right: var(--uwp-expander-hor-padding) !important;
+		border-radius: var(--uwp-nav-item-selector-radius);
+	}
+	header {
+		border-bottom: none !important;
+	}
+
+	@media (prefers-color-scheme: light) {
+		.login-list-item.selected::before {
+			background: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		.login-list-item.selected::before {
+			background: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+		}
+	}
+}
+
+@-moz-document url-prefix("about:debugging") {
+	:root {
+		--bg-color: var(--uwp-background) !important;
+	}
+	.card {
+		color: var(--uwp-expander-color) !important;
+		border: var(--uwp-expander-border) !important;
+		background-color: var(--uwp-expander-background) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		box-shadow: none !important;
+		padding: 16px !important;
+		min-height: 51px !important;
+		cursor: default !important;
+		margin-bottom: 3px !important;
+	}
+	.default-input {
+		line-height: normal !important;
 	}
 }

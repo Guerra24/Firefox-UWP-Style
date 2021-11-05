@@ -1,9 +1,5 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
-	.context-menu {
-		border-radius: 0px !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
-	}
 	menupopup {
 		-moz-appearance: none !important;
 		background: transparent !important;
@@ -21,23 +17,31 @@
 		padding: 0px !important;
 		border-radius: 0px !important;
 	}
-	.menupopup-arrowscrollbox, panel-list, ul[role="menu"], #PopupAutoComplete {
+	.menupopup-arrowscrollbox, panel-list, .context-menu, #PopupAutoComplete, ul[role="menu"].menu {
 		-moz-appearance: none !important;
-		padding: 5px 1px 5px 1px !important;
+		padding: var(--uwp-context-margin) !important;
 		background-color: var(--uwp-context-background) !important;
+		background-clip: padding-box !important;
 		background-image: none !important;
-		border: 1px var(--uwp-context-border) solid !important;
-		border-radius: 0px !important;
+		border: 1px solid var(--uwp-context-border) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
-	ul[role="menu"] {
-		box-shadow: none !important;
+	.scrollbox-clip * {
+		scrollbar-width: var(--uwp-context-scrollbar-width) !important;
+		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
+	}
+	.context-menu > ul {
+		padding: 0px !important;
+	}
+	.context-menu > ul > li {
+		width: calc(100% - var(--uwp-context-item-margin-width)) !important;
 	}
 	menupopup menuseparator, panel-item-separator, hr[role="separator"], .context-menu > ul > li.separator {
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;
-		margin: 4px 11px 4px 11px !important;
+		margin: var(--uwp-context-separator-margin) !important;
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
@@ -50,18 +54,21 @@
 	}
 	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option {
 		-moz-appearance: none !important;
-		color: var(--uwp-global-front) !important;
-		background-color: var(--uwp-context-background) !important;
-		padding-top: 7px !important;
-		padding-bottom: 7px !important;
+		color: var(--uwp-context-item-color) !important;
+		background-color: var(--uwp-context-item-background) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		padding-top: var(--uwp-context-item-padding-top) !important;
+		padding-bottom: var(--uwp-context-item-padding-bottom) !important;
 		border: none !important;
 		font-size: 12px !important;
+		margin: var(--uwp-context-item-margin) !important;
+	}
+	.menuitem-iconic > .menu-iconic-left {
+		padding-top: 0px !important;
 	}
 	button[role="menuitem"] {
-		background-color: transparent !important;
-		background-position-x: 12px !important;
-		padding-left: 40px !important;
-		padding-right: 34px !important;
+		background-position-x: 10px !important;
+		padding-left: 36px !important;
 	}
 	select > option {
 		padding-inline: 7px 0px 7px 9px !important;
@@ -70,15 +77,22 @@
 		color: gray !important;
 	}
 	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
-		background-color: var(--uwp-context-menuitem-hover) !important;
+		background-color: var(--uwp-context-item-background-hover) !important;
+		border: none !important;
 	}
-	menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
-		background-image: var(--uwp-context-menuitem-open-image) !important;
-		background-blend-mode: multiply;
-		background-color: var(--uwp-context-menuitem-open) !important;
+	@media (prefers-color-scheme: light) {
+		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
+			background-color: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
+			background-color: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+		}
 	}
 	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
-		background-color: var(--uwp-context-menuitem-active) !important;
+		background-color: var(--uwp-context-item-background-active) !important;
+		border: none !important;
 	}
 	menugroup {
 		padding: 0px !important;
@@ -93,21 +107,40 @@
 	.menu-accel {
 		color: gray !important;
 	}
+	#PlacesChevronPopup menuitem .menu-iconic-icon {
+		margin-left: 2px !important;
+		margin-right: 8px !important;
+	}
+	#context-navigation > .menuitem-iconic {
+		width: auto !important;
+		flex-grow: 1 !important;
+	}
+	menubar {
+		height: var(--uwp-menubar-height)!important;
+	}
 	menubar > menu {
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
-		padding-left: 5px !important;
-		padding-right: 5px !important;
-		padding-top: 5px !important;
-		padding-bottom: 5px !important;
+		margin: var(--uwp-menubar-item-margin) !important;
+		padding: var(--uwp-menubar-item-padding) !important;
 		font-size: 14px !important;
 		border: none !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		background-color: var(--uwp-menubar-item-background) !important;
+	}
+	menubar > menu > .menubar-text {
+		margin: 0px !important;
 	}
 	menubar > menu:hover {
-		background-color: var(--uwp-context-menubar-hover) !important;
+		color: var(--uwp-button-color-hover) !important;
+		background-color: var(--uwp-menubar-item-background-hover) !important;
+	}
+	menubar > menu:hover:active {
+		color: var(--uwp-button-color-active) !important;
+		background-color: var(--uwp-menubar-item-background-active) !important;
 	}
 	menubar > menu[open] {
-		background-color: var(--uwp-context-menubar-open) !important;
+		background-color: var(--uwp-menubar-item-background-selected) !important;
 	}
 	#ContentSelectDropdown > menupopup {
 		background-image: none !important;
@@ -121,19 +154,23 @@
 	menulist, menulist[disabled="true"], select {
 		-moz-appearance: none !important;
 		padding: 4px 6px 4px 6px !important;
-		border: 2px solid var(--uwp-tags-textbox-border) !important;
-		border-radius: 0px !important;
-		background: var(--uwp-tags-textbox) !important;
-		color: var(--uwp-tags-textbox-color) !important;
+		color: var(--uwp-combo-color) !important;
+		background-color: var(--uwp-combo-background) !important;
+		border: var(--uwp-combo-border) !important;
+		background-clip: padding-box !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
 		height: auto !important;
 		box-shadow: none !important;
 	}
 	menulist:hover, select:hover { /* Finish this */
-		border: 2px solid var(--uwp-tags-textbox-hover) !important;
+		color: var(--uwp-combo-color-hover) !important;
+		background-color: var(--uwp-combo-background-hover) !important;
+		border: var(--uwp-combo-border-hover) !important;
 	}
 	menulist[open="true"] {
-		border: 2px solid var(--uwp-context-menulist-open-border) !important;
-		background-color: var(--uwp-context-menulist-open) !important;
+		color: var(--uwp-combo-color-active) !important;
+		background-color: var(--uwp-combo-background-active) !important;
+		border: var(--uwp-combo-border-active) !important;
 	}
 	#label-box:not([native]) {
 		font-weight: normal !important;
@@ -157,20 +194,20 @@
 		background: transparent !important;
 	}
 	tooltip { /* Also update the js script */
+		-moz-window-shadow: cliprounded !important;
 		-moz-appearance: none !important;
 		color: var(--uwp-global-front) !important;
 		background-color: var(--uwp-context-tooltip) !important;
+		background-clip: padding-box !important;
 		border: 1px solid var(--uwp-context-tooltip-border) !important;
 		padding: 6px !important;
+		border-radius: var(--uwp-tags-control-radius) !important
 	}
 	@supports(backdrop-filter: blur(1px)) {
-		 ul[role="menu"] {
-			background-color: transparent !important;
-		}
 		panel-list, .context-menu {
 			background-image: url(../img/noise-512x512.png) !important;
 			background-color: var(--uwp-context-background-blur) !important;
-			backdrop-filter: blur(32px) !important;
+			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}
 	}
 	.arrow.top, .arrow.bottom {

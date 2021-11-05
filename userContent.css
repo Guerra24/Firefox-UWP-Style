@@ -1,5 +1,6 @@
 /*AGENT_SHEET*/
 
+/* MDL2 */
 /* Pop-ups, Context Menus, Dropdowns, etc */
 @import url(./css/context.css);
 
@@ -9,28 +10,14 @@
 /* Pages */
 @import url(./css/pagesContent.css);
 
-/* Icons */
-@import url(./css/icons.css);
-
-/* External */
-@import url(./css/external.css);
-
-/* Colors */
-/* Dark */
-@import url(./css/colors/tags-dark.css);
-@import url(./css/colors/context-dark.css);
-@import url(./css/colors/base-dark.css);
-@import url(./css/colors/pagesContent-dark.css);
-
-/* Light */
-@import url(./css/colors/tags-light.css);
-@import url(./css/colors/context-light.css);
-@import url(./css/colors/base-light.css);
-@import url(./css/colors/pagesContent-light.css);
-
-/* Custom CSS for userContent.css */
-@import url(./customContent.css);
+/* Styles */
+@import url(./css/styles/mdl2.css);
+@import url(./css/styles/sun-valley.css);
 
 * {
 	scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar);
 }
+
+/* Custom CSS for userContent.css */
+@import url(./customContent.css);
+
