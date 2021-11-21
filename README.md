@@ -8,8 +8,8 @@ Uses OS-level dark/light setting to apply the correct colors. This can cause col
 
 Select the appropriate file:
 
-- [MDL2 + Sun Valley Style Firefox 89+](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [MDL2 Style Firefox 89+ (Legacy)](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
+- [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
+- [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
