@@ -205,6 +205,9 @@
 		--uwp-expander-spacing: 3px;
 
 		--uwp-acrylic-backdrop: saturate(2) blur(32px);
+		--uwp-acrylic-noise: none;
+		--uwp-shadow-context: 0px 8px 10px 0px rgba(0, 0, 0, .14);
+		--uwp-shadow-popup: 0px 10px 20px 0px rgba(0, 0, 0, .32);
 	}
 
 	:root {

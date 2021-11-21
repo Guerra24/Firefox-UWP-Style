@@ -25,7 +25,7 @@
 		background-image: none !important;
 		border: 1px solid var(--uwp-context-border) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		box-shadow: var(--uwp-shadow-context) !important;
 	}
 	.scrollbox-clip * {
 		scrollbar-width: var(--uwp-context-scrollbar-width) !important;
@@ -205,7 +205,7 @@
 	}
 	@supports(backdrop-filter: blur(1px)) {
 		panel-list, .context-menu {
-			background-image: url(../img/noise-512x512.png) !important;
+			background-image: var(--uwp-acrylic-noise) !important;
 			background-color: var(--uwp-context-background-blur) !important;
 			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}

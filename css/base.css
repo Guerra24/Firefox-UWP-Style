@@ -285,6 +285,12 @@ findbar[hidden] {
 slot[part="content"]:only-child {
 	border: none !important;
 	background: transparent !important;
+	margin: 30px !important;
+	margin-top: 10px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+	margin-bottom: 30px !important;
+	box-shadow: var(--uwp-shadow-context) !important;
 }
 .panel-arrowbox + slot[part="content"] {
 	margin: 0px !important;
@@ -294,16 +300,6 @@ slot[part="content"]:only-child {
 }
 .panel-arrowcontent {
 	margin: 0px !important;
-}
-.panel-arrowcontainer {
-	border: none !important;
-	border-radius: var(--uwp-tags-overlay-radius) !important;
-	margin: 30px !important;
-	margin-top: 10px !important;
-	margin-left: 20px !important;
-	margin-right: 20px !important;
-	margin-bottom: 30px !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 }
 .addon-banner-item, .panel-banner-item {
 	border-radius: 0px !important;
@@ -481,7 +477,7 @@ panel .text-link {
 		border: none !important;
 		width: 100% !important;
 		background-color: transparent !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		box-shadow: var(--uwp-shadow-popup) !important;
 		clip-path: inset(0px -20px -30px -20px) !important;
 		animation: none !important;
 		margin-block-start: 0px !important;
@@ -506,7 +502,7 @@ panel .text-link {
 		background: var(--uwp-autocomplete-list) !important;
 		background-clip: padding-box !important;
 		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		box-shadow: var(--uwp-shadow-popup) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 	}
 	#urlbar-input-container, #searchbar {
@@ -615,7 +611,7 @@ panel .text-link {
 }
 @supports(backdrop-filter: blur(1px)) {
 	#urlbar[breakout][breakout-extend] #urlbar-background {
-		background-image: url(../img/noise-512x512.png) !important;
+		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
@@ -681,13 +677,13 @@ body[lwt-sidebar] {
 		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 		margin: 0px 0px 2px 2px !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+		box-shadow: var(--uwp-shadow-popup) !important;
 		clip-path: unset !important;
 	}
 }
 @supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
-		background-image: url(../img/noise-512x512.png) !important;
+		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
@@ -720,7 +716,7 @@ notification {
 	border: none !important;
 	border-radius: var(--uwp-tags-overlay-radius) !important;
 	background-color: var(--uwp-autocomplete-list) !important;
-	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
+	box-shadow: var(--uwp-shadow-popup) !important;
 }
 .pointerlockfswarning[ontop] {
 	transform: translate(-50%, 10px) !important;
@@ -729,12 +725,11 @@ notification {
 	#fullscreen-warning  {
 		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
 		margin: 0px 0px 2px 2px !important;
-		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, .32) !important;
 	}
 }
 @supports(backdrop-filter: blur(1px)) {
 	#fullscreen-warning {
-		background-image: url(../img/noise-512x512.png) !important;
+		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
