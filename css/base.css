@@ -283,14 +283,17 @@ findbar[hidden] {
 	display: none !important;
 }
 slot[part="content"]:only-child {
-	border: none !important;
-	background: transparent !important;
 	margin: 30px !important;
 	margin-top: 10px !important;
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 	margin-bottom: 30px !important;
+	border: 1px solid var(--uwp-context-border) !important;
+	border-radius: var(--uwp-tags-overlay-radius) !important;
+	background: var(--uwp-context-background) !important;
+	background-clip: padding-box !important;
 	box-shadow: var(--uwp-shadow-context) !important;
+	overflow: clip !important;
 }
 .panel-arrowbox + slot[part="content"] {
 	margin: 0px !important;
@@ -314,6 +317,10 @@ panel .text-link {
 	color: -moz-accent-color !important;
 }
 /* Various Panels */
+#PopupAutoComplete {
+	margin-top: -10px !important;
+	margin-left: -20px !important;
+}
 #appMenu-popup {
 	margin-top: -10px !important;
 	margin-right: -33px !important;

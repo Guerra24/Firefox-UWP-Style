@@ -202,8 +202,8 @@
 	:root {
 		--arrowpanel-menuitem-margin: var(--uwp-context-item-margin) !important;
 		--arrowpanel-menuitem-border-radius: var(--uwp-tags-control-radius) !important;
-		--arrowpanel-border-radius: var(--uwp-tags-overlay-radius) !important;
-		--arrowpanel-border-color: var(--uwp-context-border) !important;
+		--arrowpanel-border-radius: 0px !important;
+		--arrowpanel-border-color: transparent !important;
 		--panel-subview-body-padding: 0px !important;
 
 		--organizer-toolbar-background: var(--uwp-background) !important;

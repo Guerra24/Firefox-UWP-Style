@@ -17,7 +17,7 @@
 		padding: 0px !important;
 		border-radius: 0px !important;
 	}
-	.menupopup-arrowscrollbox, panel-list, .context-menu, #PopupAutoComplete, ul[role="menu"].menu {
+	.menupopup-arrowscrollbox, panel-list, .context-menu, ul[role="menu"].menu {
 		-moz-appearance: none !important;
 		padding: var(--uwp-context-margin) !important;
 		background-color: var(--uwp-context-background) !important;
