@@ -235,6 +235,17 @@ toolbarbutton.close-icon {
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
+#navigator-toolbox-background {
+	background: var(--uwp-browser) !important;
+}
+@supports -moz-bool-pref("privacy.resistFingerprinting.letterboxing") {
+	#navigator-toolbox {
+		margin-bottom: var(--uwp-navbar-letterbox) !important;
+	}
+	#PersonalToolbar[collapsed="false"] {
+		margin-bottom: var(--uwp-navbar-letterbox-bookmarks) !important;
+	}
+}
 @media (-moz-windows-compositor) {
 	#navigator-toolbox {
 		background: var(--uwp-mainwindow) !important;
@@ -810,11 +821,21 @@ notification {
 
 	--toolbar-field-focus-background-color: var(--uwp-button-background) !important;
 	--urlbar-box-focus-bgcolor: var(--uwp-button-background) !important;
+
+	--uwp-navbar-letterbox: 20px;
+	--uwp-navbar-letterbox-bookmarks: 0px;
+}
+:root[uidensity="compact"] {
+	--uwp-navbar-letterbox: 7px;
+	--uwp-navbar-letterbox-bookmarks: -6px;
 }
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
 	--uwp-urlbar-height: 42px !important;
 	--toolbarbutton-inner-padding: 8px !important;
+
+	--uwp-navbar-letterbox: 9px;
+	--uwp-navbar-letterbox-bookmarks: 0px;
 }
 @media (-moz-windows-compositor) {
 	/* Temporal fix for top border */
