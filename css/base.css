@@ -448,9 +448,6 @@ panel .text-link {
 #searchbar {
    box-shadow: none !important;
 }
-#PopupSearchAutoComplete {
-   --panel-background: var(--autocomplete-popup-background) !important;
-}
 .searchbar-separator {
    display: none !important;
 }
@@ -473,6 +470,12 @@ panel .text-link {
 	top: 0px !important;
 	left: 0px !important;
 	width: 100% !important;
+}
+#searchbar:focus-within {
+	outline: none !important;
+}
+#PopupSearchAutoComplete {
+	-moz-window-shadow: none !important;
 }
 @supports not -moz-bool-pref("uwp.sun-valley") {
 	#urlbar-input-container, #searchbar {
