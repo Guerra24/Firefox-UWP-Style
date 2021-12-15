@@ -107,7 +107,7 @@
 	.menu-accel {
 		color: gray !important;
 	}
-	#PlacesChevronPopup menuitem .menu-iconic-icon {
+	menupopup[placespopup="true"] menuitem .menu-iconic-icon {
 		margin-left: 2px !important;
 		margin-right: 8px !important;
 	}
