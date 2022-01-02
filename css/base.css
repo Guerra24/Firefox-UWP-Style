@@ -576,15 +576,20 @@ panel .text-link {
 	.urlbarView-row[selected] .urlbarView-row-inner {
 		padding-left: 0px !important;
 		background-color: var(--uwp-context-item-background-hover) !important;
+		position: relative !important;
 	}
 	.urlbarView-row[selected] .urlbarView-row-inner::before {
 		content: "";
 		width: 0 !important;
 		display: block !important;
+		position: absolute !important;
 		background-color: -moz-accent-color !important;
 		padding: 8px 1.5px !important;
 		border-radius: var(--uwp-nav-item-selector-radius) !important;
 		margin-right: 7px !important;
+	}
+	.urlbarView-row[selected] .urlbarView-no-wrap, .urlbarView-results[wrap] .urlbarView-row[selected] .urlbarView-url {
+		margin-left: 10px !important;
 	}
 }
 .urlbarView-body-inner {
