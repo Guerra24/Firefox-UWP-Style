@@ -635,13 +635,13 @@ panel .text-link {
 #urlbar .searchbar-engine-one-off-item {
     margin-inline-end: 2px !important;
 }
-@supports(backdrop-filter: blur(1px)) {
+/*@supports(backdrop-filter: blur(1px)) {
 	#urlbar[breakout][breakout-extend] #urlbar-background {
 		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-urlbar-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
-}
+}*/
 /* Tracking toggle */
 #appMenu-tp-toggle {
 	margin-top: 6px !important;
@@ -707,13 +707,13 @@ body[lwt-sidebar] {
 		clip-path: unset !important;
 	}
 }
-@supports(backdrop-filter: blur(1px)) {
+/*@supports(backdrop-filter: blur(1px)) {
 	#statuspanel-label {
 		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
-}
+}*/
 /* Notifications? */
 notification {
 	background-color: var(--uwp-bottom-background) !important;
@@ -753,13 +753,13 @@ notification {
 		margin: 0px 0px 2px 2px !important;
 	}
 }
-@supports(backdrop-filter: blur(1px)) {
+/*@supports(backdrop-filter: blur(1px)) {
 	#fullscreen-warning {
 		background-image: var(--uwp-acrylic-noise) !important;
 		background-color: var(--uwp-context-background-blur) !important;
 		backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 	}
-}
+}*/
 .ctrlTab-preview > .ctrlTab-preview-inner, #ctrlTab-showAll {
 	border: 2px solid transparent !important;
 	background: transparent !important;
