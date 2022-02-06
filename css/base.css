@@ -743,6 +743,7 @@ notification {
 	border-radius: var(--uwp-tags-overlay-radius) !important;
 	background-color: var(--uwp-autocomplete-list) !important;
 	box-shadow: var(--uwp-shadow-popup) !important;
+	color: var(--uwp-foreground) !important;
 }
 .pointerlockfswarning[ontop] {
 	transform: translate(-50%, 10px) !important;

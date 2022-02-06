@@ -197,6 +197,8 @@
 		--uwp-acrylic-noise: url(../img/noise-512x512.png);
 		--uwp-shadow-context: 0px 10px 20px 0px rgba(0, 0, 0, .32);
 		--uwp-shadow-popup: 0px 10px 20px 0px rgba(0, 0, 0, .32);
+		--uwp-popup-padding: 10px 20px 30px 20px;
+		--uwp-popup-margin: -12px 0px 0px -22px;
 	}
 
 	:root {

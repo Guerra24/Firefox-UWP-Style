@@ -5,12 +5,8 @@
 		background: transparent !important;
 		-moz-window-shadow: none !important;
 		border: none !important;
-		margin-left: -22px !important;
-		margin-top: -12px !important;
-		padding-top: 10px !important;
-		padding-left: 20px !important;
-		padding-right: 20px !important;
-		padding-bottom: 30px !important;
+		padding: var(--uwp-popup-padding) !important;
+		margin: var(--uwp-popup-margin) !important;
 	}
 	menupopup.in-menulist {
 		margin: 0px !important;

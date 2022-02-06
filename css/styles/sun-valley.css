@@ -208,6 +208,9 @@
 		--uwp-acrylic-noise: none;
 		--uwp-shadow-context: 0px 8px 10px 0px rgba(0, 0, 0, .14);
 		--uwp-shadow-popup: 0px 10px 20px 0px rgba(0, 0, 0, .32);
+
+		--uwp-popup-padding: 2px 10px 18px 10px;
+		--uwp-popup-margin: -4px 0px 0px -10px;
 	}
 
 	:root {
