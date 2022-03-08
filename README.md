@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 96-97](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
+- [Firefox 96-99](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
 - [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
@@ -39,7 +39,7 @@ If you want to change any rules use `customChrome.css` and `customContent.css`.
 
 All the theme vars `--uwp-*` can be overridden, Firefox vars too but only if they are not set using `!important`.
 
-### Accent Color (Only 88+)
+### Accent Color
 
 If you want to override the accent color create two new prefs, both string type set to RGB Hex values.
 
