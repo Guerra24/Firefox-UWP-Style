@@ -338,6 +338,7 @@
 		background-color: var(--uwp-radio-background) !important;
 		border: var(--uwp-radio-border) !important;
 
+		outline: none !important;
 		border-radius: 100% !important;
 		margin-right: 5px !important;
 		box-shadow: none !important;
