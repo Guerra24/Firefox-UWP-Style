@@ -92,6 +92,7 @@
 		--uwp-radio-border-padding-hover: 4px;
 		--uwp-radio-selected-padding: 1px;
 
+		--uwp-radio-transition: none;
 		--uwp-radio-color: var(--uwp-foreground);
 		--uwp-radio-background: transparent;
 		--uwp-radio-border: 2px solid var(--uwp-tags-radio-border);

@@ -95,6 +95,7 @@
 		--uwp-radio-border-padding-hover: 3px;
 		--uwp-radio-selected-padding: 1px;
 
+		--uwp-radio-transition: margin 200ms, width 200ms, height 200ms;
 		--uwp-radio-color: var(--uwp-text-fill-primary);
 		--uwp-radio-background: var(--uwp-control-alt-fill-secondary);
 		--uwp-radio-border: var(--uwp-control-strong-stroke-default-border);

@@ -374,6 +374,7 @@
 		width: var(--uwp-radio-dot-size) !important;
 		margin: var(--uwp-radio-border-padding) !important;
 		border-radius: 100% !important;
+		transition: var(--uwp-radio-transition) !important;
 	}
 	input[type="radio"]:hover::before {
 		height: var(--uwp-radio-dot-size-hover) !important;
@@ -490,21 +491,6 @@
 		color: gray !important;
 	}
 
-	scrollbar {
-		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
-		scrollbar-width: thin;
-		margin-left: -8px !important;
-		margin-top: 17px !important;
-		margin-bottom: 17px !important;
-	}
-	scrollbar:hover {
-		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
-		scrollbar-width: auto;
-		margin-left: -17px !important;;
-		margin-top: 0px !important;
-		margin-bottom: 0px !important;
-	}
-
 	.toolbarbutton-text {
 		color: inherit !important;
 	}
@@ -591,8 +577,6 @@
 		background: transparent !important;
 		border-radius: 0px !important;
 		border: none !important;
-		scrollbar-width: thin !important;
-		scrollbar-color: var(--uwp-scrollbar-thumb) transparent !important;
 	}
 	richlistitem:not(.category), .options-container .option {
 		color: var(--uwp-expander-color) !important;
