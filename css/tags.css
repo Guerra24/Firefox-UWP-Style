@@ -23,7 +23,7 @@
 		-moz-appearance: none !important;
 		padding: 5px 11px 6px 11px !important;
 		cursor: default !important;
-		transition: none !important;
+		transition: var(--uwp-button-transition) !important;
 		opacity: 1 !important;
 		box-shadow: none !important;
 		font-weight: normal !important;
@@ -35,7 +35,7 @@
 		border: var(--uwp-button-border-hover) !important;
 	}
 	button:hover:active, .urlbarView-tip-button:hover:active,
-	.findbar-find-previous:hover:activ, .findbar-find-next:hover:active {
+	.findbar-find-previous:hover:active, .findbar-find-next:hover:active {
 		color: var(--uwp-button-color-active) !important;
 		background-color: var(--uwp-button-background-active) !important;
 		border: var(--uwp-button-border-active) !important;
@@ -644,9 +644,6 @@
 	richlistbox .actionsMenuContainer[hidden="true"] {
 		display: none !important;
 	}
-	.downloadButton:hover > .button-box > .button-icon {
-		fill: -moz-accent-color !important;
-	}
 	progressmeter, progress {
 		-moz-appearance: none !important;
 		border: none !important;
@@ -674,6 +671,10 @@
 	}
 	#downloadsListBox > richlistitem {
 		margin-bottom: 0px !important;
+	}
+	#downloadsListBox .downloadButton:not(:hover, :hover:active) {
+		border-color: transparent !important;
+		background-color: transparent !important;
 	}
 	
 	/* Message-bar */

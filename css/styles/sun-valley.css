@@ -18,6 +18,7 @@
 		--uwp-background: var(--uwp-background-fill-base);
 		--uwp-foreground: var(--uwp-text-fill-primary);
 
+		--uwp-button-transition: background-color 83ms;
 		--uwp-button-color: var(--uwp-text-fill-primary);
 		--uwp-button-background: var(--uwp-control-fill-default);
 		--uwp-button-border: var(--uwp-control-elevation-border);

@@ -102,6 +102,11 @@
 
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
 
+	.downloadButton {
+		margin: 16px 0px !important;
+		border-color: transparent !important;
+		background-color: transparent !important;
+	}
 	.downloadButton > .button-box {
 		padding: 0px !important;
 		background: transparent !important;
