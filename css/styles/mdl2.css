@@ -18,7 +18,7 @@
 		--uwp-background: var(--uwp-global-back);
 		--uwp-foreground: var(--uwp-global-front);
 
-		--uwp-button-transition: nones;
+		--uwp-button-transition: none;
 		--uwp-button-color: var(--uwp-foreground);
 		--uwp-button-background: var(--uwp-tags-button);
 		--uwp-button-border: 2px solid var(--uwp-tags-button);

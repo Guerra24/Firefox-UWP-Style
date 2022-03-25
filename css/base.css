@@ -294,11 +294,7 @@ findbar[hidden] {
 	display: none !important;
 }
 slot[part="content"]:only-child {
-	margin: 30px !important;
-	margin-top: 10px !important;
-	margin-left: 20px !important;
-	margin-right: 20px !important;
-	margin-bottom: 30px !important;
+	margin: var(--uwp-popup-padding) !important;
 	border: 1px solid var(--uwp-context-border) !important;
 	border-radius: var(--uwp-tags-overlay-radius) !important;
 	background: var(--uwp-context-background) !important;
@@ -329,24 +325,20 @@ panel .text-link {
 }
 /* Various Panels */
 #PopupAutoComplete {
-	margin-top: -10px !important;
-	margin-left: -20px !important;
+	margin: var(--uwp-popup-margin) !important;
 }
-#appMenu-popup {
-	margin-top: -10px !important;
-	margin-right: -33px !important;
+panel[position*="bottomcenter"] {
+	margin-top: -2px !important;
 }
-#identity-popup, #permission-popup, #protections-popup {
-	margin-top: -9px !important;
-	margin-left: -31px !important;
+panel[position*="topleft"]:not([position~="bottomleft"]) {
+	margin-left: -22px !important;
 }
-#pageActionPanel {
-	margin-top: -5px !important;
-	margin-right: -30px !important;
+panel[position*="topright"] {
+	margin-right: -25px !important;
 }
-#editBookmarkPanel {
-	margin-top: -9px !important;
-	margin-right: -32px !important;
+panel[position*="bottomleft"] {
+	margin-left: -11px !important;
+	margin-bottom: -18px !important;
 }
 #editBookmarkPanelFavicon {
 	display: none !important;
@@ -363,30 +355,6 @@ panel .text-link {
 }
 #editBookmarkPanel .panel-header {
 	border-bottom: none !important;
-}
-#notification-popup {
-	margin-top: -5px !important;
-	margin-left: -32px !important;
-}
-#widget-overflow, #downloadsPanel {
-	margin-top: -10px !important;
-	margin-right: -34px !important;
-}
-#appMenu-notification-popup {
-	margin-top: -10px !important;
-	margin-right: -33px !important;
-}
-.whatsNew-message-body {
-	background: transparent !important;
-	border: none !important;
-}
-#customizationui-widget-panel {
-	margin-right: -34px !important;
-	margin-top: -10px !important;
-}
-#customization-uidensity-menu {
-	margin-bottom: -30px !important;
-	margin-left: -20px !important;
 }
 #customization-uidensity-button {
 	width: 200px !important;
@@ -427,6 +395,10 @@ panel .text-link {
 }
 .identity-popup-security-connection:not(.identity-button) .identity-popup-connection-secure {
 	margin-left: 38px !important;
+}
+.whatsNew-message-body {
+	background: transparent !important;
+	border: none !important;
 }
 #DateTimePickerPanel {
     --arrowpanel-background: var(--uwp-context-background) !important;
@@ -807,6 +779,13 @@ notification {
 #urlbar-zoom-button {
 	background: transparent !important;
 }
+
+.panel-banner-item {
+	margin: var(--arrowpanel-menuitem-margin) !important;
+	padding: var(--arrowpanel-menuitem-padding) !important;
+	border-radius: var(--arrowpanel-menuitem-border-radius) !important;
+}
+
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
