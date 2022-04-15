@@ -35,11 +35,13 @@ Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in som
 
 ### Mica (WIP)
 
-Requires [MicaForEveryone](https://github.com/minusium/MicaForEveryone/) and only works with *Sun Valley* style
+Requires [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) and only works with *Sun Valley* style
 
 In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one and titlebar to *System*.
 
 Create boolean `uwp.sun-valley.mica` pref to enable.
+
+On Nightly disable `gfx.webrender.dcomp-win.enabled` since it causes rendering issues.
 
 ### Custom CSS
 

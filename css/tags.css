@@ -478,14 +478,27 @@
 		border-radius: 50% !important;
 	}
 
-	a, label[href] {
-		color: -moz-accent-color !important;
+	@media (prefers-color-scheme: light) {
+		a, label[href] {
+			color: color-mix(in srgb, -moz-accent-color 80%, black) !important;
+		}
+		a:hover, label[href]:hover {
+			color: color-mix(in srgb, -moz-accent-color 65%, black) !important;
+		}
+		a:hover:active, label[href]:hover:active {
+			color: color-mix(in srgb, -moz-accent-color 50%, black) !important;
+		}
 	}
-	a:hover, label[href]:hover {
-		color: #999999 !important;
-	}
-	a:hover:active, label[href]:hover:active {
-		color: #666666 !important;
+	@media (prefers-color-scheme: dark) {
+		a, label[href] {
+			color: color-mix(in srgb, -moz-accent-color 80%, white) !important;
+		}
+		a:hover, label[href]:hover {
+			color: color-mix(in srgb, -moz-accent-color 65%, white) !important;
+		}
+		a:hover:active, label[href]:hover:active {
+			color: color-mix(in srgb, -moz-accent-color 50%, white) !important;
+		}
 	}
 	a:visited, label[href]:visited {
 		color: gray !important;

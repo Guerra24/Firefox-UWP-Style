@@ -9,18 +9,21 @@
 		padding: 0px !important;
 	}
 	@supports -moz-bool-pref("uwp.sun-valley.mica") {
-		/*dialog:not([inbrowserwindow="true"]), window:not([type="child"]) {
+		window:not([type="child"]) {
 			appearance: -moz-win-glass !important;
 			background: transparent !important;
-		}*/
-		#places {
+		}
+		wizard {
+			background: transparent !important;
+		}
+		/*#places {
 			appearance: -moz-win-glass !important;
 			background: transparent !important;
 		}
 		#placesView {
 			background: var(--uwp-background) !important;
 			appearance: -moz-win-exclude-glass !important;
-		}
+		}*/
 	}
 	#window-modal-dialog {
 		margin-top: auto !important;
@@ -186,11 +189,16 @@
 
 @-moz-document url("chrome://browser/content/aboutDialog.xhtml") {
 	#aboutDialogContainer {
-		background-color: transparent !important;
+		background: transparent !important;
+	}
+	#clientBox {
+		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
+		background-color: var(--uwp-layer-fill-alt) !important;
+		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 	}
 	#bottomBox {
-		background-color: var(--uwp-bottom-background) !important;
+		background-color: transparent !important;
 	}
 	#rightBox {
 		-moz-context-properties: fill !important;
@@ -199,8 +207,27 @@
 	.button-text {
 		color: var(--uwp-global-front) !important;
 	}
-	.text-link {
-		color: -moz-accent-color !important;
+	@media (prefers-color-scheme: light) {
+		.text-link {
+			color: color-mix(in srgb, -moz-accent-color 80%, black) !important;
+		}
+		.text-link:hover {
+			color: color-mix(in srgb, -moz-accent-color 65%, black) !important;
+		}
+		.text-link:hover:active {
+			color: color-mix(in srgb, -moz-accent-color 50%, black) !important;
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		.text-link {
+			color: color-mix(in srgb, -moz-accent-color 80%, white) !important;
+		}
+		.text-link:hover {
+			color: color-mix(in srgb, -moz-accent-color 65%, white) !important;
+		}
+		.text-link:hover:active {
+			color: color-mix(in srgb, -moz-accent-color 50%, white) !important;
+		}
 	}
 }
 
