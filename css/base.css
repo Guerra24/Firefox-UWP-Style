@@ -648,9 +648,14 @@ panel[position*="bottomleft"] {
 	fill: -moz-accent-color !important;
 }
 /* Sidebar */
+#sidebar-box {
+	background-color: transparent !important;
+}
+body[lwt-sidebar] {
+	background-color: transparent !important;
+}
 #sidebar-header {
-	background: var(--uwp-sidebar) !important;
-	color: var(--uwp-global-front) !important;
+	background: transparent !important;
 	border-bottom: none !important;
 }
 #sidebar-switcher-target:hover {
@@ -663,20 +668,15 @@ panel[position*="bottomleft"] {
 	fill: var(--uwp-global-front) !important;
 }
 #sidebar-search-container {
-	background: var(--uwp-sidebar) !important;
+	/*! background: var(--uwp-sidebar) !important; */
 }
 #sidebar-splitter {
 	border: none !important;
 }
-#sidebar-box {
-	background-color: var(--uwp-sidebar-box) !important;
-}
-body[lwt-sidebar] {
-	background-color: var(--uwp-global-back) !important;
-}
 /* Status Panel */
 #statuspanel-label {
 	background-color: var(--uwp-statuspanel) !important;
+	background-clip: padding-box !important;
 	color: var(--uwp-global-front) !important;
 	border: none !important;
 	padding: 4px !important;
