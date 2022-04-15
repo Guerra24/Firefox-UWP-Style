@@ -8,6 +8,20 @@
 		color: var(--uwp-foreground) !important;
 		padding: 0px !important;
 	}
+	@supports -moz-bool-pref("uwp.sun-valley.mica") {
+		/*dialog:not([inbrowserwindow="true"]), window:not([type="child"]) {
+			appearance: -moz-win-glass !important;
+			background: transparent !important;
+		}*/
+		#places {
+			appearance: -moz-win-glass !important;
+			background: transparent !important;
+		}
+		#placesView {
+			background: var(--uwp-background) !important;
+			appearance: -moz-win-exclude-glass !important;
+		}
+	}
 	#window-modal-dialog {
 		margin-top: auto !important;
 		background: transparent !important;;
@@ -115,6 +129,7 @@
 	#placesToolbar {
 		padding: 0px !important;
 		border: none !important;
+		background: transparent !important;
 	}
 	#placesToolbox {
 		appearance: none !important;

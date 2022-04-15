@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 96-99](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
+- [Firefox 96-100](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
 - [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
@@ -27,11 +27,19 @@ Enabled by default.
 
 The 2021 Fluent Design refresh. Features heavy use of rounded corners and smoother colors.
 
-Create boolean `uwp.sun-valley`=`true` pref to enable.
+Create boolean `uwp.sun-valley` pref to enable.
 
 ## Customize
 
 Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in some menus.
+
+### Mica (WIP)
+
+Requires [MicaForEveryone](https://github.com/minusium/MicaForEveryone/) and only works with *Sun Valley* style
+
+In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one and titlebar to *System*.
+
+Create boolean `uwp.sun-valley.mica` pref to enable.
 
 ### Custom CSS
 

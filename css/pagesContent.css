@@ -622,8 +622,13 @@
 		background-color: transparent !important;
 	}
 	.navigation {
-		background-color: var(--uwp-pages-sidepanel) !important;
+		background-color: transparent !important;
 		overflow-y: hidden !important;
+	}
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		.navigation {
+			background-color: var(--uwp-pages-sidepanel) !important;
+		}
 	}
 	.searchBarImage {
 		-moz-context-properties: fill, stroke;
@@ -652,23 +657,52 @@
 		padding: 0px !important;
 		background-color: var(--uwp-background) !important;
 	}
+	.downloadButton {
+		margin: 16px 0px !important;
+		border-color: transparent !important;
+		background-color: transparent !important;
+	}
+	.downloadButton > .button-box {
+		padding: 0px !important;
+		background: transparent !important;
+	}
+	#downloadsListBox > richlistitem {
+		height: 72px !important;
+	}
 }
 
 @-moz-document url("about:addons") {
 	.theme-enable-button {
 		height: unset !important;
 	}
+	html {
+		height: 100% !important;
+	}
+	body {
+		height: 100% !important;
+	}
+	#full {
+		height: 100% !important;
+	}
 	#content {
-		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
+		border-top-left-radius: var(--uwp-tags-overlay-radius);
 		background-color: var(--uwp-nav-content-background) !important;
+		border: var(--uwp-nav-content-border) !important;
+		border-right-width: 0px !important;
+		border-bottom-width: 0px !important;
+		overflow: scroll !important;
 	}
 	.sticky-container, .main-heading, .main-search {
 		background-color: var(--uwp-sticky-container-hack) !important;
 	}
 	#sidebar {
-		background-color: var(--uwp-pages-sidepanel) !important;
+		background-color: transparent !important;
 	}
-
+	@supports not -moz-bool-pref("uwp.sun-valley") {
+		#sidebar {
+			background-color: var(--uwp-pages-sidepanel) !important;
+		}
+	}
 	button.button-link {
 		background: transparent !important;
 		border: none !important;

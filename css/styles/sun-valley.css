@@ -213,6 +213,8 @@
 
 		--uwp-popup-padding: 2px 10px 18px 10px;
 		--uwp-popup-margin: -4px 0px 0px -10px;
+
+		--uwp-bottom-background: var(--uwp-control-fill-secondary);
 	}
 
 	:root {
@@ -247,6 +249,12 @@
 		--organizer-selected-background: transparent !important;
 		
 		--urlbarView-item-inline-padding: 10px !important;
+	}
+
+	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") and -moz-bool-pref("uwp.sun-valley.mica") {
+		:root {
+			--toolbar-bgcolor: transparent !important;
+		}
 	}
 
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {

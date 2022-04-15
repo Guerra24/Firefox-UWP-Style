@@ -229,14 +229,11 @@ toolbarbutton.close-icon {
 #nav-bar {
 	box-shadow: none !important;
 }
-#content-deck, #browser {
-	/*-moz-appearance: -moz-win-exclude-glass !important;*/
-}
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
-#navigator-toolbox-background {
-	background: var(--uwp-browser) !important;
+#navigator-toolbox {
+	background: transparent !important;
 }
 @supports -moz-bool-pref("privacy.resistFingerprinting.letterboxing") {
 	#navigator-toolbox {
@@ -247,21 +244,24 @@ toolbarbutton.close-icon {
 	}
 }
 @media (-moz-windows-compositor) {
-	#navigator-toolbox {
-		background: var(--uwp-mainwindow) !important;
-	}
 	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
-		#navigator-toolbox {
-			background: var(--uwp-background) !important;
+		@supports not -moz-bool-pref("uwp.sun-valley.mica") {
+			#navigator-toolbox-background {
+				background: var(--uwp-background) !important;
+			}
 		}
 	}
-}
-:root:not([tabsintitlebar]) #navigator-toolbox {
-	background: var(--uwp-mainwindow) !important;
 }
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
 	background: var(--uwp-browser) !important;
 }
+/*
+@supports -moz-bool-pref("uwp.sun-valley.mica") {
+	#browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
+		background: transparent !important;
+	}
+}
+*/
 #tracking-protection-icon-container, #identity-box {
 	border: none !important;
 }
@@ -829,6 +829,31 @@ notification {
 	/* Temporal fix for top border */
 	:root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive {
 		border-top-color: #2B2B2B !important;
+	}
+}
+
+@supports -moz-bool-pref("uwp.sun-valley.mica") {
+	#main-window {
+		appearance: -moz-win-glass !important;
+		background: transparent !important;
+	}
+	#appcontent {
+		appearance: -moz-win-exclude-glass !important;
+	}
+	.titlebar-button {
+		width: auto !important;
+		height: auto !important;
+		opacity: 0 !important;
+	}
+	.titlebar-button:is(:hover,:active) {
+		opacity: 1 !important;
+	}
+	.titlebar-min {
+		padding: 8px 16px !important;
+		padding-bottom: 7px !important;
+	}
+	:root[sizemode="maximized"] .titlebar-close {
+		padding-right: 19px !important;
 	}
 }
 
