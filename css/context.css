@@ -7,6 +7,7 @@
 		border: none !important;
 		padding: var(--uwp-popup-padding) !important;
 		margin: var(--uwp-popup-margin) !important;
+		border-radius: 0px !important;
 	}
 	menupopup.in-menulist {
 		margin: 0px !important;

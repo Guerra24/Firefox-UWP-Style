@@ -52,7 +52,7 @@
 	}
 	.dialogBox {
 		margin-top: 0px !important;
-		background-color: var(--uwp-background-fill-base) !important;
+		background-color: var(--uwp-dialog-background) !important;
 		background-clip: padding-box !important;
 		color: var(--uwp-global-front) !important;
 		box-shadow: var(--uwp-shadow-popup) !important;
