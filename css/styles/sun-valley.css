@@ -73,6 +73,18 @@
 		--uwp-checkbox-background-checked-disabled: var(--uwp-accent-fill-disabled);
 		--uwp-checkbox-border-checked-disabled: 1px solid var(--uwp-control-strong-stroke-disabled);
 
+		--uwp-togglesw-color: var(--uwp-text-fill-secondary);
+		--uwp-togglesw-background: var(--uwp-control-alt-fill-secondary);
+		--uwp-togglesw-border: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-togglesw-color-hover: var(--uwp-text-fill-secondary);
+		--uwp-togglesw-background-hover: var(--uwp-control-alt-fill-tertiary);
+		--uwp-togglesw-border-hover: var(--uwp-control-strong-stroke-default-border);
+
+		--uwp-togglesw-color-active: var(--uwp-text-fill-secondary);
+		--uwp-togglesw-background-active: var(--uwp-control-alt-fill-quarternary);
+		--uwp-togglesw-border-active: var(--uwp-control-strong-stroke-default-border);
+
 		--uwp-combo-color: var(--uwp-text-fill-primary);
 		--uwp-combo-background: var(--uwp-control-fill-default);
 		--uwp-combo-border: var(--uwp-control-elevation-border);

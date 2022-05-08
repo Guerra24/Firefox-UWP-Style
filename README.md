@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 96-100](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
+- [Firefox 96-101](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
 - [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.

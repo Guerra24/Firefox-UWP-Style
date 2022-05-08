@@ -70,6 +70,18 @@
 		--uwp-checkbox-background-checked-disabled: transparent;
 		--uwp-checkbox-border-checked-disabled: 2px solid var(--uwp-tags-checkbox-disabled);
 
+		--uwp-togglesw-color: var(--uwp-foreground);
+		--uwp-togglesw-background: transparent;
+		--uwp-togglesw-border: var(--uwp-checkbox-border);
+
+		--uwp-togglesw-color-hover: var(--uwp-foreground);
+		--uwp-togglesw-background-hover: var(--uwp-checkbox-background-hover);
+		--uwp-togglesw-border-hover: var(--uwp-checkbox-border-hover);
+
+		--uwp-togglesw-color-active: var(--uwp-foregroundy);
+		--uwp-togglesw-background-active: var(--uwp-checkbox-background-active);
+		--uwp-togglesw-border-active: var(--uwp-checkbox-border-active);
+
 		--uwp-combo-color: var(--uwp-foreground);
 		--uwp-combo-background: transparent;
 		--uwp-combo-border: 2px solid var(--uwp-tags-textbox-border);
