@@ -23,6 +23,7 @@
 		border: 1px solid var(--uwp-context-border) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 		box-shadow: var(--uwp-shadow-context) !important;
+		margin: 0px !important;
 	}
 	.scrollbox-clip * {
 		scrollbar-width: var(--uwp-context-scrollbar-width) !important;
@@ -200,13 +201,13 @@
 		padding: 6px !important;
 		border-radius: var(--uwp-tags-control-radius) !important
 	}
-	/*@supports(backdrop-filter: blur(1px)) {
+	@supports(backdrop-filter: blur(1px)) {
 		panel-list, .context-menu {
 			background-image: var(--uwp-acrylic-noise) !important;
 			background-color: var(--uwp-context-background-blur) !important;
 			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}
-	}*/
+	}
 	.arrow.top, .arrow.bottom {
 		display: none !important;
 	}

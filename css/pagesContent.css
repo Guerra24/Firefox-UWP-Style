@@ -86,7 +86,7 @@
 		.dialogBox {
 			border: 1px solid -moz-accent-color !important;
 		}
-		/*@supports(backdrop-filter: blur(1px)) {
+		@supports(backdrop-filter: blur(1px)) {
 			body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
 				background: transparent !important;
 			}
@@ -95,7 +95,7 @@
 				background-color: var(--uwp-dialog-background-blur) !important;
 				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 			}
-		}*/
+		}
 	}
 	.groupbox-title {
 		background: transparent !important;
@@ -465,13 +465,13 @@
 		}
 	}
 	@supports -moz-bool-pref("uwp.sun-valley") {
-		/*@supports(backdrop-filter: blur(1px)) {
+		@supports(backdrop-filter: blur(1px)) {
 			.customize-menu.customize-animate-enter-done, .customize-menu.customize-animate-enter-active, .customize-menu.customize-animate-enter, .customize-menu.customize-animate-exit {
 				background-image: var(--uwp-acrylic-noise) !important;
 				background-color: var(--uwp-context-background-blur) !important;
 				backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 			}
-		}*/
+		}
 	}
 }
 
@@ -485,13 +485,13 @@
 		border: none !important;
 		box-shadow: var(--uwp-shadow-popup) !important;
 	}
-	/*@supports(backdrop-filter: blur(1px)) {
+	@supports(backdrop-filter: blur(1px)) {
 		body:not(.inline-onboarding) .fixed-search .search-wrapper {
 			background-image: var(--uwp-acrylic-noise) !important;
 			background-color: var(--uwp-context-background-blur) !important;
 			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}
-	}*/
+	}
 	.search-handoff-button .fake-textbox {
 		margin-left: 48px !important;
 	}
@@ -923,13 +923,13 @@
 	.font-type-buttons > button > .description {
 		color: #BEBEBE !important;
 	}
-	/*@supports(backdrop-filter: blur(1px)) {
+	@supports(backdrop-filter: blur(1px)) {
 		.dropdown-popup {
 			background-image: var(--uwp-acrylic-noise) !important;
 			background-color: var(--uwp-context-background-blur) !important;
 			backdrop-filter: var(--uwp-acrylic-backdrop) !important;
 		}
-	}*/
+	}
 }
 
 @-moz-document url-prefix("about:tabcrashed") {
