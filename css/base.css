@@ -55,7 +55,7 @@
 	}
 }
 @media not (-moz-windows-accent-color-in-titlebar) {
-	#navigator-toolbox {
+	#main-window[sizemode="normal"] #navigator-toolbox {
 		border-top: 1px solid transparent !important;
 	}
 }
