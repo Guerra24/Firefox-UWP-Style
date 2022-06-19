@@ -595,6 +595,7 @@
 		fill: var(--uwp-foreground) !important;
 		color: var(--uwp-foreground) !important;
 		padding: 4px !important;
+		box-shadow: none !important;
 	}
 	treecol[hideheader="true"] {
 		padding: 0px !important;

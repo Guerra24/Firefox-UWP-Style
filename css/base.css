@@ -54,6 +54,11 @@
 		background-color: var(--uwp-mainwindow) !important;
 	}
 }
+@media not (-moz-windows-accent-color-in-titlebar) {
+	#navigator-toolbox {
+		border-top: 1px solid transparent !important;
+	}
+}
 :root:not([tabsintitlebar]) #main-window {
 	background-color: var(--uwp-mainwindow) !important;
 }
