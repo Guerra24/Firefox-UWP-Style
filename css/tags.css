@@ -3,13 +3,13 @@
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 
 	:root {
-		--urlbar-popup-url-color: -moz-accent-color !important;
+		--urlbar-popup-url-color: AccentColor !important;
 		scrollbar-color: var(--uwp-scrollbar-thumb) var(--uwp-scrollbar) !important;
 	}
 
 	::selection {
-		color: -moz-accent-color-foreground !important;
-		background-color: -moz-accent-color !important;
+		color: AccentColorText !important;
+		background-color: AccentColor !important;
 	}
 
 	/* Button */
@@ -48,16 +48,16 @@
 		border: var(--uwp-button-border-disabled) !important;
 	}
 	button[dlgtype="accept"] {
-		color: -moz-accent-color-foreground !important;
-		background-color: color-mix(in srgb, -moz-accent-color 90%, #808080) !important;
+		color: AccentColorText !important;
+		background-color: color-mix(in srgb, AccentColor 90%, #808080) !important;
 	}
 	button[dlgtype="accept"]:hover {
-		color: -moz-accent-color-foreground !important;
-		background-color: color-mix(in srgb, -moz-accent-color 70%, #808080) !important;
+		color: AccentColorText !important;
+		background-color: color-mix(in srgb, AccentColor 70%, #808080) !important;
 	}
 	button[dlgtype="accept"]:hover:active {
-		color: -moz-accent-color-foreground !important;
-		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		color: AccentColorText !important;
+		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 		border-color: transparent !important;
 	}
 	button:-moz-focusring {
@@ -68,13 +68,13 @@
 		box-shadow: 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white, 0px 0px 0px 3px white !important;*/
 	}
 	.toggle-group-input:enabled:checked + .toggle-group-label {
-		background-color: -moz-accent-color !important;
-		border-color: -moz-accent-color !important;
-		color: -moz-accent-color-foreground !important;
+		background-color: AccentColor !important;
+		border-color: AccentColor !important;
+		color: AccentColorText !important;
 	}
 	.toggle-group-input:enabled:checked + .toggle-group-label:hover {
-		/* linear-gradient(-moz-accent-color, -moz-accent-color)*/
-		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		/* linear-gradient(AccentColor, AccentColor)*/
+		background-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 		border: var(--uwp-button-border-hover) !important;
 	}
 	.toggle-group > .toggle-group-label {
@@ -111,7 +111,7 @@
 	}
 	button[role="tab"][aria-selected="true"] {
 		color: var(--uwp-tags-pivot-selected) !important;
-		border-bottom: 2px solid -moz-accent-color !important;
+		border-bottom: 2px solid AccentColor !important;
 		padding-bottom: 8px !important;
 		border-radius: 0px !important;
 	}
@@ -210,7 +210,7 @@
 		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
 		-moz-context-properties: fill !important;
-		fill: -moz-accent-color-foreground !important;
+		fill: AccentColorText !important;
 		-moz-appearance: none !important;
 		width: 20px !important;
 		height: 20px !important;
@@ -226,17 +226,17 @@
 		border: var(--uwp-checkbox-border-active) !important;
 	}
 	input[type="checkbox"]:checked, checkbox[checked="true"] > .checkbox-check {
-		background: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		background: color-mix(in srgb, AccentColor 60%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 	}
 	input[type="checkbox"]:checked:hover, checkbox[checked="true"]:hover > .checkbox-check {
-		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 	}
 	input[type="checkbox"]:checked:active, checkbox[checked="true"]:hover:active > .checkbox-check {
-		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
-		fill: color-mix(in srgb, -moz-accent-color-foreground 60%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
+		fill: color-mix(in srgb, AccentColorText 60%, #808080) !important;
 	}
 	checkbox[checked="true"] > .checkbox-check , input[type="checkbox"]:checked {
 		background-image: url("chrome://global/skin/icons/check.svg") !important;
@@ -294,16 +294,16 @@
 		border: var(--uwp-togglesw-border-active) !important;
 	}
 	input[type="checkbox"].toggle-button:checked, input[type="checkbox"]:checked + .slider, .protections-popup-tp-switch[enabled] {
-		background: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		background: color-mix(in srgb, AccentColor 60%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 	}
 	input[type="checkbox"].toggle-button:checked:hover, input[type="checkbox"]:checked:hover + .slider, .protections-popup-tp-switch[enabled]:hover {
-		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 	}
 	input[type="checkbox"].toggle-button:checked:active, input[type="checkbox"]:checked:active + .slider, .protections-popup-tp-switch[enabled]:active {
-		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 	}
 	input[type="checkbox"].toggle-button::before, input + .slider::before, .protections-popup-tp-switch::before {
 	    background: var(--uwp-togglesw-color) !important;
@@ -321,14 +321,14 @@
 		background: var(--uwp-togglesw-color-hover) !important;
 	}
 	input[type="checkbox"].toggle-button:checked::before, input:checked + .slider::before, .protections-popup-tp-switch[enabled]::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 		transform: translateX(17px) translateY(-6px) !important;
 	}
 	.protections-popup-tp-switch[enabled]::before {
 		transform: translateX(23px) !important;
 	}
 	input[type="checkbox"].toggle-button:checked:hover::before, input:hover:checked + .slider::before, .protections-popup-tp-switch[enabled]:hover::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 	}
 	.slider::before {
 		bottom: 0px !important;
@@ -390,16 +390,16 @@
 		border: var(--uwp-radio-border-active) !important;
 	}
 	input[type="radio"]:checked {
-		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 	}
 	input[type="radio"]:checked:hover {
-		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 	}
 	input[type="radio"]:checked:hover:active {
-		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 	}
 	input[type="radio"]::before {
 		display: block !important;
@@ -417,16 +417,16 @@
 		margin: var(--uwp-radio-border-padding-hover) !important;
 	}
 	input[type="radio"]:hover:active::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 	}
 	input[type="radio"]:checked::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 	}
 	input[type="radio"]:checked:hover::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 	}
 	input[type="radio"]:checked:hover:active::before {
-		background: -moz-accent-color-foreground !important;
+		background: AccentColorText !important;
 	}
 	input[type="radio"] + span {
 		position: relative !important;
@@ -459,21 +459,21 @@
 	}
 	radio[selected="true"] > .radio-check {
 		padding: var(--uwp-radio-selected-padding) !important;
-		fill: -moz-accent-color-foreground !important;
+		fill: AccentColorText !important;
 		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
 		background-clip: border-box !important;
-		background-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 60%, #808080) !important;
+		background-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 	}
 	radio[selected="true"]:hover > .radio-check {
-		fill: -moz-accent-color-foreground !important;
-		background-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 50%, #808080) !important;
+		fill: AccentColorText !important;
+		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 	}
 	radio[selected="true"]:hover:active > .radio-check {
-		fill: -moz-accent-color-foreground !important;
-		background-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
-		border-color: color-mix(in srgb, -moz-accent-color 40%, #808080) !important;
+		fill: AccentColorText !important;
+		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
+		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 	}
 	/* Radio Button Disabled */
 	radio[disabled="true"] > .radio-label-box {
@@ -502,11 +502,11 @@
 		background: var(--uwp-tags-slider-hover) !important;
 	}
 	input[type="range"]::-moz-range-progress {
-		background: -moz-accent-color !important;
+		background: AccentColor !important;
 		height: 2px !important;
 	}
 	input[type="range"]::-moz-range-thumb {
-		background: -moz-accent-color !important;
+		background: AccentColor !important;
 		border: none !important;
 		width: 20px !important;
 		height: 20px !important;
@@ -515,24 +515,24 @@
 
 	@media (prefers-color-scheme: light) {
 		a, label[href] {
-			color: color-mix(in srgb, -moz-accent-color 80%, black) !important;
+			color: color-mix(in srgb, AccentColor 80%, black) !important;
 		}
 		a:hover, label[href]:hover {
-			color: color-mix(in srgb, -moz-accent-color 65%, black) !important;
+			color: color-mix(in srgb, AccentColor 65%, black) !important;
 		}
 		a:hover:active, label[href]:hover:active {
-			color: color-mix(in srgb, -moz-accent-color 50%, black) !important;
+			color: color-mix(in srgb, AccentColor 50%, black) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
 		a, label[href] {
-			color: color-mix(in srgb, -moz-accent-color 80%, white) !important;
+			color: color-mix(in srgb, AccentColor 80%, white) !important;
 		}
 		a:hover, label[href]:hover {
-			color: color-mix(in srgb, -moz-accent-color 65%, white) !important;
+			color: color-mix(in srgb, AccentColor 65%, white) !important;
 		}
 		a:hover:active, label[href]:hover:active {
-			color: color-mix(in srgb, -moz-accent-color 50%, white) !important;
+			color: color-mix(in srgb, AccentColor 50%, white) !important;
 		}
 	}
 	a:visited, label[href]:visited {
@@ -686,7 +686,7 @@
 		border-radius: 0px !important;
 	}
 	progressmeter > .progress-bar, progress::-moz-progress-bar {
-		background-color: -moz-accent-color !important;
+		background-color: AccentColor !important;
 		margin: var(--uwp-progress-bar-margin) !important;
 		border-radius: var(--uwp-progress-bar-radius) !important;
 		height: var(--uwp-progress-bar-fill-height) !important;
@@ -736,10 +736,10 @@
 	}
 
 	.external {
-		color: -moz-accent-color !important;
+		color: AccentColor !important;
 	}
 	.external::after {
-		fill: -moz-accent-color !important;
+		fill: AccentColor !important;
 	}
 
 	@keyframes fadeInScale {

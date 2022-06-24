@@ -78,8 +78,8 @@
 	--tab-line-color: rgb(128, 128, 128) !important;
 }
 #tabbrowser-tabs {
-	--tab-line-color: -moz-accent-color !important;
-	--tab-loading-fill: -moz-accent-color !important;
+	--tab-line-color: AccentColor !important;
+	--tab-loading-fill: AccentColor !important;
 }
 .tabbrowser-tab {
 	padding: 0px !important;
@@ -153,7 +153,7 @@
 		margin-top: 0px !important;
 	}
 	.tabbrowser-tab:not([class*="identity-color"]) .tab-context-line {
-		background: -moz-accent-color !important;
+		background: AccentColor !important;
 	}
 	.tabbrowser-tab .tab-context-line:-moz-window-inactive {
 		background: rgb(128, 128, 128) !important;
@@ -345,7 +345,7 @@ findbar[hidden] {
 	margin: 0px !important;
 }
 panel .text-link {
-	color: -moz-accent-color !important;
+	color: AccentColor !important;
 }
 /* Various Panels */
 #PopupAutoComplete {
@@ -579,7 +579,7 @@ panel[position*="bottomleft"] {
 		width: 0 !important;
 		display: block !important;
 		position: absolute !important;
-		background-color: -moz-accent-color !important;
+		background-color: AccentColor !important;
 		padding: 8px 1.5px !important;
 		border-radius: var(--uwp-nav-item-selector-radius) !important;
 		margin-right: 7px !important;
@@ -645,8 +645,8 @@ panel[position*="bottomleft"] {
 	margin-bottom: 6px !important;
 }
 #appMenu-tp-toggle[enabled="true"] {
-	background-color: -moz-accent-color !important;
-	border: 1px solid -moz-accent-color !important;
+	background-color: AccentColor !important;
+	border: 1px solid AccentColor !important;
 }
 #appMenu-tp-toggle > .toolbarbutton-text {
 	padding: 0px !important;
@@ -657,7 +657,7 @@ panel[position*="bottomleft"] {
 }
 /* Sync Icon */
 #appMenu-fxa-icon[syncstatus="active"] > .toolbarbutton-icon, #PanelUI-remotetabs-syncnow[syncstatus="active"] > .toolbarbutton-icon {
-	fill: -moz-accent-color !important;
+	fill: AccentColor !important;
 }
 /* Sidebar */
 #sidebar-box {
@@ -730,7 +730,7 @@ notification {
 	border-color: var(--uwp-tags-button-hover-active) !important;
 }
 #PanelUI-fxa-menu-syncnow-button[syncstatus="active"] > .toolbarbutton-icon {
-	fill: -moz-accent-color !important;
+	fill: AccentColor !important;
 }
 #fullscreen-warning {
 	border: none !important;
@@ -795,7 +795,7 @@ notification {
 	display: none !important;
 }
 .infobar > .icon {
-	color: -moz-accent-color !important;
+	color: AccentColor !important;
 	margin-left: 8px !important;
 }
 #urlbar-zoom-button {
@@ -823,11 +823,11 @@ notification {
 	--toolbarbutton-active-background: var(--uwp-navbar-button-hover) !important;
 	--tab-border-radius: var(--uwp-tags-control-radius) !important;
 	--panel-font-size: 12px !important;
-	--lwt-toolbarbutton-icon-fill-attention: -moz-accent-color !important;
+	--lwt-toolbarbutton-icon-fill-attention: AccentColor !important;
 
 	--zoom-controls-bgcolor: transparent !important;
 	--toolbar-bgimage: none !important;
-	--panel-banner-item-update-supported-bgcolor: -moz-accent-color !important;
+	--panel-banner-item-update-supported-bgcolor: AccentColor !important;
 
 	--toolbar-field-focus-background-color: var(--uwp-button-background) !important;
 	--urlbar-box-focus-bgcolor: var(--uwp-button-background) !important;

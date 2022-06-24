@@ -84,7 +84,7 @@
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.dialogBox {
-			border: 1px solid -moz-accent-color !important;
+			border: 1px solid AccentColor !important;
 		}
 		@supports(backdrop-filter: blur(1px)) {
 			body[role="dialog"], dialog[subdialog="true"], window[role="dialog"]:not([chromehidden]) {
@@ -259,12 +259,12 @@
 
 	@media (prefers-color-scheme: light) {
 		#categories > .category:is([selected], .selected)::before {
-			background: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+			background: color-mix(in srgb, AccentColor 60%, black) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
 		#categories > .category:is([selected], .selected)::before {
-			background: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+			background: color-mix(in srgb, AccentColor 60%, white) !important;
 		}
 	}
 
@@ -416,7 +416,7 @@
 		background: var(--newtab-card-background-color) !important;
 	}
 	.ds-card .meta .source, .ds-card .ds-card-link:hover header {
-		color: -moz-accent-color !important;
+		color: AccentColor !important;
 	}
 	.ds-card .ds-card-link:is(:active, :focus) header {
 		color: #666666 !important;
@@ -455,13 +455,13 @@
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.edit-topsites-wrapper .modal {
-			border: 1px solid -moz-accent-color !important;
+			border: 1px solid AccentColor !important;
 		}
 		.customize-menu {
 			background: var(--uwp-sidebar) !important;
 		}
 		.modal {
-			border: 1px solid -moz-accent-color !important;
+			border: 1px solid AccentColor !important;
 		}
 	}
 	@supports -moz-bool-pref("uwp.sun-valley") {
@@ -605,7 +605,7 @@
 		border-color: #505050 !important;
 	}
 	.fxaProfileImage.actionable:hover:active {
-		border-color: -moz-accent-color !important;
+		border-color: AccentColor !important;
 	}
 	#categories > scrollbox > box {
 		padding: 0px !important;
@@ -709,7 +709,7 @@
 		cursor: default !important;
 		text-decoration: underline !important;
 		margin: 0px !important;
-		color: -moz-accent-color !important;
+		color: AccentColor !important;
 	}
 	button.button-link:hover {
 		color: #999999 !important;
@@ -729,7 +729,7 @@
 		text-shadow: none !important;
 	}
 	.icon[src=""] {
-		fill: -moz-accent-color-foreground !important;
+		fill: AccentColorText !important;
 		-moz-context-properties: fill !important;
 	}
 	.addon-view[notification], .addon-view[pending] {
@@ -767,7 +767,7 @@
 /* New HTML-based addons page */
 @-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html"), url-prefix("about:addons") {
 	.rating-star {
-		fill: -moz-accent-color !important;
+		fill: AccentColor !important;
 	}
 	.card.addon {
 		background: transparent !important;
@@ -799,8 +799,8 @@
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.card-heading-icon {
-			fill: -moz-accent-color-foreground !important;
-			background-color: -moz-accent-color !important;
+			fill: AccentColorText !important;
+			background-color: AccentColor !important;
 			padding: 4px !important;
 		}
 	}
@@ -856,7 +856,7 @@
 	.firstrun-sign-in {
 		background: rgba(0, 0, 0, 0.5) !important;
 		color: white !important;
-		border: 1px solid -moz-accent-color !important;
+		border: 1px solid AccentColor !important;
 	}
 	.firstrun-sign-in .extra-links {
 		color: darkgray !important;
@@ -1002,12 +1002,12 @@
 
 	@media (prefers-color-scheme: light) {
 		.login-list-item.selected::before {
-			background: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+			background: color-mix(in srgb, AccentColor 60%, black) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
 		.login-list-item.selected::before {
-			background: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+			background: color-mix(in srgb, AccentColor 60%, white) !important;
 		}
 	}
 }

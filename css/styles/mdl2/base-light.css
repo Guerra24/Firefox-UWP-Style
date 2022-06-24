@@ -30,7 +30,7 @@
 	--chrome-secondary-background-color: #2A2A2A !important;
 	--toolbar-bgcolor: white !important;
 	--toolbar-color: var(--uwp-global-front) !important;
-	--toolbarbutton-icon-fill-attention: -moz-accent-color !important;
+	--toolbarbutton-icon-fill-attention: AccentColor !important;
 
 	--uwp-bottom-background: #E6E6E6;
 
@@ -38,8 +38,8 @@
 
 	--autocomplete-popup-background: white !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
-	--autocomplete-popup-highlight-background: -moz-accent-color !important;
-	--autocomplete-popup-highlight-color: -moz-accent-color-foreground !important;
+	--autocomplete-popup-highlight-background: AccentColor !important;
+	--autocomplete-popup-highlight-color: AccentColorText !important;
 	--autocomplete-popup-hover-background: #cccccc !important;
 	--urlbar-result-hover-bgcolor: #CDCDCD !important;
 

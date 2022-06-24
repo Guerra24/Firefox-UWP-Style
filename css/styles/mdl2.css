@@ -232,7 +232,7 @@
 		textarea:focus,
 		input:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]):focus,
 		.findbar-textbox:focus {
-			border: 2px solid -moz-accent-color !important;
+			border: 2px solid AccentColor !important;
 		}
 	}
 }

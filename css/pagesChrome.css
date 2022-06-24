@@ -100,7 +100,7 @@
 	}
 	@supports not -moz-bool-pref("uwp.sun-valley") {
 		.dialogBox {
-			border: 1px solid -moz-accent-color !important;
+			border: 1px solid AccentColor !important;
 		}
 	}
 }
@@ -170,7 +170,7 @@
 	#clearDownloadsButton {
 		-moz-appearance: none !important;
 		margin-left: 8px !important;
-		color: -moz-accent-color !important;
+		color: AccentColor !important;
 	}
 	#clearDownloadsButton:hover {
 		color: #999999 !important;
@@ -209,24 +209,24 @@
 	}
 	@media (prefers-color-scheme: light) {
 		.text-link {
-			color: color-mix(in srgb, -moz-accent-color 80%, black) !important;
+			color: color-mix(in srgb, AccentColor 80%, black) !important;
 		}
 		.text-link:hover {
-			color: color-mix(in srgb, -moz-accent-color 65%, black) !important;
+			color: color-mix(in srgb, AccentColor 65%, black) !important;
 		}
 		.text-link:hover:active {
-			color: color-mix(in srgb, -moz-accent-color 50%, black) !important;
+			color: color-mix(in srgb, AccentColor 50%, black) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
 		.text-link {
-			color: color-mix(in srgb, -moz-accent-color 80%, white) !important;
+			color: color-mix(in srgb, AccentColor 80%, white) !important;
 		}
 		.text-link:hover {
-			color: color-mix(in srgb, -moz-accent-color 65%, white) !important;
+			color: color-mix(in srgb, AccentColor 65%, white) !important;
 		}
 		.text-link:hover:active {
-			color: color-mix(in srgb, -moz-accent-color 50%, white) !important;
+			color: color-mix(in srgb, AccentColor 50%, white) !important;
 		}
 	}
 }
@@ -377,7 +377,7 @@
 	#viewGroup > radio[selected="true"] {
 		background-color: transparent !important;
 		color: var(--uwp-global-front) !important;
-		border-bottom: 3px solid -moz-accent-color;
+		border-bottom: 3px solid AccentColor;
 		padding-bottom: 6.5px !important;
 	}
 	#viewGroup > radio > .radio-label-box {
@@ -433,7 +433,7 @@
 	body {
 		background: transparent !important;
 		--disabled-fill-color: var(--uwp-button-background-disabled) !important;
-		--selected-fill-color: -moz-accent-color !important;
+		--selected-fill-color: AccentColor !important;
 		--border: var(--uwp-button-border) !important;
 	}
 	.spinner {

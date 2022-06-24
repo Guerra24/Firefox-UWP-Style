@@ -4,7 +4,7 @@
 @-moz-document url-prefix("chrome://"), regexp("about:(?!blank).*") {
 
 	:root {
-		--in-content-accent-color: -moz-accent-color !important;
+		--in-content-accent-color: AccentColor !important;
 	    --in-content-page-color: var(--uwp-foreground) !important;
 	    --in-content-page-background: var(--uwp-background) !important;
 	    --in-content-text-color: lightgray !important;
@@ -16,7 +16,7 @@
 	    --in-content-box-border-color: transparent !important;
 	    --in-content-item-hover: #191919 !important;
 	    --in-content-item-selected: #0a84ff;
-		--in-content-border-highlight: -moz-accent-color !important;
+		--in-content-border-highlight: AccentColor !important;
 	    --in-content-border-focus: #0a84ff;
 	    --in-content-border-color: #282828 !important;
 	    --in-content-category-outline-focus: 1px dotted #0a84ff;
@@ -29,7 +29,7 @@
 	    --in-content-category-background-selected-hover: #353535 !important;
 	    --in-content-category-background-selected-active: #4C4C4C !important;
 	    --in-content-tab-color: #424f5a;
-	    --in-content-link-color: -moz-accent-color !important;
+	    --in-content-link-color: AccentColor !important;
 	    --in-content-link-color-hover: #999999 !important;
 	    --in-content-link-color-active: #666666 !important;
 	    --in-content-link-color-visited: #0a8dff;
@@ -38,7 +38,7 @@
 	    --in-content-primary-button-background-active: #003EAA;
 	    --in-content-table-background: transparent !important;
 	    --in-content-table-border-dark-color: #282828 !important;
-	    --in-content-table-header-background: -moz-accent-color !important;
+	    --in-content-table-header-background: AccentColor !important;
 		--card-shadow: none !important;
 		--card-shadow-hover: none !important;
 		--card-shadow-focus: none !important;
@@ -58,8 +58,8 @@
 	body {
 		--newtab-background-color: #1A1A1A !important;
 		--newtab-snippets-background-color: #2A2A2A !important;
-		--newtab-textbox-focus-color: -moz-accent-color !important;
-		--newtab-link-primary-color: -moz-accent-color !important;
+		--newtab-textbox-focus-color: AccentColor !important;
+		--newtab-link-primary-color: AccentColor !important;
 		--newtab-card-background-color: #2A2A2A !important;
 		--newtab-card-shadow: none !important;
 		--newtab-search-header-background-color: #2A2A2A !important;

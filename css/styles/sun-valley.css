@@ -286,7 +286,7 @@
 		.findbar-textbox:focus {
 			padding: 5.5px 5.5px 4.5px 5.5px !important;
 			border-bottom-width: 2px !important;
-			border-bottom-color: color-mix(in srgb, -moz-accent-color 40%, white) !important;
+			border-bottom-color: color-mix(in srgb, AccentColor 40%, white) !important;
 		}
 		input[disabled]:not(#urlbar-input):not(.searchbar-textbox):not(.fake-editable):not([type="radio"]):not([type="checkbox"]):not([type="range"]) {
 			border-bottom: var(--uwp-input-border-disabled) !important;

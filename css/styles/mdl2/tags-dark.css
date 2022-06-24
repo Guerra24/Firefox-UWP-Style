@@ -10,7 +10,7 @@
 		--uwp-tags-button-hover-active: #666666;
 		--uwp-tags-button-color: var(--uwp-global-front);
 		--uwp-tags-button-disabled-text: #858585;
-		--uwp-tags-button-accent: linear-gradient(-moz-accent-color, -moz-accent-color);
+		--uwp-tags-button-accent: linear-gradient(AccentColor, AccentColor);
 		--uwp-tags-button-accent-mod: #D0D0D0;
 		--uwp-tags-textbox: black;
 		--uwp-tags-textbox-border: #666666;

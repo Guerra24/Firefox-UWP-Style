@@ -80,12 +80,12 @@
 	}
 	@media (prefers-color-scheme: light) {
 		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
-			background-color: color-mix(in srgb, -moz-accent-color 60%, white) !important;
+			background-color: color-mix(in srgb, AccentColor 60%, white) !important;
 		}
 	}
 	@media (prefers-color-scheme: dark) {
 		menupopup menu[open], menupopup menuitem[selected="true"], select > option:checked {
-			background-color: color-mix(in srgb, -moz-accent-color 60%, black) !important;
+			background-color: color-mix(in srgb, AccentColor 60%, black) !important;
 		}
 	}
 	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {

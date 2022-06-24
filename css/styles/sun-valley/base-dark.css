@@ -28,13 +28,13 @@
 	--chrome-background-color: black !important;
 	--toolbar-bgcolor: #2A2A2A !important;
 	--toolbar-color: var(--uwp-global-front) !important;
-	--toolbarbutton-icon-fill-attention: -moz-accent-color !important;
+	--toolbarbutton-icon-fill-attention: AccentColor !important;
 	
 	--uwp-titlebar: white;
 
 	--autocomplete-popup-background: #2A2A2A !important;
 	--autocomplete-popup-color: var(--uwp-global-front) !important;
-	--autocomplete-popup-highlight-background: -moz-accent-color !important;
+	--autocomplete-popup-highlight-background: AccentColor !important;
 
 	--button-hover-bgcolor: var(--panelview-toolbarbutton-hover-bgcolor) !important;
 	--button-active-bgcolor: var(--panelview-toolbarbutton-active-bgcolor) !important;

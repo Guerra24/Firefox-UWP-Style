@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 96-101](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
+- [Firefox 96-102](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
 - [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
@@ -53,9 +53,17 @@ All the theme vars `--uwp-*` can be overridden, Firefox vars too but only if the
 
 If you want to override the accent color create two new prefs, both string type set to RGB Hex values.
 
+#### Firefox 102 and older
+
 `ui.-moz-accent-color`=`#FF00FF` Accent color
 
 `ui.-moz-accent-color-foreground`=`#FFFFFF` Text color when the background is the accent color.
+
+#### Firefox 103 and newer
+
+`ui.accentcolor`=`#FF00FF` Accent color
+
+`ui.accentcolortext`=`#FFFFFF` Text color when the background is the accent color.
 
 ## Screenshots (Sun Valley)
 
