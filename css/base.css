@@ -380,6 +380,9 @@ panel[position*="bottomleft"] {
 #editBookmarkPanel .panel-header {
 	border-bottom: none !important;
 }
+#customization-container {
+	background: transparent !important;
+}
 #customization-uidensity-button {
 	width: 200px !important;
 }
@@ -558,6 +561,7 @@ panel[position*="bottomleft"] {
 		border-radius: 0px !important;
 		padding-block: 0px !important;
 		padding: var(--uwp-context-item-margin) !important;
+		margin-inline: 0px !important;
 	}
 	.urlbarView-row-inner {
 		background: transparent !important;
