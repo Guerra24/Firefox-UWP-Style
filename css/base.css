@@ -305,7 +305,7 @@ findbar[hidden] {
 	display: none !important;
 }
 @media not (-moz-windows-compositor) {
-	.panel-arrowcontainer > slot[part="content"] {
+	slot[part="content"]:only-child {
 		margin: var(--uwp-popup-padding) !important;
 		border: 1px solid var(--uwp-context-border) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
