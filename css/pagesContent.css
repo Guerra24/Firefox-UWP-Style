@@ -239,7 +239,6 @@
 		background-position-y: calc(var(--uwp-nav-item-height) / 2 - 8px) !important;
 	}
 	#categories > .category:is(richlistitem) {
-		position: absolute !important;
 		min-height: var(--uwp-nav-item-height) !important;
 		transition: none !important;
 		padding-left: 0px !important;

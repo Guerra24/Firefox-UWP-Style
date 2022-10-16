@@ -120,7 +120,7 @@
 @-moz-document url("chrome://browser/content/places/places.xhtml") {
 
 	.downloadButton {
-		margin: 16px 0px !important;
+		margin: 8px 0px !important;
 		border-color: transparent !important;
 		background-color: transparent !important;
 	}
