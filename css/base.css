@@ -92,7 +92,7 @@
 		background-image: none !important;
 		border: var(--uwp-button-border) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
-		margin: 2px 0px !important;
+		margin: 0px 0px !important;
 		box-shadow: none !important;
 		opacity: 1 !important;
 		overflow: hidden !important;
@@ -116,7 +116,7 @@
 		border: var(--uwp-button-border) !important;
 		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
-		margin: 2px !important;
+		margin: 0px 2px !important;
 		transition: background-color 83ms !important;
 	}
 	.toolbar-items .toolbarbutton-1:hover {
@@ -127,8 +127,11 @@
 		background-color: var(--uwp-button-background-active) !important;
 		border: var(--uwp-button-border-active) !important;
 	}
-	toolbar .toolbarbutton-1 > .toolbarbutton-icon {
-		--toolbarbutton-inner-padding: 6px !important;
+	.toolbar-items .toolbarbutton-1 .toolbarbutton-badge-stack {
+		background: transparent !important;
+	}
+	#alltabs-button {
+		margin: 0px !important;
 	}
 }
 @supports not -moz-bool-pref("uwp.sun-valley.round-tabs") {
@@ -842,6 +845,11 @@ notification {
 	--uwp-navbar-letterbox: 20px;
 	--uwp-navbar-letterbox-bookmarks: 0px;
 }
+@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	:root #TabsToolbar {
+		--toolbarbutton-inner-padding: 6px !important;
+	}
+}
 :root[uidensity="compact"] {
 	--uwp-navbar-letterbox: 7px;
 	--uwp-navbar-letterbox-bookmarks: -6px;
@@ -849,10 +857,14 @@ notification {
 :root[uidensity="touch"] {
 	--tab-min-height: 42px !important;
 	--uwp-urlbar-height: 42px !important;
-	--toolbarbutton-inner-padding: 8px !important;
 
 	--uwp-navbar-letterbox: 9px;
 	--uwp-navbar-letterbox-bookmarks: 0px;
+}
+@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
+	:root[uidensity="touch"] #TabsToolbar {
+		--toolbarbutton-inner-padding: 12px !important;
+	}
 }
 @media (-moz-windows-compositor) {
 	/* Temporal fix for top border */
