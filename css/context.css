@@ -50,7 +50,7 @@
 		color: var(--uwp-global-front) !important;
 		font-style: normal !important;
 	}
-	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option {
+	menupopup menuitem, menupopup menu, button[role="menuitem"], .autocomplete-richlistitem, select > option, .all-tabs-item {
 		-moz-appearance: none !important;
 		color: var(--uwp-context-item-color) !important;
 		background-color: var(--uwp-context-item-background) !important;
@@ -60,6 +60,10 @@
 		border: none !important;
 		font-size: 12px !important;
 		margin: var(--uwp-context-item-margin) !important;
+	}
+	.all-tabs-item {
+		padding-bottom: 0px !important;
+		padding-top: 0px !important;
 	}
 	.menuitem-iconic > .menu-iconic-left {
 		padding-top: 0px !important;
@@ -74,7 +78,7 @@
 	menupopup menuitem[disabled="true"], menupopup menuitem[disabled="true"] > .menu-text {
 		color: gray !important;
 	}
-	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
+	menupopup menuitem:hover, menupopup menu:hover, button[role="menuitem"]:hover, .autocomplete-richlistitem:hover, menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive], .all-tabs-item:hover {
 		background-color: var(--uwp-context-item-background-hover) !important;
 		border: none !important;
 	}
@@ -88,7 +92,7 @@
 			background-color: color-mix(in srgb, AccentColor 60%, black) !important;
 		}
 	}
-	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected] {
+	menupopup menuitem:hover:active, menupopup menu:hover:active, button[role="menuitem"]:hover:active, .autocomplete-richlistitem:hover:active, menupopup menuitem[selected], .all-tabs-item:hover:active {
 		background-color: var(--uwp-context-item-background-active) !important;
 		border: none !important;
 	}
