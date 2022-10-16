@@ -170,10 +170,10 @@
 	.toolbar-items .toolbarbutton-1:hover {
 		background: var(--uwp-tabbar-button-hover) !important;
 	}
-	.toolbar-items .toolbarbutton-1:hover:active {
+	.toolbar-items .toolbarbutton-1:is(:hover:active, [open]) {
 		background: var(--uwp-tabbar-button-hover-active) !important;
 	}
-	toolbar .toolbarbutton-1 .toolbarbutton-badge-stack {
+	.toolbar-items .toolbarbutton-1 .toolbarbutton-badge-stack {
 		background: transparent !important;
 	}
 }
