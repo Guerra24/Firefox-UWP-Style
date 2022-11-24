@@ -10,14 +10,14 @@
 	}
 	@supports -moz-bool-pref("uwp.sun-valley.mica") {
 		window:not([type="child"]) {
-			appearance: -moz-win-glass !important;
+			appearance: -moz-win-borderless-glass !important;
 			background: transparent !important;
 		}
 		wizard {
 			background: transparent !important;
 		}
 		/*#places {
-			appearance: -moz-win-glass !important;
+			appearance: -moz-win-borderless-glass !important;
 			background: transparent !important;
 		}
 		#placesView {

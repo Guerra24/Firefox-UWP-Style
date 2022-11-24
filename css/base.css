@@ -65,7 +65,7 @@
 /*
 #main-window[chromemargin] {
 	background-color: var(--uwp-mainwindow) !important;
-	-moz-appearance: -moz-win-glass !important;
+	-moz-appearance: -moz-win-borderless-glass !important;
 }
 #main-window[sizemode="normal"][tabsintitlebar="true"] {
 	margin-top: 1px !important;
@@ -817,7 +817,6 @@ notification {
 	padding: var(--arrowpanel-menuitem-padding) !important;
 	border-radius: var(--arrowpanel-menuitem-border-radius) !important;
 }
-
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
@@ -875,7 +874,7 @@ notification {
 
 @supports -moz-bool-pref("uwp.sun-valley.mica") {
 	#main-window:not([sizemode="fullscreen"])  {
-		appearance: -moz-win-glass !important;
+		appearance: -moz-win-borderless-glass !important;
 		background: transparent !important;
 	}
 	#appcontent {
