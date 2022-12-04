@@ -78,6 +78,8 @@ If you want to override the accent color create two new prefs, both string type 
 ![05](https://s3.guerra24.net/projects/firefox-uwp/screenshots/04.png)
 ![05](https://s3.guerra24.net/projects/firefox-uwp/screenshots/05.png)
 ![06](https://s3.guerra24.net/projects/firefox-uwp/screenshots/06.png)
+<!---
 ![07](https://s3.guerra24.net/projects/firefox-uwp/screenshots/07.png)
 ![08](https://s3.guerra24.net/projects/firefox-uwp/screenshots/08.png)
+-->
 ![09](https://s3.guerra24.net/projects/firefox-uwp/screenshots/09.png)
