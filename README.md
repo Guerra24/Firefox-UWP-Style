@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 103-106](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-103.zip)
+- [Firefox 103-108](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-103.zip)
 - [Firefox 96-102](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
 - [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
 
@@ -30,9 +30,13 @@ The 2021 Fluent Design refresh. Features heavy use of rounded corners and smooth
 
 Create boolean `uwp.sun-valley` pref to enable.
 
+Create boolean `uwp.sun-valley.round-tabs` pref to enable rounded tabs.
+
 ## Customize
 
 Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in some menus.
+
+Toggle `widget.non-native-theme.use-theme-accent` pref to enable accent color in all *about:\** pages.
 
 ### Mica (WIP)
 
