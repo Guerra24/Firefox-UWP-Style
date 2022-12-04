@@ -2,6 +2,7 @@
 
 /* chrome:// specific pages */
 
+
 @-moz-document regexp("chrome:\/\/(?!devtools).*") {
 	dialog, window, wizard {
 		background: var(--uwp-background) !important;
@@ -60,7 +61,7 @@
 		animation: fadeInScale .3s;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 	}
-	.dialog-content-box {
+	.dialog-content-box, vbox[part="content-box"].box-inherit {
 		padding: 24px !important;
 		border-bottom: 1px solid var(--uwp-dialog-separator) !important;
 		background-color: var(--uwp-layer-fill-alt) !important;
@@ -75,7 +76,7 @@
 		}
 	}
 	@supports -moz-bool-pref("uwp.sun-valley") {
-		.dialog-content-box {
+		.dialog-content-box,  vbox[part="content-box"].box-inherit {
 			margin-bottom: 24px !important;
 		}
 		.dialog-button-box {
