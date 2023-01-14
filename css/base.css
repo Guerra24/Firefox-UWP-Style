@@ -884,22 +884,81 @@ notification {
 		appearance: -moz-win-exclude-glass !important;
 	}
 	:root:not([sizemode="fullscreen"]) .titlebar-button {
-		width: auto !important;
-		height: auto !important;
 		opacity: 0 !important;
 	}
 	:root:not([sizemode="fullscreen"]) .titlebar-button:is(:hover,:active) {
 		opacity: 1 !important;
 	}
-	.titlebar-min {
-		padding: 8px 16px !important;
-		padding-bottom: 7px !important;
+	@media (-moz-device-pixel-ratio: 1.0) {
+		:root:not([sizemode="fullscreen"]) .titlebar-button {
+			width: auto !important;
+			height: auto !important;
+		}
+		.titlebar-min {
+			padding: 8px 16px !important;
+			padding-bottom: 7px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-close {
+			padding-right: 19px !important;
+		}
 	}
-	:root[sizemode="maximized"] .titlebar-close {
-		padding-right: 19px !important;
+	@media (-moz-device-pixel-ratio: 1.25) {
+		.titlebar-button {
+			width: 47px !important;
+			height: 29px !important;
+		}
+		.titlebar-max {
+			padding-left: 16px !important;
+		}
+		.titlebar-min {
+			padding: 8px 0px !important;
+		}
+		.titlebar-close {
+			padding-left: 16px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-button {
+			width: 48px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-close {
+			padding-left: 14px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-restore {
+			padding-right: 19px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-min {
+			padding-left: 2px !important;
+		}
+	}
+	@media (-moz-device-pixel-ratio: 1.5) {
+		.titlebar-button {
+			width: 47px !important;
+			height: 28px !important;
+		}
+		.titlebar-max {
+			padding-top: 9px !important;
+			padding-left: 17px !important;
+		}
+		.titlebar-min {
+			padding-left: 18px !important;
+		}
+		.titlebar-close {
+		}
+		:root[sizemode="maximized"] .titlebar-button {
+			
+		}
+		:root[sizemode="maximized"] .titlebar-close {
+			padding-left: 14px !important;
+		}
+		:root[sizemode="maximized"] .titlebar-restore {
+			padding-top: 9px !important;
+			padding-right: 20px !important;
+			
+		}
+		:root[sizemode="maximized"] .titlebar-min {
+			
+		}
 	}
 }
-
 /* Testing shadows  */
 /*
 :root {
