@@ -200,6 +200,9 @@
 .tabbrowser-tab::before, .tabbrowser-tab::after {
 	display: none !important;
 }
+.tab-label:is([selected], [attention]) {
+	font-weight: unset !important;
+}
 .all-tabs-item {
 	margin-inline: 0px !important;
 	border-radius: 0px !important;

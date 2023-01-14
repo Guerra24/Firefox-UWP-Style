@@ -95,6 +95,9 @@
 	.dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {
 		background: transparent !important;
 	}
+	#window-modal-dialog {
+		bottom: 0 !important;
+	}
 	#label-box[native] {
 		outline: none !important;
 	}
