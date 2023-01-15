@@ -8,8 +8,7 @@ Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
 - [Firefox 103-109](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-103.zip)
-- [Firefox 96-102](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip)
-- [Firefox 89-95](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-89.zip)
+- [Firefox 96-102](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-96.zip))
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
 
@@ -30,7 +29,11 @@ The 2021 Fluent Design refresh. Features heavy use of rounded corners and smooth
 
 Create boolean `uwp.sun-valley` pref to enable.
 
+Create boolean `uwp.sun-valley.font` pref to enable Segoe UI Variable.
+
 Create boolean `uwp.sun-valley.round-tabs` pref to enable rounded tabs.
+
+Create boolean `uwp.sun-valley.colored-tabs` pref to enable colored tabs. It uses the container color or the accent color in default tabs. Only works with rounded tabs since the default ones have the tab line.
 
 ## Customize
 
