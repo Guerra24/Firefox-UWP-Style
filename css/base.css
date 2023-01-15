@@ -84,7 +84,15 @@
 .tabbrowser-tab {
 	padding: 0px !important;
 }
-
+@supports -moz-bool-pref("uwp.sun-valley.colored-tabs") {
+	.tabbrowser-tab > .tab-stack {
+		--tmp-tab-line: color-mix(in srgb, var(--identity-tab-color) 50%, transparent);
+		--lwt-tab-line-color: var(--tmp-tab-line, color-mix(in srgb, AccentColor 50%, transparent)) !important;
+	}
+	.tabbrowser-tab > .tab-stack:-moz-window-inactive {
+		--lwt-tab-line-color: rgb(72, 72, 72) !important;
+	}
+}
 @supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
 	.tabbrowser-tab > .tab-stack > .tab-background {
 		background-color: transparent !important;
