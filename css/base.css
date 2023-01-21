@@ -84,6 +84,9 @@
 .tabbrowser-tab {
 	padding: 0px !important;
 }
+.urlbarView-row[label]::before {
+	display: none !important;
+}
 @supports -moz-bool-pref("uwp.sun-valley.colored-tabs") {
 	.tabbrowser-tab > .tab-stack {
 		--tmp-tab-line: color-mix(in srgb, var(--identity-tab-color) 50%, transparent);
@@ -577,8 +580,10 @@ panel[position*="bottomleft"] {
 	.urlbarView .urlbarView-row {
 		border-radius: 0px !important;
 		padding-block: 0px !important;
+		margin-block: 0px !important;
 		padding: var(--uwp-context-item-margin) !important;
 		margin-inline: 0px !important;
+		background: transparent !important;
 	}
 	.urlbarView-row-inner {
 		background: transparent !important;
