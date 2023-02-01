@@ -272,7 +272,7 @@
 	}
 
 	/* Toggle Switch */
-	input[type="checkbox"].toggle-button, input[type="checkbox"] + .slider, .protections-popup-tp-switch {
+	input[type="checkbox"].toggle-button, input[type="checkbox"] + .slider, .protections-popup-tp-switch, .toggle-button {
 		background-clip: padding-box !important;
 		background-color: var(--uwp-togglesw-background) !important;
 		background-image: none !important;
@@ -285,44 +285,44 @@
 		padding: 3px !important;
 		padding-right: 26px !important;
 	}
-	input[type="checkbox"].toggle-button:hover, input[type="checkbox"]:hover + .slider, .protections-popup-tp-switch:hover {
+	input[type="checkbox"].toggle-button:hover, input[type="checkbox"]:hover + .slider, .protections-popup-tp-switch:hover, .toggle-button:hover {
 		background-color: var(--uwp-togglesw-background-hover) !important;
 		border: var(--uwp-togglesw-border-hover) !important;
 	}
-	input[type="checkbox"].toggle-button:active, input[type="checkbox"]:active + .slider, .protections-popup-tp-switch:active {
+	input[type="checkbox"].toggle-button:active, input[type="checkbox"]:active + .slider, .protections-popup-tp-switch:active, .toggle-button:active {
 		background-color: var(--uwp-togglesw-background-active) !important;
 		border: var(--uwp-togglesw-border-active) !important;
 	}
-	input[type="checkbox"].toggle-button:checked, input[type="checkbox"]:checked + .slider, .protections-popup-tp-switch[enabled] {
+	input[type="checkbox"].toggle-button:checked, input[type="checkbox"]:checked + .slider, .protections-popup-tp-switch[enabled], .toggle-button[aria-pressed="true"] {
 		background: color-mix(in srgb, AccentColor 60%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 	}
-	input[type="checkbox"].toggle-button:checked:hover, input[type="checkbox"]:checked:hover + .slider, .protections-popup-tp-switch[enabled]:hover {
+	input[type="checkbox"].toggle-button:checked:hover, input[type="checkbox"]:checked:hover + .slider, .protections-popup-tp-switch[enabled]:hover, .toggle-button[aria-pressed="true"]:hover {
 		background-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 50%, #808080) !important;
 	}
-	input[type="checkbox"].toggle-button:checked:active, input[type="checkbox"]:checked:active + .slider, .protections-popup-tp-switch[enabled]:active {
+	input[type="checkbox"].toggle-button:checked:active, input[type="checkbox"]:checked:active + .slider, .protections-popup-tp-switch[enabled]:active, .toggle-button[aria-pressed="true"]:active {
 		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 	}
-	input[type="checkbox"].toggle-button::before, input + .slider::before, .protections-popup-tp-switch::before {
+	input[type="checkbox"].toggle-button::before, input + .slider::before, .protections-popup-tp-switch::before, .toggle-button::before {
 	    background: var(--uwp-togglesw-color) !important;
 	    height: 12px !important;
 	    width: 12px !important;
 	    outline: none !important;
 		margin: 0px !important;
 		transition: transform 200ms !important;
-		transform: translateX(-6px) translateY(-6px) !important;
+		transform: translateX(-7px) translateY(-6px) !important;
 	}
 	.protections-popup-tp-switch::before {
 		transform: none !important;
 	}
-	input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before, .protections-popup-tp-switch:hover::before {
+	input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before, .protections-popup-tp-switch:hover::before, .toggle-button:hover::before {
 		background: var(--uwp-togglesw-color-hover) !important;
 	}
-	input[type="checkbox"].toggle-button:checked::before, input:checked + .slider::before, .protections-popup-tp-switch[enabled]::before {
+	input[type="checkbox"].toggle-button:checked::before, input:checked + .slider::before, .protections-popup-tp-switch[enabled]::before, .toggle-button[aria-pressed="true"]::before {
 		background: AccentColorText !important;
-		transform: translateX(17px) translateY(-6px) !important;
+		transform: translateX(2px) translateY(-6px) !important;
 	}
 	.protections-popup-tp-switch[enabled]::before {
 		transform: translateX(23px) !important;
@@ -335,14 +335,14 @@
 		inset-inline-start: 0px !important;
 	}
 	input[type="checkbox"] + .slider::before {
-		transform: translateX(3px) translateY(-3px) !important;
+		transform: translateX(2px) translateY(-3px) !important;
 	}
 	input[type="checkbox"]:checked + .slider::before {
 		transform: translateX(27px) translateY(-3px) !important;
 	}
 
 	@supports -moz-bool-pref("uwp.sun-valley") {
-		input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before {
+		input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before, .toggle-button:hover::before {
 			height: 14px !important;
 			width: 14px !important;
 			transform: translateX(-7px) translateY(-7px) !important;
@@ -350,11 +350,18 @@
 		input[type="checkbox"].toggle-button:checked:hover::before {
 			transform: translateX(16px) translateY(-7px) !important;
 		}
+		.toggle-button[aria-pressed="true"]:hover::before {
+			height: 14px !important;
+			width: 14px !important;
+			transform: translateX(0px) translateY(-7px) !important;
+		}
 		input[type="checkbox"] + .slider:hover::before {
 			transform: translateX(2px) translateY(-2px) !important;
 		}
 		input[type="checkbox"]:checked + .slider:hover::before {
-			transform: translateX(26px) translateY(-2px) !important;
+			height: 14px !important;
+			width: 14px !important;
+			transform: translateX(25px) translateY(-2px) !important;
 		}
 	}
 

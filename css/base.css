@@ -577,6 +577,10 @@ panel[position*="bottomleft"] {
 	.urlbarView-results {
 		padding-block: 0px !important;
 	}
+	.urlbarView-button {
+		margin-inline: 0px !important;
+		margin-inline-start: 2px !important;
+	}
 	.urlbarView .urlbarView-row {
 		border-radius: 0px !important;
 		padding-block: 0px !important;
@@ -584,6 +588,9 @@ panel[position*="bottomleft"] {
 		padding: var(--uwp-context-item-margin) !important;
 		margin-inline: 0px !important;
 		background: transparent !important;
+		border: none !important;
+		border-left: 2px solid transparent !important;
+		border-right: 2px solid transparent !important;
 	}
 	.urlbarView-row-inner {
 		background: transparent !important;
