@@ -901,7 +901,7 @@ notification {
 		background: transparent !important;
 	}
 	#appcontent {
-		appearance: -moz-win-exclude-glass !important;
+		/*appearance: -moz-win-exclude-glass !important;*/
 	}
 	:root:not([sizemode="fullscreen"]) .titlebar-button {
 		opacity: 0 !important;
@@ -920,6 +920,18 @@ notification {
 		}
 		:root[sizemode="maximized"] .titlebar-close {
 			padding-right: 19px !important;
+		}
+		.titlebar-min {
+			padding: 0px 16px !important;
+			padding-bottom: 3px !important;
+		}
+		.titlebar-max, .titlebar-restore {
+			padding: 0px 17px !important;
+			padding-bottom: 4px !important;
+		}
+		.titlebar-close {
+			padding: 0px 17px !important;
+			padding-bottom: 4px !important;
 		}
 	}
 	@media (-moz-device-pixel-ratio: 1.25) {
