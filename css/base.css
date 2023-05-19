@@ -46,6 +46,7 @@
 }
 .titlebar-spacer[type="post-tabs"] {
 	width: 50px !important;
+	display: flex !important;
 }
 /* Window */
 /* Temporal fix for top border */
@@ -882,6 +883,7 @@ notification {
 
 	--uwp-navbar-letterbox: 9px;
 	--uwp-navbar-letterbox-bookmarks: 0px;
+	--toolbarbutton-inner-padding: 12px !important;
 }
 @supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
 	:root[uidensity="touch"] #TabsToolbar {
@@ -912,7 +914,7 @@ notification {
 	@media (-moz-device-pixel-ratio: 1.0) {
 		:root:not([sizemode="fullscreen"]) .titlebar-button {
 			width: auto !important;
-			height: auto !important;
+			/*height: auto !important;*/
 		}
 		.titlebar-min {
 			padding: 8px 16px !important;
