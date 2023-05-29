@@ -51,8 +51,6 @@ In MicaForEveryone create a process rule and select `firefox` then set the backd
 
 Create boolean `uwp.sun-valley.mica` pref to enable.
 
-On Nightly disable `gfx.webrender.dcomp-win.enabled` since it causes rendering issues.
-
 ### Custom CSS
 
 If you want to change any rules use `customChrome.css` and `customContent.css`.
