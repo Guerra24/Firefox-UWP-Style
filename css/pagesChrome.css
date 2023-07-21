@@ -10,8 +10,8 @@
 	}
 	@supports -moz-bool-pref("uwp.sun-valley.mica") {
 		window:not([type="child"]) {
-			appearance: -moz-win-borderless-glass !important;
-			background: transparent !important;
+			/*appearance: -moz-win-borderless-glass !important;*/
+			background: var(--uwp-background) !important;
 		}
 		wizard {
 			background: transparent !important;

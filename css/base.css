@@ -325,34 +325,23 @@ findbar[hidden] {
 .panel-arrowbox {
 	display: none !important;
 }
-@media not (-moz-windows-compositor) {
-	slot[part="content"]:only-child {
-		margin: var(--uwp-popup-padding) !important;
-		border: 1px solid var(--uwp-context-border) !important;
-		border-radius: var(--uwp-tags-overlay-radius) !important;
-		background: var(--uwp-context-background) !important;
-		background-clip: padding-box !important;
-		box-shadow: var(--uwp-shadow-context) !important;
-		overflow: clip !important;
-	}
+
+.panel-arrowbox + slot[part="content"] {
+	margin: 0px !important;
+	box-shadow: none !important;
+	background-clip: padding-box !important;
+	border: 1px solid var(--uwp-context-border) !important;
 }
-@media (-moz-windows-compositor) {
-	.panel-arrowbox + slot[part="content"] {
-		margin: 0px !important;
-		box-shadow: none !important;
-		background-clip: padding-box !important;
-		border: 1px solid var(--uwp-context-border) !important;
-	}
-	slot[part="content"]:only-child {
-		margin: var(--uwp-popup-padding) !important;
-		border: 1px solid var(--uwp-context-border) !important;
-		border-radius: var(--uwp-tags-overlay-radius) !important;
-		background: var(--uwp-context-background) !important;
-		background-clip: padding-box !important;
-		box-shadow: var(--uwp-shadow-context) !important;
-		overflow: clip !important;
-	}
+slot[part="content"]:only-child {
+	margin: var(--uwp-popup-padding) !important;
+	border: 1px solid var(--uwp-context-border) !important;
+	border-radius: var(--uwp-tags-overlay-radius) !important;
+	background: var(--uwp-context-background) !important;
+	background-clip: padding-box !important;
+	box-shadow: var(--uwp-shadow-context) !important;
+	overflow: clip !important;
 }
+
 .panel-arrowcontent {
 	margin: 0px !important;
 }
@@ -666,6 +655,10 @@ panel[position*="bottomleft"] {
 #urlbar .searchbar-engine-one-off-item {
     margin-inline-end: 2px !important;
 }
+.urlbarView-row[rich-suggestion="no-icon"] .urlbarView-favicon {
+	margin-inline-start: 0px !important;
+	margin-inline-end: var(--urlbarView-icon-margin-end) !important;
+}
 /*@supports(backdrop-filter: blur(1px)) {
 	#urlbar[breakout][breakout-extend] #urlbar-background {
 		background-image: var(--uwp-acrylic-noise) !important;
@@ -899,18 +892,18 @@ notification {
 
 @supports -moz-bool-pref("uwp.sun-valley.mica") {
 	#main-window:not([sizemode="fullscreen"])  {
-		appearance: -moz-win-borderless-glass !important;
-		background: transparent !important;
+		/*appearance: -moz-win-browsertabbar-toolbox !important;*/
+		background: var(--uwp-background) !important;
 	}
 	#appcontent {
 		/*appearance: -moz-win-exclude-glass !important;*/
 	}
-	:root:not([sizemode="fullscreen"]) .titlebar-button {
+	/*:root:not([sizemode="fullscreen"]) .titlebar-button {
 		opacity: 0 !important;
 	}
 	:root:not([sizemode="fullscreen"]) .titlebar-button:is(:hover,:active) {
 		opacity: 1 !important;
-	}
+	}*/
 	@media (-moz-device-pixel-ratio: 1.0) {
 		:root:not([sizemode="fullscreen"]) .titlebar-button {
 			width: auto !important;

@@ -43,6 +43,9 @@
 		height: 0px !important;
 		background-color: var(--uwp-context-separator) !important;
 	}
+	menupopup menuseparator::before {
+		display: none !important;
+	}
 	.context-menu > ul > li.separator {
 		width: auto !important;
 	}
