@@ -45,6 +45,8 @@ Toggle `widget.non-native-theme.use-theme-accent` pref to enable accent color in
 
 ### Mica (WIP)
 
+**Not supported after Firefox 116**
+
 Requires [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) and only works with *Sun Valley* style
 
 In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one and titlebar to *System*.

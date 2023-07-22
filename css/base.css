@@ -1,4 +1,4 @@
-@media (-moz-windows-compositor) {
+@media (-moz-platform: windows) {
 	/* Titlebar */
 	.titlebar-button {
 		width: 46px !important;
@@ -50,7 +50,7 @@
 }
 /* Window */
 /* Temporal fix for top border */
-@media (-moz-windows-compositor) {
+@media (-moz-platform: windows) {
 	#main-window {
 		background-color: var(--uwp-mainwindow) !important;
 	}
@@ -270,7 +270,7 @@ toolbarbutton.close-icon {
 		margin-bottom: var(--uwp-navbar-letterbox-bookmarks) !important;
 	}
 }
-@media (-moz-windows-compositor) {
+@media (-moz-platform: windows) {
 	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") {
 		@supports -moz-bool-pref("uwp.sun-valley.mica") {
 			:root[sizemode="fullscreen"] #navigator-toolbox-background {
@@ -325,7 +325,7 @@ findbar[hidden] {
 .panel-arrowbox {
 	display: none !important;
 }
-@media not (-moz-windows-compositor) {
+@media not (-moz-platform: windows) {
 	slot[part="content"]:only-child {
 		margin: var(--uwp-popup-padding) !important;
 		border: 1px solid var(--uwp-context-border) !important;
@@ -336,7 +336,7 @@ findbar[hidden] {
 		overflow: clip !important;
 	}
 }
-@media (-moz-windows-compositor) {
+@media (-moz-platform: windows) {
 	.panel-arrowbox + slot[part="content"] {
 		margin: 0px !important;
 		box-shadow: none !important;
@@ -890,7 +890,7 @@ notification {
 		--toolbarbutton-inner-padding: 12px !important;
 	}
 }
-@media (-moz-windows-compositor) {
+@media (-moz-platform: windows) {
 	/* Temporal fix for top border */
 	:root[sizemode="normal"][tabsintitlebar]:-moz-window-inactive {
 		border-top-color: #2B2B2B !important;
@@ -899,15 +899,15 @@ notification {
 
 @supports -moz-bool-pref("uwp.sun-valley.mica") {
 	#main-window:not([sizemode="fullscreen"])  {
-		appearance: -moz-win-borderless-glass !important;
-		background: transparent !important;
+		/*appearance: -moz-win-borderless-glass !important;*/
+		background: var(--uwp-background) !important;
 	}
 	#appcontent {
 		/*appearance: -moz-win-exclude-glass !important;*/
 	}
-	:root:not([sizemode="fullscreen"]) .titlebar-button {
+	/*:root:not([sizemode="fullscreen"]) .titlebar-button {
 		opacity: 0 !important;
-	}
+	}*/
 	:root:not([sizemode="fullscreen"]) .titlebar-button:is(:hover,:active) {
 		opacity: 1 !important;
 	}
