@@ -18,7 +18,7 @@
 @import url(./css/styles/sun-valley.css);
 
 /*
-@supports -moz-bool-pref("pref.here") {
+@media (-moz-bool-pref: "pref.here") {
 */
 
 /* Custom CSS for userChrome.css */

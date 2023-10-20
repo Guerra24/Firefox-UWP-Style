@@ -1,5 +1,5 @@
 /**/
-@supports not -moz-bool-pref("uwp.sun-valley") {
+@media not (-moz-bool-pref: "uwp.sun-valley") {
 @media (prefers-color-scheme: dark) {
 :root {
 	--uwp-context-background: #2B2B2B;

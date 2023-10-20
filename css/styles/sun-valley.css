@@ -10,7 +10,7 @@
 @import url(./sun-valley/base-light.css);
 @import url(./sun-valley/pagesContent-light.css);
 
-@supports -moz-bool-pref("uwp.sun-valley.font") {
+@media (-moz-bool-pref: "uwp.sun-valley.font") {
 	@-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!(blank|devtools)).*") {
 		* {
 			font-family: "Segoe UI Variable", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -19,7 +19,7 @@
 	}
 }
 
-@supports -moz-bool-pref("uwp.sun-valley") {
+@media (-moz-bool-pref: "uwp.sun-valley") {
 
 	:root {
 		--uwp-tags-control-radius: 4px;
@@ -273,7 +273,7 @@
 		--urlbarView-item-inline-padding: 10px !important;
 	}
 
-	@supports -moz-bool-pref("uwp.sun-valley.round-tabs") and -moz-bool-pref("uwp.sun-valley.mica") {
+	@media (-moz-bool-pref: "uwp.sun-valley.round-tabs") and -moz-bool-pref("uwp.sun-valley.mica") {
 		:root {
 			--toolbar-bgcolor: transparent !important;
 		}

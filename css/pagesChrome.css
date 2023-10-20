@@ -8,7 +8,7 @@
 		color: var(--uwp-foreground) !important;
 		padding: 0px !important;
 	}
-	@supports -moz-bool-pref("uwp.sun-valley.mica") {
+	@media (-moz-bool-pref: "uwp.sun-valley.mica") {
 		window:not([type="child"]) {
 			/*appearance: -moz-win-borderless-glass !important;*/
 			background: var(--uwp-background) !important;
@@ -29,15 +29,8 @@
 		margin-top: auto !important;
 		background: transparent !important;;
 	}
-	#window-modal-dialog::before {
-		content: '' !important;
-		z-index: -1 !important;
-		position: fixed !important;
-		left: 0 !important;
-		top: 0 !important;
+	#window-modal-dialog::backdrop {
 		background: var(--uwp-dialog-smoke) !important;
-		width: 100vw !important;
-		height: 100vh !important;
 	}
 	.wizard-header {
 		background: transparent !important;
@@ -69,12 +62,12 @@
 	.dialog-button-box {
 		padding: 0px 16px 16px 16px !important;
 	}
-	@supports not -moz-bool-pref("uwp.sun-valley") {
+	@media not (-moz-bool-pref: "uwp.sun-valley") {
 		.dialog-content-box {
 			padding-bottom: 0px !important;
 		}
 	}
-	@supports -moz-bool-pref("uwp.sun-valley") {
+	@media (-moz-bool-pref: "uwp.sun-valley") {
 		.dialog-content-box, vbox[part="content-box"].box-inherit {
 			margin-bottom: 24px !important;
 		}
@@ -92,16 +85,13 @@
 	.previewStack {
 		background: transparent !important;
 	}
-	.dialogOverlay[topmost="true"], #window-modal-dialog::backdrop {
-		background: transparent !important;
-	}
 	#window-modal-dialog {
 		bottom: 0 !important;
 	}
 	#label-box[native] {
 		outline: none !important;
 	}
-	@supports not -moz-bool-pref("uwp.sun-valley") {
+	@media not (-moz-bool-pref: "uwp.sun-valley") {
 		.dialogBox {
 			border: 1px solid AccentColor !important;
 		}

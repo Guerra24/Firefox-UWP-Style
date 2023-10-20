@@ -341,7 +341,7 @@
 		transform: translateX(27px) translateY(-3px) !important;
 	}
 
-	@supports -moz-bool-pref("uwp.sun-valley") {
+	@media (-moz-bool-pref: "uwp.sun-valley") {
 		input[type="checkbox"].toggle-button:hover::before, input:hover + .slider::before, .toggle-button:hover::before {
 			height: 14px !important;
 			width: 14px !important;
@@ -561,7 +561,7 @@
 		background: var(--uwp-expander-content-background) !important;
 		background-clip: padding-box !important;
 	}
-	@supports not -moz-bool-pref("uwp.sun-valley") {
+	@media not (-moz-bool-pref: "uwp.sun-valley") {
 		tree {
 			border: transparent !important;
 			background: transparent !important;

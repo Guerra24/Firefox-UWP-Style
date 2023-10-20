@@ -10,7 +10,7 @@
 @import url(./mdl2/base-light.css);
 @import url(./mdl2/pagesContent-light.css);
 
-@supports not -moz-bool-pref("uwp.sun-valley") {
+@media not (-moz-bool-pref: "uwp.sun-valley") {
 	:root {
 		--uwp-tags-control-radius: 0px;
 		--uwp-tags-overlay-radius: 0px;
