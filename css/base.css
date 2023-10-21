@@ -654,6 +654,10 @@ panel[position*="bottomleft"] {
     height: 16px !important;
     flex-basis: 16px !important;
 }
+.urlbarView-favicon {
+	margin-inline-start: 0px !important;
+	margin-inline-end: 7px !important;
+}
 .urlbarView-row[selected] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
 	color: var(--uwp-global-front) !important;
 }
