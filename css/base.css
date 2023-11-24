@@ -673,6 +673,7 @@ panel[position*="bottomleft"] {
 }
 #urlbar .search-one-offs:not([hidden]) {
 	padding-block: 0px !important;
+	border: none !important;
 }
 #urlbar .searchbar-engine-one-off-item {
     margin-inline-end: 2px !important;
