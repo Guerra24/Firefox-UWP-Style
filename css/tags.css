@@ -444,7 +444,6 @@
 		-moz-context-properties: fill !important;
 		appearance: none !important;
 
-		appearance: none !important;
 		background-clip: padding-box !important;
 		background-color: var(--uwp-radio-background) !important;
 		border: var(--uwp-radio-border) !important;
@@ -467,7 +466,7 @@
 	radio[selected="true"] > .radio-check {
 		padding: var(--uwp-radio-selected-padding) !important;
 		fill: AccentColorText !important;
-		list-style-image: url("chrome://global/skin/icons/radio.svg") !important;
+		list-style-image: url("../img/radio.svg") !important;
 		background-clip: border-box !important;
 		background-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
