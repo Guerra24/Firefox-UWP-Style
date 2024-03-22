@@ -35,7 +35,7 @@
 	.context-menu > ul > li {
 		width: calc(100% - var(--uwp-context-item-margin-width)) !important;
 	}
-	menupopup menuseparator, panel-item-separator, hr[role="separator"], .context-menu > ul > li.separator {
+	menupopup menuseparator, panel-item-separator, hr[role="separator"], panel-list hr:not([hidden]), .context-menu > ul > li.separator {
 		-moz-appearance: none !important;
 		border: none !important;
 		padding: .5px 0px .5px 0px !important;

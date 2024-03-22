@@ -116,6 +116,7 @@
 		--uwp-radio-dot-size-hover: 12px;
 		--uwp-radio-border-padding-hover: 3px;
 		--uwp-radio-selected-padding: 1px;
+		--uwp-radio-legacy-border-size: 1px;
 
 		--uwp-radio-transition: margin 200ms, width 200ms, height 200ms;
 		--uwp-radio-color: var(--uwp-text-fill-primary);
@@ -273,7 +274,7 @@
 		--urlbarView-item-inline-padding: 10px !important;
 	}
 
-	@media (-moz-bool-pref: "uwp.sun-valley.round-tabs") and -moz-bool-pref("uwp.sun-valley.mica") {
+	@media (-moz-bool-pref: "uwp.sun-valley.round-tabs") and (-moz-bool-pref: "uwp.sun-valley.mica") {
 		:root {
 			--toolbar-bgcolor: transparent !important;
 		}

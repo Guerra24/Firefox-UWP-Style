@@ -440,6 +440,9 @@
 		bottom: 0px !important;
 	}
 	/* Old radio buttons */
+	radio {
+		position: relative !important;
+	}
 	radio > .radio-check {
 		-moz-context-properties: fill !important;
 		appearance: none !important;
@@ -464,9 +467,7 @@
 		border: var(--uwp-radio-border-active) !important;
 	}
 	radio[selected="true"] > .radio-check {
-		padding: var(--uwp-radio-selected-padding) !important;
 		fill: AccentColorText !important;
-		list-style-image: url("../img/radio.svg") !important;
 		background-clip: border-box !important;
 		background-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 60%, #808080) !important;
@@ -481,6 +482,19 @@
 		background-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 		border-color: color-mix(in srgb, AccentColor 40%, #808080) !important;
 	}
+
+	radio[selected="true"]::before {
+		position: absolute !important;
+		left: calc(var(--uwp-radio-border-padding) + var(--uwp-radio-legacy-border-size)) !important;
+		display: block !important;
+		content: "" !important;
+		background: AccentColorText !important;
+		height: var(--uwp-radio-dot-size) !important;
+		width: var(--uwp-radio-dot-size) !important;
+		border-radius: 100% !important;
+		transition: var(--uwp-radio-transition) !important;
+	}
+
 	/* Radio Button Disabled */
 	radio[disabled="true"] > .radio-label-box {
 		color: var(--uwp-tags-checkbox-disabled) !important;

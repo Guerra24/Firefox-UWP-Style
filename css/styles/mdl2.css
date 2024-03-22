@@ -103,6 +103,7 @@
 		--uwp-radio-dot-size-hover: 10px;
 		--uwp-radio-border-padding-hover: 4px;
 		--uwp-radio-selected-padding: 1px;
+		--uwp-radio-legacy-border-size: 2px;
 
 		--uwp-radio-transition: none;
 		--uwp-radio-color: var(--uwp-foreground);

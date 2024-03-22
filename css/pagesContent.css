@@ -441,6 +441,19 @@
 		border: 1px solid var(--uwp-dialog-border) !important;
 		animation: fadeInScale .3s;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
+		font-size: 12px !important;
+	}
+	.modal section-title {
+		font-size: 12px !important;
+	}
+	.modal label {
+		font-size: 12px !important;
+	}
+	.modal input {
+		font-size: inherit !important;
+	}
+	.modalOverlayOuter  {
+		background: var(--uwp-dialog-smoke) !important;
 	}
 	.modal .actions {
 		border-top-color: var(--uwp-dialog-separator) !important;
