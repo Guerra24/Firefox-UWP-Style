@@ -654,6 +654,9 @@ panel[position*="bottomleft"] {
 		color: AccentColor !important;
 	}
 }
+.urlbarView-url {
+	line-height: initial !important;
+}
 .urlbarView-body-inner {
 	border: none !important;
 }
