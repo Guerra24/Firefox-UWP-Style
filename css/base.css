@@ -55,9 +55,11 @@
 		background-color: var(--uwp-mainwindow) !important;
 	}
 }
-@media not (-moz-windows-accent-color-in-titlebar) {
-	#main-window[sizemode="normal"] #navigator-toolbox {
-		border-top: 1px solid transparent !important;
+@media (-moz-platform: windows) {
+	@media not (-moz-windows-accent-color-in-titlebar) {
+		#main-window[sizemode="normal"] #navigator-toolbox {
+			border-top: 1px solid transparent !important;
+		}
 	}
 }
 :root:not([tabsintitlebar]) #main-window {
@@ -263,8 +265,15 @@ toolbarbutton.close-icon {
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
 }
-#navigator-toolbox {
-	background: transparent !important;
+@media (-moz-platform: windows) {
+	#navigator-toolbox {
+		background: transparent !important;
+	}
+}
+@media not (-moz-platform: windows) {
+	#navigator-toolbox {
+		background-color: var(--uwp-background) !important;
+	}
 }
 @media (-moz-bool-pref: "privacy.resistFingerprinting.letterboxing") {
 	#navigator-toolbox {
