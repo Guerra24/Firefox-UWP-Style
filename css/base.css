@@ -689,6 +689,9 @@ panel[position*="bottomleft"] {
 .urlbarView-row[selected] > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
 	color: var(--uwp-global-front) !important;
 }
+.urlbarView-action {
+	margin-block: -3px !important;
+}
 .urlbarView-tip-help {
 	height: 28px !important;
 	box-shadow: none !important;
