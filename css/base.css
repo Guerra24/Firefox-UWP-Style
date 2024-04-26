@@ -37,12 +37,9 @@
 		margin-bottom: 0px !important;
 		-moz-box-align: start !important;
 	}
-	.titlebar-spacer[type="pre-tabs"] {
-		display: none !important;
-	}
 }
 .titlebar-spacer[type="pre-tabs"] {
-	width: 8px !important;
+	display: none !important;
 }
 .titlebar-spacer[type="post-tabs"] {
 	width: 50px !important;
@@ -220,6 +217,9 @@
 }
 .tab-label:is([selected], [attention]) {
 	font-weight: unset !important;
+}
+.tab-label-container {
+	height: initial !important;
 }
 .all-tabs-item {
 	margin-inline: 0px !important;
@@ -484,7 +484,6 @@ panel[position*="bottomleft"] {
 #urlbar {
 	border: none !important;
 	box-shadow: none !important;
-	font-size: 1.15em !important;
 	--urlbar-toolbar-height: var(--uwp-urlbar-height) !important;
 }
 #urlbar-container {
@@ -940,6 +939,7 @@ notification {
 	}
 }
 
+
 @media (-moz-bool-pref: "uwp.sun-valley.mica") {
 	#main-window:not([sizemode="fullscreen"])  {
 		/*appearance: -moz-win-borderless-glass !important;*/
@@ -1034,6 +1034,12 @@ notification {
 		:root[sizemode="maximized"] .titlebar-min {
 			
 		}
+	}
+}
+
+@media not (-moz-platform: windows) {
+	#main-window body {
+		background: var(--uwp-background) !important;
 	}
 }
 /* Testing shadows  */
