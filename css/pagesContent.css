@@ -305,6 +305,7 @@
 	.main-content {
 		border-top-left-radius: var(--uwp-tags-overlay-radius);
 		background-color: var(--uwp-nav-content-background) !important;
+		background-clip: padding-box !important;
 		border: var(--uwp-nav-content-border) !important;
 		border-right-width: 0px !important;
 		border-bottom-width: 0px !important;
@@ -699,6 +700,7 @@
 	#content {
 		border-top-left-radius: var(--uwp-tags-overlay-radius);
 		background-color: var(--uwp-nav-content-background) !important;
+		background-clip: padding-box !important;
 		border: var(--uwp-nav-content-border) !important;
 		border-right-width: 0px !important;
 		border-bottom-width: 0px !important;
