@@ -261,6 +261,7 @@ toolbarbutton.close-icon {
 /* navbar stuff */
 #nav-bar {
 	box-shadow: none !important;
+	border-top: none !important;
 }
 #navigator-toolbox, #navigator-toolbox::after {
 	border-bottom: 0px !important;
@@ -340,6 +341,7 @@ findbar[hidden] {
 }
 @media not (-moz-platform: windows) {
 	slot[part="content"]:only-child {
+		color: var(--uwp-global-front) !important;
 		margin: var(--uwp-popup-padding) !important;
 		border: 1px solid var(--uwp-context-border) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
@@ -485,6 +487,7 @@ panel[position*="bottomleft"] {
 	border: none !important;
 	box-shadow: none !important;
 	--urlbar-toolbar-height: var(--uwp-urlbar-height) !important;
+	color: var(--uwp-global-front) !important;
 }
 #urlbar-container {
 	--urlbar-container-height: var(--uwp-urlbar-height) !important;
