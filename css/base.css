@@ -1040,11 +1040,11 @@ notification {
 	}
 }
 
-@media not (-moz-platform: windows) {
+/*@media not (-moz-platform: windows) {
 	#main-window body {
 		background: var(--uwp-background) !important;
 	}
-}
+}*/
 /* Testing shadows  */
 /*
 :root {

@@ -178,6 +178,9 @@
 	label {
 		color: var(--uwp-global-front) !important;
 	}
+	#placesView {
+		background-color: unset !important;
+	}
 }
 
 @-moz-document url("chrome://browser/content/aboutDialog.xhtml") {

@@ -631,6 +631,7 @@
 		width: 8px !important;
 		background: transparent !important;
 		border: none !important;
+		appearance: none !important;
 	}
 	/* List Header */
 	listheader {
