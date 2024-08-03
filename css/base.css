@@ -432,8 +432,15 @@ panel[position*="bottomleft"] {
 #editBookmarkPanel .panel-header {
 	border-bottom: none !important;
 }
-#customization-container {
-	background: transparent !important;
+@media (-moz-platform: windows) {
+	#customization-container {
+		background: transparent !important;
+	}
+}
+@media not (-moz-platform: windows) {
+	#customization-container {
+		background: var(--uwp-background) !important;
+	}
 }
 #customization-uidensity-button {
 	width: 200px !important;
