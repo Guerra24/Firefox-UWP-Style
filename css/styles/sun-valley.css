@@ -146,6 +146,7 @@
 		--uwp-nav-item-selector-height: 16px;
 		--uwp-nav-item-selector-width: 3px;
 		--uwp-nav-item-selector-radius: 2px;
+		--uwp-nav-item-margin: 2px 4px;
 
 		--uwp-nav-item-color: var(--uwp-text-fill-primary);
 		--uwp-nav-item-background: var(--uwp-subtle-fill-transparent);

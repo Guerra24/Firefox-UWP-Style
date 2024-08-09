@@ -1,18 +1,5 @@
 /* about: specific pages */
 
-@-moz-document regexp("about:blank") {
-	@media (prefers-color-scheme: dark) {
-		body {
-			background-color: #1A1A1A;
-		}
-	}
-	@media (prefers-color-scheme: light) {
-		body {
-			background-color: #E6E6E6;
-		}
-	}
-}
-
 @-moz-document regexp("chrome:\/\/(?!devtools).*"), regexp("about:(?!blank).*") {
 
 	treecol {
@@ -219,7 +206,7 @@
 		color: var(--uwp-nav-item-color) !important;
 		background-color: var(--uwp-nav-item-background) !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
-		margin: var(--uwp-context-item-margin) !important;
+		margin: var(--uwp-nav-item-margin) !important;
 	}
 	#categories > .category:not(richlistitem) > .category-name {
 		padding-left: calc(44px - var(--uwp-nav-item-selector-width)) !important;
@@ -249,6 +236,7 @@
 		transition: none !important;
 		padding-left: 0px !important;
 		cursor: default !important;
+		border: none !important;
 	}
 	#categories > .category:is(div) > .category-name {
 		margin-left: 40px !important;

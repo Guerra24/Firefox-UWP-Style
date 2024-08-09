@@ -68,6 +68,15 @@
 		--newtab-textbox-background-color: #2A2A2A !important;
 	}
 
+	@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+		body {
+			--newtab-background-color: transparent !important;
+		}
+		:root {
+			--in-content-page-background: transparent !important;
+		}
+	}
+
 }
 }
 }

@@ -55,7 +55,7 @@
 @media (-moz-platform: windows) {
 	@media not (-moz-windows-accent-color-in-titlebar) {
 		#main-window[sizemode="normal"] #navigator-toolbox {
-			border-top: 1px solid transparent !important;
+			border-top: 1px solid transparent !important; 
 		}
 	}
 }
@@ -125,7 +125,7 @@
 		border: var(--uwp-button-border-active) !important;
 	}
 	/* Toolbar buttons */
-	.toolbar-items .toolbarbutton-1 {
+	.toolbar-items .toolbarbutton-1, #tabbrowser-tabs[orient="vertical"] .toolbarbutton-1 {
 		color: var(--uwp-button-color) !important;
 		background-color: var(--uwp-button-background) !important;
 		border: var(--uwp-button-border) !important;
@@ -134,11 +134,14 @@
 		margin: 0px 2px !important;
 		transition: background-color 83ms !important;
 	}
-	.toolbar-items .toolbarbutton-1:hover {
+	#tabbrowser-tabs[orient="vertical"] .toolbarbutton-1 {
+		margin: 0px !important;
+	}
+	.toolbar-items .toolbarbutton-1:hover, #tabbrowser-tabs[orient="vertical"] .toolbarbutton-1:hover {
 		background-color: var(--uwp-button-background-hover) !important;
 		border: var(--uwp-button-border-hover) !important;
 	}
-	.toolbar-items .toolbarbutton-1:hover:active {
+	.toolbar-items .toolbarbutton-1:hover:active, #tabbrowser-tabs[orient="vertical"] .toolbarbutton-1:hover:active {
 		background-color: var(--uwp-button-background-active) !important;
 		border: var(--uwp-button-border-active) !important;
 	}
@@ -298,8 +301,15 @@ toolbarbutton.close-icon {
 		}
 	}
 }
-#browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
-	background: var(--uwp-browser) !important;
+@media not (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+	#browser vbox#appcontent tabbrowser, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
+		background: var(--uwp-browser) !important;
+	}
+}
+@media (-moz-bool-pref: "browser.tabs.allow_transparent_browser") {
+	#browser vbox#appcontent tabbrowser, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html {
+		background: transparent !important;
+	}
 }
 /*
 @media (-moz-bool-pref: "uwp.sun-valley.mica") {
@@ -887,12 +897,139 @@ notification {
 #urlbar-zoom-button {
 	background: transparent !important;
 }
-
 .panel-banner-item {
 	margin: var(--arrowpanel-menuitem-margin) !important;
 	padding: var(--arrowpanel-menuitem-padding) !important;
 	border-radius: var(--arrowpanel-menuitem-border-radius) !important;
 }
+
+/* Sidebar */
+/* Why the hell is this a shadow root */
+.wrapper {
+	border: none !important;
+	background: transparent !important;
+	padding: 8px 3px !important;
+	border-inline-end: none !important;
+	gap: 4px !important;
+	min-width: 0px !important;
+}
+.wrapper > * {
+	padding-inline-end: 0px !important;
+}
+.wrapper > .tools-and-extensions {
+	gap: 4px !important;
+}
+.wrapper > .tools-and-extensions > moz-button {
+}
+/* How I'm supposed to unfuck this thing if the damn button is inside a shadow root the hell */
+moz-button button {
+
+}
+#sidebar-box {
+
+}
+
+.sidebar-panel {
+	padding: 8px !important;
+}
+/* Move this into another css (?) */
+.search-container > .search-icon {
+	left: unset !important;
+	right: 8px !important;
+}
+.moz-card summary {
+	cursor: default !important;
+	padding-block: 0px !important;
+	background: transparent !important;
+}
+/* Just kill me please */
+fieldset > legend[part="label"] {
+	font-size: 14px !important;
+}
+.label-content {
+	display: flex !important;
+	align-items: center !important;
+}
+.label-content .text {
+	text-indent: 0px !important;
+	margin-left: 6px !important;
+	font-size: 14px !important;
+}
+label .label-content .icon {
+	position: initial !important;
+}
+label[part="label"] {
+	display: flex !important;
+	gap: 0px !important;
+	align-items: start;
+}
+moz-radio, moz-checkbox {
+	border: none !important;
+}
+.customize-group {
+	padding: 0px !important;
+	margin: 0px !important;
+	margin-block-end: var(--uwp-expander-spacing) !important;
+}
+#manage-settings {
+	font-size: 14px !important;
+}
+/* I hate shadow roots */
+div[id="inputs"][part="inputs"] {
+	border-radius: 0px !important;
+	border: none !important;
+}
+/*
+sidebar.revamp
+sidebar.verticalTabs
+*/
+
+.fxview-tab-row-main span {
+	color: var(--uwp-foreground) !important;
+}
+sidebar-tab-row {
+	background: transparent !important;
+}
+
+@media (-moz-bool-pref: "sidebar.revamp") {
+	#appcontent {
+		border-top-left-radius: var(--uwp-tags-overlay-radius) !important;
+		background-color: var(--uwp-nav-content-background) !important;
+		background-clip: padding-box !important;
+		border: var(--uwp-nav-content-border) !important;
+		border-right-width: 0px !important;
+		border-bottom-width: 0px !important;
+		overflow: hidden;
+	}
+}
+
+#vertical-tabs {
+	margin-inline-end: 0px !important;
+}
+#tabbrowser-tabs[orient="vertical"] {
+	gap: 0px !important;
+	& #newtab-button-container {
+		font-size: 12px !important;
+		padding-top: 0px !important;
+		margin-inline-end: 0px !important;
+	}
+}
+#vertical-tabs-newtab-button {
+	appearance: none !important;
+}
+sidebar-main[expanded] > #vertical-tabs > #tabbrowser-tabs[orient="vertical"] .tabbrowser-tab {
+	min-width: 100% !important;
+}
+sidebar-main > #vertical-tabs > #tabbrowser-tabs[orient="vertical"] .tabbrowser-tab {
+	min-height: 36px !important;
+}
+sidebar-main[expanded] {
+      min-width: 280px !important;
+}
+sidebar-main {
+      min-width: 46px !important;
+}
+
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;

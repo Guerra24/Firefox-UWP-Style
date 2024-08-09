@@ -762,6 +762,7 @@
 		background: var(--uwp-expander-background) padding-box !important;
 		box-shadow: none !important;
 		box-sizing: border-box;
+		margin-block-start: var(--uwp-expander-spacing) !important;
 	}
 	.moz-card {
 		padding-block: 0px !important;
