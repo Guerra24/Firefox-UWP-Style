@@ -755,6 +755,26 @@
 		background: url("chrome://global/skin/icons/arrow-left.svg") center no-repeat !important;
 		background-color: var(--arrowpanel-dimmed-further) !important;
 	}
+	/* Random new stuff */
+	moz-card {
+		border: var(--uwp-expander-border) !important;
+		border-radius: var(--uwp-tags-control-radius) !important;
+		background: var(--uwp-expander-background) padding-box !important;
+		box-shadow: none !important;
+		box-sizing: border-box;
+	}
+	.moz-card {
+		padding-block: 0px !important;
+		padding-top: var(--uwp-expander-hor-padding) !important;
+		padding-bottom: var(--uwp-expander-hor-padding) !important;
+	}
+	.moz-card #content {
+		padding-inline: 0px !important;
+		padding-left: var(--uwp-expander-hor-padding) !important;
+		padding-right: var(--uwp-expander-hor-padding) !important;
+		border-bottom-left-radius: 0px !important;
+		border-bottom-right-radius: 0px !important;
+	}
 
 	.external {
 		color: AccentColor !important;

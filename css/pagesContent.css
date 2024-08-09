@@ -131,7 +131,10 @@
 	html.private {
 		--in-content-page-background: #25003e !important;
 	}
-
+	.text-deemphasized {
+		font-size: 14px !important;
+		color: inherit !important;
+	}
 }
 
 /* Extra stuff */
@@ -542,17 +545,17 @@
 		margin-top: 0px !important;
 		border: none !important;
 	}
-	.content-blocking-category > hbox {
-		padding-left: var(--uwp-expander-hor-padding) !important;
-		padding-right: var(--uwp-expander-hor-padding) !important;
-		padding-top: var(--uwp-expander-hor-padding) !important;
+	.privacy-detailedoption {
+		padding: var(--uwp-expander-hor-padding) !important;
 		background-color: var(--uwp-expander-background) !important;
 		background-clip: padding-box !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
 		border: var(--uwp-expander-border) !important;
-		border-bottom-width: 0px !important;
-		border-bottom-left-radius: 0px !important;
-		border-bottom-right-radius: 0px !important;
+		margin: var(--uwp-expander-spacing) 0 0 0 !important;
+	}
+	.privacy-detailedoption.selected {
+		background-color: var(--section-highlight-background-color) !important;
+		border-color: var(--in-content-accent-color) !important;
 	}
 	.content-blocking-category > .indent {
 		margin-inline-end: 0px !important;
