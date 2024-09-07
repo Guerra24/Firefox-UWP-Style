@@ -55,12 +55,15 @@
 @media (-moz-platform: windows) {
 	@media not (-moz-windows-accent-color-in-titlebar) {
 		#main-window[sizemode="normal"] #navigator-toolbox {
-			border-top: 1px solid transparent !important; 
+			border-top: 1px solid transparent !important;
 		}
 	}
 }
 :root:not([tabsintitlebar]) #main-window {
 	background-color: var(--uwp-mainwindow) !important;
+}
+#tabbrowser-tabbox {
+	box-shadow: none !important;
 }
 /*
 #main-window[chromemargin] {
