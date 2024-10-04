@@ -43,7 +43,6 @@
 }
 .titlebar-spacer[type="post-tabs"] {
 	width: 50px !important;
-	display: flex !important;
 }
 /* Window */
 /* Temporal fix for top border */
