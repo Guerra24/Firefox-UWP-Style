@@ -11,7 +11,7 @@
 	@media (-moz-bool-pref: "uwp.sun-valley.mica") {
 		window:not([type="child"]) {
 			/*appearance: -moz-win-borderless-glass !important;*/
-			background: var(--uwp-background) !important;
+			background: transparent !important;
 		}
 		wizard {
 			background: transparent !important;

@@ -1093,14 +1093,14 @@ sidebar-main {
 @media (-moz-bool-pref: "uwp.sun-valley.mica") {
 	#main-window:not([sizemode="fullscreen"])  {
 		/*appearance: -moz-win-borderless-glass !important;*/
-		background: var(--uwp-background) !important;
+		background: transparent !important;
 	}
 	#appcontent {
 		/*appearance: -moz-win-exclude-glass !important;*/
 	}
-	/*:root:not([sizemode="fullscreen"]) .titlebar-button {
+	:root:not([sizemode="fullscreen"]) .titlebar-button {
 		opacity: 0 !important;
-	}*/
+	}
 	:root:not([sizemode="fullscreen"]) .titlebar-button:is(:hover,:active) {
 		opacity: 1 !important;
 	}

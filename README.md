@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 128-129](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-128.zip)
+- [Firefox 128-131](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-128.zip)
 - [Firefox 120-127](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-120.zip)
 
 Copy the content inside the folder where userChrome.css file is located into your *chrome* folder.
@@ -41,15 +41,17 @@ Toggle `layout.css.backdrop-filter.enabled` pref to enable *acrylic blur* in som
 
 Toggle `widget.non-native-theme.use-theme-accent` pref to enable accent color in all *about:\** pages.
 
-### Mica (WIP)
+### Mica
 
-**Not supported after Firefox 116**
+**Only supported on Firefox Nightly 133 and newer**
 
 Requires [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) and only works with *Sun Valley* style
 
 In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one and titlebar to *System*.
 
 Create boolean `uwp.sun-valley.mica` pref to enable.
+
+Toggle `browser.tabs.allow_transparent_browser` pref to enable transparency support in all pages.
 
 ### Custom CSS
 
