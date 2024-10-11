@@ -47,7 +47,7 @@ Toggle `widget.non-native-theme.use-theme-accent` pref to enable accent color in
 
 Requires [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) and only works with *Sun Valley* style
 
-In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one and titlebar to *System*.
+In MicaForEveryone create a process rule and select `firefox` then set the backdrop type to your preferred one.
 
 Create boolean `uwp.sun-valley.mica` pref to enable.
 
@@ -62,14 +62,6 @@ All the theme vars `--uwp-*` can be overridden, Firefox vars too but only if the
 ### Accent Color
 
 If you want to override the accent color create two new prefs, both string type set to RGB Hex values.
-
-#### Firefox 102 and older
-
-`ui.-moz-accent-color`=`#FF00FF` Accent color
-
-`ui.-moz-accent-color-foreground`=`#FFFFFF` Text color when the background is the accent color.
-
-#### Firefox 103 and newer
 
 `ui.accentcolor`=`#FF00FF` Accent color
 
