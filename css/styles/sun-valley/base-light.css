@@ -7,7 +7,7 @@
 	--uwp-tabbar-button-hover: var(--uwp-background-fill-base);
 	--uwp-tabbar-button-hover-active: #BBBBBB;
 	--uwp-navbar-background-hover: #DEDEDE;
-	--uwp-browser: #E6E6E6;
+	--uwp-browser: var(--uwp-background-fill-base);
 	--uwp-findbar: #161616;
 	--uwp-autocomplete-list: white;
 	--uwp-urlbar: transparent;

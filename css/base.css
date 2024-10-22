@@ -538,9 +538,8 @@ panel[position*="bottomleft"] {
 	outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
-	top: 0px !important;
-	left: 0px !important;
-	width: 100% !important;
+	width: var(--urlbar-width) !important;
+	margin: 0px !important;
 }
 #searchbar:focus-within {
 	outline: none !important;
