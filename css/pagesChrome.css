@@ -11,6 +11,9 @@
 	.system-font-size {
 		font-size: 14px !important;
 	}
+	html[subdialog][dialogroot] {
+		background: transparent !important;
+	}
 	@media -moz-pref("uwp.sun-valley.mica") {
 		window:not([type="child"]) {
 			/*appearance: -moz-win-borderless-glass !important;*/

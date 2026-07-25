@@ -149,10 +149,10 @@
 			}
 		}
 	}
-	.tabbrowser-tab[selected="true"] > .tab-stack > .tab-background {
+	.tabbrowser-tab[selected] > .tab-stack > .tab-background {
 		background-color: var(--uwp-button-background) !important;
 	}
-	.tabbrowser-tab[selected="true"]:hover > .tab-stack > .tab-background {
+	.tabbrowser-tab[selected]:hover > .tab-stack > .tab-background {
 		background-color: var(--uwp-button-background-hover) !important;
 	}
 	.tabbrowser-tab:hover > .tab-stack > .tab-background {
@@ -282,6 +282,7 @@
 }
 .tab-audio-button {
 	height: 26px !important;
+	width: 26px !important;
 }
 button:has(> span[part="button"].button-background:not(.labelled)) {
 	border: none !important;
@@ -770,6 +771,7 @@ panel .text-link {
 	}
 	#urlbar[breakout][breakout-extend] > .urlbar-input-container {
 		height: var(--urlbar-toolbar-height) !important;
+		outline: none !important;
 	}
 	#urlbar-results {
 		padding: 0px !important;
@@ -827,6 +829,7 @@ panel .text-link {
 		border-bottom-left-radius: 0px !important;
 		border-bottom-right-radius: 0px !important;
 		margin-block-start: 0px !important;
+		outline: none !important;
 	}
 	#urlbar-results {
 		padding: var(--uwp-context-margin) !important;
@@ -1485,6 +1488,12 @@ fieldset {
 	height: 1px !important;
 }
 
+.chrome-block {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
 :root {
 	--toolbarbutton-border-radius: 0px !important;
 	--tab-min-height: 32px !important;
@@ -1567,6 +1576,7 @@ fieldset {
 		padding-left: 10px !important;
 		padding-right: 10px !important;
 		border-radius: var(--uwp-tags-control-radius) !important;
+		outline: none !important;
 	}
 }
 

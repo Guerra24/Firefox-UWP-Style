@@ -955,6 +955,9 @@
 		background-color: color-mix(in srgb, AccentColor 40%, var(--uwp-global-back)) !important;
 		border-color: var(--in-content-accent-color) !important;
 	}
+	.browser-icon-item {
+		--visual-picker-item-padding: 0px !important;
+	}
 }
 
 @-moz-document url("about:downloads") {
@@ -1009,6 +1012,12 @@
 	}
 	#sidebar {
 		background-color: transparent !important;
+	}
+	moz-page-nav {
+		margin-inline-start: 0 !important;
+		gap: 0px !important;
+		padding-inline-end: 0 !important;
+		border-inline-end: none !important;
 	}
 	@media not -moz-pref("uwp.sun-valley") {
 		#sidebar {

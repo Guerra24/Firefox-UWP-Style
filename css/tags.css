@@ -56,12 +56,12 @@
 		border: var(--uwp-button-border-hover) !important;
 		@media -moz-pref("uwp.sun-valley") {
 			@media (prefers-color-scheme: dark) {
-				&:not(.ctrlTab-preview, .toggle-button) {
+				&:not(.ctrlTab-preview, .toggle-button, .picker-item) {
 					border-top-color: var(--uwp-control-stroke-secondary) !important;
 				}
 			}
 			@media (prefers-color-scheme: light) {
-				&:not(.ctrlTab-preview, .toggle-button) {
+				&:not(.ctrlTab-preview, .toggle-button, .picker-item) {
 					border-bottom-color: var(--uwp-control-stroke-secondary) !important;
 				}
 			}
@@ -199,6 +199,9 @@
 		font-weight: inherit !important;
 		font-size: inherit !important;
 		color: inherit !important;
+		width: initial !important;
+		height: initial !important;
+		outline: none !important;
 	}
 
 	/* Text Box */
@@ -300,6 +303,8 @@
 		height: 20px !important;
 		margin: 0px !important;
 		box-shadow: none !important;
+		min-width: initial !important;
+		min-height: initial !important;
 	}
 	checkbox:hover > .checkbox-check, input[type="checkbox"]:hover {
 		background-color: var(--uwp-checkbox-background-hover) !important;
@@ -828,6 +833,25 @@
 	}
 	richlistbox .actionsMenuContainer[hidden="true"] {
 		display: none !important;
+	}
+	#PopupAutoComplete > richlistbox > richlistitem.autocomplete-row-item {
+		& > autocomplete-row-item {
+			flex: 1;
+			border: none !important;
+			border-radius: 0px !important;
+			align-content: center !important;
+		}
+	}
+	.row-item {
+		border-radius: 0px !important;
+		border: none !important;
+		background: transparent !important;
+		padding: 0 !important;
+
+		& .icon {
+			width: 16px !important;
+			height: 16px !important;
+		}
 	}
 	progressmeter, progress {
 		-moz-appearance: none !important;
