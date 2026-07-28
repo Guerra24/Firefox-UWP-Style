@@ -936,6 +936,7 @@
 		padding-right: var(--uwp-expander-hor-padding) !important;
 		border-bottom-left-radius: 0px !important;
 		border-bottom-right-radius: 0px !important;
+		font-size: inherit !important;
 	}
 
 	.external {

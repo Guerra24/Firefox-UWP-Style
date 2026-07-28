@@ -117,6 +117,15 @@
 			border: none !important;
 		}
 	}
+	.subviewbutton {
+		border-radius: var(--uwp-tags-control-radius) !important;
+	}
+	.subviewbutton-iconic.profile-item > .toolbarbutton-icon {
+		fill: AccentColorText !important;
+		stroke: AccentColor !important;
+		width: 16px !important;
+		height: 16px !important;
+	}
 	#appMenu-zoom-controls {
 		padding: 0px 12px !important;
 	}

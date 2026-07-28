@@ -1340,6 +1340,7 @@ sidebar-tab-row {
 			width: 100% !important;
 			padding-left: 15px !important;
 			padding-right: 15px !important;
+			outline: none !important;
 		}
 		& .tabbrowser-tab {
 			min-height: 36px !important;
