@@ -760,7 +760,7 @@
 	treecol:hover:active {
 		background-color: var(--uwp-button-background-hover) !important;
 	}
-	splitter:not(.tree-splitter):not(.devtools-horizontal-splitter) {
+	splitter:not(.tree-splitter):not(.devtools-toolbox-splitter) {
 		margin: 0px -4.5px !important;
 		width: 9px !important;
 		background: transparent !important;
@@ -880,6 +880,8 @@
 	}
 	#downloadsListBox > richlistitem {
 		margin-bottom: 0px !important;
+		background-image: none !important;
+		outline: none !important;
 	}
 	#downloadsListBox .downloadButton:not(:hover, :hover:active) {
 		border-color: transparent !important;

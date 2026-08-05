@@ -861,6 +861,7 @@ panel .text-link {
 		border: none !important;
 		border-left: 2px solid transparent !important;
 		border-right: 2px solid transparent !important;
+		color: var(--uwp-global-front) !important;
 	}
 	.urlbarView-row {
 		position: initial !important;
@@ -976,6 +977,11 @@ panel .text-link {
 }
 #urlbar .searchbar-engine-one-off-item {
     margin-inline-end: 2px !important;
+}
+@media -moz-pref("browser.nova.enabled") {
+	.urlbarView-type-icon {
+		margin-inline-start: -4px !important;
+	}
 }
 /*@supports(backdrop-filter: blur(1px)) {
 	#urlbar[breakout][breakout-extend] #urlbar-background {
@@ -1529,6 +1535,8 @@ fieldset {
 
 	--toolbarbutton-background-color-hover: color-mix(in srgb, currentColor 17%, transparent) !important;
 	--toolbarbutton-background-color-active: color-mix(in srgb, currentColor 30%, transparent) !important;
+
+	--toolbox-text-color-inactive: light-dark(color-mix(in srgb, var(--uwp-foreground) 80%, white), color-mix(in srgb, var(--uwp-foreground) 80%, black)) !important;
 }
 @media -moz-pref("uwp.sun-valley.round-tabs") {
 	:root #TabsToolbar {
