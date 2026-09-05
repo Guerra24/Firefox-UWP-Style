@@ -116,6 +116,11 @@
 			background-color: var(--uwp-context-item-background-active) !important;
 			border: none !important;
 		}
+		&[data-usercontextid] > .menu-icon {
+			height: 14px !important;
+			width: initial !important;
+			padding: 0px !important;
+		}
 	}
 	.subviewbutton {
 		border-radius: var(--uwp-tags-control-radius) !important;

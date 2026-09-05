@@ -516,7 +516,6 @@ findbar {
 }
 findbar[hidden] {
 	visibility: collapse !important;
-	margin-bottom: -40px !important;
 	opacity: 1 !important;
 }
 .findbar-find-previous > .toolbarbutton-text, .findbar-find-next > .toolbarbutton-text {
@@ -750,7 +749,6 @@ panel .text-link {
 	outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
-	width: var(--urlbar-width) !important;
 	margin: 0px !important;
 }
 #searchbar:focus-within {
@@ -843,6 +841,8 @@ panel .text-link {
 		margin-block-start: 0px !important;
 		border-bottom-left-radius: var(--uwp-tags-overlay-radius) !important;
 		border-bottom-right-radius: var(--uwp-tags-overlay-radius) !important;
+		padding: 0px !important;
+		padding-bottom: 3px !important;
 	}
 	.urlbarView-results {
 		padding-block: 0px !important;
@@ -859,7 +859,6 @@ panel .text-link {
 		margin-inline: 0px !important;
 		background: transparent !important;
 		border: none !important;
-		border-left: 2px solid transparent !important;
 		border-right: 2px solid transparent !important;
 		color: var(--uwp-global-front) !important;
 	}
@@ -875,11 +874,11 @@ panel .text-link {
 
 		@media -moz-pref("browser.nova.enabled") {
 			& {
-				padding-left: 15px !important;
+				padding-left: 12px !important;
 			}
 			&::before {
 				margin-top: 0px !important;
-				left: 6px !important;
+				left: 4px !important;
 			}
 		}
 
@@ -1537,6 +1536,8 @@ fieldset {
 	--toolbarbutton-background-color-active: color-mix(in srgb, currentColor 30%, transparent) !important;
 
 	--toolbox-text-color-inactive: light-dark(color-mix(in srgb, var(--uwp-foreground) 80%, white), color-mix(in srgb, var(--uwp-foreground) 80%, black)) !important;
+
+	--urlbar-container-padding-block: 1px !important;
 }
 @media -moz-pref("uwp.sun-valley.round-tabs") {
 	:root #TabsToolbar {
