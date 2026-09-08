@@ -870,7 +870,7 @@
 		border: none !important;
 		border-radius: 0px !important;
 	}
-	a.button, button.button:has(> img.nav-icon) {
+	a.button, div.button, button.button:has(> img.nav-icon) {
 		color: var(--uwp-expander-color) !important;
 		background-color: var(--uwp-expander-background) !important;
 		background-clip: padding-box !important;
@@ -892,6 +892,11 @@
 			color: var(--uwp-expander-color-active) !important;
 			background-color: var(--uwp-expander-background-active) !important;
 			border: var(--uwp-expander-border-active) !important;
+		}
+
+		& a {
+			color: inherit !important;
+			cursor: default !important;
 		}
 
 		& > img.nav-icon {
