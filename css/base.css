@@ -818,9 +818,19 @@ panel .text-link {
 		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
 		box-shadow: var(--uwp-shadow-popup) !important;
 		border-radius: var(--uwp-tags-overlay-radius) !important;
-		inset-inline: 0 !important;;
+		inset-inline: 0 !important;
 		inset-block-start: 0 !important;
 		inset-block-end: 0 !important;
+	}
+	#urlbar[popover-open] .urlbarView-background {
+		background: var(--uwp-autocomplete-list) !important;
+		background-clip: padding-box !important;
+		border: 1px solid var(--uwp-surface-stroke-flyout) !important;
+		box-shadow: var(--uwp-shadow-popup) !important;
+		border-radius: var(--uwp-tags-overlay-radius) !important;
+		inset-inline: 0 !important;
+		inset-block-end: 0 !important;
+		clip-path: inset(calc(var(--urlbar-joint-background-overlap) - 2px) -32px -32px -32px ) !important;
 	}
 	.urlbar-input-container, #searchbar {
 		border: 1px solid transparent !important;
