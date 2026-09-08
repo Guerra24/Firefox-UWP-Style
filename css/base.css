@@ -259,6 +259,15 @@
 		margin-left: 0px !important;
 		margin-right: 0px !important;
 	}
+	.tab-label-container[pinned] {
+		display: none !important;
+	}
+	.tabbrowser-tab[pinned] > .tab-stack {
+		min-width: 32px !important;
+		& > .tab-content {
+			margin-left: 2px !important;
+		}
+	}
 	/* Toolbar buttons */
 	.toolbar-items .toolbarbutton-1 {
 		margin-bottom: 0px !important;
@@ -412,6 +421,9 @@ toolbar .toolbarbutton-1 {
 	#navigator-toolbox {
 		background-color: var(--uwp-background) !important;
 	}
+}
+#PersonalToolbar {
+	border-top: none !important;
 }
 @media -moz-pref("privacy.resistFingerprinting.letterboxing") {
 	#navigator-toolbox {
@@ -1498,6 +1510,10 @@ fieldset {
 	background-color: transparent !important;
 	border: none !important;
 	border-radius: 0px !important;
+}
+
+.infobar {
+	border-block-start: none !important;
 }
 
 :root {

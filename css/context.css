@@ -31,6 +31,7 @@
 		border-radius: var(--uwp-tags-overlay-radius) !important;
 		box-shadow: none !important;
 		margin: 0px !important;
+		max-width: unset !important;
 		@media not -moz-pref("widget.windows.mica.popups") {
 			& {
 				background-color: var(--uwp-context-background) !important;

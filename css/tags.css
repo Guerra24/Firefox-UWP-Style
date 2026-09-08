@@ -199,9 +199,12 @@
 		font-weight: inherit !important;
 		font-size: inherit !important;
 		color: inherit !important;
-		width: initial !important;
-		height: initial !important;
 		outline: none !important;
+
+		&:not([type="icon ghost"]) {
+			width: initial !important;
+			height: initial !important;
+		}
 	}
 
 	/* Text Box */
