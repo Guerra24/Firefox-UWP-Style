@@ -7,7 +7,7 @@ A theme that follows UWP styling.
 Select the appropriate file:
 
 - [Firefox Nightly](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/nightly.zip)
-- [Firefox 151-152](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-151.zip)
+- [Firefox 151-156](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-151.zip)
 - [Firefox 137-150](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-137.zip)
 - [Firefox 135-136](https://github.com/Guerra24/Firefox-UWP-Style/archive/refs/heads/firefox-135.zip)
 
